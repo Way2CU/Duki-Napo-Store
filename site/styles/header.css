@@ -1,0 +1,146 @@
+/**
+ * Main Style Sheet
+ * DukiVeNapo Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+header {
+	display: block;
+	position: relative;
+}
+
+nav#user {
+	display: block;
+	background-color: black;
+	padding:20px calc((100vw - 1200px) / 2);
+}
+
+nav#user div.message {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-right: 10px;
+	width:calc(33.3% - 20px);
+}
+
+nav#user div:last-of-type {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-right: 10px;
+	width:calc(33.3% - 20px);
+}
+
+nav#user div:last-of-type a {
+	display: block;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	background-image: url(../images/header/dukivenapo-logo.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 288px 60px;
+}
+
+nav#user ul {
+	display: inline-block;
+	vertical-align: middle;
+	list-style-type: none;
+	text-align: right;
+	padding-left: 10px;
+	padding-right: 10px;
+	width:calc(33.3% - 20px);
+}
+
+nav#user ul li {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+nav#user ul li:last-of-type {
+	padding-right: 0px;
+}
+
+nav#navigation {
+	display: block;
+	background-color:rgba(0, 0, 0, 0.7);
+	padding:20px calc((100vw - 1200px) / 2);
+	border-top: 2px solid #f6c15c;
+	border-bottom: 2px solid #f6c15c;
+}
+
+nav#navigation ul:first-of-type {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-right: 10px;
+	width:calc(33.3% - 20px);
+	list-style-type: none;
+}
+
+nav#navigation ul:first-of-type li {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-right: 1px solid white;
+}
+
+nav#navigation ul:first-of-type li:last-of-type {
+	border-right:none;
+}
+
+nav#navigation ul:first-of-type li:first-of-type {
+	padding-left: 0px;
+}
+
+nav#navigation ul:last-of-type {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	width:calc(33.3% - 20px);
+	list-style-type: none;
+}
+
+nav#navigation ul:last-of-type li {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: relative;
+}
+
+
+nav#navigation ul:last-of-type li:before {
+	content: "";
+	position: absolute;
+	top:50%;
+	margin-top: -2px;
+	right: 0%;
+	background-color: white;
+	border-radius: 50%;
+	width: 4px;
+	height: 4px;
+}
+
+nav#navigation div {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+	padding-left: 10px;
+	padding-right: 10px;
+	width:calc(33.3% - 20px);
+}
+
+nav#navigation div span {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}

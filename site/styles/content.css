@@ -1,0 +1,36 @@
+/**
+ * Main Style Sheet
+ * DukiVeNapo Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+ /*
+	Generic
+ */
+
+ a {
+ 	color:white;
+ 	text-decoration: none;
+ 	font-size: 0.9em;
+ }
+
+ span,h5 {
+ 	font-size: 0.9em;
+ 	font-weight: 400;
+ }
+
+ h2 {
+ 	display: block;
+ 	margin-top: 0px;
+ }
+
+ h5 {
+ 	margin: 0px;
+ }
+
+ ul {
+ 	margin: 0px;
+ 	padding: 0px;
+ }

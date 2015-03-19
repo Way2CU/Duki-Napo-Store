@@ -1,0 +1,48 @@
+/**
+ * Main Style Sheet
+ * DukiVeNapo Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+footer {
+	display: block;
+	padding:20px calc((100vw - 1200px) / 2);
+	background-image: url(../images/footer/texture-pattern.png);
+	background-repeat:repeat;
+	background-position: center center;
+	background-size: 360px 360px;
+}
+
+footer h2 {
+	display: block;
+	padding-bottom: 20px;
+	text-align: center;
+	font-weight: 300;
+	color:#e8e8e8;
+	border-bottom:1px solid #e8e8e8;
+}
+
+nav#footer_nav {
+	display: block;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+nav#footer_nav ul {
+	display: inline-block;
+	vertical-align: top;
+	list-style-type: none;
+}
+
+nav#footer_nav ul li {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<document>
+	<header
+		class="$section == 'home' ? 'home' : false"
+		cms:optional="class"
+		>
+		<nav id="user">
+			<div class="message">
+				<span>Welcome you can login or create an account.</span>
+			</div>
+			<div >
+				<a href="#"></a>
+			</div>
+			<ul>
+				<li><a href="#"><cms:text constant="menu_checkout"/></a></li>
+				<li><a href="#"><cms:text constant="menu_account"/></a></li>
+				<li><a href="#"><cms:text constant="menu_wishlist"/></a></li>
+			</ul>
+		</nav>
+		<nav id="navigation">
+			<ul>
+				<li>
+					<a
+						class="$section == 'about_us' ? 'active' : false"
+						href="url_Make('', 'about_us')"
+						cms:eval="href"
+						cms:optional="class"
+						>
+						<cms:text constant="menu_about_us"/>
+					</a>
+				</li>
+				<li>
+					<a
+						class="$section == 'jewellery' ? 'active' : false"
+						href="url_Make('', 'jewellery')"
+						cms:eval="href"
+						cms:optional="class"
+						>
+						<cms:text constant="menu_jewellery"/>
+					</a>
+				</li>
+				<li>
+					<a
+						class="$section == 'gallery' ? 'active' : false"
+						href="url_Make('', 'gallery')"
+						cms:eval="href"
+						cms:optional="class"
+						>
+						<cms:text constant="menu_gallery"/>
+					</a>
+				</li>
+				<li>
+					<a
+						class="$section == 'contact_us' ? 'active' : false"
+						href="url_Make('', 'contact_us')"
+						cms:eval="href"
+						cms:optional="class"
+						>
+						<cms:text constant="menu_contact_us"/>
+					</a>
+				</li>
+			</ul>
+
+			<ul>
+				<cms:module
+					name="shop"
+					action="show_category_list"
+					template="parts/category_menu_item.xml"
+					/>
+			</ul>
+
+			<div>
+				<h5><cms:text constant="cart_title"/></h5>
+				<span>0</span>
+				<span>0</span>
+			</div>
+		</nav>
+	</header>
+</document>

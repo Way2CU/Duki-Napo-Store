@@ -2,6 +2,44 @@
 <!DOCTYPE document SYSTEM "../units/schema/language.dtd">
 <document>
 	<language name="English" short="en" default="yes">
-		<constant name="site_title">Site title</constant>
+		<constant name="site_title">DukiVeNapo Site</constant>
+		<constant name="menu_about_us">About Us</constant>
+		<constant name="menu_contact_us">Contact Us</constant>
+		<constant name="menu_jewellery">Our Jewellery</constant>
+		<constant name="menu_gallery">Gallery</constant>
+		<constant name="menu_checkout">Checkout</constant>
+		<constant name="menu_account">My Account</constant>
+		<constant name="menu_wishlist">Wish List</constant>
+		<constant name="cart_title">SHOPPING CART</constant>
+		<constant name="footer_title"><![CDATA[BUYER & SELLER OF UNIQUE, RARE, ANTIQUE & EXTATE ITEMS]]>
+		</constant>
+	</language>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<language name="Hebrew" short="he">
+		<constant name="site_title">DukiVeNapo Site</constant>
+	</language>
+
+	<language name="France" short="fr">
+		<constant name="site_title">DukiVeNapo Site</constant>
 	</language>
 </document>

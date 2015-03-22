@@ -17,13 +17,14 @@
  }
 
  span,h5 {
- 	font-size: 0.9em;
+ 	font-size: 1em;
  	font-weight: 400;
  }
 
  h2 {
  	display: block;
  	margin-top: 0px;
+ 	margin-bottom: 0px;
  }
 
  h5 {

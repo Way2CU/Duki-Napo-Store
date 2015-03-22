@@ -8,14 +8,18 @@
 
 footer {
 	display: block;
-	padding:20px calc((100vw - 1200px) / 2);
 	background-image: url(../images/footer/texture-pattern.png);
 	background-repeat:repeat;
 	background-position: center center;
 	background-size: 360px 360px;
 }
 
-footer h2 {
+footer div.footer_top {
+	display: block;
+	padding:20px calc((100vw - 1200px) / 2);
+}
+
+footer div.footer_top h2 {
 	display: block;
 	padding-bottom: 20px;
 	text-align: center;
@@ -27,6 +31,7 @@ footer h2 {
 nav#footer_nav {
 	display: block;
 	text-align: center;
+	padding-top: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -42,6 +47,166 @@ nav#footer_nav ul li {
 	vertical-align: top;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+form {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 20px;
+	text-align: center;
+	width: 50%;
+}
+
+form label {
+	display: block;
+}
+
+form label span {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-right: 5px;
+	color:#989898;
+}
+
+form label input {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 5px;
+	width: 50%;
+}
+
+footer div.social {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 20px;
+	width: 50%;
+}
+
+footer div.social span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-right: 10px;
+	color:#989898;
+
+}
+
+footer div.social a {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-image: url(../images/social/social_icons_sprite.svg);
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	background-size: 150px 50px;
+	width: 50px;
+	height: 50px;
+}
+
+footer div.social a:nth-of-type(2) {
+	background-position: -50px center;
+}
+
+footer div.social a:nth-of-type(3) {
+	background-position: -100px center;
+
+}
+
+footer div.payment {
+	display: block;
+	text-align: center;
+	padding-top: 20px;
+}
+
+footer div.payment span {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 20px;
+	margin-right: 20px;
+	background-image: url(../images/payments/icons-sprite.png);
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	height: 70px;
+
+}
+
+footer div.payment span:nth-of-type(1) {
+	width: 70px;
+}
+
+footer div.payment span:nth-of-type(2) {
+	background-position: -70px center;
+	width: 180px;
+}
+
+footer div.payment span:nth-of-type(3) {
+	background-position: -250px center;
+	width: 135px;
+}
+
+footer div.payment span:nth-of-type(4) {
+	background-position: -385px center;
+	width: 45px;
+}
+
+footer div.payment span:nth-of-type(5) {
+	background-position: -430px center;
+	width: 57px;
+}
+
+footer div.payment span:nth-of-type(6) {
+	background-position: -487px center;
+	width: 57px;
+}
+
+footer div.payment span:nth-of-type(7) {
+	background-position: -544px center;
+	width: 75px;
+}
+
+footer div.rights {
+	display: block;
+	padding:20px calc((100vw - 1200px) / 2);
+	background-color: black;
+}
+
+footer div.rights span:first-of-type {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width:calc(50% - 20px);
+}
+
+footer div.rights span:first-of-type a {
+	padding-left: 5px;
+	text-decoration: underline;
+}
+
+footer div.rights span:last-of-type {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 45px;
+	padding-right: 10px;
+	background-image: url(../images/footer/way2cu-color.svg);
+	background-repeat:no-repeat;
+	background-position: left center;
+	background-size: 40px 46px;
+	width:calc(50% - 55px);
+}
+
+footer div.rights span:last-of-type a {
+	padding-left: 5px;
+	color:#449bb5;
 }
 
 

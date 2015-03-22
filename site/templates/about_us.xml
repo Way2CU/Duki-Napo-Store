@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<!DOCTYPE document SYSTEM "../units/schema/template.dtd">
 <document>
 	<cms:var name="_DOCTYPE"/>
 	<html lang="$language" cms:eval="lang">
@@ -7,12 +7,18 @@
 			<title><cms:text constant="site_title"/></title>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
-
-		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
+		<body>
 			<cms:template file="parts/header.xml"/>
-			<div id="image_rotate"></div>
+			<!-- content -->
+			<cms:module
+					name="articles"
+					action="show"
+					class="about_us"
+					text_id="about_article"
+					template="parts/article_no_heading.xml"
+					/>
+			<!-- End content -->
 			<cms:template file="parts/footer.xml"/>
-
 		</body>
 	</html>
 </document>

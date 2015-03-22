@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/template.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title><cms:text constant="site_title"/></title>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body>
+			<cms:template file="parts/header.xml"/>
+			<!-- Content Start-->
+
+			<div class="$section == 'contact_us' ? 'contact_us' : false"
+						cms:optional="class"
+						>
+				<cms:module
+						name="articles"
+						action="show"
+						class="'article '.$params['text_id']" cms:eval="class"
+						text_id="address_article"
+						template="parts/article_no_heading.xml"
+						/>
+				<div class="form_wrap">
+					<h3><cms:text constant="form_title"/></h3>
+					<cms:module
+		 				name="contact_form"
+		 				action="show"
+		 				text_id="contact_form"
+						/>
+				</div>
+			</div>
+
+			<!-- Content End -->
+			<cms:template file="parts/footer.xml"/>
+		</body>
+	</html>
+</document>

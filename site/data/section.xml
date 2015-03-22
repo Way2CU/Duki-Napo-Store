@@ -4,4 +4,16 @@
 	<section name="home">
 		<language name="all" file="home.xml" />
 	</section>
+	<section name="about_us">
+		<language name="all" file="about_us.xml" />
+	</section>
+	<section name="jewellery">
+		<language name="all" file="jewellery.xml" />
+	</section>
+	<section name="gallery">
+		<language name="all" file="gallery.xml" />
+	</section>
+	<section name="contact_us">
+		<language name="all" file="contact_us.xml" />
+	</section>
 </document>

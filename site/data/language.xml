@@ -17,6 +17,8 @@
 		<constant name="copyright">Designed and developed by<![CDATA[<a href="http://way2cu.com">Way2CU</a>.<br>All rights reserved.]]>
 	    </constant>
 	    <constant name="duki_rights"><![CDATA[© All Rights Reserved Dukivenapo<a href="#">Privacy policy</a>]]> </constant>
+	    <constant name="form_title">CONTACT US</constant>
+	    <constant name="send">SEND FORM</constant>
 	</language>
 
 

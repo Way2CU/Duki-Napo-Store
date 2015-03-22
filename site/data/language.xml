@@ -13,6 +13,10 @@
 		<constant name="cart_title">SHOPPING CART</constant>
 		<constant name="footer_title"><![CDATA[BUYER & SELLER OF UNIQUE, RARE, ANTIQUE & EXTATE ITEMS]]>
 		</constant>
+		<constant name="social_title">Share the love:</constant>
+		<constant name="copyright">Designed and developed by<![CDATA[<a href="http://way2cu.com">Way2CU</a>.<br>All rights reserved.]]>
+	    </constant>
+	    <constant name="duki_rights"><![CDATA[© All Rights Reserved Dukivenapo<a href="#">Privacy policy</a>]]> </constant>
 	</language>
 
 

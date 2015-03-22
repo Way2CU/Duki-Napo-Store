@@ -171,7 +171,7 @@ footer div.payment span:nth-of-type(7) {
 footer div.rights {
 	display: block;
 	padding:20px calc((100vw - 1200px) / 2);
-	background-color: black;
+	background-color: #212121;
 }
 
 footer div.rights span:first-of-type {

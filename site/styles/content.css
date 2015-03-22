@@ -10,18 +10,28 @@
 	Generic
  */
 
- a {
+a {
  	color:white;
  	text-decoration: none;
  	font-size: 0.9em;
  }
 
+a.active {
+	text-decoration: underline;
+}
  span,h5 {
  	font-size: 1em;
  	font-weight: 400;
+ 	color:white;
  }
 
  h2 {
+ 	display: block;
+ 	margin-top: 0px;
+ 	margin-bottom: 0px;
+ }
+
+ h3 {
  	display: block;
  	margin-top: 0px;
  	margin-bottom: 0px;
@@ -35,3 +45,128 @@
  	margin: 0px;
  	padding: 0px;
  }
+
+ /*
+	HOME.XML
+ */
+
+ div#image_rotate {
+	display: block;
+	margin-top: -110px;
+	background-image: url(../images/header/header-background-01.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width:100%;
+	height:700px;
+ }
+
+  /*
+	About Us Section
+ */
+
+div.about_article {
+	display: block;
+	text-align: center;
+	padding:20px calc((100vw - 1200px) / 2);
+	color:#212121;
+}
+
+div.about_article h3 {
+	display: block;
+	padding-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	color:#212121;
+	border-bottom: 1px solid #e8e8e8;
+	width: 800px
+}
+
+div.about_article p {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	color:#989898;
+}
+
+/*
+	Contact Page
+*/
+div.contact_us {
+	display: block;
+	padding:20px calc((100vw - 1200px) / 2);
+}
+div.address_article {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 10px;
+	padding-right: 10px;
+	color:#989898;
+	width: calc(50% - 20px);
+}
+
+div.form_wrap {
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+	color:#989898;
+	width: calc(50% - 20px);
+
+}
+
+div.form_wrap form {
+	display: block;
+	width: 100%;
+
+}
+
+div.form_wrap form label {
+	display: block;
+	padding-bottom: 15px;
+}
+
+div.form_wrap form label span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100px;
+	font-size: 1.2em;
+}
+
+div.form_wrap form label input {
+	width: 65%;
+	transition:all 0.3s;
+}
+
+
+div.form_wrap form label textarea {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 5px;
+	width: 65%;
+	transition:all 0.3s;
+}
+
+div.form_wrap form div.controls {
+
+}
+
+div.form_wrap form div.controls button {
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: #212121;
+	border:none;
+	border-radius: 8px;
+	color:white;
+	font-size: 1.8em;
+	cursor: pointer;
+}
+
+
+

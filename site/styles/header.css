@@ -9,11 +9,13 @@
 header {
 	display: block;
 	position: relative;
+	z-index: 10000;
 }
 
 nav#user {
 	display: block;
-	background-color: black;
+	background-color: #212121;
+	color:white;
 	padding:20px calc((100vw - 1200px) / 2);
 }
 
@@ -53,11 +55,20 @@ nav#user ul {
 	width:calc(33.3% - 20px);
 }
 
+header.home nav#user ul li  {
+	color:white;
+}
+
 nav#user ul li {
 	display: inline-block;
 	vertical-align: middle;
 	padding-left: 10px;
 	padding-right: 10px;
+
+}
+
+nav#user ul li a {
+	color: white;
 }
 
 nav#user ul li:last-of-type {
@@ -66,10 +77,19 @@ nav#user ul li:last-of-type {
 
 nav#navigation {
 	display: block;
-	background-color:rgba(0, 0, 0, 0.7);
+	background-color:white;
 	padding:20px calc((100vw - 1200px) / 2);
 	border-top: 2px solid #f6c15c;
+	border-bottom: 2px solid #e8e8e8;
+}
+
+header.home nav#navigation {
+	background-color:rgba(0, 0, 0, 0.7);
 	border-bottom: 2px solid #f6c15c;
+}
+
+header.home nav#navigation ul li a {
+	color: white;
 }
 
 nav#navigation ul:first-of-type {
@@ -87,6 +107,15 @@ nav#navigation ul:first-of-type li {
 	padding-left: 10px;
 	padding-right: 10px;
 	border-right: 1px solid white;
+
+}
+
+nav#navigation ul:first-of-type li a {
+	color:#212121;
+}
+
+header.home nav#navigation ul:first-of-type li a{
+	color:white;
 }
 
 nav#navigation ul:first-of-type li:last-of-type {
@@ -113,16 +142,37 @@ nav#navigation ul:last-of-type li {
 	padding-left: 10px;
 	padding-right: 10px;
 	position: relative;
+	color:#212121;
+}
+
+nav#navigation ul:last-of-type li a {
+	color:#212121;
+}
+
+header.home nav#navigation ul:last-of-type li a {
+	color:white;
 }
 
 
-nav#navigation ul:last-of-type li:before {
+header.home nav#navigation ul:last-of-type li:before {
 	content: "";
 	position: absolute;
 	top:50%;
 	margin-top: -2px;
 	right: 0%;
 	background-color: white;
+	border-radius: 50%;
+	width: 4px;
+	height: 4px;
+}
+
+ nav#navigation ul:last-of-type li:before {
+	content: "";
+	position: absolute;
+	top:50%;
+	margin-top: -2px;
+	right: 0%;
+	background-color: #212121;
 	border-radius: 50%;
 	width: 4px;
 	height: 4px;
@@ -137,10 +187,22 @@ nav#navigation div {
 	width:calc(33.3% - 20px);
 }
 
+header.home nav#navigation div h5 {
+	color:white;
+}
+
+nav#navigation div h5 {
+	color:#212121;
+}
+
+header.home nav#navigation div span {
+	color:white;
+}
+
 nav#navigation div span {
 	display: inline-block;
 	vertical-align: top;
 	padding-left: 10px;
 	padding-right: 10px;
-
+	color:#212121;
 }

@@ -5,7 +5,7 @@
 		<constant name="site_title">DukiVeNapo Site</constant>
 		<constant name="menu_about_us">About Us</constant>
 		<constant name="menu_contact_us">Contact Us</constant>
-		<constant name="menu_jewellery">Our Jewellery</constant>
+		<constant name="menu_jewellery">Diamonds</constant>
 		<constant name="menu_gallery">Gallery</constant>
 		<constant name="menu_checkout">Checkout</constant>
 		<constant name="menu_account">My Account</constant>

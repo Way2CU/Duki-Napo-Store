@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/template.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title><cms:text constant="site_title"/></title>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body>
+			<cms:template file="parts/header.xml"/>
+			<!-- Content Start-->
+			<div class="$section == 'diamonds' ? 'diamonds' : false"
+				cms:optional="class"
+				>
+				<cms:module
+						name="articles"
+						action="show"
+						text_id="process_article"
+						template="parts/article_no_heading.xml"
+						/>
+
+				<cms:module
+						name="articles"
+						action="show"
+						text_id="benefits_article"
+						template="parts/article_no_heading.xml"
+						/>
+
+			</div>
+			<!-- Content End -->
+			<cms:template file="parts/footer.xml"/>
+		</body>
+	</html>
+</document>

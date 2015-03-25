@@ -1,0 +1,14 @@
+<document>
+	<a
+		href="$params['image']"
+		class="image direct"
+		cms:eval="href"
+		>
+		<img
+			src="gallery::getThumbnailById($params['id'], null, 350)"
+			alt="$params['title'][$language]"
+			cms:eval="src,alt"
+			/>
+			<span><cms:var name="$params['title'][$language]"/></span>
+		</a>
+</document>

@@ -18,8 +18,8 @@
 					</li>
 					<li>
 						<a
-							class="$section == 'jewellery' ? 'active' : false"
-							href="url_Make('', 'jewellery')"
+							class="$section == 'diamonds' ? 'active' : false"
+							href="url_Make('', 'diamonds')"
 							cms:eval="href"
 							cms:optional="class"
 							>

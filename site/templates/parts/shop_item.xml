@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
+<document>
+		<div class="item">
+			<a
+				href="url_Make($params['item_id'], 'product-page')"
+				style="'background-image: url('.gallery::getGroupThumbnailById($params['gallery'],null, 200, Thumbnail::CONSTRAIN_HEIGHT).');'"
+				cms:eval="href,style,action"
+				>
+			</a>
+			<h5><cms:var param="name" multilanguage="yes"/></h5>
+			<span><cms:var param="price"/> $ </span>
+		</div>
+</document>

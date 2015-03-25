@@ -193,8 +193,8 @@ footer div.rights span:first-of-type a {
 footer div.rights span:last-of-type {
 	display: inline-block;
 	vertical-align: middle;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	padding-left: 45px;
 	padding-right: 10px;
 	background-image: url(../images/footer/way2cu-color.svg);

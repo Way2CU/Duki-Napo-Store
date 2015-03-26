@@ -3,12 +3,12 @@
 <document>
 		<div class="item">
 			<a
-				href="url_Make($params['item_id'], 'product-page')"
+				href="url_Make('product','shop',array('category',$_REQUEST['id']),array('id',$params['id']))"
 				style="'background-image: url('.gallery::getGroupThumbnailById($params['gallery'],null, 200, Thumbnail::CONSTRAIN_HEIGHT).');'"
-				cms:eval="href,style,action"
+				cms:eval="href,style"
 				>
+				<h5><cms:var param="name" multilanguage="yes"/></h5>
+				<span><cms:var param="price"/> $ </span>
 			</a>
-			<h5><cms:var param="name" multilanguage="yes"/></h5>
-			<span><cms:var param="price"/> $ </span>
 		</div>
 </document>

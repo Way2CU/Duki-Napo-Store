@@ -10,24 +10,15 @@
 
 		<body>
 			<cms:template file="parts/header.xml"/>
-			<div class="$section == 'diamonds' ? 'diamonds' : false"
-				cms:optional="class"
-				>
+			<section class="product">
 				<cms:module
-						name="articles"
-						action="show"
-						text_id="process_article"
-						template="parts/article_no_heading.xml"
-						/>
-
-				<cms:module
-						name="articles"
-						action="show"
-						text_id="benefits_article"
-						template="parts/article_no_heading.xml"
-						/>
-
-			</div>
+					name="shop"
+					action="show_item"
+					id="$_REQUEST[id]"
+					template="parts/product.xml"
+					cms:eval="id"
+					/>
+			</section>
 			<cms:template file="parts/footer.xml"/>
 		</body>
 	</html>

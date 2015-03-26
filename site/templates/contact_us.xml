@@ -10,8 +10,6 @@
 
 		<body>
 			<cms:template file="parts/header.xml"/>
-			<!-- Content Start-->
-
 			<div class="$section == 'contact_us' ? 'contact_us' : false"
 						cms:optional="class"
 						>
@@ -31,8 +29,6 @@
 						/>
 				</div>
 			</div>
-
-			<!-- Content End -->
 			<cms:template file="parts/footer.xml"/>
 		</body>
 	</html>

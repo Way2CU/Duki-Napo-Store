@@ -9,7 +9,6 @@
 		</head>
 		<body>
 			<cms:template file="parts/header.xml"/>
-			<!-- content -->
 			<cms:module
 					name="articles"
 					action="show"
@@ -17,7 +16,6 @@
 					text_id="about_article"
 					template="parts/article_no_heading.xml"
 					/>
-			<!-- End content -->
 			<cms:template file="parts/footer.xml"/>
 		</body>
 	</html>

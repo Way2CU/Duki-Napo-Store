@@ -16,10 +16,11 @@
 	<section name="contact_us">
 		<language name="all" file="contact_us.xml" />
 	</section>
-	<section name="category">
-		<language name="all" file="parts/category.xml" />
+	<section name="shop">
+		<language name="all">
+			<action name="category" file="parts/category.xml"/>
+			<action name="product" file="product-page.xml"/>
+		</language>
 	</section>
-	<section name="product-page">
-		<language name="all" file="parts/product-page.xml" />
-	</section>
+
 </document>

@@ -12,7 +12,11 @@
     "menu_jewellery": "Diamonds",
     "menu_wishlist": "Wish List",
     "send": "SEND FORM",
+    "add_bag":"ADD TO BAG",
     "site_title": "DukiVeNapo Site",
     "social_title": "Share the love:",
-    "nav_item_title":"Shop by Category"
+    "nav_item_title":"Shop by Category",
+    "color":"color",
+    "size" :"size",
+    "quantity":"quantity"
 }

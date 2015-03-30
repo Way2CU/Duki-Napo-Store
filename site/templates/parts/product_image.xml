@@ -1,7 +1,8 @@
 <document>
 	<img
 			src="gallery::getThumbnailById($params['id'], null,150,Thumbnail::CONSTRAIN_BOTH)"
+			data-image="$params['image']"
 			alt="$params['title'][$language]"
-			cms:eval="src,alt"
+			cms:eval="src,alt,data-image"
 			/>
 </document>

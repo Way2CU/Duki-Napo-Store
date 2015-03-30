@@ -1,17 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../units/schema/template.dtd">
 <document>
-
 		<img src="$params['image']" cms:eval="src"/>
-		<div class="info">
-			<h3><cms:var param="name" multilanguage="yes"/></h3>
-			<span><cms:var param="description" multilanguage="yes"/></span>
-			<span><cms:var param="price"/>$</span>
-			<div class="cart_info">
-				<span><cms:text constant="color"/></span>
-				<span><cms:text constant="size"/></span>
-				<span><cms:text constant="quantity"/></span>
-				<a href="#"><cms:text constant="add_bag"/></a>
+		<div class="info_wrap"
+			 data-uid="$params['uid']"
+			 cms:eval="data-uid"
+		>
+			<article>
+				<h3><cms:var param="name" multilanguage="yes"/></h3>
+				<span><cms:var param="description" multilanguage="yes"/></span>
+				<span><cms:var param="price"/>$</span>
+			</article>
+				<div class="color">
+					<h3><cms:text constant="color"/></h3>
+					<cms:color_list
+						id="$params['id']"
+						template="parts/item_colors.xml"
+						cms:eval="id"
+						/>
+				</div>
+				<div class="size">
+					<h3><cms:text constant="size"/></h3>
+					<cms:value_list
+						definition="$params['size_definition']"
+						template="parts/size.xml"
+						cms:eval="definition"
+					/>
+					<label>
+					<input type="number"/>
+					<h3><cms:text constant="quantity"/></h3>
+					</label>
+					<a href="#"><cms:text constant="add_bag"/></a>
+				</div>
+
+
+			<div id="order_policy">
+				<label>
+					<input type="checkbox"/>
+					<h5>PRODUCT DETAILS</h5>
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam veritatis, maxime saepe eos eveniet eaque! Facere, doloribus repellat, vitae accusamus dicta, quisquam debitis dolorem rem facilis provident odio itaque.</div>
+				</label>
+				<label>
+					<input type="checkbox"/>
+					<h5>SHIPPING</h5>
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam veritatis, maxime saepe eos eveniet eaque! Facere, doloribus repellat, vitae accusamus dicta, quisquam debitis dolorem rem facilis provident odio itaque.</div>
+				</label>
+				<label>
+					<input type="checkbox"/>
+					<h5>RETURNS</h5>
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam veritatis, maxime saepe eos eveniet eaque! Facere, doloribus repellat, vitae accusamus dicta, quisquam debitis dolorem rem facilis provident odio itaque.</div>
+				</label>
+				<label>
+					<input type="checkbox"/>
+					<h5>NEED ASSISTANCE?</h5>
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam veritatis, maxime saepe eos eveniet eaque! Facere, doloribus repellat, vitae accusamus dicta, quisquam debitis dolorem rem facilis provident odio itaque.</div>
+				</label>
 			</div>
 			<div class="social">
 				<a href="#"></a>
@@ -21,7 +64,6 @@
 				<a href="#"></a>
 				<a href="#"></a>
 			</div>
-
 		</div>
 		<div class="product_gallery">
 			<cms:module
@@ -33,6 +75,42 @@
 
 				/>
 		</div>
+
+		<div class="cart">
+		<ul>
+			<li>
+				<img src="http://localhost:8080/site/gallery/images/456e7dd6695127d4295fa84938c9185b.jpg" alt=""/>
+				<div>
+					<span>Cristiana Pearl Bracelet</span>
+					<span>- COLOR Rose Gold</span>
+					<span>- SIZE M</span>
+				</div>
+				<span>x1</span>
+				<span>$465.00</span>
+			</li>
+		</ul>
+		<div class="total_count">
+			<span>Sub-Total:</span>
+			<span>$465.00</span>
+		</div>
+		<div class="total_count">
+			<span>CA Sales Tax:</span>
+			<span>$41.85</span>
+		</div>
+		<div class="total_count">
+			<span>Total:</span>
+			<span>$506.85</span>
+		</div>
+
+		<div class="button">
+			<button type="button" name="view_cart">
+					<span>View Cart</span>
+			</button>
+			<button type="button" name="checkout">
+					<span>Checkout</span>
+			</button>
+		</div>
+	</div>
 
 
 

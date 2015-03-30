@@ -413,71 +413,202 @@ section.product > img {
 	width:calc(40% - 20px);
 }
 
-section.product div.info {
+section.product div.info_wrap {
 	display: inline-block;
-	padding-bottom: 20px;
-	padding-left: 10px;
-	padding-right: 10px;
 	vertical-align: top;
 	width:calc(60% - 20px);
 }
 
-section.product div.info h3 {
-	display: block;
-	padding-bottom: 20px;
-	color:#989898;
-}
-
-section.product div.info span {
-	display: block;
-	padding-bottom: 20px;
-	color:#989898;
-}
-
-section.product div.info span:last-of-type {
+section.product div.info_wrap article {
+	display:block;
 	border-bottom: 1px solid #e8e8e8;
 }
 
-section.product div.info div.cart_info {
+section.product div.info_wrap article h3 {
 	display: block;
-	padding-top: 20px;
+	color: #989898;
 }
 
-section.product div.info div.cart_info span {
+section.product div.info_wrap article span {
 	display: block;
-	text-transform: uppercase;
-	padding-left: 20px;
+	padding-bottom: 20px;
 	color:#989898;
+}
+
+section.product div.info_wrap div.color {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+section.product div.info_wrap div.color h3 {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	width: 15%;
+	color:#989898;
+	text-transform: uppercase;
 	position: relative;
 }
 
-section.product div.info div.cart_info span:before {
+section.product div.info_wrap div.color h3:before {
 	content: "*";
 	position: absolute;
 	top: 0px;
 	left: 0px;
 }
 
-section.product div.info div.cart_info > a {
+section.product div.info_wrap div.color span {
 	display: inline-block;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+section.product div.info_wrap div.size {
+	display: block;
+}
+
+section.product div.info_wrap div.size h3 {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+    width: 15%;
+	color:#989898;
+	text-transform: uppercase;
+	position: relative;
+}
+
+section.product div.info_wrap div.size h3:before {
+	content: "*";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+section.product div.info_wrap div.size span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 0px 15px;
+	border:1px solid #e8e8e8 ;
+	cursor: pointer;
+	color:#989898;
+}
+
+section.product div.info_wrap div.size label {
+	display: block;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	padding-left: 25px;
-	padding-right: 25px;
+}
+
+section.product div.info_wrap div.size label h3 {
+	display: inline-block;
+	vertical-align: middle;
+	width: 15%;
+	float: left;
+}
+
+section.product div.info_wrap div.size label input[type="number"] {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 50px;
+}
+
+section.product div.info_wrap div.size a {
+	display: inline-block;
+	padding: 10px 15px;
+	font-size: 1.3em;
 	background-color:#212121;
-	font-size: 1.2em;
-	color:white;
+	cursor: pointer;
 	transition:all 0.3s;
 }
 
-section.product div.info div.cart_info > a:hover {
-	background-color:rgb(247, 194, 93);
+section.product div.info_wrap div.size a:hover {
+	background-color:#f6c15c;
 }
+
+div#order_policy  {
+	display: block;
+}
+
+div#order_policy label {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e8e8e8;
+	cursor: pointer;
+
+}
+
+div#order_policy label input[type="checkbox"] {
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+	display: block;
+	position: relative;
+	cursor: pointer;
+
+
+}
+
+div#order_policy label input[type="checkbox"]:before {
+	content: "";
+	position: absolute;
+	top:0px;
+	left: 0px;
+	background-color: white;
+	background-image: url(../images/social/arrow_mobile.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 15px 15px;
+	width: 15px;
+	height: 15px;
+	transform:rotate(90deg);
+
+
+}
+
+div#order_policy label input[type="checkbox"]:checked ~ div {
+	display: block;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+div#order_policy label h5  {
+	display: inline-block;
+	vertical-align: middle;
+	font-style: italic;
+	color: #989898;
+}
+
+div#order_policy label div {
+	display: none;
+	color: #989898;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
 
 section.product div.social {
 	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 section.product div.social a {
@@ -534,7 +665,104 @@ section.product  div.product_gallery img {
 
 }
 
+/*
+	CART
+*/
 
+div.cart {
+	display: block;
+	margin-top: 20px;
+	width: 50%;
+	box-shadow: 0px 0px 3px grey;
+}
+
+div.cart ul {
+	display: block;
+	list-style-type: none;
+	text-align: center;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+div.cart ul li {
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div.cart ul li img {
+	display: inline-block;
+	vertical-align: top;
+	border:1px solid #e8e8e8;
+	width: calc(25% - 2px);
+}
+
+div.cart ul li div {
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+
+}
+
+div.cart ul li div > span {
+	display: block;
+	text-align: left;
+	color:black;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div.cart ul li > span {
+	display: inline-block;
+	vertical-align: top;
+	color:black;
+	width: 15%;
+}
+
+div.cart div.total_count {
+	display: block;
+	text-align: left;
+	margin-left: auto;
+	width: 200px;
+}
+
+div.cart div.total_count span {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 75px;
+	color:black;
+}
+
+div.cart div.total_count span:last-of-type {
+	text-align: center;
+}
+
+div.cart div.button {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: right
+}
+
+div.cart div.button button {
+	margin-left: 5px;
+	margin-right: 5px;
+	border: none;
+	background-color: white;
+	cursor: pointer;
+}
+
+div.cart div.button button span {
+	color: #989898;
+}
 
 
 

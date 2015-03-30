@@ -11,6 +11,7 @@
  */
 
 a {
+	display: inline-block;
  	color:white;
  	text-decoration: none;
  	font-size: 0.9em;
@@ -665,104 +666,7 @@ section.product  div.product_gallery img {
 
 }
 
-/*
-	CART
-*/
 
-div.cart {
-	display: block;
-	margin-top: 20px;
-	width: 50%;
-	box-shadow: 0px 0px 3px grey;
-}
-
-div.cart ul {
-	display: block;
-	list-style-type: none;
-	text-align: center;
-	border-bottom: 1px solid #e8e8e8;
-}
-
-div.cart ul li {
-	display: block;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-div.cart ul li img {
-	display: inline-block;
-	vertical-align: top;
-	border:1px solid #e8e8e8;
-	width: calc(25% - 2px);
-}
-
-div.cart ul li div {
-	display: inline-block;
-	vertical-align: top;
-	width: 45%;
-
-}
-
-div.cart ul li div > span {
-	display: block;
-	text-align: left;
-	color:black;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-div.cart ul li > span {
-	display: inline-block;
-	vertical-align: top;
-	color:black;
-	width: 15%;
-}
-
-div.cart div.total_count {
-	display: block;
-	text-align: left;
-	margin-left: auto;
-	width: 200px;
-}
-
-div.cart div.total_count span {
-	display: inline-block;
-	vertical-align: top;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-	width: 75px;
-	color:black;
-}
-
-div.cart div.total_count span:last-of-type {
-	text-align: center;
-}
-
-div.cart div.button {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 10px;
-	padding-right: 10px;
-	text-align: right
-}
-
-div.cart div.button button {
-	margin-left: 5px;
-	margin-right: 5px;
-	border: none;
-	background-color: white;
-	cursor: pointer;
-}
-
-div.cart div.button button span {
-	color: #989898;
-}
 
 
 

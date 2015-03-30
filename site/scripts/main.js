@@ -50,6 +50,16 @@ Site.is_mobile = function() {
  */
 Site.on_load = function() {
 	Caracal.lightbox = new LightBox('a.image.direct', false, false, true);
+	// Function Displaying Product Big Image
+	function showImage() {
+		var item = $(this);
+		var bImage = $('section.product > img').attr('src',item.data('image'));
+	}
+
+	var images = $('div.product_gallery img');
+	images.on('click',showImage);
+
+
 };
 
 

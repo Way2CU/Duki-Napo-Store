@@ -5,6 +5,8 @@
 		class="$section == 'home' ? 'home' : false"
 		cms:optional="class"
 		>
+
+		<!-- Top navigation -->
 		<nav id="user">
 			<div class="message">
 				<span>Welcome you can login or create an account.</span>
@@ -18,6 +20,8 @@
 				<li><a href="#"><cms:text constant="menu_wishlist"/></a></li>
 			</ul>
 		</nav>
+
+		<!-- Bottom navigation -->
 		<nav id="navigation">
 			<ul>
 				<li>
@@ -62,6 +66,7 @@
 				</li>
 			</ul>
 
+			<!-- Shop categories -->
 			<ul>
 				<cms:module
 					name="shop"
@@ -70,10 +75,13 @@
 					/>
 			</ul>
 
-			<div>
+			<!-- Shopping cart -->
+			<div id="cart">
 				<h5><cms:text constant="cart_title"/></h5>
 				<span>0</span>
 				<span>0</span>
+
+				<cms:template file="parts/cart.xml"/>
 			</div>
 		</nav>
 	</header>

@@ -57,7 +57,8 @@ Site.on_load = function() {
 	}
 
 	var images = $('div.product_gallery img');
-	images.on('click',showImage);
+	// images.on('click',showImage);
+	images.hover(showImage);
 
 
 };

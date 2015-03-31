@@ -18,7 +18,7 @@
 	</section>
 	<section name="shop">
 		<language name="all">
-			<action name="category" file="parts/category.xml"/>
+			<action name="category" file="category.xml"/>
 			<action name="product" file="product-page.xml"/>
 		</language>
 	</section>

@@ -72,7 +72,6 @@
 				group_id="$params['gallery']"
 				template="parts/product_image.xml"
 				cms:eval="group_id"
-
 				/>
 		</div>
 

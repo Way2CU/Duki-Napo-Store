@@ -10,17 +10,25 @@
 
 		<body>
 			<cms:template file="parts/header.xml"/>
-
-			<section class="product" >
-				<cms:module
-					name="shop"
-					action="show_item"
-					id="$_REQUEST[id]"
-					template="parts/product.xml"
-					cms:eval="id"
-					/>
+			<section class="category">
+				<nav>
+					<h3><cms:text constant="nav_item_title"/></h3>
+					<cms:module
+						name="shop"
+						action="show_category_list"
+						template="parts/category_menu_item.xml"
+						/>
+				</nav>
+				<div >
+					<cms:module
+						name="shop"
+						action="show_item_list"
+						category="$_REQUEST['id']"
+						template="parts/shop_item.xml"
+						cms:eval="category"
+						/>
+				</div>
 			</section>
-
 			<cms:template file="parts/footer.xml"/>
 		</body>
 	</html>

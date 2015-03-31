@@ -533,12 +533,29 @@ section.product div.info_wrap div.size a {
 	font-size: 1.3em;
 	background-color:#212121;
 	cursor: pointer;
-	transition:all 0.3s;
+	overflow: hidden;
+	position: relative;
 }
 
-section.product div.info_wrap div.size a:hover {
+section.product div.info_wrap div.size a:before {
+	content: "ADD TO BAG";
+	position: absolute;
+	display: inline-block;
+	top: 0px;
+	left: 0px;
+	padding: 10px 15px;
 	background-color:#f6c15c;
+	transform:translateX(-100%);
+	transition:all 0.5s;
 }
+
+section.product div.info_wrap div.size a:hover:before {
+	transform:translateX(0%);
+}
+
+/*section.product div.info_wrap div.size a:hover {
+	background-color:#f6c15c;
+}*/
 
 div#order_policy  {
 	display: block;
@@ -560,7 +577,6 @@ div#order_policy label input[type="checkbox"] {
 	display: block;
 	position: relative;
 	cursor: pointer;
-
 
 }
 

@@ -195,12 +195,12 @@ footer div.rights span:last-of-type {
 	vertical-align: middle;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	padding-left: 45px;
+	padding-left: 35px;
 	padding-right: 10px;
 	background-image: url(../images/footer/way2cu-color.svg);
 	background-repeat:no-repeat;
 	background-position: left center;
-	background-size: 40px 46px;
+	background-size: 30px 34.5px;
 	width:calc(50% - 55px);
 }
 

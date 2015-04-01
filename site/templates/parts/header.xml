@@ -78,8 +78,8 @@
 			<!-- Shopping cart -->
 			<div id="cart">
 				<h5><cms:text constant="cart_title"/></h5>
-				<span>0</span>
-				<span>0</span>
+				<span></span>
+				<span></span>
 
 				<cms:template file="parts/cart.xml"/>
 			</div>

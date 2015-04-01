@@ -18,6 +18,7 @@
 						template="parts/item_colors.xml"
 						cms:eval="id"
 						/>
+					<span class="color_error"><cms:text constant="color_error"/></span>
 				</div>
 				<div class="size">
 					<h3><cms:text constant="size"/></h3>
@@ -26,11 +27,12 @@
 						template="parts/size.xml"
 						cms:eval="definition"
 					/>
+					<span class="size_error"><cms:text constant="size_error"/></span>
 					<label>
-					<input type="number"/>
+					<input type="number" value="1"/>
 					<h3><cms:text constant="quantity"/></h3>
 					</label>
-					<a href="#"><cms:text constant="add_bag"/></a>
+					<a href="javascript:void(0)"><cms:text constant="add_bag"/></a>
 				</div>
 
 

@@ -34,6 +34,15 @@ a.active {
  	margin-bottom: 0px;
  }
 
+ h2.error {
+ 	display: block;
+ 	padding-top: 20px;
+ 	padding-bottom: 20px;
+ 	color:#212121;
+ 	background-color:#e8e8e8;
+ 	transition:all 0.3s;
+ }
+
  h3 {
  	display: block;
  	padding-bottom: 20px;
@@ -469,6 +478,22 @@ section.product div.info_wrap div.color span {
 	width: 20px;
 	height: 20px;
 	cursor: pointer;
+	transition:all 0.3s;
+}
+
+section.product div.info_wrap div.color span.color_error {
+	display: inline-block;
+	vertical-align: middle;
+	color: #f6c15c;
+	width: 300px;
+	visibility: hidden;
+	opacity: 0;
+	transition:all 0.3s;
+}
+
+section.product div.info_wrap div.color span.active {
+	width: 25px;
+	height: 25px;
 }
 
 section.product div.info_wrap div.size {
@@ -503,6 +528,23 @@ section.product div.info_wrap div.size span {
 	border:1px solid #e8e8e8 ;
 	cursor: pointer;
 	color:#989898;
+	transition:all 0.3s;
+}
+
+section.product div.info_wrap div.size span.size_error {
+	display: inline-block;
+	vertical-align: middle;
+	color: #f6c15c;
+	border: none;
+	cursor: none;
+	visibility: hidden;
+	opacity: 0;
+	transition:all 0.3s;
+}
+
+section.product div.info_wrap div.size span.active {
+	color: white;
+	background-color: #212121;
 }
 
 section.product div.info_wrap div.size label {
@@ -557,7 +599,7 @@ section.product div.info_wrap div.size a:hover:before {
 	background-color:#f6c15c;
 }*/
 
-div#order_policy  {
+div#order_policy {
 	display: block;
 }
 
@@ -605,7 +647,7 @@ div#order_policy label input[type="checkbox"]:checked ~ div {
 }
 
 
-div#order_policy label h5  {
+div#order_policy label h5 {
 	display: inline-block;
 	vertical-align: middle;
 	font-style: italic;

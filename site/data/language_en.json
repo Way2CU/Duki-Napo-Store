@@ -18,5 +18,7 @@
     "nav_item_title":"Shop by Category",
     "color":"color",
     "size" :"size",
-    "quantity":"quantity"
+    "quantity":"quantity",
+    "color_error":"TAP ON RING COLOR",
+    "size_error":"TAP ON RING SIZE"
 }

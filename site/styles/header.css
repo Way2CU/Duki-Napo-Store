@@ -62,12 +62,30 @@ header.home nav#user > ul li  {
 nav#user > ul li {
 	display: inline-block;
 	vertical-align: middle;
+	margin-right: 5px;
+	margin-left: 5px;
 }
 
 nav#user > ul li a {
 	padding-left: 10px;
 	padding-right: 10px;
 	color: white;
+	position: relative;
+}
+
+nav#user > ul li a:before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	background-color: #f6c15c;
+	height: 1px;
+	width: 0%;
+	transition:all 0.3s;
+}
+
+nav#user > ul li a:hover:before {
+	width: 100%;
 }
 
 nav#user > ul li:last-of-type a {
@@ -105,7 +123,13 @@ nav#navigation > ul:first-of-type {
 nav#navigation > ul:first-of-type li {
 	display: inline-block;
 	vertical-align: middle;
+	margin-left: 5px;
+	margin-right: 5px;
 
+}
+
+nav#navigation > ul:first-of-type li:first-of-type {
+	margin-left: 0px;
 }
 
 nav#navigation > ul:first-of-type li a {
@@ -114,11 +138,31 @@ nav#navigation > ul:first-of-type li a {
 	padding-top: 1em;
 	padding-bottom: 1em;
 	color:#212121;
+	position: relative;
 }
 
-nav#navigation > ul:first-of-type li:first-of-type a {
-	padding-left: 0px;
+nav#navigation > ul:first-of-type li a.active {
+	color:#f6c15c;
 }
+
+nav#navigation > ul:first-of-type li a:before {
+	content: "";
+	position: absolute;
+	top: 85%;
+	left: 0px;
+	background-color: #f6c15c;
+	height: 1px;
+	width: 0%;
+	transition:all 0.3s;
+}
+
+nav#navigation > ul:first-of-type li a:hover:before {
+	width: 100%;
+}
+
+/*nav#navigation > ul:first-of-type li:first-of-type a {
+	padding-left: 0px;
+}*/
 
 
 header.home nav#navigation > ul:first-of-type li a{
@@ -148,6 +192,8 @@ nav#navigation > ul:last-of-type li {
 	vertical-align: middle;
 	position: relative;
 	color:#212121;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 nav#navigation > ul:last-of-type li a {
@@ -156,36 +202,32 @@ nav#navigation > ul:last-of-type li a {
 	padding-top: 1em;
 	padding-bottom: 1em;
 	color:#212121;
+	position: relative;
+}
+
+nav#navigation > ul:last-of-type li a:before {
+	content: "";
+	position: absolute;
+	top: 85%;
+	left: 0px;
+	background-color: #f6c15c;
+	height: 1px;
+	width: 0%;
+	transition:all 0.3s;
+}
+
+nav#navigation > ul:last-of-type li a:hover:before {
+	width: 100%;
+}
+
+nav#navigation > ul:last-of-type li a.active {
+	color:#f6c15c;
 }
 
 header.home nav#navigation > ul:last-of-type li a {
 	color:white;
 }
 
-
-header.home nav#navigation > ul:last-of-type li:before {
-	content: "";
-	position: absolute;
-	top:50%;
-	margin-top: -2px;
-	right: 0%;
-	background-color: white;
-	border-radius: 50%;
-	width: 4px;
-	height: 4px;
-}
-
- nav#navigation > ul:last-of-type li:before {
-	content: "";
-	position: absolute;
-	top:50%;
-	margin-top: -2px;
-	right: 0%;
-	background-color: #212121;
-	border-radius: 50%;
-	width: 4px;
-	height: 4px;
-}
 
 div#cart {
 	display: inline-block;

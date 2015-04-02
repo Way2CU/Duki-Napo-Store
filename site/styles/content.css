@@ -18,9 +18,8 @@ a {
  }
 
 a.active {
-	text-decoration: underline;
+	color:#f6c15c;
 }
-
 
  span,h5 {
  	font-size: 1em;
@@ -79,7 +78,7 @@ a.active {
 
 div.about_article {
 	display: block;
-	text-align: center;
+	text-align: left;
 	padding:20px calc((100vw - 1200px) / 2);
 	color:#212121;
 }
@@ -414,13 +413,34 @@ section.product {
 	padding:20px calc((100vw - 1200px) / 2);
 }
 
-section.product > img {
+section.product div.images_wrap {
 	display: inline-block;
 	vertical-align: top;
 	padding-bottom: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
 	width:calc(40% - 20px);
+}
+
+section.product div.images_wrap img {
+	width: 100%;
+}
+
+section.product div.images_wrap div.product_gallery {
+	display: block;
+	text-align: center;
+	padding-top: 20px;
+}
+
+section.product div.images_wrap  div.product_gallery img {
+	display: inline-block;
+	vertical-align:middle;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 15px;
+	margin-left: 15px;
+	width: 100px;
+	cursor: pointer;
 }
 
 section.product div.info_wrap {
@@ -625,16 +645,17 @@ div#order_policy label input[type="checkbox"] {
 div#order_policy label input[type="checkbox"]:before {
 	content: "";
 	position: absolute;
-	top:0px;
-	left: 0px;
-	background-color: white;
+	top: 0px;
+	left: -4px;
+	background-color: rgb(255, 255, 255);
 	background-image: url(../images/social/arrow_mobile.svg);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 15px 15px;
-	width: 15px;
-	height: 15px;
-	transform:rotate(90deg);
+	background-size: 20px 20px;
+	width: 20px;
+	height: 20px;
+	transform: rotate(90deg);
+	transition: all 0.3s;
 
 
 }
@@ -644,6 +665,10 @@ div#order_policy label input[type="checkbox"]:checked ~ div {
 	padding-top: 20px;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+div#order_policy label input[type="checkbox"]:checked:before {
+	transform:rotate(270deg);
 }
 
 
@@ -707,22 +732,7 @@ section.product div.social a:nth-of-type(6) {
 	background-position: -250px center;
 }
 
-section.product div.product_gallery {
-	display: block;
-	text-align: center;
-	padding-top: 20px;
-	border-top: 1px solid #e8e8e8;
-}
 
-section.product  div.product_gallery img {
-	display: inline-block;
-	vertical-align:middle;
-	margin-right: 15px;
-	margin-left: 15px;
-	width: 150px;
-	cursor: pointer;
-
-}
 
 
 

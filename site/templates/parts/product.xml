@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../units/schema/template.dtd">
 <document>
-		<img src="$params['image']" cms:eval="src"/>
+		<div class="images_wrap">
+			<img src="$params['image']" cms:eval="src"/>
+			<div class="product_gallery">
+			<cms:module
+				name="gallery"
+				action="show_image_list"
+				group_id="$params['gallery']"
+				template="parts/product_image.xml"
+				cms:eval="group_id"
+				/>
+		</div>
+		</div>
 		<div class="info_wrap"
 			 data-uid="$params['uid']"
 			 cms:eval="data-uid"
@@ -66,15 +77,6 @@
 				<a href="#"></a>
 				<a href="#"></a>
 			</div>
-		</div>
-		<div class="product_gallery">
-			<cms:module
-				name="gallery"
-				action="show_image_list"
-				group_id="$params['gallery']"
-				template="parts/product_image.xml"
-				cms:eval="group_id"
-				/>
 		</div>
 
 </document>

@@ -100,7 +100,9 @@ Site.is_mobile = function() {
 
 		self.label_removeItem = $('<a href="javascript:void(0)">').appendTo(self.container);
 
-		self.label_count = $('div.total_count:last() span:last()');
+		self.label_total = $('div.total_count:last() span:last()');
+
+		self.label_total2 = $('div#cart > span:last()');
 
 		self.label_tax = $('div.total_count:first() span:last()');
 
@@ -112,6 +114,9 @@ Site.is_mobile = function() {
 	 */
 	self.handle_change = function() {
 
+		self.label_name.text(self.item.name[language_handler.current_language]);
+
+		self.label_quantity.text("X" + self.item.count);
 
 		// update shopping cart elements
 		self.image
@@ -124,16 +129,14 @@ Site.is_mobile = function() {
 
 		self.label_size.text("- SIZE " + self.item.properties.size);
 
-		self.label_quantity.text("x" + self.item.properties.quantity);
-
-		self.label_price.text("$" + self.item.price);
+		self.label_price.text("$" + self.item.price );
 
 		self.label_removeItem.on('click',function() {
 			event.preventDefault();
 			self.item.remove();
 		});
 
-		self.label_count.text("$" + self.item.price);
+		// self.label_count.text("$" + self.item.price);
 
 		self.label_tax.text("$" + self.item.tax);
 
@@ -171,18 +174,22 @@ Site.on_load = function() {
 
 	Site.cart = new Caracal.Shop.Cart();
 	Site.cart
+			.set_checkout_url('/shop/checkout')
+			.ui.connect_checkout_button($('div.popup div.controls button[name=checkout]'))
 			.ui.add_item_list($('div.popup ul'))
-			.ui.add_total_count_label($('div#cart span:last()'))
+			.ui.add_total_count_label($('div#cart div.popup ul li.item span.quantity'))
+			.ui.add_total_count_label($('div#cart span:first()'))
 			.ui.add_total_cost_label($('div.total_count:last() span:last()'))
+			.ui.add_total_cost_label($('div#cart > span:last()'))
 			.add_item_view(Site.ItemView);
 
 	// Function Displaying Product Big Image
 	function showImage() {
 		var item = $(this);
-		var bImage = $('section.product > img').attr('src',item.data('image'));
+		var bImage = $('section.product div.images_wrap > img').attr('src',item.data('image'));
 	}
 
-	var images = $('div.product_gallery img');
+	var images = $('section.product div.images_wrap div.product_gallery img');
 	images.hover(showImage);
 
 	// Function making color names be active
@@ -210,7 +217,6 @@ Site.on_load = function() {
 	sizesLinks.on('click',selectedSize);
 
 
-
 	/*
 	*
 	* Function Which Handles Add to cart call
@@ -221,7 +227,6 @@ Site.on_load = function() {
 		var size = $('div.size span.active').attr('value');
 		var color = $('div.color span.active').data('value');
 		var uid = product_container.data('uid');
-
 		var properties = {'size':size,'color':color};
 
 		// get item with specified unique id
@@ -238,12 +243,10 @@ Site.on_load = function() {
 		} else {
 
 			var item_list = Site.cart.get_item_list_by_uid(uid);
-			console.log(item_list);
 			var found_item = null;
 
 			for (var i=0, count=item_list.length; i<count; i++) {
 				var item = item_list[i];
-				console.log(item);
 
 				if (item.properties.size == properties.size &&
 					item.properties.color == properties.color) {
@@ -255,6 +258,7 @@ Site.on_load = function() {
 			if (found_item == null) {
 				// add new item
 				Site.cart.add_item_by_uid(uid,{'size':size,'color':color,'quantity':quantity});
+
 			} else {
 				// increase count
 				found_item.alter_count(1);

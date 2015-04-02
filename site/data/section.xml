@@ -18,6 +18,7 @@
 	</section>
 	<section name="shop">
 		<language name="all">
+			<action name="checkout" file="checkout.xml"/>
 			<action name="category" file="category.xml"/>
 			<action name="product" file="product-page.xml"/>
 		</language>

@@ -61,6 +61,7 @@ Site.is_mobile = function() {
 	self.label_removeItem = null;
 	self.label_count = null;
 	self.label_total = null;
+	self.label_total2 = null;
 	self.label_tax = null;
 
 	/**
@@ -115,6 +116,11 @@ Site.is_mobile = function() {
 	self.handle_change = function() {
 
 		self.label_name.text(self.item.name[language_handler.current_language]);
+
+		self.label_total
+				.text((self.item.count * self.item.price ).toFixed(2))
+				.attr('data-currency', self.currency);
+
 
 		self.label_quantity.text("X" + self.item.count);
 
@@ -176,6 +182,7 @@ Site.on_load = function() {
 	Site.cart
 			.set_checkout_url('/shop/checkout')
 			.ui.connect_checkout_button($('div.popup div.controls button[name=checkout]'))
+			// .ui.connect_checkout_button($('a.checkout'))
 			.ui.add_item_list($('div.popup ul'))
 			.ui.add_total_count_label($('div#cart div.popup ul li.item span.quantity'))
 			.ui.add_total_count_label($('div#cart span:first()'))
@@ -242,6 +249,8 @@ Site.on_load = function() {
 								 .css('opacity','1');
 		} else {
 
+
+
 			var item_list = Site.cart.get_item_list_by_uid(uid);
 			var found_item = null;
 
@@ -262,9 +271,13 @@ Site.on_load = function() {
 			} else {
 				// increase count
 				found_item.alter_count(1);
+
+
 			}
 
 		}
+
+
 
 	}
 

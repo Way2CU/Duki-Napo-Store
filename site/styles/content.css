@@ -479,7 +479,8 @@ section.product div.info_wrap div.color h3 {
 	padding-bottom: 0px;
 	width: 15%;
 	color:#989898;
-	text-transform: uppercase;
+	text-transform: lowercase;
+	font-weight: 400;
 	position: relative;
 }
 
@@ -493,8 +494,8 @@ section.product div.info_wrap div.color h3:before {
 section.product div.info_wrap div.color span {
 	display: inline-block;
 	vertical-align: middle;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
 	width: 20px;
 	height: 20px;
 	cursor: pointer;
@@ -528,7 +529,8 @@ section.product div.info_wrap div.size h3 {
 	padding-bottom: 0px;
     width: 15%;
 	color:#989898;
-	text-transform: uppercase;
+	font-weight: 400;
+	text-transform: lowercase;
 	position: relative;
 }
 
@@ -542,9 +544,9 @@ section.product div.info_wrap div.size h3:before {
 section.product div.info_wrap div.size span {
 	display: inline-block;
 	vertical-align: middle;
-	margin-left: 10px;
-	margin-right: 10px;
-	padding: 0px 15px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 0px 10px;
 	border:1px solid #e8e8e8 ;
 	cursor: pointer;
 	color:#989898;
@@ -584,15 +586,15 @@ section.product div.info_wrap div.size label input[type="number"] {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
-	margin-left: 10px;
-	margin-right: 10px;
-	width: 50px;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 40px;
 }
 
 section.product div.info_wrap div.size a {
 	display: inline-block;
 	padding: 10px 15px;
-	font-size: 1.3em;
+	font-size: 1em;
 	background-color:#212121;
 	cursor: pointer;
 	overflow: hidden;

@@ -13,11 +13,10 @@
 		</div>
 		<div class="total_count">
 			<span>Total:</span>
-			<span></span>
+			<span class="cart_total"></span>
 		</div>
 
 		<div class="controls">
-			<button type="button" name="view_cart">View Cart</button>
 			<button type="button" name="checkout">Checkout</button>
 		</div>
 	</div>

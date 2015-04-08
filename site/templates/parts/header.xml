@@ -78,10 +78,10 @@
 			<!-- Shopping cart -->
 			<div id="cart">
 				<h5><cms:text constant="cart_title"/></h5>
-				<span></span>
+				<span class="count"></span>
 				<span>item(s)</span>
-				<span></span>
-				<span></span>
+				<span>$</span>
+				<span class="total"></span>
 
 				<cms:template file="parts/cart.xml"/>
 			</div>

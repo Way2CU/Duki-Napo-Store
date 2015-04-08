@@ -60,13 +60,12 @@ Site.is_mobile = function() {
 	self.label_price = null;
 	self.label_removeItem = null;
 	self.label_count = null;
-	self.label_total = null;
-	self.label_total2 = null;
 	self.label_tax = null;
 
 	/**
 	 * Complete object initialization.
 	 */
+
 	self._init = function() {
 		var item_list = self.cart.get_list_container();
 
@@ -101,10 +100,6 @@ Site.is_mobile = function() {
 
 		self.label_removeItem = $('<a href="javascript:void(0)">').appendTo(self.container);
 
-		self.label_total = $('div.total_count:last() span:last()');
-
-		self.label_total2 = $('div#cart > span:last()');
-
 		self.label_tax = $('div.total_count:first() span:last()');
 
 
@@ -117,23 +112,19 @@ Site.is_mobile = function() {
 
 		self.label_name.text(self.item.name[language_handler.current_language]);
 
-		self.label_total
-				.text((self.item.count * self.item.price ).toFixed(2))
-				.attr('data-currency', self.currency);
-
 
 		self.label_quantity.text("X" + self.item.count);
 
 		// update shopping cart elements
 		self.image
-				.attr('alt', self.item.name[language_handler.current_language])
-				.attr('src', self.item.image);
+				.attr('src', self.item.image)
+				.attr('alt', self.item.name[language_handler.current_language]);
 
 		self.label_name.text(self.item.name[language_handler.current_language]);
 
-		self.label_color.text("- COLOR " + self.item.properties.color);
+		self.label_color.text("- COLOR : " + self.item.properties.color);
 
-		self.label_size.text("- SIZE " + self.item.properties.size);
+		self.label_size.text("- SIZE : " + self.item.properties.size);
 
 		self.label_price.text("$" + self.item.price );
 
@@ -142,11 +133,8 @@ Site.is_mobile = function() {
 			self.item.remove();
 		});
 
-		// self.label_count.text("$" + self.item.price);
 
 		self.label_tax.text("$" + self.item.tax);
-
-
 
 		//show item if hidden
 		if (self.container.hasClass('hidden'))
@@ -182,12 +170,12 @@ Site.on_load = function() {
 	Site.cart
 			.set_checkout_url('/shop/checkout')
 			.ui.connect_checkout_button($('div.popup div.controls button[name=checkout]'))
-			// .ui.connect_checkout_button($('a.checkout'))
+			.ui.connect_checkout_button($('a.checkout'))
 			.ui.add_item_list($('div.popup ul'))
 			.ui.add_total_count_label($('div#cart div.popup ul li.item span.quantity'))
-			.ui.add_total_count_label($('div#cart span:first()'))
-			.ui.add_total_cost_label($('div.total_count:last() span:last()'))
-			.ui.add_total_cost_label($('div#cart > span:last()'))
+			.ui.add_total_count_label($('div#cart span.count'))
+			.ui.add_total_cost_label($('div#cart span.total'))
+			.ui.add_total_cost_label($('div#cart span.cart_total'))
 			.add_item_view(Site.ItemView);
 
 	// Function Displaying Product Big Image
@@ -232,7 +220,7 @@ Site.on_load = function() {
 		var product_container = $('div.info_wrap');
 		var quantity = $('input[type="number"]').val();
 		var size = $('div.size span.active').attr('value');
-		var color = $('div.color span.active').data('value');
+		var color = $('div.color span.active').data('name');
 		var uid = product_container.data('uid');
 		var properties = {'size':size,'color':color};
 
@@ -266,7 +254,7 @@ Site.on_load = function() {
 
 			if (found_item == null) {
 				// add new item
-				Site.cart.add_item_by_uid(uid,{'size':size,'color':color,'quantity':quantity});
+				Site.cart.add_item_by_uid(uid,{'size':size,'color':color},quantity);
 
 			} else {
 				// increase count

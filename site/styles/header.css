@@ -390,8 +390,5 @@ div#cart div.popup div.controls button {
 	cursor: pointer;
 }
 
-div#cart div.popup div.controls button:first-of-type {
-	border-right: 1px solid #989898;
-}
 
 

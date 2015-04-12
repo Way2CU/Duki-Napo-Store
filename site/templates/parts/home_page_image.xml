@@ -1,0 +1,10 @@
+<document>
+
+		<img
+			class="home_gallery"
+			src="$params['image']"
+			alt="$params['title'][$language]"
+			cms:eval="src,alt,class"
+			/>
+
+</document>

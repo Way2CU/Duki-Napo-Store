@@ -9,12 +9,22 @@
 				name="shop"
 				action="include_cart_scripts"
 				/>
+			<cms:collection include="page_control,animation_chain"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<cms:template file="parts/header.xml"/>
-			<div id="image_rotate"></div>
+			<!-- <div id="image_rotate"></div> -->
+			<div id="image_rotate">
+				<cms:module
+					name="gallery"
+					action="show_image_list"
+					random="1"
+					group="home_page"
+					template="parts/home_page_image.xml"
+					/>
+			</div>
 			<cms:template file="parts/footer.xml"/>
 
 		</body>

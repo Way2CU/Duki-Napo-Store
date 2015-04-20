@@ -103,6 +103,8 @@ Caracal.Gallery.Slideshow = function() {
         return self;
     };
 
+
+
     /**
      * Make specified jQuery object behave as previous button.
      *

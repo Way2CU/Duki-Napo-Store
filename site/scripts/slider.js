@@ -1,10 +1,14 @@
+
+
 Caracal.Gallery.Slideshow = function() {
     var self = this;
 
     self.images = {};
     self.controls = {};
     self._index = 0;
-    self.timeout = 2000;
+    self.timeout = 0;
+    self.timer_id = null;
+
 
 
     /**
@@ -15,7 +19,7 @@ Caracal.Gallery.Slideshow = function() {
         // create image container
         self.images.list = $();
 
-        // create control containers
+       // create control containers
         self.controls.next = $();
         self.controls.previous = $();
 
@@ -66,9 +70,10 @@ Caracal.Gallery.Slideshow = function() {
      * Turn on auto-scrolling with specified timeout.
      * @param integer timeout
      */
-     self.control.set_auto = function(timeout) {
-         self.timeout = timeout;
-         clearInterval(self.next_step,self.timout);
+     self.set_auto = function(timeout) {
+        self.timeout = timeout;
+        setInterval(self.next_step, self.timeout);
+
      }
 
     /**
@@ -76,6 +81,7 @@ Caracal.Gallery.Slideshow = function() {
      *  @param images
      *  @return object
      */
+
     self.images.add = function(images) {
         var list = typeof images == 'string' ? $(images) : images;
         self.images.list = self.images.list.add(list);
@@ -103,7 +109,18 @@ Caracal.Gallery.Slideshow = function() {
         return self;
     };
 
-
+    /**
+     * Set specified jQuery object or selector as image container. Unless
+     * container is specified gallery will only apply `visible` class to elements instead
+     * of actually specifying their position.
+     *
+     * @param mixed container
+     * @return object
+     */
+    self.images.set_container = function(container) {
+    self.container = $(container);
+    return self;
+    };
 
     /**
      * Make specified jQuery object behave as previous button.
@@ -136,4 +153,6 @@ Caracal.Gallery.Slideshow = function() {
 
         return self;
     };
+
+    self._init();
 }

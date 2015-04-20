@@ -1,144 +1,137 @@
-
 Caracal.Gallery.Slideshow = function() {
-	var self = this;
+    var self = this;
 
-	self.images = {};
-	self.controls = {};
+    self.images = {};
+    self.controls = {};
+    self._index = 0;
+    self.timeout = 2000;
 
-	// object functions
 
-	// Function for applying visible class to image
+    /**
+     * Complete object initialization.
+     */
+    self._init = function() {
 
-	self.image_visible = function(index) {
-		self.images.eq(index).addClass('visible');
-	}
+        // create image container
+        self.images.list = $();
 
-	/**
-	 * Move images by one step forward.
-	 */
-	self.next_step = function() {
-		if(self.images < self.images.list.length)
-		self.image_visible(index + 1);
-	};
+        // create control containers
+        self.controls.next = $();
+        self.controls.previous = $();
 
-	/**
-	 * Move images by one step backward.
-	 */
-	self.previous_step = function() {
-		self.image_visible(index - 1);
-	};
+    };
 
-	/**
-	 *	set specified jquery selector as image container
-	 *	@param container
-	 *	return object
-	*/
-	self.images._container = function(container) {
-		self.container = $(container);
-		return self;
-	}
+    /**
+     * Show specified image.
+     *
+     * @param integer index
+     */
+    self.show_image = function(index) {
+        self._index = index;
+        var new_image = self.images.list.eq(index);
+        new_image.addClass('visible');
+        self.images.list.not(new_image).removeClass('visible');
+    };
 
-	/**
-	 *	Set or clear container status as busy.
-	 *	@param boolean busy
-	 *	return object
-	*/
-	self.images._container_status = function(busy) {
-		if(busy)
-				self.container.addClass('loading'); else
-				self.container.removeClass('loading');
-		return self;
-	}
+    /**
+     * Show next image in line.
+     */
+    self.next_step = function() {
+        var new_index = self._index + 1;
 
-	/**
-	 *	Add images from jQuery set or from specified selector to the list
-	 *	@param images
-	 *	return object
-	*/
-	self.images.add = function(images) {
-		var list = typeof images == 'string' ? $(images) : images;
-		$.extend(self.images.list, list);
-		return self;
-	};
+        // wrap when we reach end
+        if (new_index >= self.images.list.length)
+            new_index = 0;
 
-	/**
-	 *	Append list of images to container.
-	 *	@param array images
-	 *	return object
-	*/
-	self.images.append = function(images) {
-		self.container.append(images);
-		return self;
-	};
+        // show specified image
+        self.show_image(new_index);
+    }
 
-	/**
-	 * Remove all the images from DOM tree.
-	 *
-	 * @return object
-	 */
-	self.images.clear = function() {
-		self.images.list.remove();
-		self.images.list = $();
-		return self;
-	};
+    /**
+     * show previous image in line
+     */
+     self.previous_step = function() {
+         var new_index = self._index - 1;
 
-	/**
-	 * Make specified jQuery object behave as previous button.
-	 *
-	 * @param object control
-	 * @return object
-	 */
-	self.controls.attach_next = function(control) {
-		// add control to the list
-		self.controls.next = self.controls.next.add(control);
+         // wrap when we reach end
+         if (new_index < 0)
+             new_index = self.images.list.length - 1;
 
-		// re-attach event handlers
-		self.controls._attach_handlers(true, false, false);
+         // show specified image
+         self.show_image(new_index);
 
-		return self;
-	};
+     }
 
-	/**
-	 * Make specified jQuery object behave as previous button.
-	 *
-	 * @param object control
-	 * @return object
-	 */
-	self.controls.attach_previous = function(control) {
-		// add control to the list
-		self.controls.previous =  self.controls.previous.add(control);
+     /**
+     * Turn on auto-scrolling with specified timeout.
+     * @param integer timeout
+     */
+     self.control.set_auto = function(timeout) {
+         self.timeout = timeout;
+         clearInterval(self.next_step,self.timout);
+     }
 
-		// re-attach event handlers
-		self.controls._attach_handlers(false, true, false);
+    /**
+     *  Add images from jQuery set or from specified selector to the list
+     *  @param images
+     *  @return object
+     */
+    self.images.add = function(images) {
+        var list = typeof images == 'string' ? $(images) : images;
+        self.images.list = self.images.list.add(list);
+        return self;
+    };
 
-		return self;
-	};
+    /**
+     *  Append list of images to container.
+     *  @param array images
+     *  return object
+    */
+    self.images.append = function(images) {
+        self.container.append(images);
+        return self;
+    };
 
-	/**
-	 * Turn on auto-scrolling with specified timeout.
-	 *
-	 * @param integer timeout
-	 * @return object
-	 */
-	self.controls.set_auto = function(timeout) {
-		// store timeout for later use
-		self.timeout = timeout;
+    /**
+     * Remove all the images from DOM tree.
+     *
+     * @return object
+     */
+    self.images.clear = function() {
+        self.images.list.remove();
+        self.images.list = $();
+        return self;
+    };
 
-		if (timeout == 0) {
-			// clear existing timer
-			if (self.timer_id != null)
-				clearInterval(self.timer_id);
-			self.timer_id = null;
+    /**
+     * Make specified jQuery object behave as previous button.
+     *
+     * @param object control
+     * @return object
+     */
+    self.controls.attach_next = function(control) {
+        // add control to the list
+        self.controls.next = self.controls.next.add(control);
 
-		} else {
-			// start new timer
-			self.timer_id = setInterval(self.next_step, self.timeout);
-		}
+        // re-attach event handlers
+        self.controls._attach_handlers(true, false, false);
 
-		// re-attach event handlers
-		self.controls._attach_handlers(false, false, true);
+        return self;
+    };
 
-		return self;
-	};
+    /**
+     * Make specified jQuery object behave as previous button.
+     *
+     * @param object control
+     * @return object
+     */
+    self.controls.attach_previous = function(control) {
+        // add control to the list
+        self.controls.previous =  self.controls.previous.add(control);
 
+        // re-attach event handlers
+        self.controls._attach_handlers(false, true, false);
+
+        return self;
+    };
 }

@@ -158,164 +158,160 @@ Site.is_mobile = function() {
 }
 
 Caracal.Gallery.Slideshow = function() {
-	var self = this;
+    var self = this;
 
-	self.images = {};
-	self.controls = {};
-	self._index = 0;
+    self.images = {};
+    self.controls = {};
+    self._index = 0;
+    self.timeout = 0;
+    self.timer_id = null;
 
 
-	/**
-	 * Complete object initialization.
-	 */
-	self._init = function() {
 
-		// create image container
-		self.images.list = $();
+    /**
+     * Complete object initialization.
+     */
+    self._init = function() {
 
-		// create control containers
-		self.controls.next = $();
-		self.controls.previous = $();
+        // create image container
+        self.images.list = $();
 
-	};
+       // create control containers
+        self.controls.next = $();
+        self.controls.previous = $();
 
-	// object functions
+    };
 
-	// Function for applying visible class to image
+    /**
+     * Show specified image.
+     *
+     * @param integer index
+     */
+    self.show_image = function(index) {
+        self._index = index;
+        var new_image = self.images.list.eq(index);
+        new_image.addClass('visible');
+        self.images.list.not(new_image).removeClass('visible');
+    };
 
-	self.show_image = function(index) {
-		self._index = index;
-		self.images.list.eq(self._index).addClass('visible');
-	}
+    /**
+     * Show next image in line.
+     */
+    self.next_step = function() {
+        var new_index = self._index + 1;
 
-	/**
-	 * Move images by one step forward.
-	 */
-	self.next_step = function() {
-		if(self.images < self.images.list.length)
-		self.image_visible(index + 1);
-	};
+        // wrap when we reach end
+        if (new_index >= self.images.list.length)
+            new_index = 0;
 
-	/**
-	 * Move images by one step backward.
-	 */
-	self.previous_step = function() {
-		self.image_visible(index - 1);
-	};
+        // show specified image
+        self.show_image(new_index);
+    }
 
-	/**
-	 *	set specified jquery selector as image container
-	 *	@param container
-	 *	return object
-	*/
-	self.images_container = function(container) {
-		self.container = $(container);
-		return self;
-	}
+    /**
+     * show previous image in line
+     */
+     self.previous_step = function() {
+         var new_index = self._index - 1;
 
-	/**
-	 *	Set or clear container status as busy.
-	 *	@param boolean busy
-	 *	return object
-	*/
-	self.images._container_status = function(busy) {
-		if(busy)
-				self.container.addClass('loading'); else
-				self.container.removeClass('loading');
-		return self;
-	}
+         // wrap when we reach end
+         if (new_index < 0)
+             new_index = self.images.list.length - 1;
 
-	/**
-	 *	Add images from jQuery set or from specified selector to the list
-	 *	@param images
-	 *	return object
-	*/
-	self.images.add = function(images) {
-		var list = typeof images == 'string' ? $(images) : images;
-		self.images.list = self.images.list.add(list);
-		return self;
-	};
+         // show specified image
+         self.show_image(new_index);
 
-	/**
-	 *	Append list of images to container.
-	 *	@param array images
-	 *	return object
-	*/
-	self.images.append = function(images) {
-		self.container.append(images);
-		return self;
-	};
+     }
 
-	/**
-	 * Remove all the images from DOM tree.
-	 *
-	 * @return object
-	 */
-	self.images.clear = function() {
-		self.images.list.remove();
-		self.images.list = $();
-		return self;
-	};
-
-	/**
-	 * Make specified jQuery object behave as previous button.
-	 *
-	 * @param object control
-	 * @return object
-	 */
-	self.controls.attach_next = function(control) {
-		// add control to the list
-		self.controls.next = self.controls.next.add(control);
-
-		// re-attach event handlers
-		self.controls._attach_handlers(true, false, false);
-
-		return self;
-	};
-
-	/**
-	 * Make specified jQuery object behave as previous button.
-	 *
-	 * @param object control
-	 * @return object
-	 */
-	self.controls.attach_previous = function(control) {
-		// add control to the list
-		self.controls.previous =  self.controls.previous.add(control);
-
-		// re-attach event handlers
-		self.controls._attach_handlers(false, true, false);
-
-		return self;
-	};
-
-	/**
-	 * Turn on auto-scrolling with specified timeout.
-	 *
-	 * @param integer timeout
-	 * @return object
-	 */
-	self.controls.set_auto = function(timeout) {
-		// store timeout for later use
+     /**
+     * Turn on auto-scrolling with specified timeout.
+     * @param integer timeout
+     */
+     self.set_auto = function(timeout) {
 		self.timeout = timeout;
+		setInterval(self.next_step, self.timeout);
 
-		if (timeout == 0) {
-			// clear existing timer
-			if (self.timer_id != null)
-				clearInterval(self.timer_id);
-			self.timer_id = null;
+     }
 
-		} else {
-			// start new timer
-			self.timer_id = setInterval(self.next_step, self.timeout);
-		}
+    /**
+     *  Add images from jQuery set or from specified selector to the list
+     *  @param images
+     *  @return object
+     */
 
-		// re-attach event handlers
-		self.controls._attach_handlers(false, false, true);
+    self.images.add = function(images) {
+        var list = typeof images == 'string' ? $(images) : images;
+        self.images.list = self.images.list.add(list);
+        return self;
+    };
 
-		return self;
-	};
+    /**
+     *  Append list of images to container.
+     *  @param array images
+     *  return object
+    */
+    self.images.append = function(images) {
+        self.container.append(images);
+        return self;
+    };
 
+    /**
+     * Remove all the images from DOM tree.
+     *
+     * @return object
+     */
+    self.images.clear = function() {
+        self.images.list.remove();
+        self.images.list = $();
+        return self;
+    };
+
+    /**
+     * Set specified jQuery object or selector as image container. Unless
+     * container is specified gallery will only apply `visible` class to elements instead
+     * of actually specifying their position.
+     *
+     * @param mixed container
+     * @return object
+     */
+    self.images.set_container = function(container) {
+    self.container = $(container);
+    return self;
+    };
+
+    /**
+     * Make specified jQuery object behave as previous button.
+     *
+     * @param object control
+     * @return object
+     */
+    self.controls.attach_next = function(control) {
+        // add control to the list
+        self.controls.next = self.controls.next.add(control);
+
+        // re-attach event handlers
+        self.controls._attach_handlers(true, false, false);
+
+        return self;
+    };
+
+    /**
+     * Make specified jQuery object behave as previous button.
+     *
+     * @param object control
+     * @return object
+     */
+    self.controls.attach_previous = function(control) {
+        // add control to the list
+        self.controls.previous =  self.controls.previous.add(control);
+
+        // re-attach event handlers
+        self.controls._attach_handlers(false, true, false);
+
+        return self;
+    };
+
+    self._init();
 }
 
 /**
@@ -339,11 +335,12 @@ Site.on_load = function() {
 			.ui.add_total_cost_label($('div#cart span.cart_total'))
 			.add_item_view(Site.ItemView);
 
-	// var gallery = new Caracal.Gallery.Slideshow();
-	// gallery
-	// 	.images_container($('div#image_rotate'))
-	// 	.images.add($('img.home_gallery'))
-	// 	.image_visible(1);
+	var rotate = new Caracal.Gallery.Slideshow();
+	rotate.images.set_container($('div#image_rotate'))
+		  .images.add($('div#image_rotate img'))
+		  .set_auto(4000);
+
+
 
 
 

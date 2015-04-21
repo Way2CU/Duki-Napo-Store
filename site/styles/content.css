@@ -81,12 +81,12 @@ div#image_rotate img {
 	padding: 0px;
 	top:0px;
 	left: 0%;
-	opacity:0;
+	opacity:1;
 	transition:all 1s;
 }
 
 div#image_rotate img.visible {
-	opacity: 1;
+	opacity: 0;
 }
 
 

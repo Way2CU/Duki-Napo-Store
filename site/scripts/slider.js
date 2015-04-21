@@ -118,8 +118,8 @@ Caracal.Gallery.Slideshow = function() {
      * @return object
      */
     self.images.set_container = function(container) {
-    self.container = $(container);
-    return self;
+        self.container = $(container);
+        return self;
     };
 
     /**

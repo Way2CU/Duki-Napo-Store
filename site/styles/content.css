@@ -122,6 +122,13 @@ div.about_article p {
 	color:#989898;
 }
 
+div.about_article p img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	color:#989898;
+}
+
 /*
 	Contact Page
 */
@@ -250,6 +257,13 @@ div.process_article p {
 	margin-left: auto;
 	margin-right: auto;
 	width: 900px;
+	color:#989898;
+}
+
+div.process_article p img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	color:#989898;
 }
 

@@ -99,7 +99,7 @@ div#image_rotate img.visible {
 
 div.about_article {
 	display: block;
-	text-align: left;
+	text-align: center;
 	padding:20px calc((100vw - 1200px) / 2);
 	color:#212121;
 }
@@ -239,6 +239,7 @@ div.diamonds {
 
 div.process_article {
 	display: block;
+	text-align: center;
 }
 
 div.process_article h3 {
@@ -256,19 +257,25 @@ div.process_article p {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: left;
 	width: 900px;
 	color:#989898;
 }
 
 div.process_article p img {
-	display: block;
-	color:#989898;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #989898;
+    width: 50%;
 }
 
 div.process_article ol {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: left;
 	width: 900px;
 	color:#989898;
 }
@@ -283,6 +290,7 @@ div.process_article ul {
 
 div.benefits_article {
 	display: block;
+	text-align: center;
 }
 
 div.benefits_article h3 {
@@ -301,6 +309,7 @@ div.benefits_article p {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: left;
 	width: 900px;
 	color:#989898;
 }
@@ -309,6 +318,7 @@ div.benefits_article ol {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: left;
 	width: 900px;
 	color:#989898;
 }

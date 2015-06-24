@@ -6,5 +6,10 @@
 			alt="$params['title'][$language]"
 			cms:eval="src,alt,class"
 			/>
+		<!-- <figure style="'background-image: url('$params['image'])'"
+				cms:eval="style"
+			>
+
+		</figure> -->
 
 </document>

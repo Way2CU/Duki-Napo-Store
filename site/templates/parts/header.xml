@@ -9,15 +9,14 @@
 		<!-- Top navigation -->
 		<nav id="user">
 			<div class="message">
-				<span>Welcome you can login or create an account.</span>
+
 			</div>
 			<div >
 				<a href="#"></a>
 			</div>
 			<ul>
-				<li><a class="checkout" href="#"><cms:text constant="menu_checkout"/></a></li>
+				<li><a class="checkout" href="#"><cms:text constant="menu_sign"/></a></li>
 				<li><a class="acount" href="#"><cms:text constant="menu_account"/></a></li>
-				<li><a class="wish_list" href="#"><cms:text constant="menu_wishlist"/></a></li>
 			</ul>
 		</nav>
 

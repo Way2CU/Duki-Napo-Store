@@ -337,7 +337,7 @@ Site.on_load = function() {
 
 	var rotate = new Caracal.Gallery.Slideshow();
 	rotate.images.set_container($('div#image_rotate'))
-		  .images.add($('div#image_rotate img'))
+		  .images.add($('div#image_rotate figure'))
 		  .set_auto(4000);
 
 

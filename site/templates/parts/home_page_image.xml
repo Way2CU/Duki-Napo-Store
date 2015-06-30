@@ -1,15 +1,6 @@
 <document>
-
-		<img
-			class="home_gallery"
-			src="$params['image']"
-			alt="$params['title'][$language]"
-			cms:eval="src,alt,class"
-			/>
-		<!-- <figure style="'background-image: url('$params['image'])'"
+		<figure style="'background-image: url('.$params['image'].');'"
 				cms:eval="style"
 			>
-
-		</figure> -->
-
+		</figure>
 </document>

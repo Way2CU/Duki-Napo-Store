@@ -17,11 +17,13 @@
 			<section class="category">
 				<nav>
 					<h3><cms:text constant="nav_item_title"/></h3>
-					<cms:module
-						name="shop"
-						action="show_category_list"
-						template="parts/category_menu_item.xml"
-						/>
+					<ul>
+						<cms:module
+							name="shop"
+							action="show_category_list"
+							template="parts/category_menu_item.xml"
+							/>
+					</ul>
 				</nav>
 				<div >
 					<cms:module

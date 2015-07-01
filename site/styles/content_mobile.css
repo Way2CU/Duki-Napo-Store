@@ -6,6 +6,12 @@
  * Authors:Tal Reznic
  */
 
+ /*RESET*/
+h1,h2,h3,h4,h5,h6,p {
+	margin:0px;
+}
+
+/*Mobile Header*/
 a.logo {
     display: block;
     margin-left: auto;
@@ -33,7 +39,375 @@ a.menu {
     transition:all 0.3s;
 }
 
+a.cart_btn {
+    position: absolute;
+    top: 50%;
+    margin-top: -17.5px;
+    right: 3%;
+    width: 35px;
+    height: 35px;
+    background-image: url(../images/header/mobile-sprite.svg);
+    background-repeat: no-repeat;
+    background-position: -20px -20px;
+    background-size: 150px 975px;
+    transition:all 0.3s;
+}
+
+a.cart_btn:hover {
+    background-position: -95px -20px;
+}
+
+.mobile_title {
+	position: relative;
+}
+
 .mobile_title.visible a.menu {
-	left: -2%;
+
+	left: -3%;
 	background-position: -92px -95px;
 }
+
+.mobile_menu.visible {
+ 	width: 85%;
+}
+
+.mobile_menu ul {
+	margin: 0px;
+	padding:0px;
+	border-bottom: 2px solid #bcc2c6;
+}
+
+.mobile_menu ul li {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 40px;
+	position: relative;
+}
+
+.mobile_menu ul:first-of-type li:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 3%;
+    width: 35px;
+    height: 35px;
+    background-image: url(../images/header/mobile-sprite.svg);
+    background-repeat: no-repeat;
+    background-position: -2px -82px;
+    background-size: 80px 520px;
+}
+
+.mobile_menu ul:first-of-type li:nth-of-type(2):before {
+	background-position: -2px -122px;
+}
+
+.mobile_menu ul:first-of-type li:nth-of-type(3):before {
+	background-position: -2px -162px;
+}
+
+.mobile_menu ul:nth-of-type(2) li:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 3%;
+    width: 35px;
+    height: 35px;
+    background-image: url(../images/header/mobile-sprite.svg);
+    background-repeat: no-repeat;
+    background-position: -2px -202px;
+    background-size: 80px 520px;
+}
+
+.mobile_menu ul:nth-of-type(2) li:nth-of-type(2):before {
+    background-position: -2px -242px;
+}
+
+.mobile_menu ul:nth-of-type(2) li:nth-of-type(3):before {
+    background-position: -2px -282px;
+}
+
+.mobile_menu ul:nth-of-type(2) li:nth-of-type(4):before {
+    background-position: -2px -322px;
+}
+
+.mobile_menu ul:nth-of-type(3) li:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 3%;
+    width: 35px;
+    height: 35px;
+    background-image: url(../images/header/mobile-sprite.svg);
+    background-repeat: no-repeat;
+    background-position: -2px -362px;
+    background-size: 80px 520px;
+}
+
+.mobile_menu ul:nth-of-type(3) li:nth-of-type(2):before {
+    background-position: -2px -402px;
+}
+
+.mobile_menu ul:nth-of-type(3) li:nth-of-type(3):before {
+    background-position: -2px -442px;
+}
+
+.mobile_menu ul:nth-of-type(3) li:nth-of-type(4):before {
+    background-position: -2px -482px;
+}
+
+header.home ul#navigation {
+	display: block;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	background-color:rgba(0, 0, 0, 0.7);
+	border-top:2px solid #f6c15c;
+	border-bottom: 2px solid #f6c15c;
+	position: relative;
+	z-index: 10;
+}
+
+header.home ul#navigation li {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+
+header.home ul#navigation li a {
+	display: block;
+	padding-top: 10px;
+	padding-bottom:10px;
+	color:white;
+	text-decoration: none;
+}
+
+/*Mobile Footer*/
+
+footer {
+	display: block;
+	background-image: url(../images/footer/texture-pattern.png);
+	background-repeat:repeat;
+	background-position: center center;
+	background-size: 360px 360px;
+}
+
+footer div.footer_top {
+	display: block;
+}
+
+footer div.footer_top h2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: 300;
+    color: #e8e8e8;
+    font-size: 1.2em;
+    width: 90%;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+form {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	text-align: center;
+	width: 90%;
+}
+
+form label {
+	display: block;
+}
+
+form label span {
+	display:block;
+	padding-bottom:10px;
+	color:#989898;
+}
+
+form label input {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	border: none;
+	width: 90%;
+}
+
+footer div.social {
+	display:block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	width: 90%;
+}
+
+footer div.social span {
+	display:block;
+	color:#989898;
+}
+
+footer div.social a {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-image: url(../images/social/social_icons_sprite.svg);
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	background-size: 150px 50px;
+	width: 50px;
+	height: 50px;
+}
+
+footer div.social a:nth-of-type(2) {
+	background-position: -50px center;
+}
+
+footer div.social a:nth-of-type(3) {
+	background-position: -100px center;
+
+}
+
+footer div.payment {
+	display: block;
+	text-align: center;
+	padding-top: 10px;
+}
+
+footer div.payment span {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-image: url(../images/payments/icons-sprite.png);
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	height: 70px;
+}
+
+footer div.payment span:nth-of-type(1) {
+	width: 70px;
+}
+
+footer div.payment span:nth-of-type(2) {
+	background-position: -70px center;
+	width: 180px;
+}
+
+footer div.payment span:nth-of-type(3) {
+	background-position: -250px center;
+	width: 135px;
+}
+
+footer div.payment span:nth-of-type(4) {
+	background-position: -385px center;
+	width: 45px;
+}
+
+footer div.payment span:nth-of-type(5) {
+	background-position: -430px center;
+	width: 57px;
+}
+
+footer div.payment span:nth-of-type(6) {
+	background-position: -487px center;
+	width: 57px;
+}
+
+footer div.payment span:nth-of-type(7) {
+	background-position: -544px center;
+	width: 75px;
+}
+
+footer div.rights {
+	display: block;
+	background-color: #212121;
+}
+
+footer div.rights span:first-of-type {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.8em;
+    width: 90%;
+
+}
+
+footer div.rights span:first-of-type a {
+	padding-left: 5px;
+	color:white;
+	text-decoration: underline;
+}
+
+footer div.rights span:last-of-type {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    background-image: url(../images/footer/way2cu-color.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 25px 28px;
+    font-size: 0.8em;
+    width: 230px;
+}
+
+footer div.rights span:last-of-type a {
+	padding-left: 5px;
+	color:#449bb5;
+	font-size: 1em;
+	text-decoration: underline;
+	transition:all 0.3s;
+}
+
+footer div.rights span:last-of-type a:hover {
+	color:#5bc2d8;
+}
+
+
+/*Mobile Home Page*/
+div#image_rotate {
+	display: block;
+	text-align: center;
+	margin-top: -43px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width:100%;
+	height:220px;
+	position: relative;
+	overflow: hidden;
+
+}
+
+div#image_rotate figure {
+	position: absolute;
+	margin: 0px;
+	top:0px;
+	left: 0%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	transition:all 1s ease-in-out;
+}
+
+div#image_rotate figure.visible {
+	opacity: 0;
+}
+
+

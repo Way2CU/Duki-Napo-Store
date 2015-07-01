@@ -1,0 +1,39 @@
+/**
+ * Mobile Style Sheet
+ * DukiVeNapo Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+a.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url(../images/header/dukivenapo-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 200px 41px;
+    width: 200px;
+}
+
+a.menu {
+    position: absolute;
+    top: 50%;
+    margin-top: -17.5px;
+    left: 3%;
+    width: 35px;
+    height: 35px;
+    background-image: url(../images/header/mobile-sprite.svg);
+    background-repeat: no-repeat;
+    background-position: -20px -95px;
+    background-size: 150px 975px;
+    transition:all 0.3s;
+}
+
+.mobile_title.visible a.menu {
+	left: -2%;
+	background-position: -92px -95px;
+}

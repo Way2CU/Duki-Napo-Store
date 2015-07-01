@@ -157,7 +157,6 @@ div.form_wrap {
 	padding-right: 10px;
 	color:#989898;
 	width: calc(50% - 20px);
-
 }
 
 div.form_wrap h3 {
@@ -167,7 +166,6 @@ div.form_wrap h3 {
 div.form_wrap form {
 	display: block;
 	width: 100%;
-
 }
 
 div.form_wrap form label {
@@ -460,7 +458,7 @@ section.category  div.item a span {
 
 
 /*
-	Shop product Dynamic Page
+	product Dynamic Page
 */
 
 section.product {
@@ -634,7 +632,6 @@ section.product div.info_wrap div.size label h3 {
 	display: inline-block;
 	vertical-align: middle;
 	width: 15%;
-	float: left;
 }
 
 section.product div.info_wrap div.size label input[type="number"] {

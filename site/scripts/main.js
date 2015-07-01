@@ -320,6 +320,12 @@ Caracal.Gallery.Slideshow = function() {
 
 Site.on_load = function() {
 
+	if (Site.is_mobile()) {
+		Site.mobile_menu = new Caracal.MobileMenu();
+		Site.mobile_title = $('.mobile_title');
+
+	}
+
 
 	Caracal.lightbox = new LightBox('a.image.direct', false, false, true);
 

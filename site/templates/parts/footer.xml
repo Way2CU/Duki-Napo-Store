@@ -4,58 +4,60 @@
 	<footer>
 		<div class="footer_top">
 			<h2><cms:text constant="footer_title"/></h2>
-			<nav id="footer_nav">
-				<ul>
-					<li>
-						<a
-							class="$section == 'about_us' ? 'active' : false"
-							href="url_Make('', 'about_us')"
-							cms:eval="href"
-							cms:optional="class"
-							>
-							<cms:text constant="menu_about_us"/>
-						</a>
-					</li>
-					<li>
-						<a
-							class="$section == 'diamonds' ? 'active' : false"
-							href="url_Make('', 'diamonds')"
-							cms:eval="href"
-							cms:optional="class"
-							>
-							<cms:text constant="menu_jewellery"/>
-						</a>
-					</li>
-					<li>
-						<a
-							class="$section == 'gallery' ? 'active' : false"
-							href="url_Make('', 'gallery')"
-							cms:eval="href"
-							cms:optional="class"
-							>
-							<cms:text constant="menu_gallery"/>
-						</a>
-					</li>
-					<li>
-						<a
-							class="$section == 'contact_us' ? 'active' : false"
-							href="url_Make('', 'contact_us')"
-							cms:eval="href"
-							cms:optional="class"
-							>
-							<cms:text constant="menu_contact_us"/>
-						</a>
-					</li>
-				</ul>
+			<cms:desktop>
+				<nav id="footer_nav">
+					<ul>
+						<li>
+							<a
+								class="$section == 'about_us' ? 'active' : false"
+								href="url_Make('', 'about_us')"
+								cms:eval="href"
+								cms:optional="class"
+								>
+								<cms:text constant="menu_about_us"/>
+							</a>
+						</li>
+						<li>
+							<a
+								class="$section == 'diamonds' ? 'active' : false"
+								href="url_Make('', 'diamonds')"
+								cms:eval="href"
+								cms:optional="class"
+								>
+								<cms:text constant="menu_jewellery"/>
+							</a>
+						</li>
+						<li>
+							<a
+								class="$section == 'gallery' ? 'active' : false"
+								href="url_Make('', 'gallery')"
+								cms:eval="href"
+								cms:optional="class"
+								>
+								<cms:text constant="menu_gallery"/>
+							</a>
+						</li>
+						<li>
+							<a
+								class="$section == 'contact_us' ? 'active' : false"
+								href="url_Make('', 'contact_us')"
+								cms:eval="href"
+								cms:optional="class"
+								>
+								<cms:text constant="menu_contact_us"/>
+							</a>
+						</li>
+					</ul>
 
-				<ul>
-					<cms:module
-						name="shop"
-						action="show_category_list"
-						template="parts/category_menu_item.xml"
-						/>
-				</ul>
-			</nav>
+					<ul>
+						<cms:module
+							name="shop"
+							action="show_category_list"
+							template="parts/category_menu_item.xml"
+							/>
+					</ul>
+				</nav>
+			</cms:desktop>
 			<cms:module
 	 				name="contact_form"
 	 				action="show"

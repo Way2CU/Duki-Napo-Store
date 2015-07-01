@@ -55,6 +55,7 @@
 				</div>
 
 			<cms:desktop>
+
 				<div id="order_policy">
 					<label>
 						<input type="checkbox"/>

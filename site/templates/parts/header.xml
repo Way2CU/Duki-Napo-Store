@@ -89,15 +89,97 @@
 			</nav>
 		</header>
 	</cms:desktop>
+
 	<!-- Mobile version -->
 	<cms:mobile>
 
-		<header>
+		<header class="$section == 'home' ? 'home' : false" cms:optional="class">
+
 			<div class="mobile_title">
 				<a href="javascript:void(0)" class="menu"></a>
 				<a href="javascript:void(0)" class="logo"></a>
 				<a href="javascript:void(0)" class="cart_btn"></a>
 			</div>
+
+			<nav class="mobile_menu">
+				<ul>
+					<li><a class="checkout" href="#"><cms:text constant="menu_sign"/></a></li>
+					<li><a class="acount" href="#"><cms:text constant="menu_account"/></a></li>
+					<li>
+						<a
+							class="$section == 'home' ? 'active' : false"
+							href="url_Make('', 'home')"
+							cms:eval="href"
+							cms:optional="class"
+							>
+							<cms:text constant="menu_home"/>
+						</a>
+					</li>
+				</ul>
+
+				<ul>
+					<li>
+						<a
+							class="$section == 'about_us' ? 'active' : false"
+							href="url_Make('', 'about_us')"
+							cms:eval="href"
+							cms:optional="class"
+							>
+							<cms:text constant="menu_about_us"/>
+						</a>
+					</li>
+					<li>
+						<a
+							class="$section == 'diamonds' ? 'active' : false"
+							href="url_Make('', 'diamonds')"
+							cms:eval="href"
+							cms:optional="class"
+							>
+							<cms:text constant="menu_jewellery"/>
+						</a>
+					</li>
+					<li>
+						<a
+							class="$section == 'gallery' ? 'active' : false"
+							href="url_Make('', 'gallery')"
+							cms:eval="href"
+							cms:optional="class"
+							>
+							<cms:text constant="menu_gallery"/>
+						</a>
+					</li>
+					<li>
+						<a
+							class="$section == 'contact_us' ? 'active' : false"
+							href="url_Make('', 'contact_us')"
+							cms:eval="href"
+							cms:optional="class"
+							>
+							<cms:text constant="menu_contact_us"/>
+						</a>
+					</li>
+				</ul>
+
+				<ul>
+					<cms:module
+						name="shop"
+						action="show_category_list"
+						template="parts/category_menu_item.xml"
+						/>
+				</ul>
+
+			</nav>
+
+			<!-- Shop categories -->
+			<ul id="navigation">
+				<cms:module
+					name="shop"
+					action="show_category_list"
+					template="parts/category_menu_item.xml"
+					/>
+			</ul>
+
+
 		</header>
 
 	</cms:mobile>

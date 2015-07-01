@@ -1,89 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../units/schema/language.dtd">
 <document>
-	<header
-		class="$section == 'home' ? 'home' : false"
-		cms:optional="class"
-		>
+	<!-- Desktop Version -->
+	<cms:desktop>
+		<header
+			class="$section == 'home' ? 'home' : false"
+			cms:optional="class"
+			>
 
-		<!-- Top navigation -->
-		<nav id="user">
-			<div class="message">
+			<!-- Top navigation -->
+			<nav id="user">
+				<div class="message">
 
+				</div>
+				<div >
+					<a href="#"></a>
+				</div>
+				<ul>
+					<li><a class="checkout" href="#"><cms:text constant="menu_sign"/></a></li>
+					<li><a class="acount" href="#"><cms:text constant="menu_account"/></a></li>
+				</ul>
+			</nav>
+
+			<!-- Bottom navigation -->
+			<nav id="navigation">
+				<ul>
+					<li>
+						<a
+							class="$section == 'about_us' ? 'active' : false"
+							href="url_Make('', 'about_us')"
+							cms:eval="href"
+							cms:optional="class"
+							>
+							<cms:text constant="menu_about_us"/>
+						</a>
+					</li>
+					<li>
+						<a
+							class="$section == 'diamonds' ? 'active' : false"
+							href="url_Make('', 'diamonds')"
+							cms:eval="href"
+							cms:optional="class"
+							>
+							<cms:text constant="menu_jewellery"/>
+						</a>
+					</li>
+					<li>
+						<a
+							class="$section == 'gallery' ? 'active' : false"
+							href="url_Make('', 'gallery')"
+							cms:eval="href"
+							cms:optional="class"
+							>
+							<cms:text constant="menu_gallery"/>
+						</a>
+					</li>
+					<li>
+						<a
+							class="$section == 'contact_us' ? 'active' : false"
+							href="url_Make('', 'contact_us')"
+							cms:eval="href"
+							cms:optional="class"
+							>
+							<cms:text constant="menu_contact_us"/>
+						</a>
+					</li>
+				</ul>
+
+				<!-- Shop categories -->
+				<ul>
+					<cms:module
+						name="shop"
+						action="show_category_list"
+						template="parts/category_menu_item.xml"
+						/>
+				</ul>
+
+				<!-- Shopping cart -->
+				<div id="cart">
+					<h5><cms:text constant="cart_title"/></h5>
+					<span class="count"></span>
+					<span>item(s)</span>
+					<span>$</span>
+					<span class="total"></span>
+
+					<cms:template file="parts/cart.xml"/>
+				</div>
+			</nav>
+		</header>
+	</cms:desktop>
+	<!-- Mobile version -->
+	<cms:mobile>
+
+		<header>
+			<div class="mobile_title">
+				<a href="javascript:void(0)" class="menu"></a>
+				<a href="javascript:void(0)" class="logo"></a>
+				<a href="javascript:void(0)" class="cart_btn"></a>
 			</div>
-			<div >
-				<a href="#"></a>
-			</div>
-			<ul>
-				<li><a class="checkout" href="#"><cms:text constant="menu_sign"/></a></li>
-				<li><a class="acount" href="#"><cms:text constant="menu_account"/></a></li>
-			</ul>
-		</nav>
+		</header>
 
-		<!-- Bottom navigation -->
-		<nav id="navigation">
-			<ul>
-				<li>
-					<a
-						class="$section == 'about_us' ? 'active' : false"
-						href="url_Make('', 'about_us')"
-						cms:eval="href"
-						cms:optional="class"
-						>
-						<cms:text constant="menu_about_us"/>
-					</a>
-				</li>
-				<li>
-					<a
-						class="$section == 'diamonds' ? 'active' : false"
-						href="url_Make('', 'diamonds')"
-						cms:eval="href"
-						cms:optional="class"
-						>
-						<cms:text constant="menu_jewellery"/>
-					</a>
-				</li>
-				<li>
-					<a
-						class="$section == 'gallery' ? 'active' : false"
-						href="url_Make('', 'gallery')"
-						cms:eval="href"
-						cms:optional="class"
-						>
-						<cms:text constant="menu_gallery"/>
-					</a>
-				</li>
-				<li>
-					<a
-						class="$section == 'contact_us' ? 'active' : false"
-						href="url_Make('', 'contact_us')"
-						cms:eval="href"
-						cms:optional="class"
-						>
-						<cms:text constant="menu_contact_us"/>
-					</a>
-				</li>
-			</ul>
+	</cms:mobile>
 
-			<!-- Shop categories -->
-			<ul>
-				<cms:module
-					name="shop"
-					action="show_category_list"
-					template="parts/category_menu_item.xml"
-					/>
-			</ul>
-
-			<!-- Shopping cart -->
-			<div id="cart">
-				<h5><cms:text constant="cart_title"/></h5>
-				<span class="count"></span>
-				<span>item(s)</span>
-				<span>$</span>
-				<span class="total"></span>
-
-				<cms:template file="parts/cart.xml"/>
-			</div>
-		</nav>
-	</header>
 </document>

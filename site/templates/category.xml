@@ -15,16 +15,18 @@
 		<body>
 			<cms:template file="parts/header.xml"/>
 			<section class="category">
-				<nav>
-					<h3><cms:text constant="nav_item_title"/></h3>
-					<ul>
-						<cms:module
-							name="shop"
-							action="show_category_list"
-							template="parts/category_menu_item.xml"
-							/>
-					</ul>
-				</nav>
+				<cms:desktop>
+					<nav>
+						<h3><cms:text constant="nav_item_title"/></h3>
+						<ul>
+							<cms:module
+								name="shop"
+								action="show_category_list"
+								template="parts/category_menu_item.xml"
+								/>
+						</ul>
+					</nav>
+				</cms:desktop>
 				<div >
 					<cms:module
 						name="shop"

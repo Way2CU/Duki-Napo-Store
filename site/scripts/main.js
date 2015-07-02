@@ -354,7 +354,7 @@ Site.on_load = function() {
 		var bImage = $('section.product div.images_wrap > img').attr('src',item.data('image'));
 	}
 
-	var images = $('section.product div.images_wrap div.product_gallery img');
+	var images = $('section.product div.images_wrap div.product_gallery a');
 	images.hover(showImage);
 
 	// Function making color names be active
@@ -425,10 +425,14 @@ Site.on_load = function() {
 			if (found_item == null) {
 				// add new item
 				Site.cart.add_item_by_uid(uid,{'size':size,'color':color},quantity);
+				$('div.popup').addClass('activeCart');
+				$('a.cart_btn').addClass('enabled');
 
 			} else {
 				// increase count
 				found_item.alter_count(1);
+				$('div.popup').addClass('activeCart');
+				$('a.cart_btn').addClass('enabled');
 			}
 
 		}

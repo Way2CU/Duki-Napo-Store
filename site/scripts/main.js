@@ -337,6 +337,7 @@ Site.on_load = function() {
 			.ui.add_item_list($('div.popup ul'))
 			.ui.add_total_count_label($('div#cart div.popup ul li.item span.quantity'))
 			.ui.add_total_count_label($('div#cart span.count'))
+			.ui.add_total_count_label($('div.mobile_title span.mobile_count'))
 			.ui.add_total_cost_label($('div#cart span.total'))
 			.ui.add_total_cost_label($('span.cart_total'))
 			.add_item_view(Site.ItemView);

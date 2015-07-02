@@ -778,6 +778,13 @@ div.address_article p:first-of-type {
 	padding-top: 10px;
 }
 
+div.address_article p:nth-of-type(4) {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 1.2em;
+	text-decoration: underline;
+}
+
 div.form_wrap {
 	display:block;
 	padding-top: 10px;

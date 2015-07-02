@@ -61,12 +61,21 @@ a.cart_btn {
     transition:all 0.3s;
 }
 
+span.mobile_count {
+    position: absolute;
+    top: 15%;
+    right: 4%;
+    font-size: 0.8em;
+    color: #F7C25D;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
 a.cart_btn.enabled{
     background-position: -95px -20px;
 }
 
 .mobile_title {
-	position: relative;
+	position: fixed;
 }
 
 .mobile_title.visible a.menu {
@@ -175,6 +184,7 @@ a.cart_btn.enabled{
 ul#navigation {
 	display: block;
 	text-align: center;
+	top: 60px;
 	margin: 0px;
 	padding: 0px;
 	list-style-type: none;
@@ -207,6 +217,7 @@ ul#navigation li a.active {
 header.home ul#navigation {
 	display: block;
 	text-align: center;
+	top:60px;
 	margin: 0px;
 	padding: 0px;
 	list-style-type: none;
@@ -284,7 +295,7 @@ div.popup {
 	width:100%;
 	background-color: white;
 	box-shadow: 0px 0px 5px grey;
-	transition: all 0.5s;
+	transition: all 0.3s;
 	z-index: 1000;
 }
 
@@ -601,7 +612,6 @@ footer div.rights span:last-of-type a:hover {
 div#image_rotate {
 	display: block;
 	text-align: center;
-	margin-top: -43px;
 	background-repeat: no-repeat;
 	background-position: center center;
 	width:100%;
@@ -635,6 +645,7 @@ div#image_rotate figure.visible {
 
 div.about_article {
 	display: block;
+	padding-top: 70px;
 	padding-bottom:10px;
 	text-align: center;
 	color:#212121;
@@ -674,6 +685,7 @@ div.about_article p img {
 */
 div.contact_us {
 	display: block;
+	padding-top: 70px;
 }
 
 div.address_article {
@@ -784,6 +796,7 @@ div.diamonds {
 
 div.process_article {
 	display: block;
+	padding-top: 70px;
 	text-align: center;
 }
 
@@ -906,7 +919,7 @@ div.benefits_article ul {
 
 div.gallery {
     display: block;
-    padding-top: 10px;
+    padding-top: 70px;
     padding-bottom: 10px;
     text-align: center;
 }
@@ -934,7 +947,7 @@ div#lightbox a.close_button {
 
 section.category {
 	display: block;
-	padding-top: 10px;
+	padding-top: 70px;
 	text-align: center;
 }
 
@@ -995,6 +1008,7 @@ section.category div.item a span {
 
 section.product {
 	display: block;
+	padding-top: 70px;
 }
 
 section.product article {

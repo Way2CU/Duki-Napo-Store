@@ -87,6 +87,10 @@ a.cart_btn.enabled{
  	width: 100%;
 }
 
+.mobile_menu a {
+	padding-left: 3.5em;
+}
+
 .mobile_menu ul {
 	margin: 0px;
 	padding:0px;
@@ -101,15 +105,15 @@ a.cart_btn.enabled{
 	display: block;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	padding-left: 40px;
 	position: relative;
 }
 
 .mobile_menu ul li a.active {
 	color:#f6c15c;
+	background-color: #94a4a5;
 }
 
-.mobile_menu ul:first-of-type li:before {
+.mobile_menu ul:first-of-type li a:before {
     content: "";
     position: absolute;
     top: 0px;
@@ -122,16 +126,29 @@ a.cart_btn.enabled{
     background-size: 80px 520px;
 }
 
-.mobile_menu ul:first-of-type li:nth-of-type(2):before {
+.mobile_menu ul:first-of-type li:nth-of-type(1) a:before {
+	background-position: -2px -82px;
+}
+
+.mobile_menu ul:first-of-type li:nth-of-type(1) a.active:before {
+	background-position: -22px -82px;
+}
+
+
+.mobile_menu ul:first-of-type li:nth-of-type(2) a:before {
 	background-position: -2px -122px;
 }
 
 
-.mobile_menu ul:first-of-type li:nth-of-type(3):before {
+.mobile_menu ul:first-of-type li:nth-of-type(3) a:before {
 	background-position: -2px -162px;
 }
 
-.mobile_menu ul:nth-of-type(2) li:before {
+.mobile_menu ul:first-of-type li:nth-of-type(3) a.active:before {
+	background-position: -42px -162px;
+}
+
+.mobile_menu ul:nth-of-type(2) li a:before {
     content: "";
     position: absolute;
     top: 0px;
@@ -144,19 +161,39 @@ a.cart_btn.enabled{
     background-size: 80px 520px;
 }
 
-.mobile_menu ul:nth-of-type(2) li:nth-of-type(2):before {
+.mobile_menu ul:nth-of-type(2) li:nth-of-type(1) a:before {
+    background-position: -2px -202px;
+}
+
+.mobile_menu ul:nth-of-type(2) li:nth-of-type(1) a.active:before {
+    background-position: -42px -202px;
+}
+
+.mobile_menu ul:nth-of-type(2) li:nth-of-type(2) a:before {
     background-position: -2px -242px;
 }
 
-.mobile_menu ul:nth-of-type(2) li:nth-of-type(3):before {
+.mobile_menu ul:nth-of-type(2) li:nth-of-type(2) a.active:before {
+    background-position: -42px -242px;
+}
+
+.mobile_menu ul:nth-of-type(2) li:nth-of-type(3) a:before {
     background-position: -2px -282px;
 }
 
-.mobile_menu ul:nth-of-type(2) li:nth-of-type(4):before {
+.mobile_menu ul:nth-of-type(2) li:nth-of-type(3) a.active:before {
+    background-position: -42px -242px;
+}
+
+.mobile_menu ul:nth-of-type(2) li:nth-of-type(4) a:before {
     background-position: -2px -322px;
 }
 
-.mobile_menu ul:nth-of-type(3) li:before {
+.mobile_menu ul:nth-of-type(2) li:nth-of-type(4) a.active:before {
+    background-position: -42px -322px;
+}
+
+.mobile_menu ul:nth-of-type(3) li a:before {
     content: "";
     position: absolute;
     top: 0px;
@@ -169,16 +206,37 @@ a.cart_btn.enabled{
     background-size: 80px 520px;
 }
 
-.mobile_menu ul:nth-of-type(3) li:nth-of-type(2):before {
+.mobile_menu ul:nth-of-type(3) li:nth-of-type(1) a:before {
     background-position: -2px -402px;
 }
 
-.mobile_menu ul:nth-of-type(3) li:nth-of-type(3):before {
+.mobile_menu ul:nth-of-type(3) li:nth-of-type(1) a.active:before {
+    background-position: -42px -402px;
+}
+
+
+.mobile_menu ul:nth-of-type(3) li:nth-of-type(2) a:before {
+    background-position: -2px -402px;
+}
+
+.mobile_menu ul:nth-of-type(3) li:nth-of-type(2) a.active:before {
+    background-position: -42px -402px;
+}
+
+.mobile_menu ul:nth-of-type(3) li:nth-of-type(3) a:before {
     background-position: -2px -442px;
 }
 
-.mobile_menu ul:nth-of-type(3) li:nth-of-type(4):before {
+.mobile_menu ul:nth-of-type(3) li:nth-of-type(3) a.active:before {
+    background-position: -42px -442px;
+}
+
+.mobile_menu ul:nth-of-type(3) li:nth-of-type(4) a:before {
     background-position: -2px -482px;
+}
+
+.mobile_menu ul:nth-of-type(3) li:nth-of-type(4) a.active:before {
+    background-position: -42px -482px;
 }
 
 ul#navigation {

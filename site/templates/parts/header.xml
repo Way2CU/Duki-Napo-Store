@@ -97,7 +97,13 @@
 
 			<div class="mobile_title">
 				<a href="javascript:void(0)" class="menu"></a>
-				<a href="javascript:void(0)" class="logo"></a>
+				<a
+					class="logo"
+					href="url_Make('', 'home')"
+					cms:eval="href"
+					cms:optional="class"
+					>
+				</a>
 				<a href="javascript:void(0)" class="cart_btn"></a>
 				<span class="mobile_count"></span>
 			</div>

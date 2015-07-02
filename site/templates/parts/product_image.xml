@@ -1,8 +1,9 @@
 <document>
-	<img
-			src="gallery::getThumbnailById($params['id'], null,150,Thumbnail::CONSTRAIN_BOTH)"
-			data-image="$params['image']"
-			alt="$params['title'][$language]"
-			cms:eval="src,alt,data-image"
-			/>
+	<a
+		href="javascript:void(0)"
+		style="'background-image: url('.$params['image'].');'"
+		data-image="$params['image']"
+		cms:eval="href,style,data-image"
+		>
+	</a>
 </document>

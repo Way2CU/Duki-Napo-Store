@@ -4,7 +4,7 @@
 		<div class="item">
 			<a
 				href="url_Make('product','shop',array('category',$_REQUEST['id']),array('id',$params['id']))"
-				style="'background-image: url('.gallery::getGroupThumbnailById($params['gallery'],null, 200, Thumbnail::CONSTRAIN_HEIGHT).');'"
+				style="'background-image: url('.$params['image'].');'"
 				cms:eval="href,style"
 				>
 				<h5><cms:var param="name" multilanguage="yes"/></h5>

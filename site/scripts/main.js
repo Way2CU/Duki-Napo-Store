@@ -351,7 +351,7 @@ Site.on_load = function() {
 	// Function Displaying Product Big Image
 	function showImage() {
 		var item = $(this);
-		var bImage = $('section.product div.images_wrap > img').attr('src',item.data('image'));
+		var bImage = $('section.product div.images_wrap > a').css('background-image','url(' + item.data('image') +')');
 	}
 
 	var images = $('section.product div.images_wrap div.product_gallery a');

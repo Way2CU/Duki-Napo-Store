@@ -122,9 +122,9 @@ Site.is_mobile = function() {
 
 		self.label_name.text(self.item.name[language_handler.current_language]);
 
-		self.label_color.text("- COLOR : " + self.item.properties.color);
+		self.label_color.text("COLOR : " + self.item.properties.color);
 
-		self.label_size.text("- SIZE : " + self.item.properties.size);
+		self.label_size.text("SIZE : " + self.item.properties.size);
 
 		self.label_price.text("$" + self.item.price );
 
@@ -338,18 +338,13 @@ Site.on_load = function() {
 			.ui.add_total_count_label($('div#cart div.popup ul li.item span.quantity'))
 			.ui.add_total_count_label($('div#cart span.count'))
 			.ui.add_total_cost_label($('div#cart span.total'))
-			.ui.add_total_cost_label($('div#cart span.cart_total'))
+			.ui.add_total_cost_label($('span.cart_total'))
 			.add_item_view(Site.ItemView);
 
 	var rotate = new Caracal.Gallery.Slideshow();
 	rotate.images.set_container($('div#image_rotate'))
 		  .images.add($('div#image_rotate figure'))
 		  .set_auto(4000);
-
-
-
-
-
 
 
 	// Function Displaying Product Big Image
@@ -445,6 +440,19 @@ Site.on_load = function() {
 
 	var cartBtn = $('div.size a');
 	cartBtn.on('click',insertToCart);
+
+	// Mobile Version Functions
+
+	var mobileCartBtn = $('a.cart_btn');
+	var cart = $('div.popup');
+	mobileCartBtn.on('click',function(){
+		$(this).toggleClass('enabled');
+		cart.toggleClass('activeCart');
+	});
+
+
+
+
 
 };
 

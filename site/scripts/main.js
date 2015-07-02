@@ -429,8 +429,6 @@ Site.on_load = function() {
 			} else {
 				// increase count
 				found_item.alter_count(1);
-
-
 			}
 
 		}
@@ -446,6 +444,7 @@ Site.on_load = function() {
 
 	var mobileCartBtn = $('a.cart_btn');
 	var cart = $('div.popup');
+
 	mobileCartBtn.on('click',function(){
 		$(this).toggleClass('enabled');
 		cart.toggleClass('activeCart');

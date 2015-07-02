@@ -99,6 +99,7 @@
 				<a href="javascript:void(0)" class="menu"></a>
 				<a href="javascript:void(0)" class="logo"></a>
 				<a href="javascript:void(0)" class="cart_btn"></a>
+				<span class="mobile_count"></span>
 			</div>
 
 			<nav class="mobile_menu">
@@ -180,8 +181,6 @@
 					template="parts/category_menu_item.xml"
 					/>
 			</ul>
-
-
 
 		</header>
 

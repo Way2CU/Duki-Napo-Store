@@ -651,27 +651,28 @@ section.product div.info_wrap div.size a {
 	cursor: pointer;
 	overflow: hidden;
 	position: relative;
+	z-index: 1;
 }
 
 section.product div.info_wrap div.size a:before {
-	content: "ADD TO BAG";
+	content: "";
 	position: absolute;
 	display: inline-block;
 	top: 0px;
 	left: 0px;
-	padding: 10px 15px;
+	width: 100%;
+	height: 100%;
 	background-color:#f6c15c;
-	transform:translateX(-100%);
+	-webkit-transform:translateX(-100%);
 	transition:all 0.5s;
+	z-index: -1;
 }
 
 section.product div.info_wrap div.size a:hover:before {
-	transform:translateX(0%);
+	-webkit-transform:translateX(0%);
+	width: 100%;
+	height: 100%;
 }
-
-/*section.product div.info_wrap div.size a:hover {
-	background-color:#f6c15c;
-}*/
 
 div#order_policy {
 	display: block;

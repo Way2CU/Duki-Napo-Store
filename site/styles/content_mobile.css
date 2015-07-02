@@ -1258,23 +1258,27 @@ section.product div.info_wrap div.size a {
     position: relative;
     color: white;
     text-decoration: none;
+    z-index: 1;
 }
 
 section.product div.info_wrap div.size a:before {
-	content: "ADD TO BAG";
+	content: "";
 	position: absolute;
-	display:inline-block;
+	display: inline-block;
 	top: 0px;
 	left: 0px;
-	width: 85%;
-	padding: 10px 15px;
+	width: 100%;
+	height: 100%;
 	background-color:#f6c15c;
 	transform:translateX(-100%);
 	transition:all 0.5s;
+	z-index: -1;
 }
 
 section.product div.info_wrap div.size a:hover:before {
 	transform:translateX(0%);
+	width: 100%;
+	height: 100%;
 }
 
 

@@ -169,6 +169,8 @@
 				</ul>
 
 			</nav>
+			<!-- Mobile Cart -->
+			<cms:template file="parts/cart.xml"/>
 
 			<!-- Shop categories -->
 			<ul id="navigation">

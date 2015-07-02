@@ -85,6 +85,10 @@ a.cart_btn:hover {
 	border-bottom: 2px solid #bcc2c6;
 }
 
+.mobile_menu ul:last-of-type {
+	border-bottom: none;
+}
+
 .mobile_menu ul li {
 	display: block;
 	margin-top: 5px;

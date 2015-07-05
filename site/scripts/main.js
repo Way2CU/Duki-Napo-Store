@@ -352,9 +352,7 @@ Site.on_load = function() {
 	function showImage() {
 		var item = $(this);
 		var myurl = item.data('image');
-
 		var bImage = $('section.product div.images_wrap > figure').css('backgroundImage','url(' + myurl + ')');
-
 	}
 
 	var images = $('section.product div.images_wrap div.product_gallery a');

@@ -395,5 +395,9 @@ div#cart div.popup div.controls button {
 	transition: all 0.3s;
 }
 
+div#cart div.popup div.controls button:hover {
+	background-color:#B0883C;
+}
+
 
 

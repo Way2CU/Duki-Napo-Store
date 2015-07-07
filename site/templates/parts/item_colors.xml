@@ -5,7 +5,8 @@
 		data-value="$params['value']"
 		data-name="$params['name']"
 		cms:eval="data-value,data-name,style"
-	/>
-
+	>
+	<cms:var param="name"/>
+	</span>
 
 </document>

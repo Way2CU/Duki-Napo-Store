@@ -9,10 +9,8 @@
 			</article>
 		</cms:mobile>
 		<div class="images_wrap">
-			<!-- <img src="$params['image']" cms:eval="src"/> -->
-			<figure style="'background-image: url('.$params['image'].');'" cms:eval="style">
 
-			</figure>
+			<figure style="'background-image: url('.$params['image'].');'" cms:eval="style"></figure>
 			<div class="product_gallery">
 			<cms:module
 				name="gallery"
@@ -21,8 +19,10 @@
 				template="parts/product_image.xml"
 				cms:eval="group_id"
 				/>
+			</div>
+
 		</div>
-		</div>
+
 		<div class="info_wrap" data-uid="$params['uid']" cms:eval="data-uid">
 
 			<cms:desktop>

@@ -435,7 +435,6 @@ section.category  div.item a {
 section.category  div.item a h5 {
 	display: block;
 	padding-top: 210px;
-	padding-bottom: 20px;
 	color:#212121;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -452,7 +451,6 @@ section.category  div.item a span.color_preview {
 
 section.category  div.item a span {
 	display: block;
-	padding-top: 20px;
 	color:#6e6e6e;
 }
 
@@ -584,26 +582,20 @@ section.product div.info_wrap div.color span.active {
 
 section.product div.info_wrap div.size {
 	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 section.product div.info_wrap div.size h3 {
 	display: inline-block;
 	vertical-align: middle;
-	padding-left: 20px;
-	padding-right: 20px;
 	padding-bottom: 0px;
     width: 15%;
 	color:#989898;
 	font-weight: 400;
+	font-size: 1.2em;
 	text-transform: lowercase;
 	position: relative;
-}
-
-section.product div.info_wrap div.size h3:before {
-	content: "*";
-	position: absolute;
-	top: 0px;
-	left: 0px;
 }
 
 section.product div.info_wrap div.size span {

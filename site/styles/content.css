@@ -473,6 +473,7 @@ section.product div.images_wrap {
 	padding-left: 10px;
 	padding-right: 10px;
 	width:calc(40% - 20px);
+	position: relative;
 }
 
 section.product div.images_wrap figure {
@@ -484,6 +485,7 @@ section.product div.images_wrap figure {
     width: 100%;
     height: 275px;
 }
+
 
 section.product div.images_wrap div.product_gallery {
 	display: block;

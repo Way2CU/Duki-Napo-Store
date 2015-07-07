@@ -1,0 +1,10 @@
+<document>
+	<a
+		href="url_Make('product','shop',array('category',fix_id($_REQUEST['category'])),array('id',$params['id']))"
+		style="'background-image: url('.$params['image'].');'"
+		cms:eval="href,style,data-category"
+		>
+		<h5><cms:var param="name" multilanguage="yes"/></h5>
+		<span><cms:var param="price"/> $ </span>
+	</a>
+</document>

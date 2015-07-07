@@ -33,15 +33,6 @@
 				</article>
 			</cms:desktop>
 
-				<!-- <div class="color">
-					<h3><cms:text constant="color"/></h3>
-					<cms:color_list
-						id="$params['id']"
-						template="parts/item_colors.xml"
-						cms:eval="id"
-						/>
-					<span class="color_error"><cms:text constant="color_error"/></span>
-				</div> -->
 				<div class="size">
 					<h3><cms:text constant="size"/></h3>
 					<cms:value_list
@@ -55,6 +46,17 @@
 					<input type="number" value="1"/>
 					</label>
 					<a href="javascript:void(0)"><cms:text constant="add_bag"/></a>
+				</div>
+
+				<div class="related_items">
+					<h3><cms:text constant="related"/></h3>
+					<cms:module
+						name="shop"
+						action="show_item_list"
+						related="$params['id']"
+						template="parts/related_items.xml"
+						cms:eval="related"
+						/>
 				</div>
 
 			<cms:desktop>

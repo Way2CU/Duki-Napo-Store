@@ -3,7 +3,7 @@
 <document>
 		<div class="item">
 			<a
-				href="url_Make('product','shop',array('category',$_REQUEST['id']),array('id',$params['id']))"
+				href="url_Make('product','shop',array('category',fix_id($_REQUEST['id'])),array('id',$params['id']))"
 				style="'background-image: url('.$params['image'].');'"
 				cms:eval="href,style"
 				>

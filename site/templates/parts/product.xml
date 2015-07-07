@@ -29,11 +29,11 @@
 				<article>
 					<h3><cms:var param="name" multilanguage="yes"/></h3>
 					<span><cms:var param="description" multilanguage="yes"/></span>
-					<span><cms:var param="price"/>$</span>
+					<span><cms:var param="price"/></span>
 				</article>
 			</cms:desktop>
 
-				<div class="color">
+				<!-- <div class="color">
 					<h3><cms:text constant="color"/></h3>
 					<cms:color_list
 						id="$params['id']"
@@ -41,7 +41,7 @@
 						cms:eval="id"
 						/>
 					<span class="color_error"><cms:text constant="color_error"/></span>
-				</div>
+				</div> -->
 				<div class="size">
 					<h3><cms:text constant="size"/></h3>
 					<cms:value_list

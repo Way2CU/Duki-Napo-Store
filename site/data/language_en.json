@@ -21,5 +21,6 @@
     "size" :"size",
     "quantity":"quantity",
     "color_error":"TAP ON RING COLOR",
-    "size_error":"TAP ON RING SIZE"
+    "size_error":"TAP ON RING SIZE",
+    "related":"Related items"
 }

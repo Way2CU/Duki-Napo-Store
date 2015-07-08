@@ -528,65 +528,61 @@ section.product div.info_wrap article span {
 	color:#989898;
 }
 
-section.product div.info_wrap div.color {
+
+
+section.product div.info_wrap div.info {
 	display: block;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
-section.product div.info_wrap div.color h3 {
-	display: inline-block;
-	vertical-align: middle;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 0px;
-	width: 15%;
-	color:#989898;
-	text-transform: lowercase;
-	font-weight: 400;
-	position: relative;
+section.product div.info_wrap div.info div.price {
+	display: block;
+	padding-bottom: 20px;
 }
 
-section.product div.info_wrap div.color h3:before {
-	content: "*";
-	position: absolute;
-	top: 0px;
-	left: 0px;
-}
-
-section.product div.info_wrap div.color span {
+section.product div.info_wrap div.info div.price span {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 5px;
 	margin-right: 5px;
-	width: 20px;
-	height: 20px;
-	cursor: pointer;
+	padding: 0px 5px;
+	color:#989898;
 	transition:all 0.3s;
 }
 
-section.product div.info_wrap div.color span.color_error {
-	display: inline-block;
-	vertical-align: middle;
-	color: #f6c15c;
-	width: 300px;
-	visibility: hidden;
-	opacity: 0;
-	transition:all 0.3s;
-}
 
-section.product div.info_wrap div.color span.active {
-	width: 25px;
-	height: 25px;
-}
-
-section.product div.info_wrap div.size {
+section.product div.info_wrap div.info div.color {
 	display: block;
-	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
-section.product div.info_wrap div.size h3 {
+section.product div.info_wrap div.info div.color span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 0px 5px;
+	color:#989898;
+	transition:all 0.3s;
+}
+
+section.product div.info_wrap div.info div.weight {
+	display: block;
+	padding-bottom: 20px;
+}
+
+section.product div.info_wrap div.info div.weight span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 0px 5px;
+	color:#989898;
+	transition:all 0.3s;
+}
+
+section.product div.info_wrap div.info h3 {
 	display: inline-block;
 	vertical-align: middle;
 	padding-bottom: 0px;
@@ -598,7 +594,7 @@ section.product div.info_wrap div.size h3 {
 	position: relative;
 }
 
-section.product div.info_wrap div.size span {
+section.product div.info_wrap div.info > span {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 5px;
@@ -610,7 +606,7 @@ section.product div.info_wrap div.size span {
 	transition:all 0.3s;
 }
 
-section.product div.info_wrap div.size span.size_error {
+section.product div.info_wrap div.info > span.size_error {
 	display: inline-block;
 	vertical-align: middle;
 	color: #f6c15c;
@@ -621,24 +617,24 @@ section.product div.info_wrap div.size span.size_error {
 	transition:all 0.3s;
 }
 
-section.product div.info_wrap div.size span.active {
+section.product div.info_wrap div.info > span.active {
 	color: white;
 	background-color: #212121;
 }
 
-section.product div.info_wrap div.size label {
+section.product div.info_wrap div.info label {
 	display: block;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
-section.product div.info_wrap div.size label h3 {
+section.product div.info_wrap div.info label h3 {
 	display: inline-block;
 	vertical-align: middle;
 	width: 15%;
 }
 
-section.product div.info_wrap div.size label input[type="number"] {
+section.product div.info_wrap div.info label input[type="number"] {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
@@ -647,7 +643,7 @@ section.product div.info_wrap div.size label input[type="number"] {
 	width: 40px;
 }
 
-section.product div.info_wrap div.size a {
+section.product div.info_wrap div.info a {
 	display: inline-block;
 	padding: 10px 15px;
 	font-size: 1em;
@@ -658,7 +654,7 @@ section.product div.info_wrap div.size a {
 	z-index: 1;
 }
 
-section.product div.info_wrap div.size a:before {
+section.product div.info_wrap div.info a:before {
 	content: "";
 	position: absolute;
 	display: inline-block;
@@ -672,7 +668,7 @@ section.product div.info_wrap div.size a:before {
 	z-index: -1;
 }
 
-section.product div.info_wrap div.size a:hover:before {
+section.product div.info_wrap div.info a:hover:before {
 	-webkit-transform:translateX(0%);
 	width: 100%;
 	height: 100%;

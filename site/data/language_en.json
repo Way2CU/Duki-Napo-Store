@@ -20,6 +20,7 @@
     "color":"color",
     "size" :"size",
     "quantity":"quantity",
+    "price":"price",
     "color_error":"TAP ON RING COLOR",
     "size_error":"TAP ON RING SIZE",
     "related":"Related items"

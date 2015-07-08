@@ -1,11 +1,3 @@
 <document>
-	<span
-		class="color_preview"
-		style="'background-color: '.$params['value'].';'"
-		data-value="$params['value']"
-		data-name="$params['name']"
-		cms:eval="data-value,data-name,style"
-	>
-	</span>
-
+	<span><cms:var param="name"/></span>
 </document>

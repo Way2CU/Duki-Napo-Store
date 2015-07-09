@@ -58,8 +58,6 @@ a.active {
  	padding: 0px;
  }
 
-
-
  /*
 	HOME.XML
  */
@@ -352,7 +350,6 @@ div#lightbox a.close_button {
  	color:black;
 }
 
-
 /*
 	Shop Category Dynamic Page
 */
@@ -410,7 +407,7 @@ section.category  nav li a.active {
 section.category   div {
 	display: inline-block;
 	vertical-align: top;
-	text-align: left;
+	text-align: center;
 }
 
 section.category  div.item {

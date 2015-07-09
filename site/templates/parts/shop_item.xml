@@ -8,6 +8,11 @@
 				cms:eval="href,style"
 				>
 				<h5><cms:var param="name" multilanguage="yes"/></h5>
+				<cms:color_list
+	 						id="$params['id']"
+	 						template="parts/item_colors.xml"
+	 						cms:eval="id"
+						/>
 				<span><cms:var param="price"/> $ </span>
 			</a>
 		</div>

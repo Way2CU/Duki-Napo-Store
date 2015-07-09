@@ -35,7 +35,7 @@
 				<div class="info">
 
 					<div class="color">
-						<h3><cms:text constant="color"/></h3>
+						<p><cms:text constant="color"/></p>
 						<cms:color_list
 	 						id="$params['id']"
 	 						template="parts/item_colors.xml"
@@ -44,32 +44,35 @@
 					</div>
 
 					<div class="weight">
-						<h3>Weight</h3>
+						<p><cms:text constant="weight"/></p>
 						<span><cms:var param="weight"/>g</span>
 					</div>
 
-					<h3><cms:text constant="size"/></h3>
-					<cms:value_list
-						definition="$params['size_definition']"
-						template="parts/size.xml"
-						cms:eval="definition"
-					/>
+					<div class="size">
+						<p><cms:text constant="size"/></p>
+						<select>
+							<cms:value_list
+								definition="$params['size_definition']"
+								template="parts/size.xml"
+								cms:eval="definition"
+							/>
+						</select>
+					</div>
 
-					<span class="size_error"><cms:text constant="size_error"/></span>
-
-					<label>
-					<h3><cms:text constant="quantity"/></h3>
-					<input type="number" value="1"/>
+					<label >
+						<p><cms:text constant="quantity"/></p>
+						<input type="number" value="1"/>
 					</label>
+
 					<div class="price">
-						<h3><cms:text constant="price"/></h3>
+						<p><cms:text constant="price"/></p>
 						<span><cms:var param="price"/>$</span>
 					</div>
 					<a href="javascript:void(0)"><cms:text constant="add_bag"/></a>
 				</div>
 
 				<div class="related_items">
-					<h3><cms:text constant="related"/></h3>
+					<p><cms:text constant="related"/></p>
 					<cms:module
 						name="shop"
 						action="show_item_list"

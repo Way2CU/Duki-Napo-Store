@@ -58,6 +58,8 @@ a.active {
  	padding: 0px;
  }
 
+
+
  /*
 	HOME.XML
  */
@@ -532,109 +534,94 @@ section.product div.info_wrap article span {
 
 section.product div.info_wrap div.info {
 	display: block;
-	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
-section.product div.info_wrap div.info div.price {
-	display: block;
-	padding-bottom: 20px;
-}
-
-section.product div.info_wrap div.info div.price span {
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: 5px;
-	margin-right: 5px;
-	padding: 0px 5px;
-	color:#989898;
-	transition:all 0.3s;
-}
-
-
-section.product div.info_wrap div.info div.color {
-	display: block;
-	padding-bottom: 20px;
-}
-
-section.product div.info_wrap div.info div.color span {
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: 5px;
-	margin-right: 5px;
-	padding: 0px 5px;
-	color:#989898;
-	transition:all 0.3s;
-}
-
-section.product div.info_wrap div.info div.weight {
-	display: block;
-	padding-bottom: 20px;
-}
-
-section.product div.info_wrap div.info div.weight span {
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: 5px;
-	margin-right: 5px;
-	padding: 0px 5px;
-	color:#989898;
-	transition:all 0.3s;
-}
-
-section.product div.info_wrap div.info h3 {
-	display: inline-block;
-	vertical-align: middle;
-	padding-bottom: 0px;
-    width: 15%;
-	color:#989898;
-	font-weight: 400;
-	font-size: 1.2em;
-	text-transform: lowercase;
-	position: relative;
-}
-
-section.product div.info_wrap div.info > span {
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: 5px;
-	margin-right: 5px;
-	padding: 0px 5px;
-	border:1px solid #e8e8e8 ;
-	cursor: pointer;
-	color:#989898;
-	transition:all 0.3s;
-}
-
-section.product div.info_wrap div.info > span.size_error {
-	display: inline-block;
-	vertical-align: middle;
-	color: #f6c15c;
-	border: none;
-	cursor: none;
-	visibility: hidden;
-	opacity: 0;
-	transition:all 0.3s;
-}
-
-section.product div.info_wrap div.info > span.active {
-	color: white;
-	background-color: #212121;
-}
-
-section.product div.info_wrap div.info label {
+div.color {
 	display: block;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
-section.product div.info_wrap div.info label h3 {
+div.color p {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+	color:#989898;
+}
+
+div.color span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	color:#989898;
+}
+
+div.weight {
+	display: block;
+	padding-bottom: 20px;
+}
+
+div.weight p {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+	color:#989898;
+}
+
+div.weight span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	color:#989898;
+}
+
+div.size {
+	display: block;
+	padding-bottom: 20px;
+}
+
+div.size p {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+	color:#989898;
+}
+
+div.size select {
+	margin-left:10px;
+}
+
+div.size span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	color:#989898;
+}
+
+div.info_wrap div.info label {
+	display: block;
+	padding-bottom: 20px;
+}
+
+div.info_wrap div.info label h3 {
 	display: inline-block;
 	vertical-align: middle;
 	width: 15%;
 }
 
-section.product div.info_wrap div.info label input[type="number"] {
+div.info_wrap div.info label p {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+	color:#989898;
+}
+
+div.info label input[type="number"] {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
@@ -643,7 +630,27 @@ section.product div.info_wrap div.info label input[type="number"] {
 	width: 40px;
 }
 
-section.product div.info_wrap div.info a {
+div.price {
+	display: block;
+	padding-bottom: 20px;
+}
+
+div.price p {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+	color:#989898;
+}
+
+div.price span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	color:#989898;
+}
+
+div.info a {
 	display: inline-block;
 	padding: 10px 15px;
 	font-size: 1em;
@@ -654,7 +661,7 @@ section.product div.info_wrap div.info a {
 	z-index: 1;
 }
 
-section.product div.info_wrap div.info a:before {
+div.info a:before {
 	content: "";
 	position: absolute;
 	display: inline-block;
@@ -668,7 +675,7 @@ section.product div.info_wrap div.info a:before {
 	z-index: -1;
 }
 
-section.product div.info_wrap div.info a:hover:before {
+div.info a:hover:before {
 	-webkit-transform:translateX(0%);
 	width: 100%;
 	height: 100%;
@@ -680,10 +687,14 @@ div.related_items {
     border-bottom: 1px solid #e8e8e8;
 }
 
-div.related_items h3 {
+div.related_items p {
 	display: block;
-	color:#989898;
+	margin: 0px;
+	padding-bottom: 20px;
+	color: #989898;
+	font-size: 1.5em;
 }
+
 div.related_items a {
     display: inline-block;
     vertical-align: top;

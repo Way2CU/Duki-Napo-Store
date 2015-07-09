@@ -390,8 +390,8 @@ Site.on_load = function() {
 	function insertToCart() {
 		var product_container = $('div.info_wrap');
 		var quantity = $('input[type="number"]').val();
-		var size = $('div.size span.active').attr('value');
-		var color = $('div.color span.active').data('name');
+		var size = $('div.size select option:selected').text();
+		var color = $('div.color span').text();
 		var uid = product_container.data('uid');
 		var properties = {'size':size,'color':color};
 
@@ -436,7 +436,7 @@ Site.on_load = function() {
 
 	}
 
-	var cartBtn = $('div.size a');
+	var cartBtn = $('div.info a');
 	cartBtn.on('click',insertToCart);
 
 	// Mobile Version Functions

@@ -399,11 +399,6 @@ Site.on_load = function() {
 			// var item_list = Site.cart.get_item_list_by_uid(uid);
 			// console.log(item_list);
 
-		 if(size == undefined) {
-			$('span.size_error').css('visibility','visible')
-								 .css('opacity','1');
-			} else {
-
 			var item_list = Site.cart.get_item_list_by_uid(uid);
 			var found_item = null;
 
@@ -429,10 +424,6 @@ Site.on_load = function() {
 				$('div.popup').addClass('activeCart');
 				$('a.cart_btn').addClass('enabled');
 			}
-
-		}
-
-
 
 	}
 

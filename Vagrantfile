@@ -4,7 +4,7 @@
 # Author: Mladen Mijatov
 
 Vagrant.configure('2') do |config|
-	config.vm.box = 'hashicorp/precise32'
+	config.vm.box = 'hashicorp/precise32' 
 
 	# customize virtual machine
 	config.vm.provider 'virtualbox' do |vm|

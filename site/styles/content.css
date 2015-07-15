@@ -302,6 +302,16 @@ div.benefits_article h3 {
 	width: 400px
 }
 
+
+div.benefits_article p img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #989898;
+    width: 50%;
+}
+
 div.benefits_article p {
 	display: block;
 	margin-left: auto;

@@ -21,6 +21,7 @@ Vagrant.configure('2') do |config|
 		# configure virtual machine resources
 		vm.memory = 256
 		vm.cpus = 1
+
 	end
 
 	# install web server and required components

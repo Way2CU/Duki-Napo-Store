@@ -3,64 +3,56 @@
  * DukiVeNapo Site
  *
  * Copyright (c) 2015. by Way2CU, http://way2cu.com
- * Authors:Tal Reznic
- */
-
- /*
-	Generic
+ * Authors: Tal Reznic, Mladen Mijatov
  */
 
 a {
 	display: inline-block;
- 	color:white;
- 	text-decoration: none;
- 	font-size: 0.9em;
- }
+	color:white;
+	text-decoration: none;
+	font-size: 0.9em;
+}
 
 a.active {
 	color:#f6c15c;
 }
 
- span,h5 {
- 	font-size: 1em;
- 	font-weight: 400;
- 	color:white;
- }
+span, h5 {
+	font-size: 1em;
+	font-weight: 400;
+	color:white;
+}
 
- h2 {
- 	display: block;
- 	margin-top: 0px;
- 	margin-bottom: 0px;
- }
+h2 {
+	display: block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
 
- h2.error {
- 	display: block;
- 	padding-top: 20px;
- 	padding-bottom: 20px;
- 	color:#212121;
- 	background-color:#e8e8e8;
- 	transition:all 0.3s;
- }
+h2.error {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color:#212121;
+	background-color:#e8e8e8;
+	transition:all 0.3s;
+}
 
- h3 {
- 	display: block;
- 	padding-bottom: 20px;
- 	margin-top: 0px;
- 	margin-bottom: 0px;
- }
+h3 {
+	display: block;
+	padding-bottom: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
 
- h5 {
- 	margin: 0px;
- }
+h5 {
+	margin: 0px;
+}
 
- ul {
- 	margin: 0px;
- 	padding: 0px;
- }
-
- /*
-	HOME.XML
- */
+ul {
+	margin: 0px;
+	padding: 0px;
+}
 
 div#image_rotate {
 	display: block;
@@ -92,8 +84,8 @@ div#image_rotate figure.visible {
 	opacity: 0;
 }
 
-  /*
-	About Us Section
+/**
+ * About us section
  */
 
 div.about_article {
@@ -128,13 +120,14 @@ div.about_article p img {
 	color:#989898;
 }
 
-/*
-	Contact Page
-*/
+/**
+ * Contact Page
+ */
 div.contact_us {
 	display: block;
 	padding:20px calc((100vw - 1200px) / 2);
 }
+
 div.address_article {
 	display: inline-block;
 	vertical-align: top;
@@ -181,12 +174,15 @@ div.form_wrap form label span {
 	font-size: 1.2em;
 }
 
+div.form_wrap form label:last-of-type span {
+	vertical-align: top;
+}
+
 div.form_wrap form label input {
 	width: 80%;
 	border:1px solid #989898;
 	transition:all 0.3s;
 }
-
 
 div.form_wrap form label textarea {
 	display: inline-block;
@@ -203,7 +199,6 @@ div.form_wrap form label textarea {
 div.form_wrap form label input:focus,div.form_wrap form label textarea:focus {
 	border:1px solid #f6c15c;
 }
-
 
 div.form_wrap form div.controls button {
 	display: inline-block;
@@ -224,14 +219,14 @@ div.form_wrap form div.controls button:hover {
 	background-color:#B0883C;
 }
 
-/*
-	About Diamonds Page
-*/
+/**
+ * Diamonds page
+ */
 
 div.diamonds {
 	display: block;
-	padding:20px calc((100vw - 1200px) / 2);
-	color:#212121;
+	padding: 20px calc((100vw - 1200px) / 2);
+	color: #212121;
 }
 
 div.process_article {
@@ -260,12 +255,12 @@ div.process_article p {
 }
 
 div.process_article p img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    color: #989898;
-    width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #989898;
+	width: 50%;
 }
 
 div.process_article ol {
@@ -304,12 +299,12 @@ div.benefits_article h3 {
 
 
 div.benefits_article p img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    color: #989898;
-    width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #989898;
+	width: 50%;
 }
 
 div.benefits_article p {
@@ -339,8 +334,8 @@ div.benefits_article ul {
 }
 
 /*
-	Gallery Page
-*/
+Gallery Page
+ */
 
 div.gallery {
 	display: block;
@@ -363,13 +358,13 @@ div.gallery a {
 	height: 250px;
 }
 div#lightbox a.close_button {
- 	background-color: white;
- 	color:black;
+	background-color: white;
+	color:black;
 }
 
 /*
-	Shop Category Dynamic Page
-*/
+Shop Category Dynamic Page
+ */
 
 section.category {
 	display: block;
@@ -470,8 +465,8 @@ section.category  div.item a span {
 
 
 /*
-	product Dynamic Page
-*/
+product Dynamic Page
+ */
 
 section.product {
 	display: block;
@@ -509,17 +504,17 @@ section.product div.images_wrap div.product_gallery {
 }
 
 section.product div.images_wrap  div.product_gallery a {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: auto 100%;
-    width: 80px;
-    height: 80px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto 100%;
+	width: 80px;
+	height: 80px;
 
 }
 
@@ -702,7 +697,7 @@ div.related_items {
 	display: block;
 	padding-top: 20px;
 	padding-bottom: 60px;
-    border-bottom: 1px solid #e8e8e8;
+	border-bottom: 1px solid #e8e8e8;
 }
 
 div.related_items p {
@@ -714,20 +709,20 @@ div.related_items p {
 }
 
 div.related_items a {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 20px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    border-bottom: 2px solid transparent;
-    text-align: center;
-    width: 80px;
-    height: 80px;
-    transition:all 0.3s;
-    position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 20px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	border-bottom: 2px solid transparent;
+	text-align: center;
+	width: 80px;
+	height: 80px;
+	transition:all 0.3s;
+	position: relative;
 }
 
 div.related_items a:hover {
@@ -735,11 +730,11 @@ div.related_items a:hover {
 }
 
 
- div.related_items a h5 {
- 	display: block;
- 	padding-top: 90px;
- 	color:#989898;
- }
+div.related_items a h5 {
+	display: block;
+	padding-top: 90px;
+	color:#989898;
+}
 
 div#order_policy {
 	display: block;
@@ -946,27 +941,27 @@ div#input_details label {
 }
 
 div#input_details label span {
-  display: inline-block;
-  width: 150px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: left;
+	display: inline-block;
+	width: 150px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
 }
 
 div#input_details label select, div#input_details label input {
-  width: 300px;
-  margin: 0px;
-  padding: 5px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border: 1px solid #B9B9B9;
-  border-radius:0px;
-  outline: none;
-  background-color: white;
-  box-shadow: none;
-  color: #333333;
-  transition-property: all;
-  transition-duration: 0.3s;
+	width: 300px;
+	margin: 0px;
+	padding: 5px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: 1px solid #B9B9B9;
+	border-radius:0px;
+	outline: none;
+	background-color: white;
+	box-shadow: none;
+	color: #333333;
+	transition-property: all;
+	transition-duration: 0.3s;
 }
 
 div#input_details label select, div#input_details label input:focus {
@@ -974,34 +969,34 @@ div#input_details label select, div#input_details label input:focus {
 }
 
 div#input_details label input[type=email], div#input_details label input[name=phone] {
-  width: 300px;
+	width: 300px;
 }
 
 div.checkout_controls button {
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  border: none;
-  border-radius: 0px;
-  box-shadow: none;
-  border-radius: none;
-  background-color: #212121;
-  background-image: none;
-  background-repeat:no-repeat;
-  color: white;
-  font-size: 1.1em;
-  font-weight: bold;
-  text-shadow: none;
-  vertical-align: top;
-  transition-property: all;
-  transition-duration: 0.3s;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: none;
+	border-radius: 0px;
+	box-shadow: none;
+	border-radius: none;
+	background-color: #212121;
+	background-image: none;
+	background-repeat:no-repeat;
+	color: white;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-shadow: none;
+	vertical-align: top;
+	transition-property: all;
+	transition-duration: 0.3s;
 }
 
 div.checkout_controls button:hover {
-  background-color: #f6c15c;
-  background-image: none;
+	background-color: #f6c15c;
+	background-image: none;
 }
 
 

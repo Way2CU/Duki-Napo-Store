@@ -4,7 +4,11 @@
 	<cms:var name="_DOCTYPE"/>
 	<html lang="$language" cms:eval="lang">
 		<head>
-			<title><cms:text constant="site_title"/><cms:raw text=" - "/><cms:text constant="menu_contact_us"/></title>
+			<title>
+				<cms:text constant="site_title"/>
+				<cms:raw text=" - "/>
+				<cms:text constant="menu_contact_us"/>
+			</title>
 			<cms:module
 				name="shop"
 				action="include_cart_scripts"
@@ -14,22 +18,23 @@
 
 		<body>
 			<cms:template file="parts/header.xml"/>
-			<div class="$section == 'contact_us' ? 'contact_us' : false"
-						cms:optional="class"
-						>
+			<div
+				class="$section == 'contact_us' ? 'contact_us' : false"
+				cms:optional="class"
+				>
 				<cms:module
-						name="articles"
-						action="show"
-						class="'article '.$params['text_id']" cms:eval="class"
-						text_id="address_article"
-						template="parts/article_no_heading.xml"
-						/>
+					name="articles"
+					action="show"
+					class="'article '.$params['text_id']" cms:eval="class"
+					text_id="address_article"
+					template="parts/article_no_heading.xml"
+					/>
 				<div class="form_wrap">
 					<h3><cms:text constant="form_title"/></h3>
 					<cms:module
-		 				name="contact_form"
-		 				action="show"
-		 				text_id="contact_form"
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
 						/>
 				</div>
 			</div>

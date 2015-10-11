@@ -3,7 +3,7 @@
  * DukiVeNapo Site
  *
  * Copyright (c) 2015. by Way2CU, http://way2cu.com
- * Authors:Tal Reznic
+ * Authors: Tal Reznic, Mladen Mijatov
  */
 
 header {
@@ -16,8 +16,8 @@ nav#user {
 	display: block;
 	text-align: center;
 	background-color: #212121;
-	color:white;
-	padding:20px calc((100vw - 1200px) / 2);
+	color: white;
+	padding: 20px calc((100vw - 1200px) / 2);
 }
 
 nav#user div.message {
@@ -157,11 +157,6 @@ nav#navigation > ul:first-of-type li a:hover:before {
 	width: 100%;
 }
 
-/*nav#navigation > ul:first-of-type li:first-of-type a {
-	padding-left: 0px;
-}*/
-
-
 header.home nav#navigation > ul:first-of-type li a{
 	color:white;
 }
@@ -218,29 +213,23 @@ nav#navigation > ul:last-of-type li a:hover:before {
 }
 
 nav#navigation > ul:last-of-type li a.active {
-	color:#f6c15c;
+	color: #f6c15c;
 }
 
 header.home nav#navigation > ul:last-of-type li a {
 	color:white;
 }
 
-
 div#cart {
 	display: inline-block;
-	vertical-align: middle;
-	text-align: right;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-	padding-left: 10px;
-	padding-right: 10px;
-	width:calc(33.3% - 20px);
 	position: relative;
-}
+	width:calc(33.3% - 20px);
+	vertical-align: middle;
+	padding: 10px 0.5;
 
-div#cart:hover div.popup {
-	visibility: visible;
-	opacity: 1;
+	text-align: right;
+
+	transition: all 0.5s;
 }
 
 header.home nav#navigation div#cart h5 {
@@ -262,25 +251,36 @@ div#cart > span {
 }
 
 div#cart > span:nth-of-type(2) {
+	margin-left: 10px;
 	margin-right: 10px;
 }
 
-/*
-	CART
-*/
-
+/**
+ * Cart
+ */
 div#cart div.popup {
 	display: inline-block;
 	position: absolute;
-	top:100%;
+	top: 100%;
 	right: 0px;
 	width: 400px;
+
 	background-color: white;
 	box-shadow: 0px 0px 5px grey;
+
+	transition: opacity 0.5s, visibility 0.5s;
+	transition-delay: 0s, 0.5s;
+
 	visibility: hidden;
 	opacity: 0;
-	transition: opacity 0.5s;
 	z-index: 10000;
+}
+
+div#cart:hover div.popup {
+	visibility: visible;
+	opacity: 1;
+
+	transition-delay: 0s;
 }
 
 header.home div#cart div.popup {
@@ -290,7 +290,6 @@ header.home div#cart div.popup {
 div#cart div.popup > ul {
 	display: block;
 	text-align: left;
-
 }
 
 div#cart div.popup > ul li {

@@ -15,6 +15,7 @@
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<cms:template file="parts/header.xml"/>
+
 			<cms:desktop>
 				<div id="image_rotate">
 					<cms:module
@@ -36,8 +37,8 @@
 						/>
 				</div>
 			</cms:mobile>
-			<cms:template file="parts/footer.xml"/>
 
+			<cms:template file="parts/footer.xml"/>
 		</body>
 	</html>
 </document>

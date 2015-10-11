@@ -45,7 +45,8 @@ Site.is_mobile = function() {
 	return result;
 };
 
- Site.ItemView = function(item) {
+
+Site.ItemView = function(item) {
 	var self = this;
 
 	self.item = item;
@@ -141,10 +142,6 @@ Site.is_mobile = function() {
 			self.container.removeClass('hidden');
 	};
 
-
-
-
-
 	/**
 	 * Handle item removal.
 	 */
@@ -154,8 +151,8 @@ Site.is_mobile = function() {
 
 	// finalize object
 	self._init();
-
 }
+
 
 Caracal.Gallery.Slideshow = function() {
     var self = this;
@@ -165,8 +162,6 @@ Caracal.Gallery.Slideshow = function() {
     self._index = 0;
     self.timeout = 0;
     self.timer_id = null;
-
-
 
     /**
      * Complete object initialization.
@@ -179,7 +174,6 @@ Caracal.Gallery.Slideshow = function() {
        // create control containers
         self.controls.next = $();
         self.controls.previous = $();
-
     };
 
     /**
@@ -220,7 +214,6 @@ Caracal.Gallery.Slideshow = function() {
 
          // show specified image
          self.show_image(new_index);
-
      }
 
      /**
@@ -230,7 +223,6 @@ Caracal.Gallery.Slideshow = function() {
      self.set_auto = function(timeout) {
 		self.timeout = timeout;
 		setInterval(self.next_step, self.timeout);
-
      }
 
     /**
@@ -238,7 +230,6 @@ Caracal.Gallery.Slideshow = function() {
      *  @param images
      *  @return object
      */
-
     self.images.add = function(images) {
         var list = typeof images == 'string' ? $(images) : images;
         self.images.list = self.images.list.add(list);
@@ -247,8 +238,9 @@ Caracal.Gallery.Slideshow = function() {
 
     /**
      *  Append list of images to container.
+
      *  @param array images
-     *  return object
+     *  @return object
     */
     self.images.append = function(images) {
         self.container.append(images);
@@ -275,8 +267,8 @@ Caracal.Gallery.Slideshow = function() {
      * @return object
      */
     self.images.set_container = function(container) {
-    self.container = $(container);
-    return self;
+		self.container = $(container);
+		return self;
     };
 
     /**
@@ -323,16 +315,14 @@ Site.on_load = function() {
 	if (Site.is_mobile()) {
 		Site.mobile_menu = new Caracal.MobileMenu();
 		Site.mobile_title = $('.mobile_title');
-
 	}
-
 
 	Caracal.lightbox = new LightBox('a.image.direct', false, false, true);
 
 	Site.cart = new Caracal.Shop.Cart();
 	Site.cart
 			.set_checkout_url('/shop/checkout')
-			.ui.connect_checkout_button($('div.popup div.controls button[name=checkout]'))
+			.ui.connect_checkout_button($('div#cart div.controls button[name=checkout]'))
 			.ui.connect_checkout_button($('a.checkout'))
 			.ui.add_item_list($('div.popup ul'))
 			.ui.add_total_count_label($('div#cart div.popup ul li.item span.quantity'))
@@ -346,7 +336,6 @@ Site.on_load = function() {
 	rotate.images.set_container($('div#image_rotate'))
 		  .images.add($('div#image_rotate figure'))
 		  .set_auto(4000);
-
 
 	// Function Displaying Product Big Image
 	function showImage() {
@@ -363,8 +352,9 @@ Site.on_load = function() {
 		var item = $(this);
 		item.addClass('active');
 		colorLinks.not(item).removeClass('active');
-		$('span.color_error').css('visibility','hidden')
-							 .css('opacity','0');
+		$('span.color_error')
+			.css('visibility','hidden')
+			.css('opacity','0');
 	}
 
 	var colorLinks = $('div.color span');
@@ -383,10 +373,9 @@ Site.on_load = function() {
 	sizesLinks.on('click',selectedSize);
 
 
-	/*
-	*
-	* Function Which Handles Add to cart call
-	*/
+	/**
+	 * Function Which Handles Add to cart call
+	 */
 	function insertToCart() {
 		var product_container = $('div.info_wrap');
 		var quantity = $('input[type="number"]').val();
@@ -395,35 +384,31 @@ Site.on_load = function() {
 		var uid = product_container.data('uid');
 		var properties = {'size':size,'color':color};
 
-		// get item with specified unique id
-			// var item_list = Site.cart.get_item_list_by_uid(uid);
-			// console.log(item_list);
+		var item_list = Site.cart.get_item_list_by_uid(uid);
+		var found_item = null;
 
-			var item_list = Site.cart.get_item_list_by_uid(uid);
-			var found_item = null;
+		for (var i=0, count=item_list.length; i<count; i++) {
+			var item = item_list[i];
 
-			for (var i=0, count=item_list.length; i<count; i++) {
-				var item = item_list[i];
-
-				if (item.properties.size == properties.size &&
-					item.properties.color == properties.color) {
-					found_item = item;
-					break;
-				}
+			if (item.properties.size == properties.size &&
+				item.properties.color == properties.color) {
+				found_item = item;
+				break;
 			}
+		}
 
-			if (found_item == null) {
-				// add new item
-				Site.cart.add_item_by_uid(uid,{'size':size,'color':color},quantity);
-				$('div.popup').addClass('activeCart');
-				$('a.cart_btn').addClass('enabled');
+		if (found_item == null) {
+			// add new item
+			Site.cart.add_item_by_uid(uid,{'size':size,'color':color},quantity);
+			$('div.popup').addClass('activeCart');
+			$('a.cart_btn').addClass('enabled');
 
-			} else {
-				// increase count
-				found_item.alter_count(1);
-				$('div.popup').addClass('activeCart');
-				$('a.cart_btn').addClass('enabled');
-			}
+		} else {
+			// increase count
+			found_item.alter_count(1);
+			$('div.popup').addClass('activeCart');
+			$('a.cart_btn').addClass('enabled');
+		}
 
 	}
 
@@ -431,7 +416,6 @@ Site.on_load = function() {
 	cartBtn.on('click',insertToCart);
 
 	// Mobile Version Functions
-
 	var mobileCartBtn = $('a.cart_btn');
 	var cart = $('div.popup');
 
@@ -439,11 +423,6 @@ Site.on_load = function() {
 		$(this).toggleClass('enabled');
 		cart.toggleClass('activeCart');
 	});
-
-
-
-
-
 };
 
 

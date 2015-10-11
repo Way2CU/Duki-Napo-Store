@@ -1,10 +1,10 @@
 ---
 site:
-  domain: sample.com
-  # subdomain: test
-  make_alias: false
+  domain: dukivenapo.com
+  subdomain: duki
+  make_alias: true
   root: httpdocs
-  username: "sample"
+  username: "duki"
   caracal_branch: develop
   # ip_address: 0.0.0.0
   # owner: Some Person

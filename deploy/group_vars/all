@@ -1,7 +1,7 @@
 ---
 site:
   domain: dukivenapo.com
-  subdomain: duki
+  # subdomain: duki
   make_alias: true
   root: httpdocs
   username: "duki"

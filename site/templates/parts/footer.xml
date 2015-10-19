@@ -39,8 +39,8 @@
 						</li>
 						<li>
 							<a
-								class="$section == 'contact_us' ? 'active' : false"
-								href="url_Make('', 'contact_us')"
+								class="$section == 'contact-us' ? 'active' : false"
+								href="url_Make('', 'contact-us')"
 								cms:eval="href"
 								cms:optional="class"
 								>
@@ -58,27 +58,31 @@
 					</ul>
 				</nav>
 			</cms:desktop>
+
 			<cms:module
-	 				name="contact_form"
-	 				action="show"
-	 				text_id="newsletter_form"
-						/>
+				name="contact_form"
+				action="show"
+				text_id="newsletter_form"
+				/>
+
 			<div class="social">
 				<span><cms:text constant="social_title"/></span>
 				<a href="#"></a>
 				<a href="#"></a>
 				<a href="#"></a>
 			</div>
+
 			<div class="payment">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
+				<span/>
+				<span/>
+				<span/>
+				<span/>
+				<span/>
+				<span/>
+				<span/>
 			</div>
 		</div>
+
 		<div class="rights">
 			<span><cms:text constant="duki_rights"/></span>
 			<span><cms:text constant="copyright"/></span>

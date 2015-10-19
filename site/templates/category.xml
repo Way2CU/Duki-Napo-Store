@@ -14,7 +14,10 @@
 
 		<body>
 			<cms:template file="parts/header.xml"/>
+
 			<section class="category">
+				<h1>TODO: Display category title</h1>
+
 				<cms:desktop>
 					<nav>
 						<h3><cms:text constant="nav_item_title"/></h3>
@@ -37,6 +40,7 @@
 						/>
 				</div>
 			</section>
+
 			<cms:template file="parts/footer.xml"/>
 		</body>
 	</html>

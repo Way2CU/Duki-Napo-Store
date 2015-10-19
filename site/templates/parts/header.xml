@@ -10,21 +10,25 @@
 
 			<!-- Top navigation -->
 			<nav id="user">
-				<div class="message">
-
-				</div>
-				<div >
+				<div class="message"/>
+				<div class="logo">
 					<a href="#"></a>
 				</div>
-				<ul>
-					<li><a class="checkout" href="#"><cms:text constant="menu_sign"/></a></li>
-					<li><a class="acount" href="#"><cms:text constant="menu_account"/></a></li>
+				<ul class="session">
+					<cms:guest>
+						<li><a class="checkout" href="#"><cms:text constant="menu_signup"/></a></li>
+						<li><a class="checkout" href="#"><cms:text constant="menu_login"/></a></li>
+					</cms:guest>
+					<cms:user>
+						<li><a class="acount" href="#"><cms:text constant="menu_account"/></a></li>
+						<li><a class="checkout" href="#"><cms:text constant="menu_logout"/></a></li>
+					</cms:user>
 				</ul>
 			</nav>
 
 			<!-- Bottom navigation -->
 			<nav id="navigation">
-				<ul>
+				<ul class="menu">
 					<li>
 						<a
 							class="$section == 'about_us' ? 'active' : false"
@@ -68,7 +72,7 @@
 				</ul>
 
 				<!-- Shop categories -->
-				<ul>
+				<ul class="categories">
 					<cms:module
 						name="shop"
 						action="show_category_list"
@@ -80,11 +84,9 @@
 
 				<!-- Shopping cart -->
 				<div id="cart">
-					<h5><cms:text constant="cart_title"/></h5>
+					<em><cms:text constant="label_cart"/></em>
 					<span class="count"></span>
-					<span>item(s)</span>
-					<span>$</span>
-					<span class="total"></span>
+					<span><cms:text constant="label_cart_items"/></span>
 
 					<cms:template file="parts/cart.xml"/>
 				</div>
@@ -94,9 +96,7 @@
 
 	<!-- Mobile version -->
 	<cms:mobile>
-
 		<header class="$section == 'home' ? 'home' : false" cms:optional="class">
-
 			<div class="mobile_title">
 				<a href="javascript:void(0)" class="menu"></a>
 				<a

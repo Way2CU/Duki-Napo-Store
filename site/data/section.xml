@@ -13,8 +13,14 @@
 	<section name="gallery">
 		<language name="all" file="gallery.xml" />
 	</section>
-	<section name="contact_us">
+	<section name="contact-us">
 		<language name="all" file="contact_us.xml" />
+	</section>
+	<section name="user">
+		<language name="all">
+			<action name="_default" file="control_panel.xml"/>
+			<action name="password-recovery" file="control_panel.xml"/>
+		</language>
 	</section>
 	<section name="shop">
 		<language name="all">
@@ -23,5 +29,4 @@
 			<action name="product" file="product-page.xml"/>
 		</language>
 	</section>
-
 </document>

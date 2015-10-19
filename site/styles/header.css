@@ -48,6 +48,8 @@ nav#user div.logo a {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 288px 60px;
+
+	text-decoration: none;
 }
 
 nav#user ul.session {
@@ -70,6 +72,7 @@ nav#user ul.session a {
 	padding: 10px;
 
 	color: white;
+	text-decoration: none;
 	overflow: hidden;
 	transition: all 0.3s;
 }
@@ -156,6 +159,7 @@ nav#navigation ul.categories a {
 	line-height: 105%;
 
 	color: #333333;
+	text-decoration: none;
 }
 
 header.home nav#navigation ul a {

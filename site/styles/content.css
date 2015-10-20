@@ -998,12 +998,49 @@ div.checkout_controls button:hover {
 }
 
 
+/**
+ * Dialogs
+ */
+div.dialog {
+	border: 1px solid #f6c15c;
+}
 
+div.dialog div.title {
+	background-color: #f6c15c;
+}
 
+div.dialog div.content p {
+	margin-top: 0;
+}
 
+div.dialog div.content div.inner_content {
+	padding: 20px;
+}
 
+div.dialog div.content form label {
+	display: block;
+	text-align: center;
+	margin-bottom: 10px;
+}
 
+div.dialog div.content form input:not([type=checkbox]) {
+	width: 350px;
+	text-align: left;
+	padding: 10px;
 
+	border: 1px solid #989898;
+	background-color: #e8e8e8;
 
+	color: #212121;
+}
 
+div.dialog div.content hr {
+	display: block;
+	height: 1px;
 
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	border: 0;
+	background-color: #f6c15c;
+}

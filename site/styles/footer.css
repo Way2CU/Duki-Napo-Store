@@ -71,7 +71,7 @@ nav#footer_nav ul li a:hover:before {
 	width: 100%;
 }
 
-form {
+footer form {
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 20px;
@@ -79,11 +79,11 @@ form {
 	width: 50%;
 }
 
-form label {
+footer form label {
 	display: block;
 }
 
-form label span {
+footer form label span {
 	display: inline-block;
 	vertical-align: middle;
 	padding-left: 5px;
@@ -91,7 +91,7 @@ form label span {
 	color:#989898;
 }
 
-form label input {
+footer form label input {
 	display: inline-block;
 	vertical-align: middle;
 	padding-top: 10px;

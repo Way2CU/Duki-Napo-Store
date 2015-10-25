@@ -6,51 +6,6 @@
  * Authors: Tal Reznic, Mladen Mijatov
  */
 
-a {
-	display: inline-block;
-	color:white;
-}
-
-a.active {
-	color:#f6c15c;
-}
-
-span, h5 {
-	font-size: 1em;
-	font-weight: 400;
-	color:white;
-}
-
-h2 {
-	display: block;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-h2.error {
-	display: block;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	color:#212121;
-	background-color:#e8e8e8;
-	transition:all 0.3s;
-}
-
-h3 {
-	display: block;
-	padding-bottom: 20px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-h5 {
-	margin: 0px;
-}
-
-ul {
-	margin: 0px;
-	padding: 0px;
-}
 
 div#image_rotate {
 	display: block;
@@ -98,6 +53,7 @@ div.about_article h3 {
 	padding-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
+
 	color:#212121;
 	border-bottom: 1px solid #e8e8e8;
 	width: 800px
@@ -263,8 +219,10 @@ div.process_article p img {
 
 div.process_article ol {
 	display: block;
+	margin: 0;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 0;
 	text-align: left;
 	width: 900px;
 	color:#989898;
@@ -272,8 +230,11 @@ div.process_article ol {
 
 div.process_article ul {
 	display: block;
+	margin: 0;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 0;
+
 	width: 900px;
 	color:#212121;
 }
@@ -316,17 +277,23 @@ div.benefits_article p {
 
 div.benefits_article ol {
 	display: block;
+	margin: 0;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
+	padding: 0;
 	width: 900px;
+
 	color:#989898;
+	text-align: left;
 }
 
 div.benefits_article ul {
 	display: block;
+	margin: 0;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 0;
+
 	width: 900px;
 	color:#212121;
 }

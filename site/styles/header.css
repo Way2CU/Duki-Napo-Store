@@ -57,6 +57,9 @@ nav#user ul.session {
 	width: calc(33.3% - 20px);
 	vertical-align: top;
 
+	margin: 0;
+	padding: 0;
+
 	list-style-type: none;
 	list-style-image: none;
 
@@ -68,6 +71,7 @@ nav#user ul.session li {
 }
 
 nav#user ul.session a {
+	display: inline-block;
 	position: relative;
 	padding: 10px;
 
@@ -122,6 +126,9 @@ nav#navigation ul.menu,
 nav#navigation ul.categories {
 	display: inline-block;
 	width: calc(33.3% - 20px);
+	margin: 0;
+	padding: 0;
+
 	text-align: center;
 }
 

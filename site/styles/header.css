@@ -247,8 +247,13 @@ div#cart:after {
 	left: 0;
 	content: '';
 
-	background-color: #f6c15c;
+	background-color: #6e6e6e;
 	transition: all 0.3s;
+}
+
+header.home div#cart:before,
+header.home div#cart:after {
+	background-color: #f6c15c;
 }
 
 div#cart:after {
@@ -257,6 +262,12 @@ div#cart:after {
 }
 
 div#cart:hover {
+	background-color: #6e6e6e;
+	background-color: rgba(110, 110, 110, 0.2);
+}
+
+header.home div#cart:hover {
+	background-color: #f6c15c;
 	background-color: rgba(246, 193, 92, 0.2);
 }
 

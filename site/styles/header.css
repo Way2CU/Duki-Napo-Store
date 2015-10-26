@@ -121,15 +121,31 @@ header.home nav#navigation {
 	border-bottom-color: #f6c15c;
 }
 
-div#cart,
-nav#navigation ul.menu,
-nav#navigation ul.categories {
+nav#navigation ul.menu {
 	display: inline-block;
-	width: calc(33.3% - 20px);
+	width: calc(45% - 20px);
 	margin: 0;
 	padding: 0;
 
 	text-align: center;
+}
+
+nav#navigation ul.categories {
+	display: inline-block;
+	width: calc(35% - 20px);
+	margin: 0;
+	padding: 0;
+
+	text-align: center;
+}
+
+div#cart {
+	display: inline-block;
+	width: calc(20% - 20px);
+	margin: 0;
+	padding: 0;
+
+	text-align: center;	
 }
 
 nav#navigation ul.menu,
@@ -145,8 +161,8 @@ nav#navigation ul.categories {
 }
 
 nav#navigation ul.categories {
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 nav#navigation ul.menu li,

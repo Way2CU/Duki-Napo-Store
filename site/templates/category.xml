@@ -18,27 +18,13 @@
 			<section class="category">
 				<h1>TODO: Display category title</h1>
 
-				<cms:desktop>
-					<nav>
-						<h3><cms:text constant="nav_item_title"/></h3>
-						<ul>
-							<cms:module
-								name="shop"
-								action="show_category_list"
-								template="parts/category_menu_item.xml"
-								/>
-						</ul>
-					</nav>
-				</cms:desktop>
-				<div >
-					<cms:module
-						name="shop"
-						action="show_item_list"
-						category="$_REQUEST['id']"
-						template="parts/shop_item.xml"
-						cms:eval="category"
-						/>
-				</div>
+				<cms:module
+					name="shop"
+					action="show_item_list"
+					category="$_REQUEST['id']"
+					template="parts/shop_item.xml"
+					cms:eval="category"
+					/>
 			</section>
 
 			<cms:template file="parts/footer.xml"/>

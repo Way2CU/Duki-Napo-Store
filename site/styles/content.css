@@ -322,19 +322,18 @@ div.gallery a {
 	width: 350px;
 	height: 250px;
 }
+
 div#lightbox a.close_button {
 	background-color: white;
 	color:black;
 }
 
-/*
-Shop Category Dynamic Page
+/**
+ * Shop item list
  */
-
 section.category {
 	display: block;
-	text-align: center;
-	padding:20px calc((100vw - 1200px) / 2);
+	padding: 20px calc((100vw - 1200px) / 2);
 }
 
 section.category  > div {
@@ -381,53 +380,67 @@ section.category  nav li a.active {
 	text-decoration: none;
 }
 
-section.category   div {
+/**
+ * Shop items
+ */
+section.category a.item {
 	display: inline-block;
 	vertical-align: top;
-	text-align: center;
+	min-width: 250px;
+	margin: 10px;
+	margin-top: 0;
+	padding: 10px;
+
+	position: relative;
+	top: 0;
+	border: 1px solid white;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+
+	text-decoration: none;
+
+	transition: all 0.3s;
 }
 
-section.category  div.item {
-	display: inline-block;
-	vertical-align: top;
-	text-align: center;
-	margin-bottom: 120px;
-	padding-left: 10px;
-	padding-right: 10px;
-	transition:all 0.3s;
+section.category a.item:hover {
+	top: -10px;
+	border-color: #e8e8e8;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-
-section.category  div.item a {
-	display: inline-block;
-	vertical-align: top;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: auto 100%;
+section.category a.item span.image {
+	display: block;
 	width: 250px;
-	height: 200px;
+	height: 250px;
+	margin-bottom: 10px;
+
+	white-space: nowrap;
+	text-align: center;
 }
 
-section.category  div.item a:hover h5 {
-	color:#F7C25D;
+section.category a.item span.image:before {
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	content: '';
 }
 
-section.category  div.item a h5 {
-	display: block;
-	padding-top: 210px;
-	color:#212121;
-	font-weight: 700;
-	text-transform: uppercase;
-	transition:all 0.3s;
+section.category a.item span.image img {
+	vertical-align: middle;
+	border: 1px solid #e8e8e8;
 }
 
-
-section.category  div.item a span {
-	display: block;
-	padding-top: 5px;
-	color:#6e6e6e;
+section.category a.item span.name {
+	color: #212121;
 }
 
+section.category a.item span.price {
+	float: right;
+	color: #6e6e6e;
+}
+
+section.category a.item span.price:before {
+	content: attr(data-currency);
+}
 
 /*
 product Dynamic Page

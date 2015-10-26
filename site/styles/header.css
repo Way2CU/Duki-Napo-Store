@@ -175,6 +175,13 @@ header.home nav#navigation ul a {
 
 nav#navigation ul.menu a:hover,
 nav#navigation ul.categories a:hover {
+	background-color: #6e6e6e;
+	background-color: rgba(110, 110, 110, 0.2);
+}
+
+header.home nav#navigation ul.menu a:hover,
+header.home nav#navigation ul.categories a:hover {
+	background-color: #f6c15c;
 	background-color: rgba(246, 193, 92, 0.2);
 }
 
@@ -189,9 +196,16 @@ nav#navigation ul.categories a:after {
 	left: 0;
 	content: '';
 
-	background-color: #f6c15c;
+	background-color: #6e6e6e;
 	line-height: 0;
 	transition: all 0.3s;
+}
+
+header.home nav#navigation ul.menu a:before,
+header.home nav#navigation ul.categories a:before,
+header.home nav#navigation ul.menu a:after,
+header.home nav#navigation ul.categories a:after {
+	background-color: #f6c15c;
 }
 
 nav#navigation ul.menu a:after,

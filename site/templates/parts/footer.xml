@@ -83,8 +83,7 @@
 			</div>
 		</div>
 
-		<div class="rights">
-			<span><cms:text constant="duki_rights"/></span>
+		<div class="copyright">
 			<span><cms:text constant="copyright"/></span>
 		</div>
 	</footer>

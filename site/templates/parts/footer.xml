@@ -6,49 +6,9 @@
 			<h2><cms:text constant="footer_title"/></h2>
 			<cms:desktop>
 				<nav id="footer_nav">
-					<ul>
-						<li>
-							<a
-								class="$section == 'about_us' ? 'active' : false"
-								href="url_Make('', 'about_us')"
-								cms:eval="href"
-								cms:optional="class"
-								>
-								<cms:text constant="menu_about_us"/>
-							</a>
-						</li>
-						<li>
-							<a
-								class="$section == 'diamonds' ? 'active' : false"
-								href="url_Make('', 'diamonds')"
-								cms:eval="href"
-								cms:optional="class"
-								>
-								<cms:text constant="menu_jewellery"/>
-							</a>
-						</li>
-						<li>
-							<a
-								class="$section == 'gallery' ? 'active' : false"
-								href="url_Make('', 'gallery')"
-								cms:eval="href"
-								cms:optional="class"
-								>
-								<cms:text constant="menu_gallery"/>
-							</a>
-						</li>
-						<li>
-							<a
-								class="$section == 'contact-us' ? 'active' : false"
-								href="url_Make('', 'contact-us')"
-								cms:eval="href"
-								cms:optional="class"
-								>
-								<cms:text constant="menu_contact_us"/>
-							</a>
-						</li>
-					</ul>
 
+					<cms:template file="parts/simple_menu_items.xml"/>
+					
 					<ul>
 						<cms:module
 							name="shop"

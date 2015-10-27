@@ -336,6 +336,11 @@ section.category {
 	padding: 20px calc((100vw - 1200px) / 2);
 }
 
+section.category h1 {
+	display: block;
+	text-align: center;
+}
+
 section.category  > div {
 	display: inline-block;
 	vertical-align: top;

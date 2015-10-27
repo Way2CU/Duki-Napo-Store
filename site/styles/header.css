@@ -130,11 +130,89 @@ nav#navigation ul.drop {
 	text-align: left;
 }
 
-nav#navigation ul.drop li {
+nav#navigation ul.drop > li {
 	display: inline-block;
+	position: relative;
+	transition: all 0.3s;
+}
+
+header.home nav#navigation ul.drop > li:hover > a {
+	background-color: rgba(246, 193, 92, 0.2);
+}
+
+nav#navigation ul.drop > li:hover > a {
+	background-color: rgba(110, 110, 110, 0.2);
+}
+
+header.home nav#navigation ul.drop > li:hover > a:before {
+	top: 0px;
+}
+
+nav#navigation ul.drop > li:hover > a:before {
+	top: 0px;
+}
+
+header.home nav#navigation ul.drop > li:hover > a:after {
+	top: 0px;
+}
+
+nav#navigation ul.drop > li:hover > a:after {
+	top: 0px;
+}
+
+nav#navigation ul.drop > li > a {
+	display: inline-block;
+	overflow: hidden;
 	position: relative;
 }
 
+nav#navigation ul.drop > li > a:hover:before {
+	top: 0px;
+}
+
+nav#navigation ul.drop > li > a:hover:after {
+	top: 0px;
+}
+
+header.home nav#navigation ul.drop > li > a:before {
+	content: "";
+	position: absolute;
+	top: -100%;
+	left: 0px;
+	width: 1px;
+	height: 100%;
+	background-color: #f6c15c;
+}
+
+nav#navigation ul.drop > li > a:before {
+	content: "";
+	position: absolute;
+	top: -100%;
+	left: 0px;
+	width: 1px;
+	height: 100%;
+	background-color: #6e6e6e;
+}
+
+header.home nav#navigation ul.drop > li > a:after {
+	content: "";
+	position: absolute;
+	top: -100%;
+	right: 0px;
+	width: 1px;
+	height: 100%;
+	background-color: #f6c15c;
+}
+
+nav#navigation ul.drop > li > a:after {
+	content: "";
+	position: absolute;
+	top: -100%;
+	right: 0px;
+	width: 1px;
+	height: 100%;
+	background-color: #6e6e6e; 
+}
 
 nav#navigation ul.drop ul.menu {
 	position: absolute;
@@ -166,12 +244,30 @@ nav#navigation ul.drop ul.menu li a {
 	transition: all 0.3s;
 }
 
+header.home nav#navigation ul.drop ul.menu li a:hover:before {
+	left: 0%;
+}
+
 nav#navigation ul.drop ul.menu li a:hover:before {
 	left: 0%;
 }
 
+header.home nav#navigation ul.drop ul.menu li a:hover:after {
+	right: 0%;
+}
+
 nav#navigation ul.drop ul.menu li a:hover:after {
 	right: 0%;
+}
+
+header.home nav#navigation ul.drop ul.menu li a:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: -100%;
+	width: 100%;
+	height: 1px;
+	background-color: #f6c15c;
 }
 
 nav#navigation ul.drop ul.menu li a:before {
@@ -179,6 +275,16 @@ nav#navigation ul.drop ul.menu li a:before {
 	position: absolute;
 	top: 0px;
 	left: -100%;
+	width: 100%;
+	height: 1px;
+	background-color: #6e6e6e;
+}
+
+header.home nav#navigation ul.drop ul.menu li a:after {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	right: -100%;
 	width: 100%;
 	height: 1px;
 	background-color: #f6c15c;
@@ -191,7 +297,7 @@ nav#navigation ul.drop ul.menu li a:after {
 	right: -100%;
 	width: 100%;
 	height: 1px;
-	background-color: #f6c15c;
+	background-color: #6e6e6e;
 }
 
 nav#navigation ul.drop li:hover ul.menu {
@@ -200,6 +306,7 @@ nav#navigation ul.drop li:hover ul.menu {
 	max-height: 300px;
 	transition-delay: 0.3s;
 }
+
 nav#navigation ul.categories {
 	display: inline-block;
 	width: 33.3%;
@@ -238,7 +345,7 @@ nav#navigation ul.categories li {
 	display: inline-block;
 	margin-right: 5px;
 }
-nav#navigation ul.drop a,
+nav#navigation  ul.drop a,
 nav#navigation ul.categories a {
 	display: inline-block;
 	position: relative;
@@ -255,7 +362,7 @@ nav#navigation ul.categories a {
 header.home nav#navigation ul a {
 	color: white;
 }
-nav#navigation ul.drop  a:hover,
+nav#navigation ul.drop a:hover,
 nav#navigation ul.categories a:hover {
 	background-color: #6e6e6e;
 	background-color: rgba(110, 110, 110, 0.2);
@@ -301,6 +408,8 @@ nav#navigation ul.drop a:hover:after,
 nav#navigation ul.categories a:hover:after {
 	bottom: 0;
 }
+
+
 
 /**
  * Cart

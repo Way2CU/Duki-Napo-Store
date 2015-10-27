@@ -145,7 +145,7 @@ div#cart {
 	margin: 0;
 	padding: 0;
 
-	text-align: center;	
+	text-align: center;
 }
 
 nav#navigation ul.menu,
@@ -292,13 +292,19 @@ div#cart:hover:after {
 	height: 100%;
 }
 
-div#cart em,
-div#cart span {
+div#cart > em,
+div#cart > span {
 	display: inline-block;
 	padding: 1em 0px;
 	line-height: 104%;
 
+	color: #6e6e6e;
 	cursor: default;
+}
+
+header.home div#cart > em,
+header.home div#cart > span {
+	color: white;
 }
 
 div#cart span:first-of-type {

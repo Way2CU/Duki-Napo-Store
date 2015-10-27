@@ -44,8 +44,12 @@
 
 			<!-- Bottom navigation -->
 			<nav id="navigation">
-				
-				<cms:template file="parts/simple_menu_items.xml"/>
+				<ul class="drop">
+					<li>
+						<a href="javascript:void(0)"><cms:text constant="menu_title"/></a>
+						<cms:template file="parts/simple_menu_items.xml"/>
+					</li>
+				</ul>
 
 				<!-- Shop categories -->
 				<ul class="categories">

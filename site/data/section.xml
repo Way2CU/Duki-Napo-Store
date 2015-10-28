@@ -5,7 +5,7 @@
 		<language name="all" file="home.xml" />
 	</section>
 	<section name="about_us">
-		<language name="all" file="about_us.xml" />
+		<language name="all" file="about-us.xml" />
 	</section>
 	<section name="diamonds">
 		<language name="all" file="diamonds.xml" />

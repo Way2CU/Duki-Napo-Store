@@ -2,8 +2,8 @@
 	<ul class="menu">
 		<li>
 			<a
-				class="$section == 'about_us' ? 'active' : false"
-				href="url_Make('', 'about_us')"
+				class="$section == 'about-us' ? 'active' : false"
+				href="url_Make('', 'about-us')"
 				cms:eval="href"
 				cms:optional="class"
 				>

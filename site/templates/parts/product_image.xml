@@ -1,9 +1,12 @@
 <document>
 	<a
-		href="javascript:void(0)"
-		style="'background-image: url('.$params['image'].');'"
-		data-image="$params['image']"
-		cms:eval="style,data-image"
+		href="$params['image']"
+		cms:eval="href"
 		>
+		<img
+			src="gallery::getThumbnailById($params['id'], null, 100)"
+			alt="$params['name']"
+			cms:eval="src,alt"
+			/>
 	</a>
 </document>

@@ -1,122 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../units/schema/template.dtd">
 <document>
-		<cms:mobile>
-			<article>
-				<h3><cms:var param="name" multilanguage="yes"/></h3>
-				<span><cms:var param="description" multilanguage="yes"/></span>
-				<span><cms:var param="price"/>$</span>
-			</article>
-		</cms:mobile>
-		<div class="images_wrap">
+	<cms:mobile>
+		<article>
+			<h1><cms:var param="name" multilanguage="yes"/></h1>
+			<cms:markdown param="description" multilanguage="yes"/>
+			<span><cms:var param="price"/>$</span>
+		</article>
+	</cms:mobile>
 
-			<figure style="'background-image: url('.$params['image'].');'" cms:eval="style"></figure>
-			<div class="product_gallery">
-			<cms:module
-				name="gallery"
-				action="show_image_list"
-				group_id="$params['gallery']"
-				template="parts/product_image.xml"
-				cms:eval="group_id"
-				/>
+	<div class="images">
+		<figure>
+			<a
+				href="$params['image']"
+				cms:eval="href"
+				>
+				<img
+					src="gallery::getGroupThumbnailById($params['gallery'], null, 436)"
+					alt="$params['name']"
+					cms:eval="src,alt"
+					/>
+			</a>
+		</figure>
+
+		<cms:module
+			name="gallery"
+			action="show_image_list"
+			group_id="$params['gallery']"
+			template="parts/product_image.xml"
+			cms:eval="group_id"
+			/>
+		<cms:module
+			name="gallery"
+			action="show_image_list"
+			group_id="$params['gallery']"
+			template="parts/product_image.xml"
+			cms:eval="group_id"
+			/>
+		<cms:module
+			name="gallery"
+			action="show_image_list"
+			group_id="$params['gallery']"
+			template="parts/product_image.xml"
+			cms:eval="group_id"
+			/>
+		<cms:module
+			name="gallery"
+			action="show_image_list"
+			group_id="$params['gallery']"
+			template="parts/product_image.xml"
+			cms:eval="group_id"
+			/>
+		<cms:module
+			name="gallery"
+			action="show_image_list"
+			group_id="$params['gallery']"
+			template="parts/product_image.xml"
+			cms:eval="group_id"
+			/>
+	</div>
+
+	<div class="info" data-uid="$params['uid']" cms:eval="data-uid">
+		<cms:desktop>
+			<article>
+				<h1><cms:var param="name" multilanguage="yes"/></h1>
+				<cms:markdown param="description" multilanguage="yes"/>
+			</article>
+		</cms:desktop>
+
+		<div class="properties">
+			<div class="color">
+				<p><cms:text constant="color"/></p>
+				<cms:color_list
+					id="$params['id']"
+					template="parts/item_colors.xml"
+					cms:eval="id"
+					/>
 			</div>
 
+			<div class="weight">
+				<p><cms:text constant="weight"/></p>
+				<span><cms:var param="weight"/>g</span>
+			</div>
+
+			<div class="size">
+				<p><cms:text constant="size"/></p>
+				<select>
+					<cms:value_list
+						definition="$params['size_definition']"
+						template="parts/size.xml"
+						cms:eval="definition"
+						/>
+				</select>
+			</div>
+
+			<label >
+				<p><cms:text constant="quantity"/></p>
+				<input type="number" value="1"/>
+			</label>
+
+			<div class="price">
+				<p><cms:text constant="price"/></p>
+				<span><cms:var param="price"/>$</span>
+			</div>
+			<a href="javascript:void(0)"><cms:text constant="add_to_cart"/></a>
 		</div>
 
-		<div class="info_wrap" data-uid="$params['uid']" cms:eval="data-uid">
-
-			<cms:desktop>
-				<article>
-					<h3><cms:var param="name" multilanguage="yes"/></h3>
-					<span><cms:var param="description" multilanguage="yes"/></span>
-				</article>
-			</cms:desktop>
-
-				<div class="info">
-
-					<div class="color">
-						<p><cms:text constant="color"/></p>
-						<cms:color_list
-	 						id="$params['id']"
-	 						template="parts/item_colors.xml"
-	 						cms:eval="id"
-						/>
-					</div>
-
-					<div class="weight">
-						<p><cms:text constant="weight"/></p>
-						<span><cms:var param="weight"/>g</span>
-					</div>
-
-					<div class="size">
-						<p><cms:text constant="size"/></p>
-						<select>
-							<cms:value_list
-								definition="$params['size_definition']"
-								template="parts/size.xml"
-								cms:eval="definition"
-							/>
-						</select>
-					</div>
-
-					<label >
-						<p><cms:text constant="quantity"/></p>
-						<input type="number" value="1"/>
-					</label>
-
-					<div class="price">
-						<p><cms:text constant="price"/></p>
-						<span><cms:var param="price"/>$</span>
-					</div>
-					<a href="javascript:void(0)"><cms:text constant="add_bag"/></a>
-				</div>
-
-				<div class="related_items">
-					<p><cms:text constant="related"/></p>
-					<cms:module
-						name="shop"
-						action="show_item_list"
-						category="$_REQUEST['category']"
-						related="$params['id']"
-						template="parts/related_items.xml"
-						cms:eval="related,category"
-						/>
-				</div>
-
-			<cms:desktop>
-
-				<div id="order_policy">
-					<label>
-						<input type="checkbox"/>
-						<h5>PRODUCT DETAILS</h5>
-						<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam veritatis, maxime saepe eos eveniet eaque! Facere, doloribus repellat, vitae accusamus dicta, quisquam debitis dolorem rem facilis provident odio itaque.</div>
-					</label>
-					<label>
-						<input type="checkbox"/>
-						<h5>SHIPPING</h5>
-						<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam veritatis, maxime saepe eos eveniet eaque! Facere, doloribus repellat, vitae accusamus dicta, quisquam debitis dolorem rem facilis provident odio itaque.</div>
-					</label>
-					<label>
-						<input type="checkbox"/>
-						<h5>RETURNS</h5>
-						<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam veritatis, maxime saepe eos eveniet eaque! Facere, doloribus repellat, vitae accusamus dicta, quisquam debitis dolorem rem facilis provident odio itaque.</div>
-					</label>
-					<label>
-						<input type="checkbox"/>
-						<h5>NEED ASSISTANCE?</h5>
-						<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam veritatis, maxime saepe eos eveniet eaque! Facere, doloribus repellat, vitae accusamus dicta, quisquam debitis dolorem rem facilis provident odio itaque.</div>
-					</label>
-				</div>
-				<div class="social">
-					<a href="#"></a>
-					<a href="#"></a>
-					<a href="#"></a>
-					<a href="#"></a>
-					<a href="#"></a>
-					<a href="#"></a>
-				</div>
-			</cms:desktop>
-
+		<div class="related_items">
+			<p><cms:text constant="related"/></p>
+			<cms:module
+				name="shop"
+				action="show_item_list"
+				category="$_REQUEST['category']"
+				related="$params['id']"
+				template="parts/related_items.xml"
+				cms:eval="related,category"
+				/>
 		</div>
 
+		<cms:desktop>
+			<div id="order_policy">
+				<label>
+					<input type="checkbox"/>
+					<h5>PRODUCT DETAILS</h5>
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam veritatis, maxime saepe eos eveniet eaque! Facere, doloribus repellat, vitae accusamus dicta, quisquam debitis dolorem rem facilis provident odio itaque.</div>
+				</label>
+				<label>
+					<input type="checkbox"/>
+					<h5>SHIPPING</h5>
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam veritatis, maxime saepe eos eveniet eaque! Facere, doloribus repellat, vitae accusamus dicta, quisquam debitis dolorem rem facilis provident odio itaque.</div>
+				</label>
+				<label>
+					<input type="checkbox"/>
+					<h5>RETURNS</h5>
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam veritatis, maxime saepe eos eveniet eaque! Facere, doloribus repellat, vitae accusamus dicta, quisquam debitis dolorem rem facilis provident odio itaque.</div>
+				</label>
+				<label>
+					<input type="checkbox"/>
+					<h5>NEED ASSISTANCE?</h5>
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam veritatis, maxime saepe eos eveniet eaque! Facere, doloribus repellat, vitae accusamus dicta, quisquam debitis dolorem rem facilis provident odio itaque.</div>
+				</label>
+			</div>
+			<div class="social">
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+			</div>
+		</cms:desktop>
+	</div>
 </document>

@@ -129,6 +129,8 @@ footer form label input {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 5px;
+	background-color: #e8e8e8;
+	border: 1px solid #f6c15c; 
 	width: 50%;
 }
 

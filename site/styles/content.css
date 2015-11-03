@@ -133,40 +133,49 @@ div.contact_us div.form_wrap form label:last-of-type span {
 }
 
 div.contact_us div.form_wrap form label input {
-	width: 80%;
-	border:1px solid #989898;
-	transition:all 0.3s;
+    width: 400px;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #989898;
+    background-color: #e8e8e8;
+    color: #212121;
+    transition: all 0.3s;
 }
 
 div.contact_us div.form_wrap form label textarea {
-	display: inline-block;
-	vertical-align: middle;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 5px;
-	width: 80%;
-	height: 150px;
-	border:1px solid #989898;
-	transition:all 0.3s;
+    width: 400px;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #989898;
+    background-color: #e8e8e8;
+    color: #212121;
+    transition: all 0.3s;
 }
 
-div.contact_us div.form_wrap form label input:focus,div.form_wrap form label textarea:focus {
+div.contact_us div.form_wrap form label input:focus,div.contact_us div.form_wrap form label textarea:focus {
 	border:1px solid #f6c15c;
 }
 
+div.contact_us div.form_wrap form div.controls {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+}
+
 div.contact_us div.form_wrap form div.controls button {
-	display: inline-block;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 30px;
-	padding-right: 30px;
-	background-color: #212121;
-	border:none;
-	border-radius: 5px;
-	color:white;
-	font-size: 1em;
-	cursor: pointer;
-	transition:all 0.3s;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.4em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border: 1px solid #989898;
+    background-color: #a0a0a0;
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: all 0.3s;
 }
 
 div.contact_us div.form_wrap form div.controls button:hover {

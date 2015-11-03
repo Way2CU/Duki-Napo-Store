@@ -96,7 +96,7 @@ div.address_article h3 {
 	width: 400px;
 }
 
-div.form_wrap {
+div.contact_us div.form_wrap {
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
@@ -106,21 +106,21 @@ div.form_wrap {
 	width: calc(50% - 20px);
 }
 
-div.form_wrap h3 {
+div.contact_us div.form_wrap h3 {
 	border-bottom: 1px solid #e8e8e8;
 }
 
-div.form_wrap form {
+div.contact_us div.form_wrap form {
 	display: block;
 	width: 100%;
 }
 
-div.form_wrap form label {
+div.contact_us div.form_wrap form label {
 	display: block;
 	padding-bottom: 15px;
 }
 
-div.form_wrap form label span {
+div.contact_us div.form_wrap form label span {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: left;
@@ -128,17 +128,17 @@ div.form_wrap form label span {
 	font-size: 1.2em;
 }
 
-div.form_wrap form label:last-of-type span {
+div.contact_us div.form_wrap form label:last-of-type span {
 	vertical-align: top;
 }
 
-div.form_wrap form label input {
+div.contact_us div.form_wrap form label input {
 	width: 80%;
 	border:1px solid #989898;
 	transition:all 0.3s;
 }
 
-div.form_wrap form label textarea {
+div.contact_us div.form_wrap form label textarea {
 	display: inline-block;
 	vertical-align: middle;
 	padding-top: 15px;
@@ -150,11 +150,11 @@ div.form_wrap form label textarea {
 	transition:all 0.3s;
 }
 
-div.form_wrap form label input:focus,div.form_wrap form label textarea:focus {
+div.contact_us div.form_wrap form label input:focus,div.form_wrap form label textarea:focus {
 	border:1px solid #f6c15c;
 }
 
-div.form_wrap form div.controls button {
+div.contact_us div.form_wrap form div.controls button {
 	display: inline-block;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -169,7 +169,7 @@ div.form_wrap form div.controls button {
 	transition:all 0.3s;
 }
 
-div.form_wrap form div.controls button:hover {
+div.contact_us div.form_wrap form div.controls button:hover {
 	background-color:#B0883C;
 }
 

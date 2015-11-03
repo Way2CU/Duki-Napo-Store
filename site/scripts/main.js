@@ -336,7 +336,7 @@ Site.handle_add_to_cart = function(event) {
 		}
 	}
 
-	if (found_item) {
+	if (!found_item) {
 		// add new item
 		Site.cart.add_item_by_uid(uid, properties, quantity);
 		$('div.popup').addClass('activeCart');
@@ -1208,7 +1208,7 @@ Site.on_load = function() {
 			.add_item_view(Site.ItemView);
 
 	// create home page image slider
-	if ($('div#image_rotate').lenght > 0) {
+	if ($('div#image_rotate').length > 0) {
 		var rotate = new Caracal.Gallery.Slideshow();
 		rotate.images.set_container($('div#image_rotate'))
 			.images.add($('div#image_rotate figure'))

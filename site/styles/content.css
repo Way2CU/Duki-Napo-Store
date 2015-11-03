@@ -87,7 +87,6 @@ div.address_article {
 	vertical-align: top;
 	padding-left: 10px;
 	padding-right: 10px;
-	color:#989898;
 	width: calc(50% - 20px);
 }
 
@@ -96,31 +95,30 @@ div.address_article h3 {
 	width: 400px;
 }
 
-div.form_wrap {
+div.contact_us div.form_wrap {
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
 	padding-left: 10px;
 	padding-right: 10px;
-	color:#989898;
 	width: calc(50% - 20px);
 }
 
-div.form_wrap h3 {
+div.contact_us div.form_wrap h3 {
 	border-bottom: 1px solid #e8e8e8;
 }
 
-div.form_wrap form {
+div.contact_us div.form_wrap form {
 	display: block;
 	width: 100%;
 }
 
-div.form_wrap form label {
+div.contact_us div.form_wrap form label {
 	display: block;
 	padding-bottom: 15px;
 }
 
-div.form_wrap form label span {
+div.contact_us div.form_wrap form label span {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: left;
@@ -128,49 +126,57 @@ div.form_wrap form label span {
 	font-size: 1.2em;
 }
 
-div.form_wrap form label:last-of-type span {
+div.contact_us div.form_wrap form label:last-of-type span {
 	vertical-align: top;
 }
 
-div.form_wrap form label input {
-	width: 80%;
-	border:1px solid #989898;
-	transition:all 0.3s;
+div.contact_us div.form_wrap form label input {
+    width: 400px;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #989898;
+    background-color: #e8e8e8;
+    transition: all 0.3s;
 }
 
-div.form_wrap form label textarea {
-	display: inline-block;
-	vertical-align: middle;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 5px;
-	width: 80%;
-	height: 150px;
-	border:1px solid #989898;
-	transition:all 0.3s;
+div.contact_us div.form_wrap form label textarea {
+    width: 400px;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #989898;
+    background-color: #e8e8e8;
+    transition: all 0.3s;
 }
 
-div.form_wrap form label input:focus,div.form_wrap form label textarea:focus {
+div.contact_us div.form_wrap form label input:focus,div.contact_us div.form_wrap form label textarea:focus {
 	border:1px solid #f6c15c;
 }
 
-div.form_wrap form div.controls button {
-	display: inline-block;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 30px;
-	padding-right: 30px;
-	background-color: #212121;
-	border:none;
-	border-radius: 5px;
-	color:white;
-	font-size: 1em;
-	cursor: pointer;
-	transition:all 0.3s;
+div.contact_us div.form_wrap form div.controls {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
 }
 
-div.form_wrap form div.controls button:hover {
-	background-color:#B0883C;
+div.contact_us div.form_wrap form div.controls button {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.4em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border: 1px solid #989898;
+    background-color: #a0a0a0;
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+div.contact_us div.form_wrap form div.controls button:hover {
+	background-color: #d0d0d0;
+	border:1px solid #f6c15c;
 }
 
 /**
@@ -305,22 +311,24 @@ Gallery Page
 div.gallery {
 	display: block;
 	text-align: center;
-	padding:0px calc((100vw - 1200px) / 2);
+	padding:20px calc((100vw - 1200px) / 2);
 }
 
 
 div.gallery a {
 	display: inline-block;
 	vertical-align: middle;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
-	background-repeat:no-repeat;
-	background-position: center center;
-	background-size: auto 100%;
 	width: 350px;
-	height: 250px;
+	height: 220px;
+	overflow: hidden;
+}
+
+div.gallery a img {
+	display: block;
 }
 
 div#lightbox a.close_button {

@@ -538,7 +538,6 @@ div#cart div.popup > ul li div span {
 	padding-left: 10px;
 	padding-right: 10px;
 	text-align: left;
-	color:#212121;
 }
 
 div#cart div.popup > ul li div span:first-of-type {
@@ -553,7 +552,6 @@ div#cart div.popup > ul li > span {
 	padding-left: 10px;
 	padding-right: 10px;
 	width: calc(10% - 20px);
-	color:#212121;
 }
 
 div#cart div.popup > ul li a {
@@ -570,7 +568,6 @@ div#cart div.popup > ul li a {
 	width: calc(10% - 20px);
 }
 
-
 div#cart div.popup div.total_count {
 	display: block;
 	text-align: left;
@@ -583,8 +580,6 @@ div#cart div.popup div.total_count {
 div#cart div.popup div.total_count span {
 	display: inline-block;
 	vertical-align: middle;
-	color:#212121;
-	width: 100px;
 }
 
 div#cart div.popup div.total_count span:last-of-type {
@@ -607,9 +602,7 @@ div#cart div.popup div.controls button {
 	padding-right: 30px;
 	background-color: #212121;
 	border: none;
-	border-radius: 5px;
 	color: white;
-	font-size: 0.8em;
 	cursor: pointer;
 	transition: all 0.3s;
 }

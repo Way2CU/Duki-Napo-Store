@@ -179,7 +179,8 @@ div.contact_us div.form_wrap form div.controls button {
 }
 
 div.contact_us div.form_wrap form div.controls button:hover {
-	background-color:#B0883C;
+	background-color: #d0d0d0;
+	border:1px solid #f6c15c;
 }
 
 /**

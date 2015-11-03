@@ -311,22 +311,24 @@ Gallery Page
 div.gallery {
 	display: block;
 	text-align: center;
-	padding:0px calc((100vw - 1200px) / 2);
+	padding:20px calc((100vw - 1200px) / 2);
 }
 
 
 div.gallery a {
 	display: inline-block;
 	vertical-align: middle;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
-	background-repeat:no-repeat;
-	background-position: center center;
-	background-size: auto 100%;
 	width: 350px;
-	height: 250px;
+	height: 220px;
+	overflow: hidden;
+}
+
+div.gallery a img {
+	display: block;
 }
 
 div#lightbox a.close_button {

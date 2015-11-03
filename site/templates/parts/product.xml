@@ -103,28 +103,27 @@
 		</div>
 
 		<cms:desktop>
-			<div id="order_policy">
-				<label>
-					<input type="checkbox"/>
-					<h5>PRODUCT DETAILS</h5>
-					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam veritatis, maxime saepe eos eveniet eaque! Facere, doloribus repellat, vitae accusamus dicta, quisquam debitis dolorem rem facilis provident odio itaque.</div>
-				</label>
-				<label>
-					<input type="checkbox"/>
-					<h5>SHIPPING</h5>
-					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam veritatis, maxime saepe eos eveniet eaque! Facere, doloribus repellat, vitae accusamus dicta, quisquam debitis dolorem rem facilis provident odio itaque.</div>
-				</label>
-				<label>
-					<input type="checkbox"/>
-					<h5>RETURNS</h5>
-					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam veritatis, maxime saepe eos eveniet eaque! Facere, doloribus repellat, vitae accusamus dicta, quisquam debitis dolorem rem facilis provident odio itaque.</div>
-				</label>
-				<label>
-					<input type="checkbox"/>
-					<h5>NEED ASSISTANCE?</h5>
-					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nam veritatis, maxime saepe eos eveniet eaque! Facere, doloribus repellat, vitae accusamus dicta, quisquam debitis dolorem rem facilis provident odio itaque.</div>
-				</label>
+			<div class="policy">
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="short_shipping_policy"
+					template="parts/policy.xml"
+					/>
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="short_return_policy"
+					template="parts/policy.xml"
+					/>
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="short_need_assistance"
+					template="parts/policy.xml"
+					/>
 			</div>
+
 			<div class="social">
 				<a href="#"></a>
 				<a href="#"></a>
@@ -136,7 +135,7 @@
 		</cms:desktop>
 
 		<div class="related_items">
-			<p><cms:text constant="related"/></p>
+			<h3><cms:text constant="related"/></h3>
 			<cms:module
 				name="shop"
 				action="show_item_list"
@@ -146,6 +145,5 @@
 				cms:eval="related,category"
 				/>
 		</div>
-
 	</div>
 </document>

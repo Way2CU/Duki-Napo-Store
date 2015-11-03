@@ -28,8 +28,12 @@ nav#user {
 
 nav#user div.message {
 	display: inline-block;
-	width: calc(33.3% - 20px);
+	width: calc(33.3% - 20px - 100px);
 	vertical-align: top;
+	padding-top: 10px;
+	padding-right: 100px;
+
+	text-align: left;
 }
 
 nav#user div.logo {

@@ -18,9 +18,19 @@
 
 			<!-- Top navigation -->
 			<nav id="user">
-				<div class="message"/>
+				<div class="message">
+					<cms:guest>
+						<cms:text constant="welcome_guest"/>
+					</cms:guest>
+					<cms:user>
+						<cms:text constant="welcome_user"/>
+						<cms:raw text="&amp;nbsp;"/>
+						<cms:var name="$_SESSION['fullname']"/>
+						<cms:text constant="welcome_user2"/>
+					</cms:user>
+				</div>
 				<div class="logo">
-					<a href="#"></a>
+					<a href="url_Make()" cms:eval="href"/>
 				</div>
 				<ul class="session">
 					<cms:guest>

@@ -593,73 +593,78 @@ section.product div.properties > div h4 {
 	padding: 0;
 }
 
-div.info_wrap div.info label {
-	display: block;
-	padding-bottom: 20px;
-}
-
-div.info_wrap div.info label h3 {
-	display: inline-block;
-	vertical-align: middle;
-	width: 15%;
-}
-
-div.info_wrap div.info label p {
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0px;
-	padding: 0px;
-	color:#989898;
-}
-
-div.info label input[type="number"] {
-	display: inline-block;
-	vertical-align: middle;
-	text-align: center;
-	margin-left: 5px;
-	margin-right: 5px;
-	width: 40px;
-}
-
-div.info a {
+section.product div.info a {
 	display: inline-block;
 	padding: 10px 15px;
+	background-color: #212121;
+	margin-top: 20px;
+
+	color: white;
 	font-size: 1em;
-	background-color:#212121;
-	cursor: pointer;
+	text-decoration: none;
+
 	overflow: hidden;
 	position: relative;
 	z-index: 1;
 }
 
-div.info a:before {
+section.product div.info a:before {
 	content: "";
 	position: absolute;
 	display: inline-block;
 	top: 0px;
-	left: 0px;
+	left: -100%;
 	width: 100%;
 	height: 100%;
 	background-color:#f6c15c;
-	-webkit-transform:translateX(-100%);
 	transition:all 0.5s;
 	z-index: -1;
 }
 
-div.info a:hover:before {
-	-webkit-transform:translateX(0%);
-	width: 100%;
-	height: 100%;
+section.product div.info a:hover:before {
+	left: 0;
 }
 
-div.related_items {
+section.product div.policy {
+	display: block;
+	margin-top: 20px;
+	padding-top: 20px;
+
+	border-top: 1px solid #e8e8e8;
+}
+
+section.product div.policy label {
+	display: block;
+	font-size: 1.2em;
+}
+
+section.product div.policy input {
+	display: none;
+}
+
+section.product div.policy > div > div {
+	display: block;
+	max-height: 0;
+	opacity: 0;
+	visibility: hidden;
+
+	transition: all 0.5s;
+}
+
+section.product div.policy input:checked + div {
+	visibility: visible;
+	opacity: 1;
+	max-height: 400px;
+}
+
+section.product div.related_items {
 	display: block;
 	padding-top: 20px;
 	padding-bottom: 60px;
 	border-bottom: 1px solid #e8e8e8;
 }
 
-div.related_items p {
+section.product div.related_items p {
 	display: block;
 	margin: 0px;
 	padding-bottom: 20px;
@@ -667,7 +672,7 @@ div.related_items p {
 	font-size: 1.5em;
 }
 
-div.related_items a {
+section.product div.related_items a {
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 10px;
@@ -684,86 +689,15 @@ div.related_items a {
 	position: relative;
 }
 
-div.related_items a:hover {
+section.product div.related_items a:hover {
 	border-bottom: 2px solid #f6c15c;
 }
 
-
-div.related_items a h5 {
+section.product div.related_items a h5 {
 	display: block;
 	padding-top: 90px;
 	color:#989898;
 }
-
-div#order_policy {
-	display: block;
-}
-
-div#order_policy label {
-	display: block;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	border-bottom: 1px solid #e8e8e8;
-	cursor: pointer;
-
-}
-
-div#order_policy label input[type="checkbox"] {
-	display: inline-block;
-	vertical-align: middle;
-	float: right;
-	display: block;
-	position: relative;
-	cursor: pointer;
-
-}
-
-div#order_policy label input[type="checkbox"]:before {
-	content: "";
-	position: absolute;
-	top: 0px;
-	left: -4px;
-	background-color: rgb(255, 255, 255);
-	background-image: url(../images/social/arrow_mobile.svg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 20px 20px;
-	width: 20px;
-	height: 20px;
-	transform: rotate(90deg);
-	transition: all 0.3s;
-
-
-}
-
-div#order_policy label input[type="checkbox"]:checked ~ div {
-	display: block;
-	padding-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-div#order_policy label input[type="checkbox"]:checked:before {
-	transform:rotate(270deg);
-}
-
-
-div#order_policy label h5 {
-	display: inline-block;
-	vertical-align: middle;
-	font-style: italic;
-	color: #989898;
-}
-
-div#order_policy label div {
-	display: none;
-	color: #989898;
-	padding-top: 20px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-
 
 section.product div.social {
 	display: block;

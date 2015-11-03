@@ -6,9 +6,9 @@
 		>
 		<img 
 			src="gallery::getThumbnailById($params['id'], null, 350,Thumbnail::CONSTRAIN_BOTH)"
-			alt="$params['title']['language']"
+			alt="$params['title'][$language]"
 			cms:eval="src,alt"
 			/>
-		<span><cms:var name="$params['title'][$language]"/></span>
+		<span><cms:var param="title" multilanguage="yes"/></span>
 	</a>
 </document>

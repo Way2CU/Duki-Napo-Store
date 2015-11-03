@@ -130,11 +130,11 @@ Site.ItemView = function(item) {
 
 		self.label_name.text(self.item.name[language_handler.current_language]);
 
-		self.label_color.text("COLOR : " + self.item.properties.color);
+		self.label_color.text(language_handler.getText(null, 'color') + self.item.properties.color);
 
-		self.label_size.text("SIZE : " + self.item.properties.size);
+		self.label_size.text(language_handler.getText(null, 'size') + self.item.properties.size);
 
-		self.label_price.text("$" + self.item.price );
+		self.label_price.text(language_handler.getText(null, 'money_sign')  + self.item.price );
 
 		self.label_removeItem.on('click',function() {
 			event.preventDefault();

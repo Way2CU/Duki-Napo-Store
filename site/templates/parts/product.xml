@@ -70,7 +70,7 @@
 
 		<div class="properties">
 			<div class="color">
-				<p><cms:text constant="color"/></p>
+				<h4><cms:text constant="property_color"/></h4>
 				<cms:color_list
 					id="$params['id']"
 					template="parts/item_colors.xml"
@@ -78,13 +78,8 @@
 					/>
 			</div>
 
-			<div class="weight">
-				<p><cms:text constant="weight"/></p>
-				<span><cms:var param="weight"/>g</span>
-			</div>
-
 			<div class="size">
-				<p><cms:text constant="size"/></p>
+				<h4><cms:text constant="property_size"/></h4>
 				<select>
 					<cms:value_list
 						definition="$params['size_definition']"
@@ -94,28 +89,17 @@
 				</select>
 			</div>
 
-			<label >
-				<p><cms:text constant="quantity"/></p>
-				<input type="number" value="1"/>
-			</label>
+			<div class="weight">
+				<h4><cms:text constant="property_weight"/></h4>
+				<span><cms:var param="weight"/>g</span>
+			</div>
 
 			<div class="price">
-				<p><cms:text constant="price"/></p>
+				<h4><cms:text constant="property_price"/></h4>
 				<span><cms:var param="price"/>$</span>
 			</div>
-			<a href="javascript:void(0)"><cms:text constant="add_to_cart"/></a>
-		</div>
 
-		<div class="related_items">
-			<p><cms:text constant="related"/></p>
-			<cms:module
-				name="shop"
-				action="show_item_list"
-				category="$_REQUEST['category']"
-				related="$params['id']"
-				template="parts/related_items.xml"
-				cms:eval="related,category"
-				/>
+			<a href="javascript:void(0)"><cms:text constant="add_to_cart"/></a>
 		</div>
 
 		<cms:desktop>
@@ -150,5 +134,18 @@
 				<a href="#"></a>
 			</div>
 		</cms:desktop>
+
+		<div class="related_items">
+			<p><cms:text constant="related"/></p>
+			<cms:module
+				name="shop"
+				action="show_item_list"
+				category="$_REQUEST['category']"
+				related="$params['id']"
+				template="parts/related_items.xml"
+				cms:eval="related,category"
+				/>
+		</div>
+
 	</div>
 </document>

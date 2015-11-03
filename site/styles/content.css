@@ -563,70 +563,25 @@ section.product div.info article h1 {
 	padding: 0;
 }
 
-div.color {
-	display: block;
-	padding-top: 20px;
-	padding-bottom: 20px;
+section.product div.properties {
 }
 
-div.color p {
+section.product div.properties > div {
 	display: inline-block;
-	vertical-align: middle;
-	margin: 0px;
-	padding: 0px;
-	color:#989898;
+	width: calc((100% / 4) - 30px);
+	vertical-align: top;
+	margin-right: 10px;
+	margin-bottom: 10px;
 }
 
-div.color span {
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: 10px;
-	color:#989898;
+section.product div.properties > div:last-of-type {
+	margin-right: 0;
 }
 
-div.weight {
-	display: block;
-	padding-bottom: 20px;
-}
-
-div.weight p {
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0px;
-	padding: 0px;
-	color:#989898;
-}
-
-div.weight span {
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: 10px;
-	color:#989898;
-}
-
-div.size {
-	display: block;
-	padding-bottom: 20px;
-}
-
-div.size p {
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0px;
-	padding: 0px;
-	color:#989898;
-}
-
-div.size select {
-	margin-left:10px;
-}
-
-
-div.size span {
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: 10px;
-	color:#989898;
+section.product div.properties > div h4 {
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
 }
 
 div.info_wrap div.info label {
@@ -655,26 +610,6 @@ div.info label input[type="number"] {
 	margin-left: 5px;
 	margin-right: 5px;
 	width: 40px;
-}
-
-div.price {
-	display: block;
-	padding-bottom: 20px;
-}
-
-div.price p {
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0px;
-	padding: 0px;
-	color:#989898;
-}
-
-div.price span {
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: 10px;
-	color:#989898;
 }
 
 div.info a {

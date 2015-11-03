@@ -8,11 +8,11 @@
 		</ul>
 
 		<div class="total_count">
-			<span>CA Sales Tax:</span>
+			<span><cms:text constant="tax"/></span>
 			<span></span>
 		</div>
 		<div class="total_count">
-			<span>Total:</span>
+			<span><cms:text constant="total"/></span>
 			<span class="cart_total"></span>
 		</div>
 

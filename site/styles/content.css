@@ -572,9 +572,6 @@ section.product div.info article h1 {
 	padding: 0;
 }
 
-section.product div.properties {
-}
-
 section.product div.properties > div {
 	display: inline-block;
 	width: calc((100% / 4) - 30px);
@@ -593,7 +590,7 @@ section.product div.properties > div h4 {
 	padding: 0;
 }
 
-section.product div.info a {
+section.product div.info a.btn_cart {
 	display: inline-block;
 	padding: 10px 15px;
 	background-color: #212121;
@@ -608,7 +605,7 @@ section.product div.info a {
 	z-index: 1;
 }
 
-section.product div.info a:before {
+section.product div.info a.btn_cart:before {
 	content: "";
 	position: absolute;
 	display: inline-block;
@@ -621,7 +618,7 @@ section.product div.info a:before {
 	z-index: -1;
 }
 
-section.product div.info a:hover:before {
+section.product div.info a.btn_cart:hover:before {
 	left: 0;
 }
 
@@ -705,7 +702,7 @@ section.product div.social {
 	padding-bottom: 20px;
 }
 
-section.product div.social a {
+section.product div.social  a {
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 15px;
@@ -718,57 +715,57 @@ section.product div.social a {
 	height: 30px;
 }
 
-section.product div.social a:nth-of-type(1) {
+section.product div.social a.facebook {
 	margin-left: 0px;
 	transition:all 0.3s;
 }
 
-section.product div.social a:nth-of-type(1):hover {
+section.product div.social a.facebook:hover {
 	background-position: 0px -30px;
 }
 
-section.product div.social a:nth-of-type(2) {
+section.product div.social a.tweeter {
 	background-position: -50px 0px;
 	transition:all 0.3s;
 }
 
-section.product div.social a:nth-of-type(2):hover {
+section.product div.social a.tweeter:hover {
 	background-position: -50px -30px;
 }
 
-section.product div.social a:nth-of-type(3) {
+section.product div.social a.pinterst {
 	background-position: -100px 0px;
 	transition:all 0.3s;
 }
 
-section.product div.social a:nth-of-type(3):hover {
+section.product div.social a.pinterst:hover {
 	background-position: -100px -30px;
 }
 
-section.product div.social a:nth-of-type(4) {
+section.product div.social a.instagram {
 	background-position: -150px 0px;
 	transition:all 0.3s;
 }
 
-section.product div.social a:nth-of-type(4):hover {
+section.product div.social a.instagram:hover {
 	background-position: -150px -30px;
 }
 
-section.product div.social a:nth-of-type(5) {
+section.product div.social  a.google_plus {
 	background-position: -200px 0px;
 	transition:all 0.3s;
 }
 
-section.product div.social a:nth-of-type(5):hover {
+section.product div.social  a.google_plus:hover {
 	background-position: -200px -30px;
 }
 
-section.product div.social a:nth-of-type(6) {
+section.product div.social a.mail {
 	background-position: -250px 0px;
 	transition:all 0.3s;
 }
 
-section.product div.social a:nth-of-type(6):hover {
+section.product div.social a.mail:hover {
 	background-position: -250px -30px;
 }
 

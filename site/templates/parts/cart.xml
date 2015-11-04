@@ -8,11 +8,11 @@
 		</ul>
 
 		<div class="total_count">
-			<span><cms:text constant="tax"/></span>
+			<span><cms:text constant="sale_tax_label"/></span>
 			<span></span>
 		</div>
 		<div class="total_count">
-			<span><cms:text constant="total"/></span>
+			<span><cms:text constant="total_label"/></span>
 			<span class="cart_total"></span>
 		</div>
 

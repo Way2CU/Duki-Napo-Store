@@ -2,17 +2,18 @@
 <!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
 <document>
 	<div>
+		<input
+			type="checkbox"
+			id="'policy_'.$params['id']"
+			cms:eval="id"
+			/>
 		<label
 			for="'policy_'.$params['id']"
 			cms:eval="for"
 			>
 			<cms:var param="title" multilanguage="yes"/>
 		</label>
-		<input
-			type="checkbox"
-			id="'policy_'.$params['id']"
-			cms:eval="id"
-			/>
+			
 
 		<div>
 			<cms:markdown param="content" multilanguage="yes"/>

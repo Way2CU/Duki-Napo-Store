@@ -99,7 +99,7 @@
 				<span><cms:var param="price"/>$</span>
 			</div>
 
-			<a href="javascript:void(0)"><cms:text constant="add_to_cart"/></a>
+			<a href="javascript:void(0)" class="btn_cart"><cms:text constant="add_to_cart"/></a>
 		</div>
 
 		<cms:desktop>
@@ -125,12 +125,12 @@
 			</div>
 
 			<div class="social">
-				<a href="#"></a>
-				<a href="#"></a>
-				<a href="#"></a>
-				<a href="#"></a>
-				<a href="#"></a>
-				<a href="#"></a>
+				<a href="#" class="facebook"></a>
+				<a href="#" class="tweeter"></a>
+				<a href="#" class="pinterst"></a>
+				<a href="#" class="instagram"></a>
+				<a href="#" class="google_plus"></a>
+				<a href="#" class="mail"></a>
 			</div>
 		</cms:desktop>
 

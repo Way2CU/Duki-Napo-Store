@@ -614,7 +614,7 @@ section.product div.info a.btn_cart:before {
 	width: 100%;
 	height: 100%;
 	background-color:#f6c15c;
-	transition:all 0.5s;
+	transition:all 0.3s;
 	z-index: -1;
 }
 
@@ -630,9 +630,47 @@ section.product div.policy {
 	border-top: 1px solid #e8e8e8;
 }
 
+section.product div.policy > div {
+	margin-bottom: 0px;
+}
+
 section.product div.policy label {
 	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	font-size: 1.2em;
+	font-style: italic;
+	position: relative;
+	cursor: pointer;
+}
+
+section.product div.policy label:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	right: 5px;
+	width: 15px;
+	height: 15px;
+	border: 2px solid black;
+	border-left: none;
+	border-top: none;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	transition: all 0.3s;
+	transition-delay: 0.1s;
+}
+
+section.product div.policy input:checked + label:before {
+	-webkit-transform: rotate(223deg);
+	-moz-transform: rotate(223deg);
+	-ms-transform: rotate(223deg);
+	-o-transform: rotate(223deg);
+	transform: rotate(223deg);
+	border-color: #f6c15c;
 }
 
 section.product div.policy input {
@@ -641,17 +679,19 @@ section.product div.policy input {
 
 section.product div.policy > div > div {
 	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
 	max-height: 0;
 	opacity: 0;
-	visibility: hidden;
-
-	transition: all 0.5s;
+	overflow: hidden;
+	transition: max-height 0.3s, opacity 0.3s;
+	transition-delay:0.1s,0.1s;
 }
 
-section.product div.policy input:checked + div {
-	visibility: visible;
+section.product div.policy input:checked ~ div {
 	opacity: 1;
 	max-height: 400px;
+
 }
 
 section.product div.related_items {

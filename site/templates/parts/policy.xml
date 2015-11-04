@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
+<document>
+	<div>
+		<label
+			for="'policy_'.$params['id']"
+			cms:eval="for"
+			>
+			<cms:var param="title" multilanguage="yes"/>
+		</label>
+		<input
+			type="checkbox"
+			id="'policy_'.$params['id']"
+			cms:eval="id"
+			/>
+
+		<div>
+			<cms:markdown param="content" multilanguage="yes"/>
+		</div>
+	</div>
+</document>

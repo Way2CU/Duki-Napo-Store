@@ -740,21 +740,20 @@ section.product div.social {
 	display: block;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	margin-left: -30px;
+	margin-left: -10px;
 }
 
 section.product div.social a {
 	display: inline-block;
 	vertical-align: top;
-	padding-right: 15px;
-	padding-left: 15px;
+	margin-right: 10px;
 	width: 50px;
 	height: 50px;
 	position: relative;
 }
 
 section.product div.social a:hover:after {
-	background-color: rgba(110, 110, 110, 0.2);
+	background-color: black;
 }
 
 section.product div.social a:after {
@@ -770,7 +769,7 @@ section.product div.social a:after {
     width: 40px;
     height: 40px;
     z-index: 0;
-    transition: all 0.3;
+    transition: all 0.3s;
 }
 
 section.product div.social a:before {
@@ -961,7 +960,6 @@ div.checkout_controls button:hover {
 	background-color: #f6c15c;
 	background-image: none;
 }
-
 
 /**
  * Dialogs

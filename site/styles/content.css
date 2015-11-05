@@ -740,72 +740,105 @@ section.product div.social {
 	display: block;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	margin-left: -30px;
 }
 
-section.product div.social  a {
+section.product div.social a {
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 15px;
-	margin-left: 15px;
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 50px;
+	height: 50px;
+	position: relative;
+}
+
+section.product div.social a:hover:after {
+	background-color: rgba(110, 110, 110, 0.2);
+}
+
+section.product div.social a:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -21px;
+    left: 50%;
+    margin-left: -21px;
+    border-radius: 50%;
+    border: 1px solid #f6c15c;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    z-index: 0;
+    transition: all 0.3;
+}
+
+section.product div.social a:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+	left: 50%;
+	margin-left: -15px;
 	background-image:url(../images/social/social-inner-page.svg);
 	background-repeat: no-repeat;
 	background-size: 280px 60px;
 	background-position: 0px 0px;
 	width: 30px;
 	height: 30px;
+	z-index: 1;
 }
 
-section.product div.social a.facebook {
-	margin-left: 0px;
+section.product div.social a.facebook:before {
 	transition:all 0.3s;
 }
 
-section.product div.social a.facebook:hover {
+section.product div.social a.facebook:hover:before {
 	background-position: 0px -30px;
 }
 
-section.product div.social a.tweeter {
+section.product div.social a.tweeter:before {
 	background-position: -50px 0px;
 	transition:all 0.3s;
 }
 
-section.product div.social a.tweeter:hover {
+section.product div.social a.tweeter:hover:before {
 	background-position: -50px -30px;
 }
 
-section.product div.social a.pinterst {
+section.product div.social a.pinterst:before {
 	background-position: -100px 0px;
 	transition:all 0.3s;
 }
 
-section.product div.social a.pinterst:hover {
+section.product div.social a.pinterst:hover:before {
 	background-position: -100px -30px;
 }
 
-section.product div.social a.instagram {
+section.product div.social a.instagram:before {
 	background-position: -150px 0px;
 	transition:all 0.3s;
 }
 
-section.product div.social a.instagram:hover {
+section.product div.social a.instagram:hover:before {
 	background-position: -150px -30px;
 }
 
-section.product div.social  a.google_plus {
+section.product div.social  a.google_plus:before {
 	background-position: -200px 0px;
 	transition:all 0.3s;
 }
 
-section.product div.social  a.google_plus:hover {
+section.product div.social  a.google_plus:hover:before {
 	background-position: -200px -30px;
 }
 
-section.product div.social a.mail {
+section.product div.social a.mail:before {
 	background-position: -250px 0px;
 	transition:all 0.3s;
 }
 
-section.product div.social a.mail:hover {
+section.product div.social a.mail:hover:before {
 	background-position: -250px -30px;
 }
 

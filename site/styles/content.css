@@ -411,7 +411,7 @@ section.category  nav li a.active {
 /**
  * Shop items
  */
-section.category a.item {
+a.item {
 	display: inline-block;
 	vertical-align: top;
 	min-width: 250px;
@@ -429,13 +429,13 @@ section.category a.item {
 	transition: all 0.3s;
 }
 
-section.category a.item:hover {
+a.item:hover {
 	top: -10px;
 	border-color: #e8e8e8;
 	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-section.category a.item span.image {
+a.item span.image {
 	display: block;
 	width: 250px;
 	height: 250px;
@@ -445,28 +445,28 @@ section.category a.item span.image {
 	text-align: center;
 }
 
-section.category a.item span.image:before {
+a.item span.image:before {
 	display: inline-block;
 	vertical-align: middle;
 	height: 100%;
 	content: '';
 }
 
-section.category a.item span.image img {
+a.item span.image img {
 	vertical-align: middle;
 	border: 1px solid #e8e8e8;
 }
 
-section.category a.item span.name {
+a.item span.name {
 	color: #212121;
 }
 
-section.category a.item span.price {
+a.item span.price {
 	float: right;
 	color: #6e6e6e;
 }
 
-section.category a.item span.price:before {
+a.item span.price:before {
 	content: attr(data-currency);
 }
 
@@ -475,8 +475,7 @@ section.category a.item span.price:before {
  */
 section.product {
 	display: block;
-	padding: 20px calc((100vw - 1200px) / 2);
-	padding-top: 50px
+	padding: 50px calc((100vw - 1200px) / 2);
 }
 
 section.product div.images {
@@ -679,43 +678,24 @@ section.product div.policy input:checked ~ div {
 section.product div.related_items {
 	display: block;
 	padding-top: 20px;
-	padding-bottom: 60px;
+	padding-bottom: 20px;
+	margin-left: -20px;
 	border-bottom: 1px solid #e8e8e8;
 }
 
-section.product div.related_items p {
-	display: block;
-	margin: 0px;
-	padding-bottom: 20px;
-	color: #989898;
-	font-size: 1.5em;
-}
-
-section.product div.related_items a {
-	display: inline-block;
-	vertical-align: top;
-	margin-top: 10px;
+section.product div.related_items h3 {
+	padding-left: 10px;
 	margin-bottom: 10px;
-	margin-right: 20px;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	border-bottom: 2px solid transparent;
-	text-align: center;
-	width: 80px;
-	height: 80px;
-	transition:all 0.3s;
-	position: relative;
 }
 
-section.product div.related_items a:hover {
-	border-bottom: 2px solid #f6c15c;
+section.product div.related_items a.item {
+	min-width: 100px;
+	margin: 5px;
 }
 
-section.product div.related_items a h5 {
-	display: block;
-	padding-top: 90px;
-	color:#989898;
+section.product div.related_items span.image {
+	width: 100px;
+	height: 100px;
 }
 
 section.product div.social {

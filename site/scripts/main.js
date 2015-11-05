@@ -1260,7 +1260,7 @@ Site.on_load = function() {
 	});
 
 	// handle clicking on add to cart
-	var add_to_cart = $('div.info a');
+	var add_to_cart = $('div.info a.btn_cart');
 
 	if (add_to_cart.length > 0)
 		add_to_cart.on('click', Site.handle_add_to_cart);

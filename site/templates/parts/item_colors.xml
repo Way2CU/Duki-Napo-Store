@@ -1,3 +1,5 @@
 <document>
-	<span><cms:var param="name"/></span>
+	<span class="color" style="'background-color: '.$params['value'].''" cms:eval="style">
+		<cms:var param="name"/>
+	</span>
 </document>

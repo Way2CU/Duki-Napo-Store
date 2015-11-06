@@ -414,6 +414,7 @@ section.category  nav li a.active {
 a.item {
 	display: inline-block;
 	vertical-align: top;
+	text-align: center;
 	min-width: 250px;
 	margin: 10px;
 	margin-top: 0;
@@ -458,10 +459,25 @@ a.item span.image img {
 }
 
 a.item span.name {
+	display: inline-block;
+	vertical-align: middle;
+	float: left;
 	color: #212121;
 }
 
+a.item span.color {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+    font-size: 0px;
+}
+
 a.item span.price {
+	display: inline-block;
+	vertical-align: middle;
 	float: right;
 	color: #6e6e6e;
 }
@@ -569,6 +585,16 @@ section.product div.properties > div h4 {
 	margin: 0;
 	margin-bottom: 5px;
 	padding: 0;
+}
+
+section.product div.properties > div span {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 0px;
+	width: 18px;
+	height: 18px;
 }
 
 section.product div.info a.btn_cart {
@@ -696,6 +722,24 @@ section.product div.related_items a.item {
 section.product div.related_items span.image {
 	width: 100px;
 	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+section.product div.related_items span.name {
+	display: block;
+	float: none;
+}
+
+section.product div.related_items span.color {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+section.product div.related_items span.price {
+	display: block;
+	float: none;
 }
 
 section.product div.social {

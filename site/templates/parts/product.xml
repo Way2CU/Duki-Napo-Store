@@ -69,7 +69,7 @@
 
 			<div class="price">
 				<h4><cms:text constant="property_price"/></h4>
-				<span><cms:var param="price"/>$</span>
+				<span><cms:text constant="pricing_label"/><cms:raw text=" "/><cms:var param="price"/></span>
 			</div>
 
 			<a href="javascript:void(0)" class="btn_cart"><cms:text constant="add_to_cart"/></a>

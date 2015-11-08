@@ -23,10 +23,8 @@
 			/>
 		<span
 			class="price"
-			data-currency="$params['currency']"
-			cms:eval="data-currency"
 			>
-			<cms:text constant="pricing_label"/><cms:raw text=" "/><cms:var param="price"/>
+			<cms:text constant="currency"/><cms:raw text=" "/><cms:var param="price"/>
 		</span>
 	</a>
 </document>

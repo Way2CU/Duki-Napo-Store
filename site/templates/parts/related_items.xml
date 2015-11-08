@@ -19,12 +19,8 @@
 			template="parts/item_colors.xml"
 			cms:eval="id"
 			/>
-		<span
-			class="price"
-			data-currency="$params['currency']"
-			cms:eval="data-currency"
-			>
-			<cms:var param="price"/>
+		<span class="price">
+			<cms:text constant="currency"/><cms:raw text=" "/><cms:var param="price"/>
 		</span>
 	</a>
 </document>

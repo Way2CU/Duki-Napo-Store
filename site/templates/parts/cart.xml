@@ -15,7 +15,7 @@
 			<span>
 				<cms:text constant="total_label"/>
 				<cms:raw text=" "/>
-				<cms:text constant="pricing_label"/>
+				<cms:text constant="currency"/>
 			</span>
 			<span class="cart_total"></span>
 		</div>

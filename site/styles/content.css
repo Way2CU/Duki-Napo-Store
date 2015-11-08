@@ -169,6 +169,7 @@ div.contact_us div.form_wrap form div.controls button {
     color: white;
     font-size: 1.1em;
     text-decoration: none;
+    cursor: pointer;
     transition: all 0.3s;
 }
 

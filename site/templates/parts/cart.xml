@@ -12,7 +12,11 @@
 			<span></span>
 		</div>
 		<div class="total_count">
-			<span><cms:text constant="total_label"/></span>
+			<span>
+				<cms:text constant="total_label"/>
+				<cms:raw text=" "/>
+				<cms:text constant="pricing_label"/>
+			</span>
 			<span class="cart_total"></span>
 		</div>
 

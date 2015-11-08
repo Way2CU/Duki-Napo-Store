@@ -46,7 +46,7 @@
 				<h4><cms:text constant="property_color"/></h4>
 				<cms:color_list
 					id="$params['id']"
-					template="parts/item_colors.xml"
+					template="parts/item_color_names.xml"
 					cms:eval="id"
 					/>
 			</div>

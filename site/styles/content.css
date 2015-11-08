@@ -587,7 +587,7 @@ section.product div.properties > div h4 {
 	padding: 0;
 }
 
-section.product div.properties > div span {
+section.product div.properties > div span.color {
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 5px;
@@ -595,6 +595,7 @@ section.product div.properties > div span {
 	font-size: 0px;
 	width: 18px;
 	height: 18px;
+	position: relative;
 }
 
 section.product div.info a.btn_cart {

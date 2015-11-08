@@ -30,34 +30,7 @@
 			template="parts/product_image.xml"
 			cms:eval="group_id"
 			/>
-		<cms:module
-			name="gallery"
-			action="show_image_list"
-			group_id="$params['gallery']"
-			template="parts/product_image.xml"
-			cms:eval="group_id"
-			/>
-		<cms:module
-			name="gallery"
-			action="show_image_list"
-			group_id="$params['gallery']"
-			template="parts/product_image.xml"
-			cms:eval="group_id"
-			/>
-		<cms:module
-			name="gallery"
-			action="show_image_list"
-			group_id="$params['gallery']"
-			template="parts/product_image.xml"
-			cms:eval="group_id"
-			/>
-		<cms:module
-			name="gallery"
-			action="show_image_list"
-			group_id="$params['gallery']"
-			template="parts/product_image.xml"
-			cms:eval="group_id"
-			/>
+
 	</div>
 
 	<div class="info" data-uid="$params['uid']" cms:eval="data-uid">

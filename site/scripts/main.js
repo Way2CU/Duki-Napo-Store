@@ -1222,11 +1222,13 @@ Site.on_load = function() {
 	}
 
 	// handle hovering over preview image
-	var images = $('section.product div.images_wrap div.product_gallery a');
-	images.on('hover', function(event) {
+	var images = $('section.product div.images > a');
+	images.on('click', function(event) {
+		event.preventDefault();
 		var item = $(this);
-		var url = 'url(' + item.data('image') + ');';
-		$('section.product div.images_wrap > figure').css('background-image', url);
+		var url = item.attr('href');
+		console.log(url);
+		$('section.product div.images > figure a img').attr('src',url);
 	});
 
 	// handle selecting color

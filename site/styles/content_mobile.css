@@ -759,7 +759,6 @@ div.about_article p {
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
-	color:#989898;
 }
 
 div.about_article p img {
@@ -767,7 +766,6 @@ div.about_article p img {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	color:#989898;
 }
 
 /*
@@ -785,7 +783,6 @@ div.address_article {
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
-	color: #989898;
 
 }
 
@@ -805,80 +802,70 @@ div.address_article p:nth-of-type(4) {
 	text-decoration: underline;
 }
 
-div.form_wrap {
+div.contact_us div.form_wrap {
 	display:block;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
-	color:#989898;
 	width: 90%;
 }
 
-div.form_wrap h3 {
+div.contact_us div.form_wrap h3 {
 	border-bottom: 1px solid #e8e8e8;
 	padding-bottom: 10px;
 }
 
-div.form_wrap form {
+div.contact_us div.form_wrap form {
 	display: block;
 	text-align: left;
 	width: 100%;
 }
 
-div.form_wrap form label {
+div.contact_us div.form_wrap form label {
 	display: block;
 	padding-bottom: 15px;
 }
 
-div.form_wrap form label span {
+div.contact_us div.form_wrap form label input,
+div.contact_us div.form_wrap form label textarea {
 	display:block;
-	padding-bottom:3px;
-	text-align: left;
-	font-size: 1em;
-}
+	margin-left: auto;
+	margin-right: auto;
 
-div.form_wrap form label input {
-	width: 100%;
-	border:1px solid #989898;
-	transition:all 0.3s;
-}
-
-div.form_wrap form label textarea {
-	display:block;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	padding-left: 5px;
-	width: 100%;
-	height: 100px;
-	border:1px solid #989898;
+    border: 1px solid #989898;
+    background-color: #e8e8e8;
+    transition: all 0.3s;
+	width: calc(100% - 5px);
 	transition:all 0.3s;
 }
 
-div.form_wrap form label input:focus,div.form_wrap form label textarea:focus {
+div.contact_us div.form_wrap form label input:focus,
+div.contact_us div.form_wrap form label textarea:focus {
 	border:1px solid #f6c15c;
 }
 
-div.form_wrap form div.controls button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: #212121;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 1em;
-    cursor: pointer;
+div.contact_us div.form_wrap form div.controls button {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0.4em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	border: 1px solid #989898;
+	background-color: #a0a0a0;
+	color: white;
+	font-size: 1.1em;
+	text-decoration: none;
+	cursor: pointer;
     transition: all 0.3s;
 }
 
-div.form_wrap form div.controls button:hover {
+div.contact_us div.form_wrap form div.controls button:hover {
 	background-color:#B0883C;
 }
 

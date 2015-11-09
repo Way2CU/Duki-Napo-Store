@@ -10,18 +10,35 @@
 	</cms:mobile>
 
 	<div class="images">
-		<figure>
-			<a
-				href="$params['image']"
-				cms:eval="href"
-				>
-				<img
-					src="gallery::getGroupThumbnailById($params['gallery'], null, 436)"
-					alt="$params['name']"
-					cms:eval="src,alt"
-					/>
-			</a>
-		</figure>
+		<cms:desktop>
+			<figure>
+				<a
+					href="$params['image']"
+					cms:eval="href"
+					>
+					<img
+						src="gallery::getGroupThumbnailById($params['gallery'], null, 436)"
+						alt="$params['name']"
+						cms:eval="src,alt"
+						/>
+				</a>
+			</figure>
+		</cms:desktop>
+
+		<cms:mobile>
+			<figure>
+				<a
+					href="$params['image']"
+					cms:eval="href"
+					>
+					<img
+						src="gallery::getGroupThumbnailById($params['gallery'], null, 280)"
+						alt="$params['name']"
+						cms:eval="src,alt"
+						/>
+				</a>
+			</figure>
+		</cms:mobile>
 
 		<cms:module
 			name="gallery"
@@ -75,7 +92,7 @@
 			<a href="javascript:void(0)" class="btn_cart"><cms:text constant="add_to_cart"/></a>
 		</div>
 
-		<cms:desktop>
+		
 			<div class="policy">
 				<cms:module
 					name="articles"
@@ -105,7 +122,7 @@
 				<a href="#" class="google_plus"></a>
 				<a href="#" class="mail"></a>
 			</div>
-		</cms:desktop>
+		
 
 		<div class="related_items">
 			<h3><cms:text constant="related"/></h3>

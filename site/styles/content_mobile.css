@@ -36,15 +36,50 @@ h3 {
 .mobile_title a.menu {
     position: absolute;
     top: 50%;
-    margin-top: -17.5px;
+    margin-top: 1px;
     left: 3%;
     width: 35px;
-    height: 35px;
-    background-image: url(../images/header/mobile-sprite.svg);
-    background-repeat: no-repeat;
-    background-position: -20px -95px;
-    background-size: 150px 975px;
+    height: 2px;
+    background-color: white;
     transition:all 0.3s;
+}
+
+.mobile_title.visible a.menu {
+	background-color: inherit;
+}
+
+.mobile_title.visible a.menu:before {
+	background-color: #f6c15c;
+	transform:rotate(45deg);
+	top:0px;
+}
+
+.mobile_title.visible a.menu:after {
+	background-color: #f6c15c;
+	transform:rotate(-45deg);
+	top: 0px;
+}
+
+.mobile_title a.menu:before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 0%;
+	width: 35px;
+	height: 2px;
+	background-color: white;
+	transition: all 0.3s;
+}
+
+.mobile_title a.menu:after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 0%;
+	width: 35px;
+	height: 2px;
+	background-color: white;
+	transition: all 0.3s;
 }
 
 .mobile_title a.cart_btn {
@@ -78,10 +113,7 @@ a.cart_btn.enabled{
 	position:fixed;
 }
 
-.mobile_title.visible a.menu {
-	left: -3%;
-	background-position: -92px -95px;
-}
+
 
 .mobile_menu {
 	transition:all 0.3s;

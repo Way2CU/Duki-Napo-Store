@@ -1213,16 +1213,6 @@ Site.on_load = function() {
 			.ui.add_total_cost_label($('span.cart_total'))
 			.add_item_view(Site.ItemView);
 
-	// create home page image slider
-	 // Site.home_page_gallery = new Caracal.Gallery.Slider();
-	 // Site.home_page_gallery
-		// .images.set_container('div#image_rotate')
-		// .images.set_visible_count(1)
-		// .images.set_center(true)
-		// .images.add('div#image_rotate figure')
-		// .controls.set_pause_on_hover(false)
-		// .controls.set_auto(4000);
-	 // Site.home_page_gallery.images.update();
 
 	 Site.home_page_gallery = new PageControl('div#image_rotate', 'figure');
 	 Site.home_page_gallery

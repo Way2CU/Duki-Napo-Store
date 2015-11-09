@@ -328,6 +328,7 @@ div#cart {
 
 	text-align: center;
 }
+
 nav#navigation ul.drop,
 nav#navigation ul.categories {
 	display: inline-block;
@@ -487,10 +488,11 @@ div#cart > span:first-of-type {
 
 div#cart div.popup {
 	position: absolute;
-	max-height: 500px;
+	max-height: 0px;
 	top: 100%;
 	right: 0px;
 	width: 500px;
+	height: 500px;
 
 	border: 1px solid #f6c15c;
 	background-color: white;
@@ -505,7 +507,7 @@ div#cart div.popup {
 div#cart:hover div.popup {
 	visibility: visible;
 	opacity: 1;
-	max-height: 300px;
+	max-height: 500px;
 	transition-delay: 0.3s;
 }
 

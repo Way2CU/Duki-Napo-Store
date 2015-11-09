@@ -365,49 +365,6 @@ section.category h1 {
 	text-align: center;
 }
 
-section.category  > div {
-	display: inline-block;
-	vertical-align: top;
-	width: 80%;
-}
-
-section.category  nav {
-	display: inline-block;
-	vertical-align: top;
-	width:20%;
-}
-
-section.category  nav h3 {
-	display: block;
-	text-align: left;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-bottom: 0px;
-	color:#989898;
-	font-style: italic;
-}
-
-section.category  nav li {
-	display: block;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-	border-bottom: 1px solid #e8e8e8;
-	text-align: left;
-}
-
-
-section.category  nav li a {
-	color:#989898;
-}
-
-section.category  nav li a.active {
-	color:#989898;
-	font-style: italic;
-	font-weight: 700;
-	text-decoration: none;
-}
 
 /**
  * Shop items

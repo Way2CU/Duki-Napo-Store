@@ -1,4 +1,5 @@
 <document>
+	<cms:desktop>
 	<a
 		href="$params['image']"
 		class="image direct"
@@ -11,4 +12,20 @@
 			/>
 		<span><cms:var param="title" multilanguage="yes"/></span>
 	</a>
+	</cms:desktop>
+
+	<cms:mobile>
+	<a
+		href="$params['image']"
+		class="image direct"
+		cms:eval="href"
+		>
+		<img 
+			src="gallery::getThumbnailById($params['id'], null, 150,Thumbnail::CONSTRAIN_BOTH)"
+			alt="$params['title'][$language]"
+			cms:eval="src,alt"
+			/>
+		<span><cms:var param="title" multilanguage="yes"/></span>
+	</a>
+	</cms:mobile>
 </document>

@@ -1213,15 +1213,25 @@ Site.on_load = function() {
 			.ui.add_total_cost_label($('span.cart_total'))
 			.add_item_view(Site.ItemView);
 
-	// create home page image slider
-	if ($('div#image_rotate').length > 0) {
-		var rotate = new Caracal.Gallery.Slideshow();
-		rotate.images.set_container($('div#image_rotate'))
-			.images.add($('div#image_rotate figure'))
-			.set_auto(4000);
+
+	 Site.home_page_gallery = new PageControl('div#image_rotate', 'figure');
+	 Site.home_page_gallery
+	 	.setInterval(4000)
+	 	.setWrapAround(true);	
 
 
-	}
+
+	// handle hovering over preview image
+	var images = $('section.product div.images > a');
+	images.on('click', function(event) {
+		event.preventDefault();
+		var item = $(this);
+		var url = item.attr('href');
+		console.log(url);
+		$('section.product div.images > figure a img').attr('src',url);
+	});
+
+
 
 	// handle selecting color
 	var color_links = $('div.color span');

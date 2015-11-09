@@ -905,7 +905,6 @@ div.process_article p {
 	margin-right: auto;
 	text-align: left;
 	width:90%;
-	color:#989898;
 }
 
 div.process_article p img {
@@ -913,33 +912,23 @@ div.process_article p img {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    color: #989898;
     width:100%;
 }
 
 div.process_article ol {
 	display: block;
-	padding: 0px;
-	padding-left:35px;
 	text-align: left;
 	width: 90%;
-	color: #989898;
 }
 
 div.process_article ol li {
 	padding-top: 10px;
-	padding-right: 10px;
 }
 
 div.process_article ul {
     display: block;
-    margin: 0px;
-    padding: 0px;
-    padding-left: 30px;
-    margin-left: auto;
-    margin-right: auto;
+	padding-right: 20px;
     text-align: left;
-    width: 90%;
     color: #212121;
 }
 
@@ -961,6 +950,13 @@ div.benefits_article h3 {
 	width:90%;
 }
 
+div.benefits_article p img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
 div.benefits_article p {
 	display: block;
 	padding-top: 10px;
@@ -968,34 +964,24 @@ div.benefits_article p {
 	margin-right: auto;
 	text-align: left;
 	width: 90%;
-	color:#989898;
 }
 
 div.benefits_article ol {
 	display: block;
-	padding: 0px;
-	padding-left:35px;
 	text-align: left;
-	width: 90%;
-	color: #989898;
-}
-
-div.benefits_article ul li {
-	padding-top: 10px;
-	padding-right: 10px;
 }
 
 div.benefits_article ul {
 	display: block;
-	margin: 0px;
-	padding: 0px;
-	padding-left: 30px;
-	margin-left: auto;
-	margin-right: auto;
+	padding-right: 20px;
 	text-align: left;
-	width: 90%;
 	color: #212121;
 }
+
+div.benefits_article ul li {
+	padding-top: 10px;
+}
+
 
 /*
 	Gallery Page

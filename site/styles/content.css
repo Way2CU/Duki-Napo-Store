@@ -461,6 +461,7 @@ section.product div.images {
 
 section.product div.images figure {
 	display: block;
+	text-align: center;
 	width: 438px;
 	height: 438px;
 	margin: 0;

@@ -997,19 +997,38 @@ div.gallery {
 div.gallery a {
 	display: inline-block;
 	vertical-align: middle;
-	margin-left: 5px;
-	margin-right: 5px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: auto 100%;
-	width: 150px;
-	height: 150px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 5px;
+	width: 120px;
+	border: 1px solid transparent;
+	text-decoration: none;
+	position: relative;
+	overflow: hidden;
+	color: #212121;
+	top: 0px;
+	transition: all 0.3s;
+	transition-delay:0.3s;
 }
 
 div.gallery a img {
-	width: 100%;
+	display: block;
+	border: 2px solid #e8e8e8;
+}
+
+div.gallery a span {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+    width: calc(100% - 20px);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 0.3s;
+    transition-delay: 0.3s;
+    
 }
 
 div#lightbox a.close_button {

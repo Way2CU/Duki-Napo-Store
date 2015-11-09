@@ -119,8 +119,8 @@
 				<ul>
 					<li>
 						<a
-							class="$section == 'about_us' ? 'active' : false"
-							href="url_Make('', 'about_us')"
+							class="$section == 'about-us' ? 'active' : false"
+							href="url_Make('', 'about-us')"
 							cms:eval="href"
 							cms:optional="class"
 							>
@@ -149,8 +149,8 @@
 					</li>
 					<li>
 						<a
-							class="$section == 'contact_us' ? 'active' : false"
-							href="url_Make('', 'contact_us')"
+							class="$section == 'contact-us' ? 'active' : false"
+							href="url_Make('', 'contact-us')"
 							cms:eval="href"
 							cms:optional="class"
 							>

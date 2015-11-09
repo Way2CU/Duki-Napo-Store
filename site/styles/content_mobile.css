@@ -1043,50 +1043,91 @@ div#lightbox a.close_button {
 section.category {
 	display: block;
 	padding-top: 70px;
+	padding-bottom: 10px;
 	text-align: center;
 }
 
-section.category div {
-	display:block;
+section.category h1 {
+	display: block;
 	text-align: center;
 }
 
-section.category div.item {
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    margin-bottom: 140px;
-    padding-left: 5px;
-    padding-right: 5px;
-    transition: all 0.3s;
-}
+/**
+ * Shop items
+ */
+a.item {
+	display: block;
+	text-align: center;
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	padding: 15px;
 
-section.category  div.item a {
-	display: inline-block;
-	vertical-align: top;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: auto 100%;
-	width:150px;
-	height:120px;
+	position: relative;
+	top: 0;
+	border: 1px solid #e8e8e8;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+
 	text-decoration: none;
 
+	transition: all 0.3s;
 }
 
-section.category  div.item a h5 {
+a.item span.image {
 	display: block;
-	padding-top: 130px;
-	color:#212121;
-	font-weight: 700;
-	text-transform: uppercase;
+	margin-left: auto;
+	margin-right: auto;
+	
+	width: 250px;
+	height: 250px;
+	margin-bottom: 10px;
+
+	white-space: nowrap;
+	text-align: center;
+}
+
+a.item span.image:before {
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	content: '';
+}
+
+a.item span.image img {
+	vertical-align: middle;
+	border: 1px solid #e8e8e8;
+}
+
+a.item span.name {
+	display: inline-block;
+	vertical-align: middle;
+	float: left;
+	color: #212121;
+}
+
+a.item span.color {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+    font-size: 0px;
+}
+
+a.item span.price {
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+	color: #6e6e6e;
+}
+
+a.item span.price:before {
+	content: attr(data-currency);
 }
 
 
-section.category div.item a span {
-	display: block;
-	padding-top: 10px;
-	color:#6e6e6e;
-}
 
 /*
 	product Dynamic Page

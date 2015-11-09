@@ -524,6 +524,7 @@ footer {
 	background-repeat:repeat;
 	background-position: center center;
 	background-size: 360px 360px;
+	position: relative;
 }
 
 footer div.footer_top {
@@ -658,54 +659,41 @@ footer div.payment span:nth-of-type(7) {
 	width: 75px;
 }
 
-footer div.rights {
-	display: block;
-	background-color: #212121;
+footer div.copyright {
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	background-color: black;
+	direction: ltr;
 }
 
-footer div.rights span:first-of-type {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 0.8em;
-    width: 90%;
-
+footer div.copyright span {
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	background-image: url(../images/footer/way2cu-color.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px 34.5px;
+	font-size: 0.8em;
+	color: white;
+	text-align: left;
+	width: 250px;
 }
 
-footer div.rights span:first-of-type a {
+footer div.copyright span a {
+	display: inline-block;
 	padding-left: 5px;
-	color:white;
 	text-decoration: underline;
-}
-
-footer div.rights span:last-of-type {
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    background-image: url(../images/footer/way2cu-color.svg);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 25px 28px;
-    font-size: 0.8em;
-    width: 230px;
-}
-
-footer div.rights span:last-of-type a {
-	padding-left: 5px;
 	color:#449bb5;
-	font-size: 1em;
-	text-decoration: underline;
 	transition:all 0.3s;
 }
 
-footer div.rights span:last-of-type a:hover {
+footer div.copyright span a:hover {
 	color:#5bc2d8;
 }
 

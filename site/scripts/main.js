@@ -1219,6 +1219,8 @@ Site.on_load = function() {
 		rotate.images.set_container($('div#image_rotate'))
 			.images.add($('div#image_rotate figure'))
 			.set_auto(4000);
+
+
 	}
 
 	// handle selecting color

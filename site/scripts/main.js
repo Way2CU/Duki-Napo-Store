@@ -1197,7 +1197,7 @@ Site.on_load = function() {
 	Site.dialog_system = new Site.DialogSystem();
 
 	// lightbox for all images on page
-	Caracal.lightbox = new LightBox('a.image.direct', false, false, true);
+	Caracal.lightbox = new LightBox('div.images a', false, false, true);
 
 	// create shopping cart
 	Site.cart = new Caracal.Shop.Cart();
@@ -1230,6 +1230,7 @@ Site.on_load = function() {
 	 	.setWrapAround(true);	
 
 
+
 	// handle hovering over preview image
 	var images = $('section.product div.images > a');
 	images.on('click', function(event) {
@@ -1239,6 +1240,8 @@ Site.on_load = function() {
 		console.log(url);
 		$('section.product div.images > figure a img').attr('src',url);
 	});
+
+
 
 	// handle selecting color
 	var color_links = $('div.color span');

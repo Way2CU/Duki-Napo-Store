@@ -1214,14 +1214,21 @@ Site.on_load = function() {
 			.add_item_view(Site.ItemView);
 
 	// create home page image slider
-	if ($('div#image_rotate').length > 0) {
-		var rotate = new Caracal.Gallery.Slideshow();
-		rotate.images.set_container($('div#image_rotate'))
-			.images.add($('div#image_rotate figure'))
-			.set_auto(4000);
+	 // Site.home_page_gallery = new Caracal.Gallery.Slider();
+	 // Site.home_page_gallery
+		// .images.set_container('div#image_rotate')
+		// .images.set_visible_count(1)
+		// .images.set_center(true)
+		// .images.add('div#image_rotate figure')
+		// .controls.set_pause_on_hover(false)
+		// .controls.set_auto(4000);
+	 // Site.home_page_gallery.images.update();
 
+	 Site.home_page_gallery = new PageControl('div#image_rotate', 'figure');
+	 Site.home_page_gallery
+	 	.setInterval(4000)
+	 	.setWrapAround(true);	
 
-	}
 
 	// handle hovering over preview image
 	var images = $('section.product div.images > a');

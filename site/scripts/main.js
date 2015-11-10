@@ -1213,7 +1213,7 @@ Site.on_load = function() {
 			.ui.add_total_cost_label($('span.cart_total'))
 			.add_item_view(Site.ItemView);
 
-	if($('header').hasClass('home')) {
+	if ($('header').hasClass('home')) {
 		Site.home_page_gallery = new PageControl('div#image_rotate', 'figure');
 		Site.home_page_gallery
 			.setInterval(4000)

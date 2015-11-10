@@ -568,8 +568,8 @@ div#cart div.popup {
 }
 
 div#cart:hover div.popup {
-	visibility: visible;
-	opacity: 1;
+	visibility: visible
+;	opacity: 1;
 	max-height: 500px;
 	transition-delay: 0.3s;
 }

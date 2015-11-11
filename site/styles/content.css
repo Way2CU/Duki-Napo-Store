@@ -1021,6 +1021,11 @@ div.dialog div.content form input:not([type=checkbox]) {
 	background-color: #e8e8e8;
 
 	color: #212121;
+	transition: all 0.3s;
+}
+
+div.dialog div.content form input:not([type=checkbox]):focus {
+	border: 1px solid #f6c15c;
 }
 
 div.dialog div.content hr {

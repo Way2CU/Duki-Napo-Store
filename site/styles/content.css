@@ -808,121 +808,130 @@ section.product div.social a.mail:hover:before {
 /**
  * Checkout
  */
-div#checkout_container {
-	min-height: 600px;
-}
-
-div#checkout_container div.page {
-	display: none;
-}
-
-div#checkout_container div.page.visible {
-	display: block;
-}
-
-div#input_details {
-	display: block;
-	width: 900px;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	border: 1px solid white;
-	border-radius: 8px 8px 5px 5px;
-	background-color: white;
-	box-shadow: none;
-	color: #333333;
-	text-align: left;
-}
-
-div#input_details form {
+div#checkout_steps.input_details {
 	width: 100%;
 }
 
-div#input_details h1 {
-	margin: 0px;
-	margin-bottom: 15px;
-	text-align: center;
-	padding: 5px;
-	padding-left: 7px;
-	padding-right: 7px;
-	position: inline;
-	left: auto;
-	right: auto;
-	border: none;
-	text-transform: uppercase;
-	border-radius: 7px 7px 0px 0px;
-	background-color: white;
-	color: #989898;
-	font-size: 1.3em;
-	font-weight: bold
+div#checkout_steps a:hover:before {
+	background-color: #f6c15c;
 }
 
-div#input_details label {
-	display: block;
-	margin-bottom: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
+div#checkout_steps a.active:before {
+	background-color: #f6c15c;
+	border: 1px solid #e8e8e8;
+}
+
+div#input_details {
+	border-radius:  0px 0px 0px 0px;
+}
+
+div#input_details h1 {
+	color: black;
+	background-color: white;
+}
+div#input_details label input,
+div#payment_method input, 
+div#billing_information input,
+div#input_details div.existing_account.visible input, 
+div#input_details div.new_account.visible input, 
+div#input_details div.guest_checkout.visible input,
+div#checkout_container div.page input {
+	width: 280px;
 	text-align: left;
+	padding: 10px;
+	border: 1px solid #989898;
+	border-radius: 0px 0px 0px 0px;
+	background-color: #e8e8e8;
+	color: #212121;
+	transition: all 0.3s;
+}
+
+div#input_details div.existing_account label.captcha input {
+	display: inline-block;
+	vertical-align: middle;
+	width: 150px;
+}
+
+div#input_details div.existing_account label.captcha input img {
+	vertical-align: top;
+	max-height: calc(1em + 14px);
+	margin-left: 10px;
+	border-radius: 3px;
+}
+
+div#input_details label select {
+	width: 300px;
+	text-align: left;
+	padding: 10px;
+	border: 1px solid #989898;
+	border-radius: 0px 0px 0px 0px;
+	background-color: #e8e8e8;
+	color: #212121;
+	transition: all 0.3s;	
+}
+
+div#input_details label input:focus,
+div#payment_method input:focus,
+div#billing_information input:focus,
+div#input_details div.existing_account.visible input:focus, 
+div#input_details div.new_account.visible input:focus, 
+div#input_details div.guest_checkout.visible input:focus {
+	border: 1px solid #f6c15c;
 }
 
 div#input_details label span {
 	display: inline-block;
-	width: 150px;
+	width: 100px;
 	padding-left: 10px;
 	padding-right: 10px;
 	text-align: left;
 }
 
-div#input_details label select, div#input_details label input {
-	width: 300px;
-	margin: 0px;
-	padding: 5px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	border: 1px solid #B9B9B9;
-	border-radius:0px;
-	outline: none;
-	background-color: white;
-	box-shadow: none;
-	color: #333333;
-	transition-property: all;
-	transition-duration: 0.3s;
-}
-
-div#input_details label select, div#input_details label input:focus {
-	border: 1px solid #f6c15c;
-}
-
-div#input_details label input[type=email], div#input_details label input[name=phone] {
-	width: 300px;
+div#input_details label small {
+	display: block;
+	padding-left: 136px;
 }
 
 div.checkout_controls button {
-	margin-left: 5px;
-	margin-right: 5px;
-	padding: 10px;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	padding-left: 30px;
 	padding-right: 30px;
-	border: none;
-	border-radius: 0px;
-	box-shadow: none;
-	border-radius: none;
 	background-color: #212121;
 	background-image: none;
-	background-repeat:no-repeat;
+	box-shadow:  0px 0px 0px 0px;
+	text-shadow: 0px 0px 0px ;
+	border-radius:  0px 0px 0px 0px;
+	border: none;
 	color: white;
-	font-size: 1.1em;
-	font-weight: bold;
-	text-shadow: none;
-	vertical-align: top;
-	transition-property: all;
-	transition-duration: 0.3s;
+	cursor: pointer;
+	transition: all 0.3s;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+}
+
+div.checkout_controls button:hover:before {
+	left: 0%;
+}
+
+div.checkout_controls button:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: #f6c15c;
+	z-index: -1;
+	transition: all 0.3s;
 }
 
 div.checkout_controls button:hover {
-	background-color: #f6c15c;
-	background-image: none;
+	background-color: #212121;
 }
+
 
 /**
  * Dialogs

@@ -879,6 +879,15 @@ div#input_details div.guest_checkout.visible input:focus {
 	border: 1px solid #f6c15c;
 }
 
+div#input_details label input:hover,
+div#payment_method input:hover,
+div#billing_information input:hover,
+div#input_details div.existing_account.visible input:hover, 
+div#input_details div.new_account.visible input:hover, 
+div#input_details div.guest_checkout.visible input:hover {
+	border: 1px solid rgba(246, 193, 92, 0.5);
+}
+
 div#input_details label span {
 	display: inline-block;
 	width: 100px;
@@ -1040,7 +1049,7 @@ div.dialog div.content form input:not([type=checkbox]) {
 }
 
 div.dialog div.content form input:not([type=checkbox]):hover {
-	border: 1px solid rgba(246, 193, 92, 0.7);
+	border: 1px solid rgba(246, 193, 92, 0.5);
 }
 
 div.dialog div.content form input:not([type=checkbox]):focus {

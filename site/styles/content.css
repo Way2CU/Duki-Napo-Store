@@ -837,6 +837,7 @@ div#input_details h1 {
 	color: black;
 	background-color: white;
 }
+
 div#input_details label input,
 div#payment_method input, 
 div#billing_information input,
@@ -964,12 +965,11 @@ div.dialog {
 	color: #333333;
 	overflow: hidden;
 	transition: all 0.6s;
-
 }
 
 div.dialog.visible {
 	top: 110px;
-	max-height: 580px;
+	max-height: 650px;
 }
 
 div.dialog div.title {

@@ -1221,20 +1221,6 @@ Site.on_load = function() {
 	}
 
 
-
-
-	// handle hovering over preview image
-	var images = $('section.product div.images > a');
-	images.on('click', function(event) {
-		event.preventDefault();
-		var item = $(this);
-		var url = item.attr('href');
-		console.log(url);
-		$('section.product div.images > figure a img').attr('src',url);
-	});
-
-
-
 	// handle selecting color
 	var color_links = $('div.color span');
 	color_links.on('click', function(event) {

@@ -1039,6 +1039,10 @@ div.dialog div.content form input:not([type=checkbox]) {
 	transition: all 0.3s;
 }
 
+div.dialog div.content form input:not([type=checkbox]):hover {
+	border: 1px solid rgba(246, 193, 92, 0.7);
+}
+
 div.dialog div.content form input:not([type=checkbox]):focus {
 	border: 1px solid #f6c15c;
 }

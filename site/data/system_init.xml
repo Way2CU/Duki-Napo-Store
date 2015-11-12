@@ -12,6 +12,8 @@
 	<module name="contact_form" order="7" preload="no"/>
 	<module name="shop" order="8" preload="no"/>
 	<module name="country_list" order="9" preload="no"/>
+	<module name="mandrill" order="10" preload="no"/>
+	<module name="tranzila" order="11" preload="no"/>
 
 	<user
 		fullname="Administrator"

@@ -1213,24 +1213,12 @@ Site.on_load = function() {
 			.ui.add_total_cost_label($('span.cart_total'))
 			.add_item_view(Site.ItemView);
 
-
-	 Site.home_page_gallery = new PageControl('div#image_rotate', 'figure');
-	 Site.home_page_gallery
-	 	.setInterval(4000)
-	 	.setWrapAround(true);	
-
-
-
-	// handle hovering over preview image
-	var images = $('section.product div.images > a');
-	images.on('click', function(event) {
-		event.preventDefault();
-		var item = $(this);
-		var url = item.attr('href');
-		console.log(url);
-		$('section.product div.images > figure a img').attr('src',url);
-	});
-
+	if ($('header').hasClass('home')) {
+		Site.home_page_gallery = new PageControl('div#image_rotate', 'figure');
+		Site.home_page_gallery
+			.setInterval(4000)
+			.setWrapAround(true);	
+	}
 
 
 	// handle selecting color

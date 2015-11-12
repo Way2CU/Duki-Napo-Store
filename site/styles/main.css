@@ -5,7 +5,35 @@
  * Copyright (c) 2015. by Way2CU, http://way2cu.com
  * Authors:
  */
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic);
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../images/fonts/Roboto-Regular-webfont.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: bold;
+	font-weight: 700;
+	src: url(../images/fonts/Roboto-Bold-webfont.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: light;
+	font-weight: 100;
+	src: url(../images/fonts/Roboto-Light-webfont.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: italic;
+	font-weight: 100;
+	src: url(../images/fonts/Roboto-Italic-webfont.woff) format('woff');
+}
+
 
 body {
 	font-family: 'Roboto', sans-serif;
@@ -19,3 +47,5 @@ textarea,
 button {
 	font-family: 'Roboto', sans-serif;
 }
+
+

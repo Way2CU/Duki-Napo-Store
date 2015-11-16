@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/template.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title><cms:text constant="site_title"/><cms:raw text=" - "/><cms:text constant="menu_gallery"/></title>
+			<cms:module
+				name="shop"
+				action="include_cart_scripts"
+				/>
+			<cms:collection include="page_control,animation_chain"/>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body>
+			<cms:template file="parts/header.xml"/>
+
+			<div class="$section == 'press' ? 'press' : false" cms:optional="class" >
+
+				<cms:module
+					name="articles"
+					action="show_group"
+					text_id="press"
+					template="parts/press_group_articles.xml"
+				/>
+
+			</div>
+			<cms:template file="parts/footer.xml"/>
+		</body>
+	</html>
+</document>

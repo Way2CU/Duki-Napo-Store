@@ -169,7 +169,7 @@ div.contact_us div.form_wrap form div.controls button {
 	color: white;
 	font-size: 1.1em;
 	text-decoration: none;
-	cursor: pointer;
+	cursor: pointer;cd ..
 	transition: all 0.3s;
 	z-index: 0;
 	overflow: hidden;
@@ -1166,4 +1166,33 @@ div.dialog div.command_bar a:before {
 
 div.dialog div.command_bar a:hover {
 	background-color: #212121;
+}
+
+/*
+    From the press page
+*/
+
+div.press {
+	padding:20px calc((100vw - 1200px) / 2);
+}
+
+div.press article {
+	margin-bottom: 10px;
+	clear:both;
+}
+
+div.press article img {
+	float: right;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+div.press article a {
+	color: black;
+	transition: all 0.3s;
+}
+
+div.press article a:hover {
+	color: #f6c15c;
 }

@@ -1181,6 +1181,10 @@ div.press article {
 	clear:both;
 }
 
+div.press article  h3 {
+	border-bottom: 1px solid #e8e8e8;
+}
+
 div.press article img {
 	float: right;
 	margin-left: 20px;

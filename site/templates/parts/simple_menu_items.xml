@@ -45,5 +45,15 @@
 				<cms:text constant="menu_privacy"/>
 			</a>
 		</li>
+		<li>
+			<a
+				class="$section == 'press' ? 'active' : false"
+				href="url_Make('', 'press')"
+				cms:eval="href"
+				cms:optional="class"
+				>
+				<cms:text constant="menu_press"/>
+			</a>
+		</li>
 	</ul>
 </document>

@@ -340,7 +340,7 @@ nav#navigation ul.drop ul.menu li a:after {
 nav#navigation ul.drop li:hover ul.menu {
 	visibility: visible;
 	opacity: 1;
-	max-height: 300px;
+	max-height: 500px;
 	transition-delay: 0.3s;
 }
 

@@ -16,6 +16,9 @@
 	<section name="contact-us">
 		<language name="all" file="contact_us.xml" />
 	</section>
+	<section name="press">
+		<language name="all" file="press.xml" />
+	</section>
 	<section name="user">
 		<language name="all">
 			<action name="_default" file="control_panel.xml"/>

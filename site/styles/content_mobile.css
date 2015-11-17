@@ -36,10 +36,10 @@ h3 {
 .mobile_title a.menu {
     position: absolute;
     top: 50%;
-    margin-top: 1px;
+    margin-top: -1.5px;
     left: 3%;
     width: 35px;
-    height: 2px;
+    height: 3px;
     background-color: white;
     transition:all 0.3s;
 }
@@ -66,7 +66,7 @@ h3 {
 	top: -10px;
 	left: 0%;
 	width: 35px;
-	height: 2px;
+	height: 3px;
 	background-color: white;
 	transition: all 0.3s;
 }
@@ -77,7 +77,7 @@ h3 {
 	top: 10px;
 	left: 0%;
 	width: 35px;
-	height: 2px;
+	height: 3px;
 	background-color: white;
 	transition: all 0.3s;
 }
@@ -1153,6 +1153,7 @@ section.product div.images {
 
 section.product div.images figure {
 	display: block;
+	text-align: center;
 	margin: 0;
 	margin-bottom: 20px;
 	padding: 0;
@@ -1476,6 +1477,61 @@ section.product div.social a.mail:before {
 
 section.product div.social a.mail:hover:before {
 	background-position: -250px -30px;
+}
+
+/*
+    From the press page
+*/
+
+div.press {
+	display: block;
+	padding-top: 70px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+div.press article {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	width: 95%;
+	margin-bottom: 10px;
+	clear:both;
+}
+
+div.press article  h3 {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 1px solid #e8e8e8;
+	width: 90%
+}
+
+div.press article  p {
+	display: block;
+	padding-top: 10px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+div.press article img {
+	float: right;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+div.press article a {
+	color: black;
+	transition: all 0.3s;
+}
+
+div.press article a:hover {
+	color: #f6c15c;
 }
 
 

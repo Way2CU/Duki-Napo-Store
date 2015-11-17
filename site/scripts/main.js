@@ -134,7 +134,7 @@ Site.ItemView = function(item) {
 
 		self.label_size.text(language_handler.getText(null, 'size_label') + self.item.properties.size);
 
-		self.label_price.text(language_handler.getText(null, 'pricing_label')  + self.item.price );
+		self.label_price.text(language_handler.getText(null, 'currency')  + self.item.price );
 
 		self.label_removeItem.on('click',function() {
 			event.preventDefault();

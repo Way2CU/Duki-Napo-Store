@@ -1256,6 +1256,9 @@ Site.on_load = function() {
 
 	if (add_to_cart.length > 0)
 		add_to_cart.on('click', Site.handle_add_to_cart);
+
+	//  function for setting _blank attribute to article links
+	$('div.press article a').attr('target','_blank');
 };
 
 // connect document `load` event with handler function

@@ -848,7 +848,7 @@ div.contact_us div.form_wrap form div.controls button {
 	padding-left: 1.5em;
 	padding-right: 1.5em;
 	border: 1px solid #989898;
-	background-color: #a0a0a0;
+	background-color: #212121;
 	color: white;
 	font-size: 1.1em;
 	text-decoration: none;
@@ -1209,8 +1209,11 @@ section.product div.info article h1 {
 }
 
 section.product div.properties > div {
-	display: block;
+	display: inline-block;
+	vertical-align: top;
 	margin-bottom: 20px;
+	text-align: center;
+	width: 50%;
 }
 
 section.product div.properties > div:last-of-type {
@@ -1219,12 +1222,11 @@ section.product div.properties > div:last-of-type {
 }
 
 section.product div.properties > div h4 {
-    margin: 0;
-    margin-bottom: 5px;
-    border: 1px solid rgba(247, 194, 93, 0.37);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    position: relative;
+	margin: 0;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position: relative;
 }
 
 
@@ -1265,7 +1267,6 @@ section.product div.policy label {
 	display: block;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	font-size: 1.2em;
 	font-style: italic;
 	position: relative;
 	cursor: pointer;

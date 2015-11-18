@@ -954,6 +954,12 @@ div.checkout_controls button:hover {
 	background-color: #212121;
 }
 
+div#input_details div.existing_account.visible,
+div#input_details div.new_account.visible,
+ div#input_details div.guest_checkout.visible {
+ 	max-height: 400px;
+ }
+
 
 /**
  * Dialogs

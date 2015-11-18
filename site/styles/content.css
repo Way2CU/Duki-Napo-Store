@@ -1207,6 +1207,8 @@ ul#user_list {
 	list-style-type: none;
 	margin: 0px;
 	padding: 0px;
+	width: 960px;
+
 }
 
 ul#user_list li {
@@ -1237,10 +1239,12 @@ ul#user_list li span.name {
 ul#user_list li a {
 	display: inline-block;
 	vertical-align: middle;
+	margin-top: 35px;
 	padding: 10px;
 	background-color: #212121;
 	position: relative;
 	overflow: hidden;
+	float: right;
 	z-index: 0;
 }
 

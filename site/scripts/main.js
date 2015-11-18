@@ -45,6 +45,118 @@ Site.is_mobile = function() {
 	return result;
 };
 
+Site.ItemViewUser = function(item) {
+	var self = this;
+
+	self.item = item;
+	self.cart = item.cart;
+	self.image = null;
+	self.container = null;
+	self.section = null;
+	self.label_name = null;
+	self.label_color = null;
+	self.label_size = null;
+	self.label_quantity = null;
+	self.label_price = null;
+	self.label_removeItem = null;
+	self.label_count = null;
+	self.label_tax = null;
+
+	/**
+	 * Complete object initialization.
+	 */
+
+	self._init = function() {
+		var item_list = self.cart.get_list_container();
+
+		self.container = $('<li>').appendTo(item_list);
+		self.container
+				.addClass('hidden')
+				.addClass('item');
+
+		// force reflow of this item
+		self.container[0].offsetHeight;
+
+		// create labels
+
+		self.image = $('<img>').appendTo(self.container);
+
+		self.label_name = $('<span>').appendTo(self.container);
+		self.label_name.addClass('name');
+
+		self.label_color = $('<span>').appendTo(self.container);
+		self.label_color.addClass('color');
+
+		self.label_size = $('<span>').appendTo(self.container);
+		self.label_size.addClass('size');
+
+		self.label_quantity = $('<span>').appendTo(self.container);
+		self.label_quantity.addClass('quantity');
+
+		self.label_price = $('<span>').appendTo(self.container);
+		self.label_price.addClass('price');
+
+		self.label_removeItem = $('<a href="javascript:void(0)">').appendTo(self.container);
+		
+		var base_url = $('base').attr('href');
+		self.label_close_image = $('<img>').appendTo(self.label_removeItem);
+		self.label_close_image.attr('src', base_url + '/site/images/social/close-icon.svg');
+
+
+
+
+		self.label_tax = $('div.total_count:first() span:last()');
+
+
+	};
+
+	/**
+	 * Handle item count change.
+	 */
+	self.handle_change = function() {
+
+		self.label_name.text(self.item.name[language_handler.current_language]);
+
+
+		self.label_quantity.text("X" + self.item.count);
+
+		// update shopping cart elements
+		self.image
+				.attr('src', self.item.image)
+				.attr('alt', self.item.name[language_handler.current_language]);
+
+		self.label_name.text(self.item.name[language_handler.current_language]);
+
+		self.label_color.text(language_handler.getText(null, 'color_label') + self.item.properties.color);
+
+		self.label_size.text(language_handler.getText(null, 'size_label') + self.item.properties.size);
+
+		self.label_price.text(language_handler.getText(null, 'currency')  + self.item.price );
+
+		self.label_removeItem.on('click',function() {
+			event.preventDefault();
+			self.item.remove();
+		});
+
+
+		self.label_tax.text("$" + self.item.tax);
+
+		//show item if hidden
+		if (self.container.hasClass('hidden'))
+			self.container.removeClass('hidden');
+	};
+
+	/**
+	 * Handle item removal.
+	 */
+	self.handle_remove = function() {
+		self.container.remove();
+	};
+
+	// finalize object
+	self._init();
+}
+
 
 Site.ItemView = function(item) {
 	var self = this;
@@ -1202,16 +1314,22 @@ Site.on_load = function() {
 	// create shopping cart
 	Site.cart = new Caracal.Shop.Cart();
 	Site.cart
-			.set_checkout_url('/shop/checkout')
-			.ui.connect_checkout_button($('div#cart div.controls button[name=checkout]'))
-			.ui.connect_checkout_button($('a.checkout'))
-			.ui.add_item_list($('div.popup ul'))
-			.ui.add_total_count_label($('div#cart div.popup ul li.item span.quantity'))
-			.ui.add_total_count_label($('div#cart span.count'))
-			.ui.add_total_count_label($('div.mobile_title span.mobile_count'))
-			.ui.add_total_cost_label($('div#cart span.total'))
-			.ui.add_total_cost_label($('span.cart_total'))
-			.add_item_view(Site.ItemView);
+		.set_checkout_url('/shop/checkout')
+		.ui.connect_checkout_button($('div#cart div.controls button[name=checkout]'))
+		.ui.connect_checkout_button($('a.checkout'))
+		.ui.add_item_list($('div.popup ul'))
+		.ui.add_total_count_label($('div#cart div.popup ul li.item span.quantity'))
+		.ui.add_total_count_label($('div#cart span.count'))
+		.ui.add_total_count_label($('div.mobile_title span.mobile_count'))
+		.ui.add_total_cost_label($('div#cart span.total'))
+		.ui.add_total_cost_label($('span.cart_total'))
+		.add_item_view(Site.ItemView);
+
+	Site.user_cart = new Caracal.Shop.Cart();
+	Site.user_cart
+		.ui.add_item_list($('ul#user_list'))
+		.add_item_view(Site.ItemViewUser);
+
 
 	if ($('header').hasClass('home')) {
 		Site.home_page_gallery = new PageControl('div#image_rotate', 'figure');

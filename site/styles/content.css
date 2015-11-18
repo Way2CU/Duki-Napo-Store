@@ -9,7 +9,7 @@
 
 div#image_rotate {
 	display: block;
-	text-align: center;
+	text-align: center;`
 	margin-top: -110px;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -44,8 +44,7 @@ div#image_rotate figure.visible {
 div.about_article {
 	display: block;
 	text-align: center;
-	padding:20px calc((100vw - 1200px) / 2);
-	color:#212121;
+	padding:20px calc((100vw - 960px) / 2);
 }
 
 div.about_article h3 {
@@ -56,14 +55,12 @@ div.about_article h3 {
 
 	color:#212121;
 	border-bottom: 1px solid #e8e8e8;
-	width: 800px
 }
 
 div.about_article p {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 900px;
 }
 
 div.about_article p img {
@@ -201,7 +198,7 @@ div.contact_us div.form_wrap form div.controls button:before {
 
 div.diamonds {
 	display: block;
-	padding: 20px calc((100vw - 1200px) / 2);
+	padding: 20px calc((100vw - 960px) / 2);
 	color: #212121;
 }
 
@@ -212,13 +209,11 @@ div.process_article {
 
 div.process_article h3 {
 	display: block;
-	text-align: center;
+	text-align: left;
 	padding-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	color:#212121;
 	border-bottom: 1px solid #e8e8e8;
-	width: 400px
 }
 
 div.process_article p {
@@ -226,7 +221,6 @@ div.process_article p {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
-	width: 900px;
 }
 
 div.process_article p img {
@@ -234,7 +228,6 @@ div.process_article p img {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	width: 50%;
 }
 
 div.process_article ol {
@@ -242,7 +235,6 @@ div.process_article ol {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
-	width: 900px;
 }
 
 div.process_article ul {
@@ -260,14 +252,12 @@ div.benefits_article {
 
 div.benefits_article h3 {
 	display: block;
-	text-align: center;
+	text-align: left;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	color:#212121;
 	border-bottom: 1px solid #e8e8e8;
-	width: 400px
 }
 
 
@@ -276,7 +266,6 @@ div.benefits_article p img {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	width: 50%;
 }
 
 div.benefits_article p {
@@ -284,14 +273,12 @@ div.benefits_article p {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
-	width: 900px;
 }
 
 div.benefits_article ol {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 900px;
 
 	text-align: left;
 }
@@ -1173,7 +1160,7 @@ div.dialog div.command_bar a:hover {
 */
 
 div.press {
-	padding:20px calc((100vw - 1200px) / 2);
+	padding:20px calc((100vw - 960px) / 2);
 }
 
 div.press article {

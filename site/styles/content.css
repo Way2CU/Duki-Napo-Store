@@ -1216,6 +1216,7 @@ ul#user_list li {
 	padding-bottom: 5px;
 	padding-top: 5px;
 	border-bottom: 1px solid #d0d0d0;
+	position: relative;
 }
 
 ul#user_list li > img {
@@ -1237,14 +1238,14 @@ ul#user_list li span.name {
 }
 
 ul#user_list li a {
-	display: inline-block;
-	vertical-align: middle;
-	margin-top: 35px;
+	
+	position: absolute;
+	top: 50%;
+	margin-top: -17.5px;
+	right: 0px;
 	padding: 10px;
 	background-color: #212121;
-	position: relative;
 	overflow: hidden;
-	float: right;
 	z-index: 0;
 }
 

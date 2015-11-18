@@ -1193,3 +1193,68 @@ div.press article a {
 div.press article a:hover {
 	color: #f6c15c;
 }
+
+/*
+    control_pane;	
+*/
+
+section.user {
+	display: block;
+	padding:20px calc((100vw - 1200px) / 2);
+}
+
+ul#user_list {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+ul#user_list li {
+	display: block;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1px solid #d0d0d0;
+}
+
+ul#user_list li > img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+ul#user_list li span {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+ul#user_list li a {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 10px;
+	background-color: #212121;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+}
+
+ul#user_list li a:hover:before {
+	left: 0%
+}
+
+ul#user_list li a:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: #f6c15c;
+	z-index: -1;
+	transition: all 0.3s;
+}
+
+ul#user_list li a img {
+	display: block;
+	width: 15px;
+}

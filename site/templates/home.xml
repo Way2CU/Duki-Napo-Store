@@ -31,7 +31,6 @@
 					<cms:module
 						name="gallery"
 						action="show_image_list"
-						random="1"
 						group="home_page"
 						template="parts/home_page_image.xml"
 						/>

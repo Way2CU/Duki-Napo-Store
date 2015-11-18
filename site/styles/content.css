@@ -1228,6 +1228,12 @@ ul#user_list li span {
 	padding-right: 30px;
 }
 
+ul#user_list li span.name {
+	color: #989898;
+	font-weight: 700;
+	font-size: 1.1em;
+}
+
 ul#user_list li a {
 	display: inline-block;
 	vertical-align: middle;

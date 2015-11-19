@@ -15,7 +15,7 @@
 
 		<body>
 			<cms:template file="parts/header.xml"/>
-			<div class="$section == 'gallery' ? 'gallery' : false"
+			<div class="$section == 'portfolio' ? 'gallery' : false"
 				 cms:optional="class"
 				 >
 				<cms:module

@@ -16,7 +16,7 @@
 		<body>
 			<cms:template file="parts/header.xml"/>
 
-			<div class="$section == 'press' ? 'press' : false" cms:optional="class" >
+			<div class="$section == 'in-news' ? 'press' : false" cms:optional="class" >
 
 				<cms:module
 					name="articles"

@@ -47,8 +47,8 @@
 		</li>
 		<li>
 			<a
-				class="$section == 'press' ? 'active' : false"
-				href="url_Make('', 'press')"
+				class="$section == 'in-news' ? 'active' : false"
+				href="url_Make('', 'in-news')"
 				cms:eval="href"
 				cms:optional="class"
 				>

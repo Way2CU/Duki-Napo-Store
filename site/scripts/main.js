@@ -1315,7 +1315,7 @@ Site.on_load = function() {
 	Site.cart = new Caracal.Shop.Cart();
 	Site.cart
 		.set_checkout_url('/shop/checkout')
-		.ui.connect_checkout_button($('div#cart div.controls button[name=checkout]'))
+		.ui.connect_checkout_button($('div.popup div.controls button'))
 		.ui.connect_checkout_button($('a.checkout'))
 		.ui.add_item_list($('div.popup ul'))
 		.ui.add_total_count_label($('div#cart div.popup ul li.item span.quantity'))

@@ -1187,8 +1187,6 @@ Site.on_load = function() {
 	Site.cart = new Caracal.Shop.Cart();
 	Site.cart
 		.set_checkout_url('/shop/checkout')
-		.ui.connect_checkout_button($('div#cart div.controls button[name=checkout]'))
-		.ui.connect_checkout_button($('a.checkout'))
 		.ui.add_item_list($('div.popup ul'))
 		.ui.add_total_count_label($('div#cart div.popup ul li.item span.quantity'))
 		.ui.add_total_count_label($('div#cart span.count'))
@@ -1196,6 +1194,10 @@ Site.on_load = function() {
 		.ui.add_total_cost_label($('div#cart span.total'))
 		.ui.add_total_cost_label($('span.cart_total'))
 		.add_item_view(Site.ItemView);
+
+	if (Site.is_mobile())
+		Site.cart.ui.connect_checkout_button($('div#cart div.controls button[name=checkout]')); else
+		Site.cart.ui.connect_checkout_button($('div.popup div.controls button[name=checkout]'));
 
 	if ($('header').hasClass('home')) {
 		Site.home_page_gallery = new PageControl('div#image_rotate', 'figure');

@@ -158,6 +158,11 @@
 						</a>
 					</li>
 					<li>
+						<a href="javascript:void(0)" >
+							<cms:text constant="menu_privacy"/>
+						</a>
+					</li>
+					<li>
 						<a
 							class="$section == 'in-news' ? 'active' : false"
 							href="url_Make('', 'in-news')"

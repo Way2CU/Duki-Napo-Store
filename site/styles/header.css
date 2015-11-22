@@ -161,7 +161,7 @@ nav#navigation ul.drop > li:before {
 	position: absolute;
 	top: 50%;
 	margin-top: -16px;
-	left: 0%;
+	left: 5px;
 	background-image: url(../images/social/social-inner-page.svg);
 	background-repeat: no-repeat;
 	background-size: 428px 60px;

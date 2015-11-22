@@ -340,7 +340,7 @@ nav#navigation ul.drop ul.menu li a:after {
 nav#navigation ul.drop li:hover ul.menu {
 	visibility: visible;
 	opacity: 1;
-	max-height: 300px;
+	max-height: 500px;
 	transition-delay: 0.3s;
 }
 
@@ -589,6 +589,7 @@ div#cart div.popup > ul {
 div#cart div.popup > ul li {
 	display: block;
 	border-bottom: 1px solid #e8e8e8;
+	position:  relative;
 }
 
 div#cart div.popup > ul li img {
@@ -630,16 +631,13 @@ div#cart div.popup > ul li > span {
 }
 
 div#cart div.popup > ul li a {
-	display: inline-block;
-	vertical-align: middle;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-	padding-left: 3px;
-	padding-right: 3px;
-	width: calc(10% - 20px);
+	position: absolute;
+	top: 50%;
+	margin-top: -17.5px;
+	right: 5px;
+	padding: 10px;
 	background-color: black;
 	overflow: hidden;
-	position: relative;
 	z-index: 0;
 }
 

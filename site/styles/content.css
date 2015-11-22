@@ -9,12 +9,12 @@
 
 div#image_rotate {
 	display: block;
-	text-align: center;
 	margin-top: -110px;
+	text-align: center;
 	background-repeat: no-repeat;
 	background-position: center center;
-	width:100%;
-	height:700px;
+	width: 100%;
+	height: 700px;
 	position: relative;
 	overflow: hidden;
 }
@@ -44,8 +44,7 @@ div#image_rotate figure.visible {
 div.about_article {
 	display: block;
 	text-align: center;
-	padding:20px calc((100vw - 1200px) / 2);
-	color:#212121;
+	padding:20px calc((100vw - 960px) / 2);
 }
 
 div.about_article h3 {
@@ -56,14 +55,12 @@ div.about_article h3 {
 
 	color:#212121;
 	border-bottom: 1px solid #e8e8e8;
-	width: 800px
 }
 
 div.about_article p {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 900px;
 }
 
 div.about_article p img {
@@ -165,18 +162,35 @@ div.contact_us div.form_wrap form div.controls button {
 	padding-left: 1.5em;
 	padding-right: 1.5em;
 	border: 1px solid #989898;
-	background-color: #a0a0a0;
+	background-color: #212121;
 	color: white;
 	font-size: 1.1em;
 	text-decoration: none;
-	cursor: pointer;
+	cursor: pointer;cd ..
 	transition: all 0.3s;
+	z-index: 0;
+	overflow: hidden;
+	position: relative;
 }
 
-div.contact_us div.form_wrap form div.controls button:hover {
-	background-color: #d0d0d0;
-	border:1px solid #f6c15c;
+div.contact_us div.form_wrap form div.controls button:hover:before {
+	left: 0%;
 }
+
+div.contact_us div.form_wrap form div.controls button:before {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	top: 0px;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: #f6c15c;
+	transition: all 0.3s;
+	z-index: -1;
+}
+
+
 
 /**
  * Diamonds page
@@ -184,7 +198,7 @@ div.contact_us div.form_wrap form div.controls button:hover {
 
 div.diamonds {
 	display: block;
-	padding: 20px calc((100vw - 1200px) / 2);
+	padding: 20px calc((100vw - 960px) / 2);
 	color: #212121;
 }
 
@@ -195,13 +209,11 @@ div.process_article {
 
 div.process_article h3 {
 	display: block;
-	text-align: center;
+	text-align: left;
 	padding-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	color:#212121;
 	border-bottom: 1px solid #e8e8e8;
-	width: 400px
 }
 
 div.process_article p {
@@ -209,7 +221,6 @@ div.process_article p {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
-	width: 900px;
 }
 
 div.process_article p img {
@@ -217,7 +228,6 @@ div.process_article p img {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	width: 50%;
 }
 
 div.process_article ol {
@@ -225,7 +235,6 @@ div.process_article ol {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
-	width: 900px;
 }
 
 div.process_article ul {
@@ -243,14 +252,12 @@ div.benefits_article {
 
 div.benefits_article h3 {
 	display: block;
-	text-align: center;
+	text-align: left;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	color:#212121;
 	border-bottom: 1px solid #e8e8e8;
-	width: 400px
 }
 
 
@@ -259,7 +266,6 @@ div.benefits_article p img {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	width: 50%;
 }
 
 div.benefits_article p {
@@ -267,14 +273,12 @@ div.benefits_article p {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
-	width: 900px;
 }
 
 div.benefits_article ol {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 900px;
 
 	text-align: left;
 }
@@ -950,6 +954,12 @@ div.checkout_controls button:hover {
 	background-color: #212121;
 }
 
+div#input_details div.existing_account.visible,
+div#input_details div.new_account.visible,
+ div#input_details div.guest_checkout.visible {
+ 	max-height: 400px;
+ }
+
 
 /**
  * Dialogs
@@ -1120,4 +1130,142 @@ div.dialog div.content div.inner_content div > label > input {
 	background-color: #e8e8e8;
 
 	color: #212121;
+}
+
+div.dialog div.command_bar a {
+	background-color: #212121;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+}
+
+
+div.dialog div.command_bar a:hover:before {
+	left: 0%;
+}
+
+div.dialog div.command_bar a:before {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	top: 0px;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: #f6c15c;
+	transition: all 0.3s;
+	z-index: -1;
+}
+
+div.dialog div.command_bar a:hover {
+	background-color: #212121;
+}
+
+/*
+    From the press page
+*/
+
+div.press {
+	padding:20px calc((100vw - 960px) / 2);
+}
+
+div.press article {
+	margin-bottom: 10px;
+	clear:both;
+}
+
+div.press article  h3 {
+	border-bottom: 1px solid #e8e8e8;
+}
+
+div.press article img {
+	float: right;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+div.press article a {
+	color: black;
+	transition: all 0.3s;
+}
+
+div.press article a:hover {
+	color: #f6c15c;
+}
+
+/*
+    control_pane;	
+*/
+
+section.user {
+	display: block;
+	padding:20px calc((100vw - 1200px) / 2);
+}
+
+ul#user_list {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	width: 960px;
+
+}
+
+ul#user_list li {
+	display: block;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1px solid #d0d0d0;
+	position: relative;
+}
+
+ul#user_list li > img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+ul#user_list li span {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+ul#user_list li span.name {
+	color: #989898;
+	font-weight: 700;
+	font-size: 1.1em;
+}
+
+ul#user_list li a {
+	
+	position: absolute;
+	top: 50%;
+	margin-top: -17.5px;
+	right: 0px;
+	padding: 10px;
+	background-color: #212121;
+	overflow: hidden;
+	z-index: 0;
+}
+
+ul#user_list li a:hover:before {
+	left: 0%
+}
+
+ul#user_list li a:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: #f6c15c;
+	z-index: -1;
+	transition: all 0.3s;
+}
+
+ul#user_list li a img {
+	display: block;
+	width: 15px;
 }

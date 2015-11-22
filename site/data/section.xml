@@ -10,11 +10,14 @@
 	<section name="diamonds">
 		<language name="all" file="diamonds.xml" />
 	</section>
-	<section name="gallery">
+	<section name="portfolio">
 		<language name="all" file="gallery.xml" />
 	</section>
 	<section name="contact-us">
 		<language name="all" file="contact_us.xml" />
+	</section>
+	<section name="in-news">
+		<language name="all" file="press.xml" />
 	</section>
 	<section name="user">
 		<language name="all">

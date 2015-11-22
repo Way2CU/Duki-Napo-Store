@@ -16,26 +16,26 @@
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<cms:template file="parts/header.xml"/>
 
-			<cms:desktop>
-				<div id="image_rotate">
-					<cms:module
-						name="gallery"
-						action="show_image_list"
-						group="home_page"
-						template="parts/home_page_image.xml"
-						/>
+			<section class="user">
+			<!-- Shopping cart -->
+			<cms:template file="parts/cart_list.xml"/>
+				
+				<!-- Show list of previous purchases -->
+				<div id="transactions">
+					<cms:user>
+						<cms:module
+							name="shop"
+							action="show_transaction_list"
+							order_by="id"
+							order_asc="0"
+							system_user="$_SESSION['uid']"
+							cms:eval="system_user"
+							template="parts/transaction.xml"
+							/>
+					</cms:user>
 				</div>
-			</cms:desktop>
-			<cms:mobile>
-				<div id="image_rotate">
-					<cms:module
-						name="gallery"
-						action="show_image_list"
-						group="home_page"
-						template="parts/home_page_image.xml"
-						/>
-				</div>
-			</cms:mobile>
+
+			</section>
 
 			<cms:template file="parts/footer.xml"/>
 		</body>

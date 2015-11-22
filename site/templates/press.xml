@@ -15,16 +15,16 @@
 
 		<body>
 			<cms:template file="parts/header.xml"/>
-			<div class="$section == 'portfolio' ? 'gallery' : false"
-				 cms:optional="class"
-				 >
+
+			<div class="$section == 'in-news' ? 'press' : false" cms:optional="class" >
+
 				<cms:module
-					name="gallery"
-					action="show_image_list"
-					random="1"
-					group="galleryPage_images"
-					template="parts/image.xml"
-					/>
+					name="articles"
+					action="show_group"
+					text_id="press"
+					template="parts/press_group_articles.xml"
+				/>
+
 			</div>
 			<cms:template file="parts/footer.xml"/>
 		</body>

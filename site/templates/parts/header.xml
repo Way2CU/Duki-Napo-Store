@@ -102,7 +102,7 @@
 
 			<nav class="mobile_menu">
 				<ul>
-					<li><a class="checkout" href="#"><cms:text constant="menu_sign"/></a></li>
+					<li><a class="checkout" href="#"><cms:text constant="menu_signup"/></a></li>
 					<li><a class="acount" href="#"><cms:text constant="menu_account"/></a></li>
 					<li>
 						<a

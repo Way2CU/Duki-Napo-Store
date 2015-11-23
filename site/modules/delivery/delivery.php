@@ -18,6 +18,11 @@ class delivery extends Module {
 		global $section;
 
 		parent::__construct(__FILE__);
+
+		if (class_exists('shop')) {
+			require_once('units/method.php');
+			$delivery = Duki_DeliveryMethod::getInstance($this);
+		}
 	}
 
 	/**

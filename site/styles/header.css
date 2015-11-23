@@ -625,9 +625,9 @@ div#cart div.popup > ul li > span {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
-	padding-left: 30px;
-	padding-right: 30px;
-	width: calc(10% - 20px);
+	padding-left: 20px;
+	padding-right: 20px;
+
 }
 
 div#cart div.popup > ul li a {

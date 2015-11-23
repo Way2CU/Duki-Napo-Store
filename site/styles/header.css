@@ -562,10 +562,11 @@ div#cart div.popup {
 	background: linear-gradient(#fffcfc 80%, #BCBDB6 100%);
 	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
 
-	overflow: hidden;
+	overflow-y:scroll;
 	visibility: hidden;
 	opacity: 0;
 	transition: all 0.6s;
+
 }
 
 div#cart:hover div.popup {

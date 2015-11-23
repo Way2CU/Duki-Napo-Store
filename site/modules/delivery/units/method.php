@@ -158,7 +158,7 @@ class Duki_DeliveryMethod extends DeliveryMethod {
 	 * @return boolean
 	 */
 	public function isInternational() {
-		return false;
+		return true;
 	}
 }
 

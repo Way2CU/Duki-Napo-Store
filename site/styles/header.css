@@ -565,8 +565,6 @@ div#cart div.popup {
 	width: 500px;
 
 	border: 1px solid #f6c15c;
-	background: -webkit-linear-gradient(#fffcfc 80%, #BCBDB6 100%);
-	background: -o-linear-gradient(#fffcfc 80%, #BCBDB6 100%);
 	background: linear-gradient(#fffcfc 80%, #BCBDB6 100%);
 	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
 

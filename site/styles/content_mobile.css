@@ -82,7 +82,7 @@ h3 {
 	transition: all 0.3s;
 }
 
-.mobile_title a.cart_btn {
+	.mobile_title a.cart_btn {
 	position: absolute;
 	top: 50%;
 	margin-top: -17.5px;
@@ -92,8 +92,8 @@ h3 {
 	background-image: url(../images/header/mobile-sprite.svg);
 	background-repeat: no-repeat;
 	background-position: -20px -20px;
-	background-size: 150px 975px;
-	transition:all 0.3s;
+	background-size: 150px 1200px;
+	transition: all 0.3s;
 }
 
 span.mobile_count {
@@ -158,30 +158,33 @@ a.cart_btn.enabled{
 	height: 35px;
 	background-image: url(../images/header/mobile-sprite.svg);
 	background-repeat: no-repeat;
-	background-position: -2px -82px;
-	background-size: 80px 520px;
+	background-position: -5px -104px;
+	background-size: 80px 560px;
 }
 
 .mobile_menu ul:first-of-type li:nth-of-type(1) a:before {
-	background-position: -2px -82px;
+	background-position: -5px -69px;
 }
 
 .mobile_menu ul:first-of-type li:nth-of-type(1) a.active:before {
-	background-position: -22px -82px;
+	background-position: -40px -104px;
 }
 
 
 .mobile_menu ul:first-of-type li:nth-of-type(2) a:before {
-	background-position: -2px -122px;
+	background-position: -5px -104px;
 }
 
+.mobile_menu ul:first-of-type li:nth-of-type(2) a:active:before {
+	background-position: -40px -104px;
+}
 
 .mobile_menu ul:first-of-type li:nth-of-type(3) a:before {
-	background-position: -2px -162px;
+	background-position: -5px -104px;
 }
 
 .mobile_menu ul:first-of-type li:nth-of-type(3) a.active:before {
-	background-position: -42px -162px;
+	background-position: -40px -139px;
 }
 
 .mobile_menu ul:nth-of-type(2) li a:before {
@@ -193,41 +196,58 @@ a.cart_btn.enabled{
 	height: 35px;
 	background-image: url(../images/header/mobile-sprite.svg);
 	background-repeat: no-repeat;
-	background-position: -2px -202px;
-	background-size: 80px 520px;
+	background-position: -5px -104px;
+	background-size: 80px 560px;
 }
 
 .mobile_menu ul:nth-of-type(2) li:nth-of-type(1) a:before {
-	background-position: -2px -202px;
+	background-position: -5px -175px;
 }
 
 .mobile_menu ul:nth-of-type(2) li:nth-of-type(1) a.active:before {
-	background-position: -42px -202px;
+	background-position: -40px -175px;
 }
 
 .mobile_menu ul:nth-of-type(2) li:nth-of-type(2) a:before {
-	background-position: -2px -242px;
+	background-position: -5px -205px;
 }
 
 .mobile_menu ul:nth-of-type(2) li:nth-of-type(2) a.active:before {
-	background-position: -42px -242px;
+	background-position: -40px -205px;
 }
 
 .mobile_menu ul:nth-of-type(2) li:nth-of-type(3) a:before {
-	background-position: -2px -282px;
+	background-position: -5px -240px;
 }
 
 .mobile_menu ul:nth-of-type(2) li:nth-of-type(3) a.active:before {
-	background-position: -42px -242px;
+	background-position: -40px -240px;
 }
 
 .mobile_menu ul:nth-of-type(2) li:nth-of-type(4) a:before {
-	background-position: -2px -322px;
+	background-position: -5px -275px;
 }
 
 .mobile_menu ul:nth-of-type(2) li:nth-of-type(4) a.active:before {
-	background-position: -42px -322px;
+	background-position: -40px -275px;
 }
+
+.mobile_menu ul:nth-of-type(2) li:nth-of-type(5) a:before {
+	background-position: -5px -455px;
+}
+
+.mobile_menu ul:nth-of-type(2) li:nth-of-type(5) a.active:before {
+	background-position: -40px -455px;
+}
+
+.mobile_menu ul:nth-of-type(2) li:nth-of-type(6) a:before {
+	background-position: -5px -523px;
+}
+
+.mobile_menu ul:nth-of-type(2) li:nth-of-type(6) a.active:before {
+	background-position: -40px -523px;
+}
+
 
 .mobile_menu ul:nth-of-type(3) li a:before {
 	content: "";
@@ -243,36 +263,36 @@ a.cart_btn.enabled{
 }
 
 .mobile_menu ul:nth-of-type(3) li:nth-of-type(1) a:before {
-	background-position: -2px -362px;
+	background-position: -5px -290px;
 }
 
 .mobile_menu ul:nth-of-type(3) li:nth-of-type(1) a.active:before {
-	background-position: -42px -362px;
+	background-position: -40px -290px;
 }
 
 
 .mobile_menu ul:nth-of-type(3) li:nth-of-type(2) a:before {
-	background-position: -2px -402px;
+	background-position: -5px -324px;
 }
 
 .mobile_menu ul:nth-of-type(3) li:nth-of-type(2) a.active:before {
-	background-position: -42px -402px;
+	background-position: -40px -324px;
 }
 
 .mobile_menu ul:nth-of-type(3) li:nth-of-type(3) a:before {
-	background-position: -2px -442px;
+	background-position: -5px -354px;
 }
 
 .mobile_menu ul:nth-of-type(3) li:nth-of-type(3) a.active:before {
-	background-position: -42px -442px;
+	background-position: -40px -354px;
 }
 
 .mobile_menu ul:nth-of-type(3) li:nth-of-type(4) a:before {
-	background-position: -2px -482px;
+	background-position: -5px -386px;
 }
 
 .mobile_menu ul:nth-of-type(3) li:nth-of-type(4) a.active:before {
-	background-position: -42px -482px;
+	background-position: -40px -386px;
 }
 
 ul#navigation {

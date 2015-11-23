@@ -431,6 +431,7 @@ div.popup > ul {
 div.popup > ul li {
 	display: block;
 	border-bottom: 1px solid #e8e8e8;
+	position:  relative;
 }
 
 div.popup > ul li > img {
@@ -473,10 +474,13 @@ div.popup > ul li > span:first-of-type {
 }
 
 div.popup > ul li a {
-	display: inline-block;
-	vertical-align: middle;
-	background-color: black;
-	padding: 10px;
+	position: absolute;
+	top: 50%;
+	margin-top: -17.5px;
+	right: 5px;
+	padding:  10px;
+	background-color:  black;
+
 }
 
 div.popup > ul li a img {

@@ -10,21 +10,21 @@
 				<cms:text constant="checkout"/>
 			</title>
 
-
 			<cms:collection include="dialog"/>
-			<cms:module
-				name="shop"
-				action="include_cart_scripts"
-				/>
-			<cms:module
-				name="shop"
-				action="include_scripts"
-				/>
+			<cms:module name="shop" action="include_cart_scripts"/>
+			<cms:module name="shop" action="include_scripts"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<cms:template file="parts/header.xml"/>
+
+			<cms:module
+				name="shop"
+				action="set_terms"
+				link="url_Make('terms-and-conditions', 'about-us')"
+				cms:eval="link"
+				/>
 
 			<cms:module
 				name="shop"

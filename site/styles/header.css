@@ -247,7 +247,7 @@ nav#navigation ul.drop > li > a:after {
 	right: 0px;
 	width: 1px;
 	height: 100%;
-	background-color: #6e6e6e; 
+	background-color: #6e6e6e;
 }
 
 nav#navigation ul.drop ul.menu {
@@ -575,7 +575,7 @@ div#cart div.popup {
 }
 
 div#cart:hover div.popup {
-	visibility: visible;	
+	visibility: visible;
 	opacity: 1;
 	max-height: 500px;
 	transition-delay: 0.3s;
@@ -624,7 +624,7 @@ div#cart div.popup > ul li div span.name {
 	color: #989898;
 	font-weight: 700;
 	font-size: 1.1em;
-	
+
 }
 
 div#cart div.popup > ul li > span {
@@ -728,6 +728,6 @@ div#cart div.popup div.controls button:before {
 	height: 100%;
 	background-color: #f6c15c;
 	z-index: -1;
-	transition: all 0.3s;	
+	transition: all 0.3s;
 }
 

@@ -6,16 +6,7 @@
 			<h2><cms:text constant="footer_title"/></h2>
 			<cms:desktop>
 				<nav id="footer_nav">
-
 					<cms:template file="parts/simple_menu_items.xml"/>
-					
-					<ul>
-						<cms:module
-							name="shop"
-							action="show_category_list"
-							template="parts/category_menu_item.xml"
-							/>
-					</ul>
 				</nav>
 			</cms:desktop>
 

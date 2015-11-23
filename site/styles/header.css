@@ -268,9 +268,17 @@ nav#navigation ul.drop ul.menu {
 
 nav#navigation ul.drop ul.menu li {
 	display: block;
+	width: 250px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+nav#navigation ul.drop ul.menu li:first-of-type {
 	padding-top: 5px;
+}
+
+nav#navigation ul.drop ul.menu li:last-of-type {
 	padding-bottom: 5px;
-	width: 150px;
 }
 
 nav#navigation ul.drop ul.menu li a {

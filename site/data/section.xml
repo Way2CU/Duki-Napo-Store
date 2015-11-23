@@ -5,7 +5,11 @@
 		<language name="all" file="home.xml" />
 	</section>
 	<section name="about-us">
-		<language name="all" file="about_us.xml" />
+		<language name="all">
+			<action name="_default" file="about_us.xml"/>
+			<action name="privacy-policy" file="privacy_policy.xml"/>
+			<action name="terms-and-conditions" file="terms_and_conditions.xml"/>
+		</language>
 	</section>
 	<section name="diamonds">
 		<language name="all" file="diamonds.xml" />
@@ -16,7 +20,7 @@
 	<section name="contact-us">
 		<language name="all" file="contact_us.xml" />
 	</section>
-	<section name="in-news">
+	<section name="from-the-press">
 		<language name="all" file="press.xml" />
 	</section>
 	<section name="user">

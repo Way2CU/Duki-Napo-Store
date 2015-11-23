@@ -4,7 +4,11 @@
 	<cms:var name="_DOCTYPE"/>
 	<html lang="$language" cms:eval="lang">
 		<head>
-			<title><cms:text constant="site_title"/><cms:raw text=" - "/><cms:text constant="menu_about_us"/></title>
+			<title>
+				<cms:text constant="site_title"/>
+				<cms:raw text=" - "/>
+				<cms:text constant="menu_privacy"/>
+			</title>
 			<cms:module
 				name="shop"
 				action="include_cart_scripts"
@@ -16,8 +20,7 @@
 			<cms:module
 					name="articles"
 					action="show"
-					class="about_us"
-					text_id="about_article"
+					text_id="privacy_policy"
 					template="parts/article_no_heading.xml"
 					/>
 			<cms:template file="parts/footer.xml"/>

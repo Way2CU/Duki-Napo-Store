@@ -12,6 +12,26 @@
 		</li>
 		<li>
 			<a
+				href="url_Make('privacy-policy', 'about-us')"
+				class="$section == 'about-us' and $action == 'privacy-policy' ? 'active' : false"
+				cms:eval="href"
+				cms:optional="class"
+				>
+				<cms:text constant="menu_privacy"/>
+			</a>
+		</li>
+		<li>
+			<a
+				href="url_Make('terms-and-conditions', 'about-us')"
+				class="$section == 'about-us' and $action == 'terms-and-conditions' ? 'active' : false"
+				cms:eval="href"
+				cms:optional="class"
+				>
+				<cms:text constant="menu_terms_and_conditions"/>
+			</a>
+		</li>
+		<li>
+			<a
 				class="$section == 'diamonds' ? 'active' : false"
 				href="url_Make('', 'diamonds')"
 				cms:eval="href"
@@ -41,14 +61,9 @@
 			</a>
 		</li>
 		<li>
-			<a href="javascript:void(0)" >
-				<cms:text constant="menu_privacy"/>
-			</a>
-		</li>
-		<li>
 			<a
-				class="$section == 'in-news' ? 'active' : false"
-				href="url_Make('', 'in-news')"
+				class="$section == 'from-the-press' ? 'active' : false"
+				href="url_Make('', 'from-the-press')"
 				cms:eval="href"
 				cms:optional="class"
 				>

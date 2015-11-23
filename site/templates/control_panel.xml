@@ -16,10 +16,7 @@
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<cms:template file="parts/header.xml"/>
 
-			<section class="user">
-			<!-- Shopping cart -->
-			<cms:template file="parts/cart_list.xml"/>
-				
+			<section class="user">				
 				<!-- Show list of previous purchases -->
 				<div id="transactions">
 					<cms:user>

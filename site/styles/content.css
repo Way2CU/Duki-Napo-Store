@@ -826,8 +826,8 @@ div#checkout_steps a.active:before {
 }
 
 div.pages {
-	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
-	border: 1px solid #e8e8e8;
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+	border: 0px solid #e8e8e8;
 	border-color: #e8e8e8;
 }
 

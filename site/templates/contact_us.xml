@@ -17,7 +17,7 @@
 		</head>
 
 		<body>
-			<cms:raw file="parts/gtm.txt"/>
+			<cms:raw file="gtm.txt"/>
 			<cms:template file="parts/header.xml"/>
 			<div
 				class="$section == 'contact-us' ? 'contact_us' : false"

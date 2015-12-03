@@ -17,7 +17,7 @@
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
-			<cms:raw file="parts/gtm.txt"/>
+			<cms:raw file="gtm.txt"/>
 			<cms:template file="parts/header.xml"/>
 
 			<cms:module

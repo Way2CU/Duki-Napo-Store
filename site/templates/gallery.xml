@@ -14,6 +14,7 @@
 		</head>
 
 		<body>
+			<cms:raw file="parts/gtm.txt"/>
 			<cms:template file="parts/header.xml"/>
 			<div class="$section == 'portfolio' ? 'gallery' : false"
 				 cms:optional="class"

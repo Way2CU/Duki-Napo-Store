@@ -13,7 +13,6 @@
 		</head>
 
 		<body>
-			<cms:raw file="gtm.txt"/>
 			<cms:template file="parts/header.xml"/>
 
 			<section class="category">

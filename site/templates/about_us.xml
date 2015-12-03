@@ -12,7 +12,6 @@
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 		<body>
-			<cms:raw file="gtm.txt"/>
 			<cms:template file="parts/header.xml"/>
 			<cms:module
 					name="articles"

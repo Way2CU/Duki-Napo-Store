@@ -14,7 +14,6 @@
 		</head>
 
 		<body>
-			<cms:raw file="gtm.txt"/>
 			<cms:template file="parts/header.xml"/>
 
 			<div class="$section == 'in-news' ? 'press' : false" cms:optional="class" >

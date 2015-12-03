@@ -13,7 +13,6 @@
 		</head>
 
 		<body>
-			<cms:raw file="gtm.txt"/>
 			<cms:template file="parts/header.xml"/>
 			<div class="$section == 'diamonds' ? 'diamonds' : false"
 				cms:optional="class"

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../units/schema/language.dtd">
 <document>
+	<cms:raw file="../gtm.txt"/>
 	<!-- Save user timer -->
 	<cms:guest>
 		<cms:module

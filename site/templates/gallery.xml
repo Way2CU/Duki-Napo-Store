@@ -15,9 +15,7 @@
 
 		<body>
 			<cms:template file="parts/header.xml"/>
-			<div class="$section == 'portfolio' ? 'gallery' : false"
-				 cms:optional="class"
-				 >
+			<div class="gallery">
 				<cms:module
 					name="gallery"
 					action="show_image_list"

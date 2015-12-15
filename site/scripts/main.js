@@ -1182,6 +1182,7 @@ Site.on_load = function() {
 	// lightbox for all images on page
 	if (!Site.is_mobile())
 		Site.lightbox = new LightBox('div.images a', false, false, true);
+		Site.lightbox_gallery = new LightBox('div.gallery a', false, false, true);
 
 	// create shopping cart
 	Site.cart = new Caracal.Shop.Cart();
@@ -1246,6 +1247,14 @@ Site.on_load = function() {
 
 	//  function for setting _blank attribute to article links
 	$('div.press article a').attr('target','_blank');
+
+	// handle analytics event
+	$('form').on('analytics-event', function(event, data) {
+		if (!data.error)
+			dataLayer.push({
+            	'event':'leadSent'
+            });
+	});
 };
 
 // connect document `load` event with handler function

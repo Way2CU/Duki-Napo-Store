@@ -23,6 +23,9 @@
 	<section name="from-the-press">
 		<language name="all" file="press.xml" />
 	</section>
+	<section name="vip">
+		<language name="all" file="vip.xml" />
+	</section>
 	<section name="user">
 		<language name="all">
 			<action name="_default" file="control_panel.xml"/>

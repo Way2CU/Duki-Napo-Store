@@ -16,21 +16,36 @@
 		<body>
 			<cms:template file="parts/header.xml"/>
 			<section id="vip">
+
 				<div class="contact_vip">
 					<h2><cms:text constant="title_vip"/></h2>
-					<cms:module
-						name="gallery"
-						action="show_image_list"
-						group="vip_gallery"
-						random="1"
-						template="parts/home_page_image.xml"
-						/>
+					<cms:desktop>
+						<cms:module
+							name="gallery"
+							action="show_image_list"
+							group="vip_gallery"
+							random="1"
+							template="parts/home_page_image.xml"
+							/>
+					</cms:desktop>
+
+					<cms:mobile>
+						<cms:module
+							name="gallery"
+							action="show_image_list"
+							group="mobile_vip_gallery"
+							random="1"
+							template="parts/home_page_image.xml"
+							/>
+					</cms:mobile>
+
 					<cms:module
 						name="contact_form"
 						action="show"
 						text_id="contact_vip"
 						/>
 				</div>
+
 			</section>
 
 			<cms:template file="parts/footer.xml"/>

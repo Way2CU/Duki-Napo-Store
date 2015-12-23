@@ -1248,6 +1248,13 @@ Site.on_load = function() {
 	//  function for setting _blank attribute to article links
 	$('div.press article a').attr('target','_blank');
 
+	//   Setting text  on vip page submit button
+
+	 $('section#vip button').text(language_handler.getText(null, 'send_vip_button'));
+
+	
+
+
 	// handle analytics event
 	$('form').on('analytics-event', function(event, data) {
 		if (!data.error)

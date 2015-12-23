@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/template.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title><cms:text constant="site_title"/><cms:raw text=" - "/><cms:text constant="menu_vip"/></title>
+			<cms:module
+				name="shop"
+				action="include_cart_scripts"
+				/>
+			<cms:collection include="page_control,animation_chain"/>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body>
+			<cms:template file="parts/header.xml"/>
+			<section id="vip">
+
+				<div class="contact_vip">
+					<h2><cms:text constant="title_vip"/></h2>
+					<cms:desktop>
+						<cms:module
+							name="gallery"
+							action="show_image_list"
+							group="vip_gallery"
+							random="1"
+							template="parts/home_page_image.xml"
+							/>
+					</cms:desktop>
+
+					<cms:mobile>
+						<cms:module
+							name="gallery"
+							action="show_image_list"
+							group="mobile_vip_gallery"
+							random="1"
+							template="parts/home_page_image.xml"
+							/>
+					</cms:mobile>
+
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_vip"
+						/>
+				</div>
+
+			</section>
+
+			<cms:template file="parts/footer.xml"/>
+		</body>
+	</html>
+</document>

@@ -12,11 +12,7 @@
 
 	<!-- Desktop Version -->
 	<cms:desktop>
-		<header
-			class="$section == 'home' ? 'home' : false"
-			cms:optional="class"
-			>
-
+		<header class="$section" cms:eval="class">
 			<!-- Top navigation -->
 			<nav id="user">
 				<div class="message">

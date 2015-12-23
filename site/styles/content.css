@@ -6,7 +6,7 @@
  * Authors: Tal Reznic, Mladen Mijatov
  */
 
-
+section#vip,
 div#image_rotate {
 	display: block;
 	margin-top: -110px;
@@ -14,9 +14,200 @@ div#image_rotate {
 	background-repeat: no-repeat;
 	background-position: center center;
 	width: 100%;
-	height: 700px;
+	min-height: 700px;
 	position: relative;
 	overflow: hidden;
+}
+
+section#vip {
+	display: block;
+	padding-top: 150px;
+	background-image: url(../images/vip-background.jpg);
+	background-position: center 60px;
+	min-height: 550px;
+}
+
+section#vip div.contact_vip {
+	padding-left: calc(50% - 600px);
+	width: 500px;
+	color: white;
+}
+
+section#vip div.contact_vip h2 {
+	text-transform: uppercase;
+}
+
+section#vip div.contact_vip strong {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.7em;
+	position: relative;
+
+	background: linear-gradient(0deg, rgba(121, 55, 0, 1) 0%, 
+		rgba(129, 62, 0, 1) 4.02%, rgba(151, 81, 0, 1) 10.25%, 
+		rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%, 
+		rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%, 
+		rgba(243, 162, 0, 1) 75.76%, rgba(121,55, 0, 1) 100%);
+
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+}
+
+section#vip div.contact_vip strong:before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	width: 100%;
+	height: 3px;
+
+	background: linear-gradient(100deg, rgba(121, 55, 0, 1) 0%, 
+		rgba(129, 62, 0, 1) 4.02%, rgba(151, 81, 0, 1) 10.25%, 
+		rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%, 
+		rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%, 
+		rgba(243, 162, 0, 1) 75.76%, rgba(121,55, 0, 1) 100%);
+}
+
+section#vip form {
+	display: block;
+}
+
+section#vip form label {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 70%;
+
+}
+
+section#vip form label:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: -3px;
+
+	background-image: url(../images/form-icons.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: 150px 50px;
+	width: 50px;
+	height: 50px;
+	z-index: 1;
+}
+
+section#vip form label:first-of-type:before {
+	background-position: -100px 0px;
+}
+
+section#vip form label:nth-of-type(2):before {
+	background-position: -50px 0px;
+}
+
+section#vip form label input {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 40px;
+	color: white;
+	border: 1px solid transparent;
+	border-image: linear-gradient(100deg, rgba(121, 55, 0, 1) 0%, 
+		rgba(129, 62, 0, 1) 4.02%, rgba(151, 81, 0, 1) 10.25%, 
+		rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%, 
+		rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%, 
+		rgba(243, 162, 0, 1) 75.76%, rgba(121,55, 0, 1) 100%);
+	border-image-slice: 1;
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: all 0.3s;
+	width: calc(100% - 40px);
+}
+
+section#vip form label input:focus,
+section#vip form label input:hover {
+	background-color: rgba(0, 0, 0, 1);
+}
+
+section#vip input::-webkit-input-placeholder {
+   color: #f6c15c;
+}
+
+section#vip input::-moz-placeholder { /* Firefox 18- */
+   color: #f6c15c;  
+}
+
+section#vip input::-moz-placeholder {  /* Firefox 19+ */
+   color: #f6c15c;  
+}
+
+section#vip input::-ms-input-placeholder {  
+   color: #f6c15c;  
+}
+
+section#vip form div.controls {
+	display: inline-block;
+	vertical-align: bottom;
+	margin-top: 20px;
+	position: relative;
+	z-index: 1;
+	border: 1px solid transparent;
+	border-image: linear-gradient(100deg, rgba(121, 55, 0, 1) 0%, 
+		rgba(129, 62, 0, 1) 4.02%, rgba(151, 81, 0, 1) 10.25%, 
+		rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%, 
+		rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%, 
+		rgba(243, 162, 0, 1) 75.76%, rgba(121,55, 0, 1) 100%);
+	border-image-slice: 1;
+	
+}
+
+section#vip form div.controls button {
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: white;
+	background: linear-gradient(0deg, rgba(121, 55, 0, 1) 0%, 
+		rgba(129, 62, 0, 1) 4.02%, rgba(151, 81, 0, 1) 10.25%, 
+		rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%, 
+		rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%, 
+		rgba(243, 162, 0, 1) 75.76%, rgba(121,55, 0, 1) 100%);
+	
+
+	background-repeat: no-repeat;
+	background-size: 100% auto, 100% auto;
+	width: 150px;
+	cursor: pointer;
+	transition: all 0.3s;
+
+	position: relative;
+	z-index: 0;
+}
+
+section#vip form div.controls button:hover {
+	color: black;
+}
+
+section#vip form div.controls button:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: -1;
+
+	transition: all 0.3s;
+}
+
+section#vip form div.controls button:hover:before {
+	background-color: rgba(0, 0, 0, 0);
 }
 
 div#image_rotate figure {
@@ -355,6 +546,7 @@ div#lightbox a.close_button {
 	background-color: white;
 	color:black;
 }
+
 
 /**
  * Shop item list

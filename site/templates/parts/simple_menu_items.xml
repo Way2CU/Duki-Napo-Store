@@ -70,5 +70,15 @@
 				<cms:text constant="menu_press"/>
 			</a>
 		</li>
+		<li>
+			<a
+				class="$section == 'vip' ? 'active' : false"
+				href="url_Make('', 'vip')"
+				cms:eval="href"
+				cms:optional="class"
+				>
+				<cms:text constant="menu_vip"/>
+			</a>
+		</li>
 	</ul>
 </document>

@@ -31,6 +31,7 @@
 	"menu_home": "Home",
 	"menu_jewellery": "Diamonds",
 	"menu_press": "From the press",
+	"menu_vip": "Duki VIP",
 	"menu_login": "Login",
 	"menu_logout": "Logout",
 	"menu_privacy": "Privacy policy",
@@ -55,5 +56,8 @@
 	"social_title": "Share the love:",
 	"welcome_guest": "Welcome guest. Take a look at our wonderful offer of bling.",
 	"welcome_user": "Welcome back",
-	"welcome_user2": "."
+	"welcome_user2": ".",
+	"title_vip": "Become a <strong>vip club member</strong> & recieve special gifts & discounts",
+	"send_vip_button": "Sign up now"
+
 }

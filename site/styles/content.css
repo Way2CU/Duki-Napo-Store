@@ -22,9 +22,8 @@ div#image_rotate {
 section#vip {
 	display: block;
 	padding-top: 150px;
-	background-image: url(../images/vip-background.jpg);
-	background-position: center 60px;
 	min-height: 550px;
+
 }
 
 section#vip div.contact_vip {
@@ -210,6 +209,7 @@ section#vip form div.controls button:hover:before {
 	background-color: rgba(0, 0, 0, 0);
 }
 
+section#vip figure,
 div#image_rotate figure {
 	position: absolute;
 	margin: 0px;
@@ -222,6 +222,12 @@ div#image_rotate figure {
 	height: 100%;
 	opacity: 0;
 	transition:all 1s ease-in-out;
+}
+
+section#vip figure {
+	background-position: center 60px;
+	opacity: 1;
+	z-index: -1;
 }
 
 div#image_rotate figure.visible {

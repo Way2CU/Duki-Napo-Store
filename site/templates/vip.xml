@@ -19,6 +19,13 @@
 				<div class="contact_vip">
 					<h2><cms:text constant="title_vip"/></h2>
 					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="vip_gallery"
+						random="1"
+						template="parts/home_page_image.xml"
+						/>
+					<cms:module
 						name="contact_form"
 						action="show"
 						text_id="contact_vip"

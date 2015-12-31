@@ -21,8 +21,8 @@ div#image_rotate {
 
 section#vip {
 	display: block;
-	padding-top: 150px;
-	min-height: 550px;
+	padding-top: 100px;
+	min-height: 620px;
 
 }
 
@@ -32,8 +32,10 @@ section#vip div.contact_vip {
 	color: white;
 }
 
-section#vip div.contact_vip h2 {
+section#vip div.contact_vip p {
+	font-size: 1.75em;
 	text-transform: uppercase;
+	font-family: "serif";
 }
 
 section#vip div.contact_vip strong {
@@ -79,7 +81,16 @@ section#vip form label {
 	margin-right: auto;
 	position: relative;
 	width: 70%;
+}
 
+section#vip form label.checkbox input {
+	display: none;
+}
+
+section#vip form label.checkbox  span {
+	display: inline-block;
+	text-align: left;
+	padding-left: 40px;
 }
 
 section#vip form label:before {
@@ -90,11 +101,14 @@ section#vip form label:before {
 
 	background-image: url(../images/form-icons.svg);
 	background-repeat: no-repeat;
-	background-position: 0px 0px;
-	background-size: 150px 50px;
+	background-size: 200px 50px;
 	width: 50px;
 	height: 50px;
 	z-index: 1;
+}
+
+section#vip form label.checkbox:before {
+	background-image: none;
 }
 
 section#vip form label:first-of-type:before {
@@ -103,6 +117,18 @@ section#vip form label:first-of-type:before {
 
 section#vip form label:nth-of-type(2):before {
 	background-position: -50px 0px;
+}
+
+section#vip form label:nth-of-type(3):before {
+	background-position: 0px 0px;
+}
+
+section#vip form label:nth-of-type(4):before {
+	background-position: -150px 0px;
+}
+
+section#vip form label.checkbox:checked:after {
+	transform:scale(1);
 }
 
 section#vip form label input {
@@ -1200,6 +1226,7 @@ div.dialog div.content form label {
 	cursor: pointer;
 }
 
+section#vip form label.checkbox  span:before,
 div.dialog.login div.content form label span:before {
 	content: ' ';
 	position: absolute;
@@ -1213,10 +1240,21 @@ div.dialog.login div.content form label span:before {
 	border: 1px solid #A9A9A9;
 }
 
+section#vip form label.checkbox  span:before {
+	left: 0;
+	background-image: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-image: linear-gradient(100deg, rgba(121, 55, 0, 1) 0%, rgba(129, 62, 0, 1) 4.02%, rgba(151, 81, 0, 1) 10.25%, rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%, rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%, rgba(243, 162, 0, 1) 75.76%, rgba(121,55, 0, 1) 100%);
+	border-image-slice: 1;
+}
+
 div.dialog.login.sign-up div.content form label span:before  {
 	left: 40px;
 }
 
+
+section#vip form label.checkbox  span:after,
 div.dialog.login div.content form label span:after {
 	content: ' ';
 	position: absolute;
@@ -1239,14 +1277,20 @@ div.dialog.login div.content form label span:after {
 	opacity: 1;	
 }
 
+section#vip form label.checkbox  span:after {
+	left: 2px;
+}
+
 div.dialog.login.sign-up div.content form label span:after {
 	left: 42px;
 }
+
 
 div.dialog.login div.content form input[type=checkbox] {
 	display: none;
 }
 
+section#vip form label.checkbox  input[type=checkbox]:checked ~ span:after,
 div.dialog.login div.content form input[type=checkbox]:checked ~ span:after{
 	transform: scale(1);
 

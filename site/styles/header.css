@@ -10,6 +10,7 @@ header {
 	display: block;
 	position: relative;
 	z-index: 10000;
+	white-space: nowrap;
 	-webkit-transform: translateZ(0);
 }
 

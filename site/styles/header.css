@@ -8,7 +8,10 @@
 
 header {
 	display: block;
-	position: relative;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
 	z-index: 10000;
 	white-space: nowrap;
 	-webkit-transform: translateZ(0);
@@ -19,7 +22,7 @@ header {
  */
 nav#user {
 	display: block;
-	padding: 20px calc((100vw - 1200px) / 2);
+	padding: 10px calc((100vw - 1200px) / 2);
 
 	background-color: #212121;
 
@@ -52,7 +55,7 @@ nav#user div.logo a {
 	background-image: url(../images/header/dukivenapo-logo.svg);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 288px 60px;
+	background-size: 65%;
 
 	text-decoration: none;
 }

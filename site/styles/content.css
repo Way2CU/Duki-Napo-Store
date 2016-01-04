@@ -9,7 +9,6 @@
 section#vip,
 div#image_rotate {
 	display: block;
-	margin-top: -110px;
 	text-align: center;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -21,7 +20,7 @@ div#image_rotate {
 
 section#vip {
 	display: block;
-	padding-top: 100px;
+	padding-top: 140px;
 	min-height: 630px;
 
 }
@@ -250,6 +249,7 @@ div#image_rotate figure.visible {
 
 div.about_article {
 	display: block;
+	margin-top: 140px;
 	text-align: center;
 	padding:20px calc((100vw - 960px) / 2);
 }
@@ -281,6 +281,7 @@ div.about_article p img {
  */
 div.contact_us {
 	display: block;
+	margin-top: 120px;
 	padding:20px calc((100vw - 1200px) / 2);
 }
 
@@ -405,6 +406,7 @@ div.contact_us div.form_wrap form div.controls button:before {
 
 div.diamonds {
 	display: block;
+	margin-top: 140px;
 	padding: 20px calc((100vw - 960px) / 2);
 	color: #212121;
 }
@@ -505,6 +507,7 @@ Gallery Page
 div.gallery {
 	display: block;
 	text-align: center;
+	margin-top: 140px;
 	padding:20px calc((100vw - 1200px) / 2);
 }
 
@@ -569,6 +572,7 @@ div#lightbox a.close_button {
  */
 section.category {
 	display: block;
+	margin-top: 120px;
 	padding: 20px calc((100vw - 1200px) / 2);
 }
 
@@ -661,6 +665,7 @@ a.item span.price:before {
  */
 section.product {
 	display: block;
+	margin-top: 120px;
 	padding: 50px calc((100vw - 1200px) / 2);
 }
 
@@ -1176,7 +1181,7 @@ div.dialog {
 	display: block;
 	position: fixed;
 	max-height:  0px;
-	top: 110px;
+	top: 0px;
 	left: 50%;
 	background-color: white;
 	z-index: 100001;
@@ -1186,7 +1191,7 @@ div.dialog {
 }
 
 div.dialog.visible {
-	top: 110px;
+	top: 0px;
 	max-height: 650px;
 }
 
@@ -1396,6 +1401,7 @@ div.dialog div.command_bar a:hover {
 */
 
 div.press {
+	margin-top: 140px;
 	padding:20px calc((100vw - 960px) / 2);
 }
 

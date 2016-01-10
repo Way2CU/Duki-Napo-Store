@@ -4,7 +4,26 @@
 	<cms:var name="_DOCTYPE"/>
 	<html lang="$language" cms:eval="lang">
 		<head>
-			<title><cms:text constant="site_title"/></title>
+			<title>				
+				<cms:text constant="site_title"/>
+				<cms:raw text=" - "/>
+				<cms:module
+					name="shop"
+					action="show_item"
+					id="fix_id($_REQUEST['id'])"
+					template="parts/item_page_title.xml"
+					cms:eval="id"
+					/>
+			</title>
+
+			<!-- Page description -->
+			<cms:module
+				name="shop"
+				action="show_item"
+				id="fix_id($_REQUEST['id'])"
+				template="parts/page_description.xml"
+				cms:eval="id"
+				/>
 			<cms:module
 				name="shop"
 				action="include_cart_scripts"

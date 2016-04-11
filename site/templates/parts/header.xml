@@ -13,8 +13,70 @@
 	<!-- Desktop Version -->
 	<cms:desktop>
 		<header class="$section" cms:eval="class">
+			<cms:svg file="site-icons.svg"/>
+
+			<div class="top_header">
+				<ul class="drop">
+					<li>
+						<a href="javascript:void(0)">
+							<svg>
+								<use
+									href="#menu"
+									xlink:href="site/images/site-icons#menu"
+									/>
+							</svg>
+							<cms:text constant="menu_title"/>
+						</a>
+						<cms:template file="parts/simple_menu_items.xml"/>
+					</li>
+				</ul>
+
+				<a  class="logo" href="url_Make()" cms:eval="href">
+					<img src="_BASEURL.'/site/images/header/logo-symbol.svg'"  alt="logo-symbol" cms:eval="src"/>
+					<img src="_BASEURL.'/site/images/header/type-logo.svg'"  alt="type-logo" cms:eval="src"/>
+				</a>
+				<a
+					href="'tel:'.urlencode(Language::getText('phone'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<svg>
+						<use
+							href="#phone"
+							xlink:href="site/images/site-icons.svg#phone"
+							/>
+					</svg>
+					<cms:text constant="phone_text"/>
+				</a>
+			</div>
+
 			<!-- Top navigation -->
 			<nav id="user">
+				<ul class="contact">
+					<li>
+						<a href="url_Make('', 'contact-us')" cms:eval="href" cms:optional="class">
+							<svg>
+								<use
+									href="#mail"
+									xlink:href="site/images/site-icons#mail"
+									/>
+							</svg>
+							<cms:text constant="menu_contact_us"/>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<svg>
+								<use
+									href="#chat"
+									xlink:href="site/images/site-icons#chat"
+									/>
+							</svg>
+							<cms:text constant="label_chat"/>
+						</a>
+					</li>
+				</ul>
+
 				<div class="message">
 					<cms:guest>
 						<cms:text constant="welcome_guest"/>
@@ -26,13 +88,30 @@
 						<cms:text constant="welcome_user2"/>
 					</cms:user>
 				</div>
-				<div class="logo">
-					<a href="url_Make()" cms:eval="href"/>
-				</div>
 				<ul class="session">
 					<cms:guest>
-						<li><a class="sign-up" href="#"><cms:text constant="menu_signup"/></a></li>
-						<li><a class="login" href="#"><cms:text constant="menu_login"/></a></li>
+						<li>
+							<a class="sign-up" href="#">
+								<svg>
+									<use
+										href="#signup"
+										xlink:href="site/images/site-icons#signup"
+										/>
+								</svg>
+								<cms:text constant="menu_signup"/>
+							</a>
+						</li>
+						<li>
+							<a class="login" href="#">
+								<svg>
+									<use
+										href="#login"
+										xlink:href="site/images/site-icons#login"
+										/>
+								</svg>
+								<cms:text constant="menu_login"/>
+							</a>
+						</li>
 					</cms:guest>
 					<cms:user>
 						<li>
@@ -51,12 +130,6 @@
 
 			<!-- Bottom navigation -->
 			<nav id="navigation">
-				<ul class="drop">
-					<li>
-						<a href="javascript:void(0)"><cms:text constant="menu_title"/></a>
-						<cms:template file="parts/simple_menu_items.xml"/>
-					</li>
-				</ul>
 
 				<!-- Shop categories -->
 				<ul class="categories">

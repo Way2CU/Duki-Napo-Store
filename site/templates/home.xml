@@ -10,6 +10,8 @@
 				action="include_cart_scripts"
 				/>
 			<cms:collection include="page_control,animation_chain"/>
+			<cms:script src="_BASEURL.'/site/scripts/instafeed.min.js'" cms:eval="src"/>
+			<cms:script src="_BASEURL.'/site/scripts/instagram.js'" cms:eval="src"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
@@ -26,7 +28,10 @@
 							/>
 						<div class="controls"></div>
 				</div>
+				<!-- www.intagme.com -->
+				<div id="instafeed"></div>
 			</cms:desktop>
+			
 			<cms:mobile>
 				<div id="image_rotate">
 					<cms:module

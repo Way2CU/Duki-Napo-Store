@@ -399,8 +399,8 @@ nav#navigation ul.categories a {
 }
 
 nav#navigation ul.categories a {
-	margin-right: 15px;
-	margin-left: 15px;
+	padding-right: 30px;
+	padding-left: 30px;
 	font-family: serif;
 	font-size: 1.1em;
 	text-transform: uppercase;

@@ -258,6 +258,7 @@ nav#user div.message {
 	font-variant: small-caps;
 	text-transform: capitalize;
 	font-family: serif;
+	width: calc(33.3% + 40px);
 }
 
 nav#user ul.contact,

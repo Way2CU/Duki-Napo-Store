@@ -113,8 +113,12 @@ div#slider div.controls a {
 	height: 15px;
 	border-radius: 50%;
 	border: 2px solid white;
-	background-color: #f7c25d;
 	box-shadow: 0px 0px 0px 1px #f7c25d;
+	transition: all 0.3s;
+}
+
+div#slider div.controls a:hover {
+	background-color: rgba(247, 194, 93, 0.7);
 }
 
 section#vip {

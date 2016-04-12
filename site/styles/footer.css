@@ -8,11 +8,8 @@
 
 footer {
 	display: block;
-	background-image: url(../images/footer/texture-pattern.png);
-	background-repeat:repeat;
-	background-position: center center;
-	background-size: 360px 360px;
 	position: relative;
+	background-color: black;
 }
 
 footer div.footer_top {
@@ -34,6 +31,7 @@ nav#footer_nav {
 	display: block;
 	text-align: center;
 	padding-top: 20px;
+	padding-bottom: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -67,7 +65,6 @@ nav#footer_nav ul li a {
 }
 
 nav#footer_nav ul li a:hover {
-
 	background-color: rgba(246, 193, 92, 0.2);
 }
 
@@ -105,14 +102,14 @@ nav#footer_nav ul li a:hover:after {
 
 footer form {
 	display: inline-block;
-	vertical-align: top;
-	padding-top: 20px;
+	vertical-align: middle;
 	text-align: center;
 	width: 50%;
 }
 
 footer form label {
-	display: block;
+	display: inline-block;
+	vertical-align: top;
 }
 
 footer form label span {
@@ -120,7 +117,7 @@ footer form label span {
 	vertical-align: middle;
 	padding-left: 5px;
 	padding-right: 5px;
-	color:#989898;
+	color: white;
 }
 
 footer form label input {
@@ -130,15 +127,60 @@ footer form label input {
 	padding-bottom: 10px;
 	padding-left: 5px;
 	background-color: #e8e8e8;
-	border: 1px solid #f6c15c; 
-	width: 50%;
+	border: 1px solid #f6c15c;
+	width: 300px;
+}
+
+footer form div.controls {
+	display: inline-block;
+	vertical-align: top
+}
+
+footer form div.controls button {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: black;
+	color: white;
+	border: 1px solid #f6c15c;
+	transition: all 0.3s;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+}
+
+footer form div.controls button:hover {
+	color: black;
+}
+
+footer form div.controls button:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: #f6c15c;
+	transition: all 0.3s;
+	z-index: -1;
+}
+
+footer form div.controls button:hover:before {
+	left: 0%;
 }
 
 footer div.social {
 	display: inline-block;
-	vertical-align: top;
-	padding-top: 20px;
-	width: 50%;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid white;
+	margin-left: 25%;
+	width: calc(25% - 2px);
 }
 
 footer div.social span {
@@ -146,7 +188,7 @@ footer div.social span {
 	vertical-align: middle;
 	margin-left: 10px;
 	margin-right: 10px;
-	color:#989898;
+	color: white;
 }
 
 footer div.social a {
@@ -154,43 +196,19 @@ footer div.social a {
 	vertical-align: middle;
 	margin-left: 10px;
 	margin-right: 10px;
-	background-image: url(../images/social/social_icons_sprite.svg);
-	background-repeat: no-repeat;
-	background-position: 0px center;
-	background-size: 150px 50px;
-	width: 50px;
-	height: 50px;
 	position: relative;
 }
 
-footer div.social a:hover:before {
-	opacity: 1;
-	border-radius: 50%;
+footer div.social a svg {
+	display: block;
+	width: 30px;
+	height: 30px;
+	fill: white;
+	transition: all 0.3s;
 }
 
-footer div.social a:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    margin-top: -26px;
-    left: 50%;
-    margin-left: -26px;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #f6c15c;
-    
-    background-color: rgba(246, 193, 92, 0.2);
-    opacity: 0;
-    transition: all 0.3s;
-}
-
-footer div.social a:nth-of-type(2) {
-	background-position: -50px center;
-}
-
-footer div.social a:nth-of-type(3) {
-	background-position: -100px center;
-
+footer div.social a:hover svg {
+	fill: #f7c25d;
 }
 
 footer div.payment {
@@ -202,13 +220,12 @@ footer div.payment {
 footer div.payment span {
 	display: inline-block;
 	vertical-align: top;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
 	background-image: url(../images/payments/icons-sprite.png);
 	background-repeat: no-repeat;
 	background-position: 0px center;
 	height: 70px;
-
 }
 
 footer div.payment span:nth-of-type(1) {
@@ -282,5 +299,3 @@ footer div.copyright span a {
 footer div.copyright span a:hover {
 	color:#5bc2d8;
 }
-
-

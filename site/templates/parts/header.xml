@@ -120,10 +120,26 @@
 								href="url_Make('', 'user')"
 								cms:eval="href"
 								>
+								<svg>
+									<use
+										href="#login"
+										xlink:href="site/images/site-icons#login"
+										/>
+								</svg>
 								<cms:text constant="menu_account"/>
 							</a>
 						</li>
-						<li><a class="logout" href="#"><cms:text constant="menu_logout"/></a></li>
+						<li>
+							<a class="logout" href="#">
+								<svg>
+									<use
+										href="#login"
+										xlink:href="site/images/site-icons#login"
+										/>
+								</svg>
+								<cms:text constant="menu_logout"/>
+							</a>
+						</li>
 					</cms:user>
 				</ul>
 			</nav>

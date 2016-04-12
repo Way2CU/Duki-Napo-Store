@@ -48,6 +48,9 @@
 	"property_price": "Price",
 	"property_size": "Size",
 	"property_weight": "Weight",
+	"property_diamond_color": "Diamond color",
+	"property_gold_color": "Gold color",
+	"property_gold_size": "Gold K",
 	"quantity": "Quantity",
 	"recovery_dialog_message": "Please enter your email address to which password recovery link will be sent.",
 	"recovery_dialog_title": "Password recovery",
@@ -64,5 +67,4 @@
 	"title_vip": "Join us",
 	"subtitle_vip": "& recieve special gifts & discounts",
 	"send_vip_button": "Sign up now"
-
 }

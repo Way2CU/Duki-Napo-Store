@@ -18,9 +18,30 @@
 
 			<div class="social">
 				<span><cms:text constant="social_title"/></span>
-				<a href="#"></a>
-				<a href="#"></a>
-				<a href="#"></a>
+				<a href="#" class="facebook">
+					<svg>
+						<use
+							href="#facebook"
+							xlink:href="site/images/site-icons#facebook"
+							/>
+					</svg>
+				</a>
+				<a href="#" class="pintarest">
+					<svg>
+						<use
+							href="#pintarest"
+							xlink:href="site/images/site-icons#pintarest"
+							/>
+					</svg>
+				</a>
+				<a href="#" class="instagram">
+					<svg>
+						<use
+							href="#instagram"
+							xlink:href="site/images/site-icons#instagram"
+							/>
+					</svg>
+				</a>
 			</div>
 
 			<div class="payment">

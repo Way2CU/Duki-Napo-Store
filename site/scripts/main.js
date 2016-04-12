@@ -1202,10 +1202,21 @@ Site.on_load = function() {
 		Site.cart.ui.connect_checkout_button($('div#cart div.controls button[name=checkout]')); else
 		Site.cart.ui.connect_checkout_button($('div.popup div.controls button[name=checkout]'));
 
+	// create controls for each slide
+	var slides = $('div#slider div.image_rotate');
+	var control_container = $('div#slider div.controls');
+
+	slides.each(function(index) {
+		$('<a>')
+			.attr('href', 'javascript: void(0);')
+			.appendTo(control_container);
+	});
+
 	if ($('header').hasClass('home')) {
-		Site.home_page_gallery = new PageControl('div#image_rotate', 'figure');
+		Site.home_page_gallery = new PageControl('div#slider', 'div.image_rotate');
 		Site.home_page_gallery
 			.setInterval(4000)
+			.attachControls('div#slider div.controls a')
 			.setWrapAround(true);	
 	}
 

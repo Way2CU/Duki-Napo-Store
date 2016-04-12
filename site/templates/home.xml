@@ -17,13 +17,14 @@
 			<cms:template file="parts/header.xml"/>
 
 			<cms:desktop>
-				<div id="image_rotate">
-					<cms:module
-						name="gallery"
-						action="show_image_list"
-						group="home_page"
-						template="parts/home_page_image.xml"
-						/>
+				<div id="slider">
+						<cms:module
+							name="gallery"
+							action="show_image_list"
+							group="home_page"
+							template="parts/home_page_image.xml"
+							/>
+						<div class="controls"></div>
 				</div>
 			</cms:desktop>
 			<cms:mobile>

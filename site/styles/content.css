@@ -6,8 +6,7 @@
  * Authors: Tal Reznic, Mladen Mijatov
  */
 
-section#vip,
-div#image_rotate {
+section#vip {
 	display: block;
 	text-align: center;
 	background-repeat: no-repeat;
@@ -18,11 +17,110 @@ div#image_rotate {
 	overflow: hidden;
 }
 
+div#slider {
+	display: block;
+	padding: 0px calc((100vw - 1200px) / 2);
+	min-height: 400px;
+	position: relative;
+	background-color: black;
+}
+
+div.image_rotate {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 1200px;
+	height: 400px;
+	text-align: center;
+	margin-left: -600px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.6s;
+}
+
+div.image_rotate.right {
+	text-align: right;
+}
+
+div.image_rotate.left {
+	text-align: left;
+}
+
+div.image_rotate:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+
+div.image_rotate.visible {
+	opacity: 1;
+	visibility: visible;
+}
+
+div.image_rotate div {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+div.image_rotate div h2 {
+	margin: 0px;
+	font-family: serif;
+	color: white;
+	font-weight: 400;
+	font-size: 3.5em;
+	text-transform: capitalize;
+}
+
+div.image_rotate div a {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
+	text-decoration: none;
+	padding: 1em;
+	background-color: #f7c25d;
+	border-radius: 10px;
+	color: black;
+	text-align: center;
+	font-size: 1.1em;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+div.image_rotate div a:hover {
+	background-color: rgba(247, 194, 93, 0.7);
+}
+
+div#slider div.controls {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -150px;
+	text-align: center;
+	width: 300px;
+	height: 15px;
+}
+
+div#slider div.controls a {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+	margin-left: 10px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 2px solid white;
+	background-color: #f7c25d;
+	box-shadow: 0px 0px 0px 1px #f7c25d;
+}
+
 section#vip {
 	display: block;
 	padding-top: 140px;
 	min-height: 630px;
-
 }
 
 section#vip div.contact_vip {
@@ -218,8 +316,7 @@ section#vip form div.controls button:hover:before {
 	background-color: rgba(0, 0, 0, 0);
 }
 
-section#vip figure,
-div#image_rotate figure {
+section#vip figure {
 	position: absolute;
 	margin: 0px;
 	top:0px;
@@ -237,10 +334,6 @@ section#vip figure {
 	background-position: center 60px;
 	opacity: 1;
 	z-index: -1;
-}
-
-div#image_rotate figure.visible {
-	opacity: 1;
 }
 
 /**

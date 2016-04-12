@@ -47,7 +47,6 @@
 			template="parts/product_image.xml"
 			cms:eval="group_id"
 			/>
-
 	</div>
 
 	<div class="info" data-uid="$params['uid']" cms:eval="data-uid">
@@ -59,7 +58,7 @@
 		</cms:desktop>
 
 		<div class="properties">
-			<div class="color">
+			<div>
 				<h4><cms:text constant="property_color"/></h4>
 				<cms:color_list
 					id="$params['id']"
@@ -68,7 +67,7 @@
 					/>
 			</div>
 
-			<div class="size">
+			<div>
 				<h4><cms:text constant="property_size"/></h4>
 				<select>
 					<cms:value_list
@@ -79,20 +78,37 @@
 				</select>
 			</div>
 
-			<div class="weight">
+			<div>
 				<h4><cms:text constant="property_weight"/></h4>
-				<span><cms:var param="weight"/>g</span>
+				<span><cms:var param="weight"/></span>
 			</div>
 
-			<div class="price">
-				<h4><cms:text constant="property_price"/></h4>
-				<span><cms:text constant="currency"/><cms:raw text=" "/><cms:var param="price"/></span>
+			<div>
+				<h4><cms:text constant="property_diamond_color"/></h4>
+				<span><span><cms:var param="weight"/></span></span>
 			</div>
 
-			<a href="javascript:void(0)" class="btn_cart"><cms:text constant="add_to_cart"/></a>
+			<div>
+				<h4><cms:text constant="property_gold_color"/></h4>
+				<span><span><cms:var param="weight"/></span></span>
+			</div>
+
+			<div>
+				<h4><cms:text constant="property_gold_size"/></h4>
+				<span><span><cms:var param="weight"/></span></span>
+			</div>
 		</div>
 
-		
+		<div class="price">
+			<h4><cms:text constant="property_price"/></h4>
+			<span data-currency="shop::getDefaultCurrency()" cms:eval="data-currency" >
+				<cms:var param="price"/>
+			</span>
+			<a href="javascript:void(0)" class="btn_cart">
+				<cms:text constant="add_to_cart"/>
+			</a>
+		</div>
+
 			<div class="policy">
 				<cms:module
 					name="articles"

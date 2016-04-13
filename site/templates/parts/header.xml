@@ -146,15 +146,12 @@
 
 			<!-- Bottom navigation -->
 			<nav id="navigation">
-
 				<!-- Shop categories -->
 				<ul class="categories">
 					<cms:module
 						name="shop"
 						action="show_category_list"
-						category="$params['id']"
 						template="parts/category_menu_item.xml"
-						cms:eval="category"
 						/>
 				</ul>
 
@@ -304,9 +301,6 @@
 					template="parts/category_menu_item.xml"
 					/>
 			</ul>
-
 		</header>
-
 	</cms:mobile>
-
 </document>

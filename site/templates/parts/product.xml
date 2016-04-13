@@ -63,13 +63,13 @@
 				</svg>
 			</a>
 			<a 
-				href="'https://www.facebook.com/sharer/sharer.php?u='.urlencode(url_Make('product', 'shop', array('id', $_REQUEST['id'])))" class="instagram"
+				href="'https://twitter.com/home?status='.urlencode(url_Make('product', 'shop', array('id', $_REQUEST['id'])))" class="twitter"
 				cms:eval="href"
 				>
 				<svg>
 					<use
-						href="#instagram"
-						xlink:href="site/images/site-icons#instagram"
+						href="#twitter"
+						xlink:href="site/images/site-icons#twitter"
 						/>
 				</svg>
 			</a>

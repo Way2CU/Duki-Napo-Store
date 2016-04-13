@@ -18,7 +18,7 @@
 
 			<div class="social">
 				<span><cms:text constant="social_title"/></span>
-				<a href="#" class="facebook">
+				<a href="https://www.facebook.com/DukiVenapo/?fref=ts" class="facebook">
 					<svg>
 						<use
 							href="#facebook"
@@ -26,7 +26,7 @@
 							/>
 					</svg>
 				</a>
-				<a href="#" class="pintarest">
+				<a href="https://www.pinterest.com/dukivenapo/" class="pintarest">
 					<svg>
 						<use
 							href="#pintarest"
@@ -34,7 +34,7 @@
 							/>
 					</svg>
 				</a>
-				<a href="#" class="instagram">
+				<a href="https://www.instagram.com/dukivenapo/" class="instagram">
 					<svg>
 						<use
 							href="#instagram"

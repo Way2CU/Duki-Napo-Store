@@ -47,6 +47,53 @@
 			template="parts/product_image.xml"
 			cms:eval="group_id"
 			/>
+
+		<div class="social">
+			<span><cms:text constant="label_share"/></span>
+
+			<a 
+				href="'https://www.facebook.com/sharer/sharer.php?u='.urlencode(url_Make('product', 'shop', array('id', $_REQUEST['id'])))" class="facebook" 
+				cms:eval="href"
+				>
+				<svg>
+					<use
+						href="#facebook"
+						xlink:href="site/images/site-icons#facebook"
+						/>
+				</svg>
+			</a>
+			<a 
+				href="'https://www.facebook.com/sharer/sharer.php?u='.urlencode(url_Make('product', 'shop', array('id', $_REQUEST['id'])))" class="instagram"
+				cms:eval="href"
+				>
+				<svg>
+					<use
+						href="#instagram"
+						xlink:href="site/images/site-icons#instagram"
+						/>
+				</svg>
+			</a>
+			<a 
+				href="'https://pinterest.com/pin/create/button/?url=&amp;media=&amp;description='.urlencode(url_Make('product', 'shop', array('id', $_REQUEST['id'])))" 
+				class="instagram"
+				cms:eval="href"
+				>
+				<svg>
+					<use
+						href="#pintarest"
+						xlink:href="site/images/site-icons#pintarest"
+						/>
+				</svg>
+			</a>
+			<a href="mailto://dukivenapo26@gmail.com" class="mail">
+				<svg>
+					<use
+						href="#mail"
+						xlink:href="site/images/site-icons#mail"
+						/>
+				</svg>
+			</a>
+		</div>
 	</div>
 
 	<div class="info" data-uid="$params['uid']" cms:eval="data-uid">
@@ -58,7 +105,7 @@
 		</cms:desktop>
 
 		<div class="properties">
-			<div>
+			<div class="color">
 				<h4><cms:text constant="property_color"/></h4>
 				<cms:color_list
 					id="$params['id']"
@@ -67,8 +114,13 @@
 					/>
 			</div>
 
-			<div>
+			<div class="size">
 				<h4><cms:text constant="property_size"/></h4>
+				<cms:module
+					name="downloads"
+					action="show_list"
+					template="parts/downloads.xml"
+					/>
 				<select>
 					<cms:value_list
 						definition="$params['size_definition']"
@@ -78,24 +130,42 @@
 				</select>
 			</div>
 
-			<div>
+			<div class="weight">
 				<h4><cms:text constant="property_weight"/></h4>
 				<span><cms:var param="weight"/></span>
 			</div>
 
 			<div>
-				<h4><cms:text constant="property_diamond_color"/></h4>
-				<span><span><cms:var param="weight"/></span></span>
+				<cms:module
+					name="shop"
+					action="show_property"
+					item="$params['id']"
+					text_id="diamond_color"
+					cms:eval="item"
+					template="parts/product_properties.xml"
+					/>
 			</div>
 
 			<div>
-				<h4><cms:text constant="property_gold_color"/></h4>
-				<span><span><cms:var param="weight"/></span></span>
+				<cms:module
+					name="shop"
+					action="show_property"
+					item="$params['id']"
+					text_id="gold_color"
+					cms:eval="item"
+					template="parts/product_properties.xml"
+					/>
 			</div>
 
 			<div>
-				<h4><cms:text constant="property_gold_size"/></h4>
-				<span><span><cms:var param="weight"/></span></span>
+				<cms:module
+					name="shop"
+					action="show_property"
+					item="$params['id']"
+					text_id="gold_size"
+					cms:eval="item"
+					template="parts/product_properties.xml"
+					/>
 			</div>
 		</div>
 
@@ -109,47 +179,37 @@
 			</a>
 		</div>
 
-			<div class="policy">
-				<cms:module
-					name="articles"
-					action="show"
-					text_id="short_shipping_policy"
-					template="parts/policy.xml"
-					/>
-				<cms:module
-					name="articles"
-					action="show"
-					text_id="short_return_policy"
-					template="parts/policy.xml"
-					/>
-				<cms:module
-					name="articles"
-					action="show"
-					text_id="short_need_assistance"
-					template="parts/policy.xml"
-					/>
-			</div>
-
-			<div class="social">
-				<a href="#" class="facebook"></a>
-				<a href="#" class="tweeter"></a>
-				<a href="#" class="pinterst"></a>
-				<a href="#" class="instagram"></a>
-				<a href="#" class="google_plus"></a>
-				<a href="#" class="mail"></a>
-			</div>
-		
-
-		<div class="related_items">
-			<h3><cms:text constant="related"/></h3>
+		<div class="policy">
 			<cms:module
-				name="shop"
-				action="show_item_list"
-				category="$_REQUEST['category']"
-				related="$params['id']"
-				template="parts/related_items.xml"
-				cms:eval="related,category"
+				name="articles"
+				action="show"
+				text_id="short_shipping_policy"
+				template="parts/policy.xml"
+				/>
+			<cms:module
+				name="articles"
+				action="show"
+				text_id="short_return_policy"
+				template="parts/policy.xml"
+				/>
+			<cms:module
+				name="articles"
+				action="show"
+				text_id="short_need_assistance"
+				template="parts/policy.xml"
 				/>
 		</div>
+	</div>
+
+	<div class="related_items">
+		<h3><cms:text constant="related"/></h3>
+		<cms:module
+			name="shop"
+			action="show_item_list"
+			category="$_REQUEST['category']"
+			related="$params['id']"
+			template="parts/shop_item.xml"
+			cms:eval="related,category"
+			/>
 	</div>
 </document>

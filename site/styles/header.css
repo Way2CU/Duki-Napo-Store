@@ -247,8 +247,8 @@ nav#user {
 	padding: 0px calc((100vw - 1200px) / 2);
 	color: white;
 	text-align: center;
-	border-top: 1px solid #f7c25d;
-	border-bottom: 1px solid white;
+	border-top: 1px solid rgba(247, 194, 93, 0.5);
+	border-bottom: 1px solid rgba(255,255,255,0.5);
 	line-height: 100%;
 }
 
@@ -258,6 +258,9 @@ nav#user div.message {
 	font-variant: small-caps;
 	text-transform: capitalize;
 	font-family: serif;
+	font-size: 1.3em;
+	line-height: 1em;
+	white-space: normal;
 	width: calc(33.3% + 40px);
 }
 
@@ -337,21 +340,14 @@ nav#user ul.session a:hover:before {
 /**
  * Bottom header navigation
  */
+
 nav#navigation {
 	display: block;
 	text-align: center;
-	padding: 0px calc((100vw - 1200px) / 2);
-
-	border-bottom: 1px solid #d0d0d0;
-	background-color: white;
 	position: relative;
-}
-
-nav#navigation,
-nav#navigation {
+	padding: 0px calc((100vw - 1200px) / 2);
 	background-color: black;
-	background-color: rgba(0, 0, 0, 0.7);
-	border-bottom-color: #f6c15c;
+	border-bottom: 1px solid rgba(246,193,92,0.5);
 }
 
 nav#navigation ul.categories {

@@ -1,5 +1,5 @@
 <document>
-
-	<option value="$params['value'][$language]" cms:eval="value"><cms:var param="value" multilanguage="yes"/></option>
-
+	<option value="$params['value'][$language]" cms:eval="value">
+		<cms:var param="value" multilanguage="yes"/>
+	</option>
 </document>

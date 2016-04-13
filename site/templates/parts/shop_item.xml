@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
 <document>
 	<a
 		href="url_Make('product', 'shop', array('category', fix_id($_REQUEST['id'])), array('id',$params['id']))"

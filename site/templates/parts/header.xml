@@ -31,7 +31,7 @@
 					</li>
 				</ul>
 
-				<a  class="logo" href="url_Make()" cms:eval="href">
+				<a  class="logo" href="url_Make('','home')" cms:eval="href">
 					<img src="_BASEURL.'/site/images/header/logo-symbol.svg'"  alt="logo-symbol" cms:eval="src"/>
 					<img src="_BASEURL.'/site/images/header/type-logo.svg'"  alt="type-logo" cms:eval="src"/>
 				</a>

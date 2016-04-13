@@ -290,7 +290,7 @@ nav#user ul.session li {
 }
 
 nav#user ul.contact li a,
-nav#user ul.session a {
+nav#user ul.session li a {
 	display: inline-block;
 	position: relative;
 	padding: 10px;
@@ -327,13 +327,13 @@ div.top_header a.phone:before {
 
 nav#user ul.contact li a:hover,
 div.top_header a.phone:hover,
-nav#user ul.session a:hover {
+nav#user ul.session li a:hover {
 	background-color: rgba(246, 193, 92, 0.2);
 }
 
 nav#user ul.contact li a:hover:before,
 div.top_header a.phone:hover:before,
-nav#user ul.session a:hover:before {
+nav#user ul.session li a:hover:before {
 	left: 0;
 }
 

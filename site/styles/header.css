@@ -687,6 +687,14 @@ div#cart div.popup div.total_count {
 div#cart div.popup div.total_count span {
 	display: inline-block;
 	vertical-align: middle;
+	position: relative;
+}
+
+div#cart div.popup div.total_count span.price:after {
+	display: inline-block;
+	content: attr(data-currency);
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 div#cart div.popup div.total_count span:last-of-type {

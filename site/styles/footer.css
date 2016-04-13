@@ -104,6 +104,7 @@ footer form {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
+	white-space: nowrap;
 	width: 50%;
 }
 

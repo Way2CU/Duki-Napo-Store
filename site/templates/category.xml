@@ -33,12 +33,12 @@
 		<body>
 			<cms:template file="parts/header.xml"/>
 
-			<section class="category">
+			<section class="category" data-id="$_REQUEST['id']" cms:eval="data-id">
 				<h1>
 					<cms:module
 						name="shop"
 						action="show_category"
-						id="$_REQUEST['id']"
+						id="fix_id($_REQUEST['id'])"
 						template="parts/category_name.xml"
 						cms:eval="id"
 						/>
@@ -47,9 +47,9 @@
 				<cms:module
 					name="shop"
 					action="show_item_list"
-					id="$_REQUEST['id']"
+					id="fix_id($_REQUEST['id'])"
 					template="parts/shop_item.xml"
-					cms:eval="category"
+					cms:eval="id"
 					/>
 			</section>
 

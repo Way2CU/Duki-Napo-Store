@@ -471,6 +471,7 @@ div.contact_us div.form_wrap form label textarea {
 	border: 1px solid #989898;
 	background-color: #e8e8e8;
 	transition: all 0.3s;
+	resize: vertical;
 }
 
 div.contact_us div.form_wrap form label input:focus,div.contact_us div.form_wrap form label textarea:focus {

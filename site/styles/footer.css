@@ -276,8 +276,8 @@ footer div.copyright {
 footer div.copyright span {
 	display: inline-block;
 	vertical-align: middle;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	padding-left: 40px;
 	background-image: url(../images/footer/way2cu-color.svg);
 	background-repeat: no-repeat;

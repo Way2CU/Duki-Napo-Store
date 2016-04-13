@@ -1181,7 +1181,8 @@ Site.on_load = function() {
 
 	// lightbox for all images on page
 	if (!Site.is_mobile())
-		Site.lightbox = new LightBox('div.images a', false, false, true);
+		Site.lightbox = new LightBox('div.images > a', false, false, true);
+		Site.lightbox1 = new LightBox('div.images figure a', false, false, true);
 		Site.lightbox_gallery = new LightBox('div.gallery a', false, false, true);
 
 	// create shopping cart

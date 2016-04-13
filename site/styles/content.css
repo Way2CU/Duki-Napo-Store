@@ -366,16 +366,19 @@ section#vip figure {
 
 div.about_article {
 	display: block;
-	text-align: center;
-	padding:20px calc((100vw - 960px) / 2);
+	text-align: left;
+	padding:20px calc((100vw - 1200px) / 2);
 }
 
 div.about_article h3 {
 	display: block;
+	text-align: center;
 	padding-bottom: 20px;
 	margin-left: auto;
 	margin-right: auto;
-
+	width: 750px;
+	font-weight: 400;
+	font-family: serif;
 	color:#212121;
 	border-bottom: 1px solid #e8e8e8;
 }
@@ -386,10 +389,14 @@ div.about_article p {
 	margin-right: auto;
 }
 
+div.about_article p:first-of-type {
+	margin-top: 0px;
+}
+
 div.about_article p img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 20px;
 }
 
 /**

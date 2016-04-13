@@ -122,8 +122,8 @@
 								>
 								<svg>
 									<use
-										href="#login"
-										xlink:href="site/images/site-icons#login"
+										href="#cog"
+										xlink:href="site/images/site-icons#cog"
 										/>
 								</svg>
 								<cms:text constant="menu_account"/>
@@ -133,8 +133,8 @@
 							<a class="logout" href="#">
 								<svg>
 									<use
-										href="#login"
-										xlink:href="site/images/site-icons#login"
+										href="#enter"
+										xlink:href="site/images/site-icons#enter"
 										/>
 								</svg>
 								<cms:text constant="menu_logout"/>

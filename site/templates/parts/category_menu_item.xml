@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
 <document>
-	<li class="$params['text_id']" cms:eval="class">
+	<li>
 		<a
 			href="url_Make('category', 'shop', array('id', $params['id']))"
 			class="(isset($_REQUEST['category']) ? $_REQUEST['category'] : $_REQUEST['id']) == $params['id'] ? 'active' : false"

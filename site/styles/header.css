@@ -10,6 +10,17 @@ header {
 	display: block;
 	white-space: nowrap;
 	background-color: black;
+	position: relative;
+}
+
+header.active {
+	display: block;
+	text-align: left;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 100;
 }
 
 /**
@@ -25,11 +36,40 @@ div.top_header {
 	text-align: center;
 	background-color: black;
 	width: 1200px;
-	position: relative;
+}
+
+header.active div.top_header {
+	text-align: left;
+	border-bottom: 1px solid rgba(247,194,93,0.5);
 }
 
 div.top_header a.logo {
 	display: inline-block;
+	position: relative;
+	width: 350px;
+}
+
+header.active div.top_header a.logo {
+	width: 220px;
+}
+
+div.top_header a.logo:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	left: 0px;
+	background-image: url(../images/header/logo-symbol.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 40px 40px;
+	width: 40px;
+	height: 40px;
+	opacity: 0;
+}
+
+header.active div.top_header a.logo:before {
+	opacity: 1;
 }
 
 div.top_header a.logo img {
@@ -43,18 +83,35 @@ div.top_header a.logo img:first-of-type {
 	margin-bottom: 10px;
 }
 
+header.active div.top_header a.logo img:first-of-type {
+	display: none;
+}
+
 div.top_header a.logo img:last-of-type {
 	width: 65%;
+}
+
+header.active div.top_header a.logo img:last-of-type {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 50px;
 }
 
 div.top_header a.phone {
 	position: absolute;
 	top: 0px;
-	right: 0px;
+	right: calc(50% - 600px);
 	text-decoration: none;
 	color: white;
 	padding: 1em 10px;
 	overflow: hidden;
+	transition: all 0.3s;
+}
+
+header.active div.top_header a.phone {
+	top: auto;
+	bottom: 0px;
+	padding: 10px;
 }
 
 div.top_header a.phone svg {
@@ -70,10 +127,15 @@ div.top_header a.phone svg {
 div.top_header ul.drop {
 	position: absolute;
 	top: 0px;
-	left: 0px;
+	left: calc(50% - 600px);
 	margin: 0px;
 	padding: 0px;
 	text-align: left;
+}
+
+header.active div.top_header ul.drop {
+	bottom: 0px;
+	top: auto;
 }
 
 div.top_header ul.drop > li {
@@ -252,6 +314,12 @@ nav#user {
 	line-height: 100%;
 }
 
+header.active nav#user {
+	text-align: left;
+	margin-left: 100px;
+	border: none;
+}
+
 nav#user div.message {
 	display: inline-block;
 	vertical-align: middle;
@@ -262,6 +330,16 @@ nav#user div.message {
 	line-height: 1em;
 	white-space: normal;
 	width: calc(33.3% + 40px);
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s;
+}
+
+header.active nav#user div.message {
+	opacity: 0;
+	visibility: visible;
+	width: 0px;
+	line-height: 0;
 }
 
 nav#user ul.contact,
@@ -278,6 +356,11 @@ nav#user ul.session {
 	line-height: 50%;
 
 	text-align: right;
+}
+
+header.active nav#user ul.contact,
+header.active nav#user ul.session {
+	width: auto;
 }
 
 nav#user ul.contact {
@@ -325,6 +408,10 @@ div.top_header a.phone:before {
 	overflow: hidden;
 }
 
+header.active div.top_header a.phone:before {
+	left: -100%;
+}
+
 nav#user ul.contact li a:hover,
 div.top_header a.phone:hover,
 nav#user ul.session li a:hover {
@@ -344,10 +431,13 @@ nav#user ul.session li a:hover:before {
 nav#navigation {
 	display: block;
 	text-align: center;
-	position: relative;
 	padding: 0px calc((100vw - 1200px) / 2);
 	background-color: black;
 	border-bottom: 1px solid rgba(246,193,92,0.5);
+}
+
+header.active nav#navigation {
+	border-bottom: none;
 }
 
 nav#navigation ul.categories {
@@ -356,6 +446,12 @@ nav#navigation ul.categories {
 	padding: 0;
 
 	text-align: center;
+}
+
+header.active nav#navigation ul.categories {
+	position: absolute;
+	top: 0px;
+	left: calc(50% - 290px);
 }
 
 nav#navigation ul.drop,
@@ -393,6 +489,10 @@ nav#navigation ul.categories a {
 
 	color: #333333;
 	text-decoration: none;
+}
+
+header.active div.top_header ul.drop a {
+	padding: 10px;
 }
 
 nav#navigation ul.categories a {
@@ -470,7 +570,7 @@ nav#navigation ul.categories a:hover:after {
 
  div#cart {
  	position: absolute;
- 	top: 0px;
+ 	bottom: 0px;
  	right: calc(50% - 600px);
  	width: calc(10% - 20px);
  	margin: 0;
@@ -478,6 +578,11 @@ nav#navigation ul.categories a:hover:after {
 
  	text-align: right;
  }
+
+header.active div#cart {
+	bottom: auto;
+	top: 0px;
+}
 
 div#cart:before,
 div#cart:after {

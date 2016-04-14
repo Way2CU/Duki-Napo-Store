@@ -21,8 +21,9 @@
 			/>
 		<span
 			class="price"
+			data-currency="shop::getDefaultCurrency()" cms:eval="data-currency"
 			>
-			<cms:text constant="currency"/><cms:raw text=" "/><cms:var param="price"/>
+			<cms:var param="price"/>
 		</span>
 	</a>
 </document>

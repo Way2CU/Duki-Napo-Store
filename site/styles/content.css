@@ -771,8 +771,10 @@ a.item span.price {
 	color: #6e6e6e;
 }
 
-a.item span.price:before {
+a.item span.price:after {
 	content: attr(data-currency);
+	padding-left: 5px;
+
 }
 
 /**

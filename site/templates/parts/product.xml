@@ -5,7 +5,6 @@
 		<article>
 			<h1><cms:var param="name" multilanguage="yes"/></h1>
 			<cms:markdown param="description" multilanguage="yes"/>
-			<span><cms:var param="price"/>$</span>
 		</article>
 	</cms:mobile>
 

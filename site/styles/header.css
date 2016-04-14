@@ -124,6 +124,7 @@ div.top_header a.phone svg {
 }
 
 /*Drop Down Menu*/
+
 div.top_header ul.drop {
 	position: absolute;
 	top: 0px;
@@ -163,11 +164,8 @@ div.top_header ul.drop > li:hover > a {
 	background-color: rgba(246, 193, 92, 0.2);
 }
 
+div.top_header ul.drop > li:hover > a:after,
 div.top_header ul.drop > li:hover > a:before {
-	top: 0px;
-}
-
-div.top_header ul.drop > li:hover > a:after {
 	top: 0px;
 }
 
@@ -510,12 +508,6 @@ div.top_header ul a {
 }
 
 div.top_header ul.drop a:hover,
-nav#navigation ul.categories a:hover {
-	background-color: #6e6e6e;
-	background-color: rgba(110, 110, 110, 0.2);
-}
-
-div.top_header ul.drop a:hover,
 div.top_header ul.drop a:hover,
 nav#navigation ul.categories a:hover,
 nav#navigation ul.categories a:hover {
@@ -534,16 +526,9 @@ nav#navigation ul.categories a:after {
 	left: 0;
 	content: '';
 
-	background-color: #6e6e6e;
+	background-color: #f6c15c;
 	line-height: 0;
 	transition: all 0.3s;
-}
-
-div.top_header ul.drop a:before,
-nav#navigation ul.categories a:before,
-div.top_header ul.drop a:after,
-nav#navigation ul.categories a:after {
-	background-color: #f6c15c;
 }
 
 div.top_header ul.drop a:after,
@@ -593,15 +578,8 @@ div#cart:after {
 	left: 0;
 	content: '';
 
-	background-color: #6e6e6e;
-	transition: all 0.3s;
-}
-
-div#cart:before,
-div#cart:after,
-div#cart:before,
-div#cart:after {
 	background-color: #f6c15c;
+	transition: all 0.3s;
 }
 
 div#cart:after {

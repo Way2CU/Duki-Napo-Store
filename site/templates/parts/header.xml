@@ -157,6 +157,12 @@
 
 				<!-- Shopping cart -->
 				<div id="cart">
+					<svg>
+						<use
+							href="#cart"
+							xlink:href="site/images/site-icons.svg#cart"
+							/>
+					</svg>
 					<em><cms:text constant="label_cart"/></em>
 					<span class="count"></span>
 					<span><cms:text constant="label_cart_items"/></span>

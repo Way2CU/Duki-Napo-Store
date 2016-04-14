@@ -610,6 +610,15 @@ div#cart:hover:after {
 	transition-delay: 0s;
 }
 
+div#cart svg {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 15px;
+	width: 20px;
+	height: 20px;
+	fill: white;
+}
+
 div#cart > em,
 div#cart > span {
 	display: inline-block;

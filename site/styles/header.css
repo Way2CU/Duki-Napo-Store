@@ -189,12 +189,16 @@ nav#user ul.contact li a:hover:before,
 nav#user ul.session li a:hover:before,
 div.top_header ul.drop > li > a:hover:before {
 	top: 0px;
+	transition: all 0.3s;
+	transition-delay: 0s;
 }
 
 nav#user ul.contact li a:hover:after,
 nav#user ul.session li a:hover:after,
 div.top_header ul.drop > li > a:hover:after {
 	top: 0px;
+	transition: all 0.3s;
+	transition-delay: 0s;
 }
 
 nav#user ul.session li a:before,
@@ -208,7 +212,6 @@ div.top_header ul.drop > li > a:before {
 	width: 1px;
 	height: 100%;
 	background-color: #f6c15c;
-	transition: all 0.3s;
 }
 
 nav#user ul.session li a:after,
@@ -225,6 +228,11 @@ div.top_header ul.drop > li > a:after {
 	transition: all 0.3s;
 }
 
+div.top_header ul.drop > li > a:before,
+div.top_header ul.drop > li > a:after {
+	transition-delay: 0.3s;
+}
+
 div.top_header ul.drop ul.menu {
 	position: absolute;
 	margin: 0px;
@@ -239,6 +247,7 @@ div.top_header ul.drop ul.menu {
 	max-height: 0px;
 	z-index: 10000;
 	transition: all 0.6s;
+	transition-delay: 0.3s;
 }
 
 div.top_header ul.drop ul.menu li {
@@ -304,7 +313,7 @@ div.top_header ul.drop li:hover ul.menu {
 
 nav#user {
 	display: block;
-	padding: 0px calc((100vw - 1200px) / 2);
+	padding: 0px calc((100% - 1200px) / 2);
 	color: white;
 	text-align: center;
 	border-top: 1px solid rgba(247, 194, 93, 0.5);
@@ -580,16 +589,12 @@ div#cart:after {
 
 	background-color: #f6c15c;
 	transition: all 0.3s;
+	transition-delay: 0.3s;
 }
 
 div#cart:after {
 	left: auto;
 	right: 0;
-}
-
-div#cart:hover {
-	background-color: #6e6e6e;
-	background-color: rgba(110, 110, 110, 0.2);
 }
 
 div#cart:hover,
@@ -601,6 +606,8 @@ div#cart:hover {
 div#cart:hover:before,
 div#cart:hover:after {
 	height: 100%;
+	transition: all 0.3s;
+	transition-delay: 0s;
 }
 
 div#cart > em,
@@ -655,6 +662,7 @@ div#cart div.popup {
 	visibility: hidden;
 	opacity: 0;
 	transition: all 0.6s;
+	transition-delay: 0.3s;
 	overflow: hidden;
 	z-index: 1000;
 }
@@ -663,6 +671,7 @@ div#cart:hover div.popup {
 	visibility: visible;
 	opacity: 1;
 	max-height: 500px;
+	transition: all 0.6s;
 	transition-delay: 0.3s;
 }
 
@@ -718,7 +727,6 @@ div#cart div.popup > ul li > span {
 	text-align: center;
 	padding-left: 20px;
 	padding-right: 20px;
-
 }
 
 div#cart div.popup > ul li a {

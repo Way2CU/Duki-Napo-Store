@@ -1311,9 +1311,6 @@ Site.on_load = function() {
 
 	 $('section#vip button').text(language_handler.getText(null, 'send_vip_button'));
 
-	
-
-
 	// handle analytics event
 	$('form').on('analytics-event', function(event, data) {
 		if (!data.error)

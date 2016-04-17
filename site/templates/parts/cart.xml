@@ -12,10 +12,8 @@
 			<span></span>
 		</div>
 		<div class="total_count">
-			<span class="price" data-currency="shop::getDefaultCurrency()" cms:eval="data-currency">
-				<cms:text constant="total_label"/>
-			</span>
-			<span class="cart_total"></span>
+			<span class="price"><cms:text constant="total_label"/></span>
+			<span class="cart_total" data-currency="shop::getDefaultCurrency()" cms:eval="data-currency"></span>
 		</div>
 
 		<div class="controls">

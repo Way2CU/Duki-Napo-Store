@@ -189,12 +189,10 @@ section#vip form label.checkbox {
 	margin-bottom: 10px;
 }
 
-div.contact_us div.form_wrap form label.checkbox input,
 section#vip form label.checkbox input {
 	display: none;
 }
 
-div.contact_us div.form_wrap form label.checkbox span,
 section#vip form label.checkbox  span {
 	display: inline-block;
 	text-align: left;
@@ -458,7 +456,8 @@ div.contact_us div.form_wrap form label.checkbox input {
 
 div.contact_us div.form_wrap form label.checkbox span {
 	display: inline-block;
-	width: 380px;
+	padding-left: 30px;
+	width: 468px;
 	font-size: 1em;
 	position: relative;
 }
@@ -467,10 +466,10 @@ div.contact_us div.form_wrap form label.checkbox span:before {
 	content: "";
 	position: absolute;
 	top: 50%;
-	margin-top: -15px;
+	margin-top: -10px;
 	left: 0px;
-	width: 30px;
-	height: 30px;
+	width: 20px;
+	height: 20px;
 	border: 1px solid #989898;
 }
 
@@ -479,9 +478,9 @@ div.contact_us div.form_wrap form label.checkbox span:after {
 	position: absolute;
 	left: 4px;
 	top: 50%;
-	margin-top: -12.5px;
-	width: 23px;
-	height: 23px;
+	margin-top: -7.5px;
+	width: 15px;
+	height: 15px;
 	display: block;
 	z-index: 1;
 	background: url(../images/check_mark.svg);
@@ -512,23 +511,14 @@ div.contact_us div.form_wrap form label:last-of-type span {
 	vertical-align: top;
 }
 
+div.contact_us div.form_wrap form label textarea,
 div.contact_us div.form_wrap form label input {
-	width: 400px;
+	width: 475px;
 	text-align: left;
 	padding: 10px;
 	border: 1px solid #989898;
 	background-color: #e8e8e8;
 	transition: all 0.3s;
-}
-
-div.contact_us div.form_wrap form label textarea {
-	width: 400px;
-	text-align: left;
-	padding: 10px;
-	border: 1px solid #989898;
-	background-color: #e8e8e8;
-	transition: all 0.3s;
-	resize: vertical;
 }
 
 div.contact_us div.form_wrap form label input:hover,

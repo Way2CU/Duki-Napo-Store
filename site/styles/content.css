@@ -189,10 +189,12 @@ section#vip form label.checkbox {
 	margin-bottom: 10px;
 }
 
+div.contact_us div.form_wrap form label.checkbox input,
 section#vip form label.checkbox input {
 	display: none;
 }
 
+div.contact_us div.form_wrap form label.checkbox span,
 section#vip form label.checkbox  span {
 	display: inline-block;
 	text-align: left;
@@ -448,6 +450,54 @@ div.contact_us div.form_wrap form {
 div.contact_us div.form_wrap form label {
 	display: block;
 	padding-bottom: 15px;
+}
+
+div.contact_us div.form_wrap form label.checkbox input {
+	display: none;
+}
+
+div.contact_us div.form_wrap form label.checkbox span {
+	display: inline-block;
+	width: 380px;
+	font-size: 1em;
+	position: relative;
+}
+
+div.contact_us div.form_wrap form label.checkbox span:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+	left: 0px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #989898;
+}
+
+div.contact_us div.form_wrap form label.checkbox span:after {
+	content: '';
+	position: absolute;
+	left: 4px;
+	top: 50%;
+	margin-top: -12.5px;
+	width: 23px;
+	height: 23px;
+	display: block;
+	z-index: 1;
+	background: url(../images/check_mark.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	-ms-transition: all .2s ease;
+	-webkit-transition: all .2s ease;
+	transition: all .3s ease;
+	-ms-transform: scale(0);
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	opacity: 1;
+}
+
+div.contact_us div.form_wrap form label.checkbox input:checked ~ span:after {
+	transform: scale(1);
 }
 
 div.contact_us div.form_wrap form label span {

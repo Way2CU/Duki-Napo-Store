@@ -338,10 +338,14 @@ nav#user div.message {
 	line-height: 1em;
 	white-space: normal;
 	width: calc(33.3% + 40px);
+	transition: all 0.3s;
 }
 
 header.active nav#user div.message {
-	display: none;
+	visibility: hidden;
+	opacity: 0;
+	line-height: 0px;
+	width: 0px;
 }
 
 nav#user ul.contact,

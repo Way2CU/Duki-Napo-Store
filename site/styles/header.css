@@ -133,8 +133,8 @@ div.top_header a.phone svg {
 	display: inline-block;
 	vertical-align: middle;
 	padding-right: 10px;
-	width: 25px;
-	height: 25px;
+	width: 20px;
+	height: 20px;
 	fill: white;
 }
 
@@ -406,8 +406,8 @@ nav#user ul.contact li a svg {
 	display: inline-block;
 	vertical-align: middle;
 	padding-right: 10px;
-	width: 25px;
-	height: 25px;
+	width: 20px;
+	height: 20px;
 	fill: white;
 }
 
@@ -577,9 +577,9 @@ nav#navigation ul.categories a:hover:after {
  	position: absolute;
  	bottom: 0px;
  	right: calc(50% - 600px);
- 	width: calc(15% - 20px);
+ 	width: calc(15% - 10px);
  	margin: 0;
- 	padding-right: 20px;
+ 	padding-right: 10px;
 
  	text-align: right;
  }
@@ -625,6 +625,7 @@ div#cart svg {
 	display: inline-block;
 	vertical-align: middle;
 	padding-right: 15px;
+	padding-bottom: 5px;
 	width: 20px;
 	height: 20px;
 	fill: white;

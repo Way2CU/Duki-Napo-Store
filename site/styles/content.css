@@ -11,6 +11,7 @@ section#vip {
 	text-align: center;
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-color: black;
 	width: 100%;
 	min-height: 700px;
 	position: relative;
@@ -141,7 +142,6 @@ div#slider div.controls a:hover {
 
 section#vip {
 	display: block;
-	padding-top: 140px;
 	min-height: 630px;
 }
 
@@ -827,7 +827,6 @@ a.item span.price {
 a.item span.price:after {
 	content: attr(data-currency);
 	padding-left: 5px;
-
 }
 
 /**
@@ -1080,6 +1079,15 @@ section.product div.policy label {
 	font-style: italic;
 	position: relative;
 	cursor: pointer;
+	transition: all 0.3s;
+}
+
+section.product div.policy label:hover {
+	color: #f7c25d;
+}
+
+section.product div.policy label:hover:before {
+	border-color: #f7c25d;
 }
 
 section.product div.policy label:before {
@@ -1109,6 +1117,10 @@ section.product div.policy input:checked + label:before {
 	-o-transform: rotate(223deg);
 	transform: rotate(223deg);
 	border-color: #f6c15c;
+}
+
+section.product div.policy input:checked + label {
+	color: #f7c25d;
 }
 
 section.product div.policy input {

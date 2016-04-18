@@ -88,11 +88,10 @@ class Duki_DeliveryMethod extends DeliveryMethod {
 	 * @param array $items
 	 * @param array $shipper
 	 * @param array $recipient
-	 * @param string $transaction_id
-	 * @param string $preferred_currency
+	 * @param string $transaction
 	 * @return array
 	 */
-	public function getDeliveryTypes($items, $shipper, $recipient, $transaction_id, $preferred_currency) {
+	public function getDeliveryTypes($items, $shipper, $recipient, $transaction) {
 		$result = array(
 				'fedex'	=> array('FedEx', 10, 'USD', null, null),
 				'usps'	=> array('USPS', 10, 'USD', null, null)
@@ -153,12 +152,45 @@ class Duki_DeliveryMethod extends DeliveryMethod {
 	}
 
 	/**
+	 * Get custom delivery method interface.
+	 *
+	 * @return string
+	 */
+	public function getInterface() {
+		return '';
+	}
+
+	/**
+	 * Get delivery price for selection for specified recipient.
+	 *
+	 * @param array $items
+	 * @param array $shipper
+	 * @param array $recipient
+	 * @param object $transaction
+	 * @param string $selection
+	 * @return float
+	 */
+	public function getCustomEstimate($items, $shipper, $recipient, $transaction, $selection) {
+		return 0;
+	}
+
+	/**
 	 * Whether delivery method can be used for international deliveries.
 	 *
 	 * @return boolean
 	 */
 	public function isInternational() {
 		return true;
+	}
+
+	/**
+	 * Whether delivery method provides custom interface. If custom interface is
+	 * present instead of `getDeliveryTypes` function `getInterface` will be called.
+	 *
+	 * @return boolean
+	 */
+	public function hasCustomInterface() {
+		return false;
 	}
 }
 

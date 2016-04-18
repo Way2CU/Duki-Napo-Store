@@ -60,10 +60,12 @@ div.top_header a.logo {
 	display: inline-block;
 	position: relative;
 	width: 350px;
+	height: 121px;
 }
 
 header.active div.top_header a.logo {
 	width: 220px;
+	height: 32px;
 }
 
 div.top_header a.logo:before {

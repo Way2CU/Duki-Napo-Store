@@ -2,11 +2,11 @@
  * @param object menu               jQuery object
  * @param object trigger_element    jQuery object
  */
-function FloatingMenu(menu, trigger_element){
+function FloatingMenu(menu){
     var self = this;
 
     self.menu = menu;
-    self.position = trigger_element.offset().top;
+    self.position = menu.height();
     self.active = false;
       
     /**
@@ -30,10 +30,12 @@ function FloatingMenu(menu, trigger_element){
         
         if (over_position && !self.active) {
             self.menu.addClass('active');
+            $('body').addClass('active');
             self.active = true;
 
         } else if (!over_position && self.active) {
             self.menu.removeClass('active');
+            $('body').removeClass('active');
             self.active = false;
         }
     };
@@ -44,5 +46,5 @@ function FloatingMenu(menu, trigger_element){
 
 $(function() {
     // create floating menu
-    Site.menu = new FloatingMenu($('header'),$('header').next());
+    Site.menu = new FloatingMenu($('header'));
 })

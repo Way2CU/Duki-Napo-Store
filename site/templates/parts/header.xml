@@ -57,8 +57,8 @@
 						<a href="url_Make('', 'contact-us')" cms:eval="href" cms:optional="class">
 							<svg>
 								<use
-									href="#mail"
-									xlink:href="site/images/site-icons#mail"
+									href="#envelope"
+									xlink:href="site/images/site-icons#envelope"
 									/>
 							</svg>
 							<cms:text constant="menu_contact_us"/>

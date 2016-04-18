@@ -11,6 +11,7 @@ header {
 	position: relative;
 	background-color: black;
 	white-space: nowrap;
+	opacity: 1;
 }
 
 header.active {
@@ -21,8 +22,9 @@ header.active {
 	left: 0px;
 	width: 100%;
 	z-index: 100;
+	opacity: 0.5;
 	animation: show;
-	animation-duration: 0.3s;
+	animation-duration: 0.5s;
 	animation-delay: 0s;
 	animation-timing-function: linear;
 	animation-direction: normal;
@@ -30,8 +32,8 @@ header.active {
 }
 
 @keyframes show {
-	from{top: -100px;}
-	to{top: 0px;}
+	from{top: -100px; opacity: 0.5}
+	to{top: 0px; opacity: 1}
 }
 
 /**

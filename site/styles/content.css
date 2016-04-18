@@ -136,6 +136,7 @@ div#slider div.controls a {
 	transition: all 0.3s;
 }
 
+div#slider div.controls a.active,
 div#slider div.controls a:hover {
 	background-color: rgba(247, 194, 93, 0.7);
 }

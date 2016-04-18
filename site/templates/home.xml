@@ -24,10 +24,10 @@
 							group="home_page"
 							template="parts/home_page_image.xml"
 							/>
-						<div class="controls"></div>
+						<div class="controls"/>
 				</div>
 			</cms:desktop>
-			
+
 			<cms:mobile>
 				<div id="slider">
 					<cms:module

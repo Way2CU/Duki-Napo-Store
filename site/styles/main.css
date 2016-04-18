@@ -41,6 +41,10 @@ body {
 	color: #212121;
 }
 
+body.active {
+	padding-top: 250px;
+}
+
 input,
 select,
 textarea,

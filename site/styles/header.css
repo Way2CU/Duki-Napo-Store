@@ -11,17 +11,27 @@ header {
 	position: relative;
 	background-color: black;
 	white-space: nowrap;
-	transition: all 0.6s;
 }
 
 header.active {
 	display: block;
 	text-align: left;
 	position: fixed;
-	top: 0px;
+	top: -100px;
 	left: 0px;
 	width: 100%;
 	z-index: 100;
+	animation: show;
+	animation-duration: 0.3s;
+	animation-delay: 0s;
+	animation-timing-function: linear;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+}
+
+@keyframes show {
+	from{top: -100px;}
+	to{top: 0px;}
 }
 
 /**
@@ -338,14 +348,10 @@ nav#user div.message {
 	line-height: 1em;
 	white-space: normal;
 	width: calc(33.3% + 40px);
-	transition: all 0.3s;
 }
 
 header.active nav#user div.message {
-	visibility: hidden;
-	opacity: 0;
-	line-height: 0px;
-	width: 0px;
+	display: none;
 }
 
 nav#user ul.contact,
@@ -567,7 +573,7 @@ nav#navigation ul.categories a:hover:after {
  	position: absolute;
  	bottom: 0px;
  	right: calc(50% - 600px);
- 	width: calc(10% - 20px);
+ 	width: calc(15% - 20px);
  	margin: 0;
  	padding-right: 20px;
 

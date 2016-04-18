@@ -57,7 +57,7 @@
 				<svg>
 					<use
 						href="#facebook"
-						xlink:href="site/images/site-icons#facebook"
+						xlink:href="site/images/site-icons.svg#facebook"
 						/>
 				</svg>
 			</a>
@@ -68,7 +68,7 @@
 				<svg>
 					<use
 						href="#twitter"
-						xlink:href="site/images/site-icons#twitter"
+						xlink:href="site/images/site-icons.svg#twitter"
 						/>
 				</svg>
 			</a>
@@ -80,7 +80,7 @@
 				<svg>
 					<use
 						href="#pintarest"
-						xlink:href="site/images/site-icons#pintarest"
+						xlink:href="site/images/site-icons.svg#pintarest"
 						/>
 				</svg>
 			</a>
@@ -88,7 +88,7 @@
 				<svg>
 					<use
 						href="#mail"
-						xlink:href="site/images/site-icons#mail"
+						xlink:href="site/images/site-icons.svg#mail"
 						/>
 				</svg>
 			</a>

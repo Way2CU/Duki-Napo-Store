@@ -22,7 +22,7 @@
 					<svg>
 						<use
 							href="#facebook"
-							xlink:href="site/images/site-icons#facebook"
+							xlink:href="site/images/site-icons.svg#facebook"
 							/>
 					</svg>
 				</a>
@@ -30,7 +30,7 @@
 					<svg>
 						<use
 							href="#pintarest"
-							xlink:href="site/images/site-icons#pintarest"
+							xlink:href="site/images/site-icons.svg#pintarest"
 							/>
 					</svg>
 				</a>
@@ -38,7 +38,7 @@
 					<svg>
 						<use
 							href="#instagram"
-							xlink:href="site/images/site-icons#instagram"
+							xlink:href="site/images/site-icons.svg#instagram"
 							/>
 					</svg>
 				</a>

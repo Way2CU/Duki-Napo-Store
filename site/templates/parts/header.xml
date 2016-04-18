@@ -22,7 +22,7 @@
 							<svg>
 								<use
 									href="#menu"
-									xlink:href="site/images/site-icons#menu"
+									xlink:href="site/images/site-icons.svg#menu"
 									/>
 							</svg>
 							<cms:text constant="menu_title"/>
@@ -58,7 +58,7 @@
 							<svg>
 								<use
 									href="#envelope"
-									xlink:href="site/images/site-icons#envelope"
+									xlink:href="site/images/site-icons.svg#envelope"
 									/>
 							</svg>
 							<cms:text constant="menu_contact_us"/>
@@ -69,7 +69,7 @@
 							<svg>
 								<use
 									href="#chat"
-									xlink:href="site/images/site-icons#chat"
+									xlink:href="site/images/site-icons.svg#chat"
 									/>
 							</svg>
 							<cms:text constant="label_chat"/>
@@ -95,7 +95,7 @@
 								<svg>
 									<use
 										href="#signup"
-										xlink:href="site/images/site-icons#signup"
+										xlink:href="site/images/site-icons.svg#signup"
 										/>
 								</svg>
 								<cms:text constant="menu_signup"/>
@@ -106,7 +106,7 @@
 								<svg>
 									<use
 										href="#login"
-										xlink:href="site/images/site-icons#login"
+										xlink:href="site/images/site-icons.svg#login"
 										/>
 								</svg>
 								<cms:text constant="menu_login"/>
@@ -123,7 +123,7 @@
 								<svg>
 									<use
 										href="#cog"
-										xlink:href="site/images/site-icons#cog"
+										xlink:href="site/images/site-icons.svg#cog"
 										/>
 								</svg>
 								<cms:text constant="menu_account"/>
@@ -134,7 +134,7 @@
 								<svg>
 									<use
 										href="#enter"
-										xlink:href="site/images/site-icons#enter"
+										xlink:href="site/images/site-icons.svg#enter"
 										/>
 								</svg>
 								<cms:text constant="menu_logout"/>

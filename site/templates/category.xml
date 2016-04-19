@@ -48,9 +48,9 @@
 				<cms:module
 					name="shop"
 					action="show_item_list"
-					id="fix_id($_REQUEST['id'])"
+					category="fix_id($_REQUEST['id'])"
 					template="parts/shop_item.xml"
-					cms:eval="id"
+					cms:eval="category"
 					/>
 			</section>
 

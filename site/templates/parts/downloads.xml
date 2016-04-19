@@ -4,7 +4,7 @@
 		<svg>
 			<use
 				href="#download"
-				xlink:href="site/images/site-icons#download"
+				xlink:href="site/images/site-icons.svg#download"
 				/>
 		</svg>
 	</a>

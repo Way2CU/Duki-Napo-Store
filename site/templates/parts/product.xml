@@ -17,7 +17,7 @@
 					>
 					<img
 						src="gallery::getGroupThumbnailById($params['gallery'], null, 436)"
-						alt="$params['name']"
+						alt="$params['name'][$language]"
 						cms:eval="src,alt"
 						/>
 				</a>
@@ -32,7 +32,7 @@
 					>
 					<img
 						src="gallery::getGroupThumbnailById($params['gallery'], null, 280)"
-						alt="$params['name']"
+						alt="$params['name'][$language]"
 						cms:eval="src,alt"
 						/>
 				</a>

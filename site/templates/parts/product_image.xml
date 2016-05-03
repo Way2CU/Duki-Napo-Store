@@ -1,27 +1,12 @@
 <document>
-	<cms:desktop>
-		<a
-			href="$params['image']"
-			cms:eval="href"
-			>
-			<img
-				src="gallery::getThumbnailById($params['id'], null, 100)"
-				alt="$params['name']"
-				cms:eval="src,alt"
-				/>
-		</a>
-	</cms:desktop>
-
-	<cms:mobile>
-		<a
-			href="$params['image']"
-			cms:eval="href"
-			>
-			<img
-				src="gallery::getThumbnailById($params['id'], null, 70)"
-				alt="$params['name']"
-				cms:eval="src,alt"
-				/>
-		</a>
-	</cms:mobile>
+	<a
+		href="$params['image']"
+		cms:eval="href"
+		>
+		<img
+			src="gallery::getThumbnailById($params['id'], null, _DESKTOP_VERSION ? 100 : 70)"
+			alt="$params['title'][$language]"
+			cms:eval="src,alt"
+			/>
+	</a>
 </document>

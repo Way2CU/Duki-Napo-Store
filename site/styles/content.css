@@ -551,7 +551,7 @@ div.contact_us div.form_wrap form div.controls button {
 	color: white;
 	font-size: 1.1em;
 	text-decoration: none;
-	cursor: pointer;cd ..
+	cursor: pointer;
 	transition: all 0.3s;
 	z-index: 0;
 	overflow: hidden;
@@ -1153,7 +1153,7 @@ section.product div.related_items {
 }
 
 section.product div.related_items h3 {
-	font-size: serif;
+	font-family: serif;
 	font-variant: small-caps;
 	text-transform: capitalize;
 	position: relative;

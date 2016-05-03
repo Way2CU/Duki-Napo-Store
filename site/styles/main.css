@@ -15,25 +15,21 @@
 
 @font-face {
 	font-family: 'Roboto';
-	font-style: bold;
 	font-weight: 700;
 	src: url(../images/fonts/Roboto-Bold-webfont.woff) format('woff');
 }
 
 @font-face {
 	font-family: 'Roboto';
-	font-style: light;
 	font-weight: 100;
 	src: url(../images/fonts/Roboto-Light-webfont.woff) format('woff');
 }
 
 @font-face {
 	font-family: 'Roboto';
-	font-style: italic;
 	font-weight: 100;
 	src: url(../images/fonts/Roboto-Italic-webfont.woff) format('woff');
 }
-
 
 body {
 	font-family: 'Roboto', sans-serif;

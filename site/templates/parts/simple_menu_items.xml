@@ -12,6 +12,36 @@
 		</li>
 		<li>
 			<a
+				class="$section == 'from-the-press' ? 'active' : false"
+				href="url_Make('', 'from-the-press')"
+				cms:eval="href"
+				cms:optional="class"
+				>
+				<cms:text constant="menu_press"/>
+			</a>
+		</li>
+		<li>
+			<a
+				class="$section == 'gallery' ? 'active' : false"
+				href="url_Make('', 'gallery')"
+				cms:eval="href"
+				cms:optional="class"
+				>
+				<cms:text constant="menu_gallery"/>
+			</a>
+		</li>
+		<li>
+			<a
+				class="$section == 'vip' ? 'active' : false"
+				href="url_Make('', 'vip')"
+				cms:eval="href"
+				cms:optional="class"
+				>
+				<cms:text constant="menu_vip"/>
+			</a>
+		</li>
+		<li>
+			<a
 				href="url_Make('privacy-policy', 'about-us')"
 				class="$section == 'about-us' and $action == 'privacy-policy' ? 'active' : false"
 				cms:eval="href"
@@ -32,26 +62,6 @@
 		</li>
 		<li>
 			<a
-				class="$section == 'diamonds' ? 'active' : false"
-				href="url_Make('', 'diamonds')"
-				cms:eval="href"
-				cms:optional="class"
-				>
-				<cms:text constant="menu_jewellery"/>
-			</a>
-		</li>
-		<li>
-			<a
-				class="$section == 'gallery' ? 'active' : false"
-				href="url_Make('', 'gallery')"
-				cms:eval="href"
-				cms:optional="class"
-				>
-				<cms:text constant="menu_gallery"/>
-			</a>
-		</li>
-		<li>
-			<a
 				class="$section == 'contact-us' ? 'active' : false"
 				href="url_Make('', 'contact-us')"
 				cms:eval="href"
@@ -62,22 +72,12 @@
 		</li>
 		<li>
 			<a
-				class="$section == 'from-the-press' ? 'active' : false"
-				href="url_Make('', 'from-the-press')"
+				class="$section == 'diamonds' ? 'active' : false"
+				href="url_Make('', 'diamonds')"
 				cms:eval="href"
 				cms:optional="class"
 				>
-				<cms:text constant="menu_press"/>
-			</a>
-		</li>
-		<li>
-			<a
-				class="$section == 'vip' ? 'active' : false"
-				href="url_Make('', 'vip')"
-				cms:eval="href"
-				cms:optional="class"
-				>
-				<cms:text constant="menu_vip"/>
+				<cms:text constant="menu_jewellery"/>
 			</a>
 		</li>
 	</ul>

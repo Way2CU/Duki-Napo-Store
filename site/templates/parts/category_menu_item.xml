@@ -1,7 +1,7 @@
 <document>
 	<li>
 		<a
-			href="url_Make('category', 'shop', array('id', $params['id']))"
+			href="url_Make('category','shop',array( 'id', $params['id']))"
 			class="(isset($_REQUEST['category']) ? $_REQUEST['category'] : $_REQUEST['id']) == $params['id'] ? 'active' : false"
 			cms:eval="href"
 			cms:optional="class"

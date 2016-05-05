@@ -123,7 +123,6 @@ Site.ItemView = function(item) {
 		self.label_price.text(language_handler.getText(null, 'currency')  + self.item.price );
 
 		self.label_removeItem.on('click',function() {
-			event.preventDefault();
 			self.item.remove();
 		});
 

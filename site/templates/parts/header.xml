@@ -54,7 +54,7 @@
 			<nav id="user">
 				<ul class="contact">
 					<li>
-						<a href="url_Make('', 'contact-us')" cms:eval="href" cms:optional="class">
+						<a href="url_Make('', 'contact-us')" cms:eval="href">
 							<svg>
 								<use
 									href="#envelope"

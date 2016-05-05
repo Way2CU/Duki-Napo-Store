@@ -30,7 +30,6 @@
 				<cms:module
 					name="articles"
 					action="show"
-					class="'article '.$params['text_id']" cms:eval="class"
 					text_id="address_article"
 					template="parts/article_no_heading.xml"
 					/>

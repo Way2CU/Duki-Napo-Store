@@ -4,7 +4,8 @@
 		<svg>
 			<use
 				href="#download"
-				xlink:href="site/images/site-icons.svg#download"
+				xlink:href="_BASEURL.'/site/images/site-icons.svg#download'"
+				cms:eval="xlink:href"
 				/>
 		</svg>
 	</a>

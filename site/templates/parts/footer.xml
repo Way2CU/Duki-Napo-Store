@@ -22,7 +22,8 @@
 					<svg>
 						<use
 							href="#facebook"
-							xlink:href="site/images/site-icons.svg#facebook"
+							xlink:href="_BASEURL.'/site/images/site-icons.svg#facebook'"
+							cms:eval="xlink:href"
 							/>
 					</svg>
 				</a>
@@ -30,7 +31,8 @@
 					<svg>
 						<use
 							href="#pintarest"
-							xlink:href="site/images/site-icons.svg#pintarest"
+							xlink:href="_BASEURL.'/site/images/site-icons.svg#pintarest'"
+							cms:eval="xlink:href"
 							/>
 					</svg>
 				</a>
@@ -38,7 +40,9 @@
 					<svg>
 						<use
 							href="#instagram"
-							xlink:href="site/images/site-icons.svg#instagram"
+							xlink:href="
+							_BASEURL.'/site/images/site-icons.svg#instagram'"
+							cms:eval="xlink:href"
 							/>
 					</svg>
 				</a>

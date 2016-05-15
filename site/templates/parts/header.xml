@@ -22,7 +22,8 @@
 							<svg>
 								<use
 									href="#menu"
-									xlink:href="site/images/site-icons.svg#menu"
+									xlink:href="_BASEURL.'/site/images/site-icons.svg#menu'"
+									cms:eval="xlink:href"
 									/>
 							</svg>
 							<cms:text constant="menu_title"/>
@@ -43,7 +44,8 @@
 					<svg>
 						<use
 							href="#phone"
-							xlink:href="site/images/site-icons.svg#phone"
+							xlink:href="_BASEURL.'/site/images/site-icons.svg#phone'"
+							cms:eval="xlink:href"
 							/>
 					</svg>
 					<cms:text constant="phone_text"/>
@@ -58,7 +60,8 @@
 							<svg>
 								<use
 									href="#envelope"
-									xlink:href="site/images/site-icons.svg#envelope"
+									xlink:href="_BASEURL.'/site/images/site-icons.svg#envelope'"
+									cms:eval="xlink:href"
 									/>
 							</svg>
 							<cms:text constant="menu_contact_us"/>
@@ -69,7 +72,8 @@
 							<svg>
 								<use
 									href="#chat"
-									xlink:href="site/images/site-icons.svg#chat"
+									xlink:href="_BASEURL.'/site/images/site-icons.svg#chat'"
+									cms:eval="xlink:href"
 									/>
 							</svg>
 							<cms:text constant="label_chat"/>
@@ -95,7 +99,8 @@
 								<svg>
 									<use
 										href="#signup"
-										xlink:href="site/images/site-icons.svg#signup"
+										xlink:href="_BASEURL.'/site/images/site-icons.svg#signup'"
+										cms:eval="xlink:href"
 										/>
 								</svg>
 								<cms:text constant="menu_signup"/>
@@ -106,7 +111,8 @@
 								<svg>
 									<use
 										href="#login"
-										xlink:href="site/images/site-icons.svg#login"
+										xlink:href="_BASEURL.'/site/images/site-icons.svg#login'"
+										cms:eval="xlink:href"
 										/>
 								</svg>
 								<cms:text constant="menu_login"/>
@@ -123,7 +129,8 @@
 								<svg>
 									<use
 										href="#cog"
-										xlink:href="site/images/site-icons.svg#cog"
+										xlink:href="_BASEURL.'/site/images/site-icons.svg#cog'"
+										cms:eval="xlink:href"
 										/>
 								</svg>
 								<cms:text constant="menu_account"/>
@@ -134,7 +141,8 @@
 								<svg>
 									<use
 										href="#enter"
-										xlink:href="site/images/site-icons.svg#enter"
+										xlink:href="_BASEURL.'/site/images/site-icons.svg#enter'"
+										cms:eval="xlink:href"
 										/>
 								</svg>
 								<cms:text constant="menu_logout"/>
@@ -160,7 +168,8 @@
 					<svg>
 						<use
 							href="#cart"
-							xlink:href="site/images/site-icons.svg#cart"
+							xlink:href="_BASEURL.'/site/images/site-icons.svg#cart'"
+							cms:eval="xlink:href"
 							/>
 					</svg>
 					<em><cms:text constant="label_cart"/></em>

@@ -44,7 +44,6 @@
 						text_id="contact_vip"
 						/>
 				</div>
-
 			</section>
 
 			<cms:template file="parts/footer.xml"/>

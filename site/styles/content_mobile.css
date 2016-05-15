@@ -757,7 +757,6 @@ footer div.copyright span a:hover {
 	color:#5bc2d8;
 }
 
-
 /*Mobile Home Page*/
 
 section#vip {
@@ -766,22 +765,11 @@ section#vip {
 	padding-top: 70px;
 	min-height: 1000px;
 	background-color: black;
-	position: relative;
-}
-
-section#vip figure {
-	position: absolute;
-	margin: 0px;
-	top:0px;
-	left: 0%;
+	background-image: url(../images/black-and-white.jpg);
 	background-repeat: no-repeat;
-	background-position: center 205px;
+	background-position: center bottom;
 	background-size: 100% auto;
-	width: 100%;
-	height: 1065px;
-	opacity: 1;
-	transition:all 1s ease-in-out;
-	z-index: 0;
+	position: relative;
 }
 
 section#vip div.contact_vip {
@@ -811,31 +799,28 @@ section#vip form label {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	width: 95%;
-}
-
-section#vip form label.checkbox {
-	margin-top: 10px;
-	margin-bottom: 10px;
+	width: 100%;
 }
 
 section#vip form label.checkbox input {
 	display: none;
 }
 
-section#vip form label.checkbox  span {
+section#vip form label.checkbox span {
 	display: inline-block;
-	text-align: center;
+	text-align: left;
 	padding-bottom: 0px;
-	padding-left: 30px;
+	padding-left: 50px;
+	font-size: 0.8em;
 	color: white;
 }
 
 section#vip form label:before {
 	content: "";
 	position: absolute;
-	top: 0px;
-	left: -3px;
+	top: 50%;
+	margin-top: -25px;
+	left: 0px;
 
 	background-image: url(../images/form-icons.svg);
 	background-repeat: no-repeat;
@@ -866,13 +851,14 @@ section#vip form label:nth-of-type(4):before {
 	background-position: -150px 0px;
 }
 
+section#vip form label.checkbox span,
 section#vip form label input {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	padding-left: 40px;
+	padding-left: 50px;
 	color: white;
 	border: 1px solid transparent;
 	border-image: linear-gradient(100deg, rgba(121, 55, 0, 1) 0%, 
@@ -883,7 +869,7 @@ section#vip form label input {
 	border-image-slice: 1;
 	background-color: rgba(0, 0, 0, 0.52);
 	transition: all 0.3s;
-	width: calc(100% - 40px);
+	width: calc(100% - 50px);
 }
 
 section#vip input::-webkit-input-placeholder {
@@ -905,7 +891,6 @@ section#vip input::-ms-input-placeholder {
 section#vip form div.controls {
 	display: inline-block;
 	vertical-align: bottom;
-	margin-top: 20px;
 	position: relative;
 	z-index: 1;
 	border: 1px solid transparent;
@@ -915,6 +900,7 @@ section#vip form div.controls {
 		rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%, 
 		rgba(243, 162, 0, 1) 75.76%, rgba(121,55, 0, 1) 100%);
 	border-image-slice: 1;
+	width: 100%;
 	
 }
 
@@ -925,26 +911,20 @@ section#vip form div.controls button {
 	border: none;
 	text-transform: uppercase;
 	font-weight: 700;
-	color: white;
-	background: linear-gradient(0deg, rgba(121, 55, 0, 1) 0%, 
-		rgba(129, 62, 0, 1) 4.02%, rgba(151, 81, 0, 1) 10.25%, 
-		rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%, 
-		rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%, 
-		rgba(243, 162, 0, 1) 75.76%, rgba(121,55, 0, 1) 100%);
-	
-
+	font-size: 1.5em;
+	color: black;
+	background: linear-gradient(to bottom, #f3a200 0%,#fff78e 100%);
 	background-repeat: no-repeat;
 	background-size: 100% auto, 100% auto;
-	width: 150px;
 	cursor: pointer;
 	transition: all 0.3s;
-
+	width: 100%;
 	position: relative;
 	z-index: 0;
 }
 
-section#vip form div.controls button:hover {
-	color: black;
+section#vip form div.controls button:hover:before {
+	opacity: 1;
 }
 
 section#vip form div.controls button:before {
@@ -954,15 +934,10 @@ section#vip form div.controls button:before {
 	left: 0px;
 	width: 100%;
 	height: 100%;
-
-	background-color: rgba(0, 0, 0, 0.5);
+	background: linear-gradient(to bottom, #fff78e 0%,#f3a200 100%);
 	z-index: -1;
-
+	opacity: 0;
 	transition: all 0.3s;
-}
-
-section#vip form div.controls button:hover:before {
-	background-color: rgba(0, 0, 0, 0);
 }
 
 div#slider {
@@ -2049,7 +2024,7 @@ section#vip form label.checkbox  span:before,
  }
 
  section#vip form label.checkbox  span:before {
- 	left: 0;
+ 	left: 15px;
  	margin-top: -7.5px;
  	width: 15px;
  	height: 15px;
@@ -2087,7 +2062,7 @@ section#vip form label.checkbox  span:after,
  }
 
  section#vip form label.checkbox  span:after {
- 	left: 3px;
+ 	left: 17px;
  	width: 12px;
  	height: 12px;
  	margin-top: -6px;

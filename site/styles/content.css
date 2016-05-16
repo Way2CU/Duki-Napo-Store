@@ -1517,32 +1517,13 @@ div.dialog div.command_bar a:hover {
 */
 
 div.press {
-	padding:20px calc((100vw - 960px) / 2);
+	text-align: center;
+	background-color: black;
 }
 
-div.press article {
-	margin-bottom: 10px;
-	clear:both;
-}
-
-div.press article  h3 {
-	border-bottom: 1px solid #e8e8e8;
-}
-
-div.press article img {
-	float: right;
-	margin-left: 20px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-div.press article a {
-	color: black;
-	transition: all 0.3s;
-}
-
-div.press article a:hover {
-	color: #f6c15c;
+div.press a.link img {
+	width: 100%;
+	height: auto;
 }
 
 /*

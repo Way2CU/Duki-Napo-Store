@@ -9,23 +9,27 @@
 				name="shop"
 				action="include_cart_scripts"
 				/>
-			<cms:collection include="page_control,animation_chain"/>
+			<cms:link rel="stylesheet" href="_BASEURL.'/site/styles/jquery.jMosaic.css'" cms:eval="href"/>
+			<cms:script src="_BASEURL.'/site/scripts/floating_menu.js'" cms:eval="src"/>
+			<cms:script src="_BASEURL.'/site/scripts/jquery.jMosaic.js'" cms:eval="src"/>
+			<cms:script src="_BASEURL.'/site/scripts/mosaic_gallery.js'" cms:eval="src"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
 		<body>
 			<cms:template file="parts/header.xml"/>
 
-			<div class="$section == 'in-news' ? 'press' : false" cms:optional="class" >
+			<div class="$section == 'from-the-press' ? 'press' : false" cms:optional="class" >
 
 				<cms:module
-					name="articles"
-					action="show_group"
+					name="links"
+					action="show_link_list"
 					text_id="press"
-					template="parts/press_group_articles.xml"
+					template="parts/press_links.xml"
 				/>
 
 			</div>
+
 			<cms:template file="parts/footer.xml"/>
 		</body>
 	</html>

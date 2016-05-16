@@ -19,15 +19,15 @@
 		<body>
 			<cms:template file="parts/header.xml"/>
 
-			<div class="$section == 'from-the-press' ? 'press' : false" cms:optional="class" >
+			<div class="$section == 'from-the-press' ? 'press' : false" cms:optional="class">
 
 				<cms:module
 					name="links"
 					action="show_link_list"
-					text_id="press"
+					order_by="text_id"
+					group="press"
 					template="parts/press_links.xml"
 				/>
-
 			</div>
 
 			<cms:template file="parts/footer.xml"/>

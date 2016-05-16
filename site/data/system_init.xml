@@ -15,6 +15,7 @@
 	<module name="mandrill" order="10" preload="no"/>
 	<module name="tranzila" order="11" preload="no"/>
 	<module name="downloads" order="12" preload="no"/>
+	<module name="links" order="13" preload="no"/>
 
 	<user
 		fullname="Administrator"

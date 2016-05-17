@@ -984,6 +984,7 @@ div.info a.btn_cart:hover:before {
 }
 
 section.product div.properties div select {
+	display: block;
 	border: 1px solid black;
 	padding-left: 10px;
 	padding-right: 10px;

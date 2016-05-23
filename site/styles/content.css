@@ -1519,20 +1519,26 @@ div.dialog div.command_bar a:hover {
 
 div.press {
 	text-align: center;
+	padding-top: 20px;
 	background-color: black;
 }
 
-div.press a.link:hover img {
+.grid {
+	margin: 0 auto;
+}
+
+a.grid-item {
+	overflow: hidden;
+}
+
+a.grid-item img {
+	transition: all 0.3s;
+	transform: scale(1);
+}
+
+a.grid-item:hover img {
 	transform: scale(1.3);
 }
-
-div.press a.link img {
-	width: 100%;
-	height: auto;
-	transform: scale(1);
-	transition: all 0.3s;
-}
-
 /*
     control_pane;	
 */

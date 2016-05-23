@@ -1,5 +1,5 @@
 <document>
-	<a href="$params['url']" class="link" cms:eval="href">
+	<a href="$params['url']" class="grid-item" cms:eval="href">
 		<img src="$params['image']" alt="$params['text'][$language]" cms:eval="src,alt"/>
 	</a>
 </document>

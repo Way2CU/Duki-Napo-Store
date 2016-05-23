@@ -1,0 +1,32 @@
+/**
+ * Copyright Style Sheet
+ * Stock Templates
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors: Mladen Mijatov
+ */
+
+footer div.copyright {
+	padding: 20px 0px;
+	padding-left: 55px;
+
+	background-image: url(../../images/stock/way2cu-black.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 50px 50px;
+
+	font-size: 0.9rem;
+	direction: ltr;
+}
+
+footer div.copyright.light {
+	background-image: url(../../images/stock/way2cu-color.svg);
+}
+
+footer div.copyright a {
+	text-decoration: underline;
+}
+
+footer div.copyright a:hover {
+	text-decoration: none;
+}

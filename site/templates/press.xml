@@ -56,6 +56,16 @@
 						template="parts/press_links.xml"
 						/>
 				</div>
+
+				<div class="column">
+					<cms:module
+						name="links"
+						action="show_link_list"
+						group="press5"
+						order_by="text_id"
+						template="parts/press_links.xml"
+						/>
+				</div>
 			</div>
 
 			<cms:template file="parts/footer.xml"/>

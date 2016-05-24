@@ -67,7 +67,8 @@
 							<cms:text constant="menu_contact_us"/>
 						</a>
 					</li>
-					<li>
+					<!-- commenting  chat link until service is available -->
+<!-- 					<li>
 						<a href="javascript:void(0)">
 							<svg>
 								<use
@@ -78,7 +79,7 @@
 							</svg>
 							<cms:text constant="label_chat"/>
 						</a>
-					</li>
+					</li> -->
 				</ul>
 
 				<div class="message">

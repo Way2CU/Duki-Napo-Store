@@ -123,8 +123,6 @@ a.cart_btn.enabled{
 	position:fixed;
 }
 
-
-
 .mobile_menu {
 	transition:all 0.3s;
 }
@@ -2229,16 +2227,3 @@ section#vip form label.checkbox  input[type=checkbox]:checked ~ span:after,
  div.dialog div.command_bar a:hover {
  	background-color: #212121;
  }
-
-
-
-
-
-
-
-
-
-
-
-
-

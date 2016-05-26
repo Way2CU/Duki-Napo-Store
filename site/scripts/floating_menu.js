@@ -46,5 +46,6 @@ function FloatingMenu(menu){
 
 $(function() {
     // create floating menu
-    Site.menu = new FloatingMenu($('header'));
+    if(!Site.is_mobile())
+        Site.menu = new FloatingMenu($('header'));
 })

@@ -62,6 +62,7 @@ Site.ItemView = function(item) {
 	self.label_removeItem = null;
 	self.label_count = null;
 	self.label_tax = null;
+	self.base_url = document.querySelector('meta[property]').getAttribute('content');
 
 	/**
 	 * Complete object initialization.
@@ -98,9 +99,8 @@ Site.ItemView = function(item) {
 
 		self.label_removeItem = $('<a href="javascript:void(0)">').appendTo(self.container);
 		
-		var base_url = $('base').attr('href');
 		self.label_close_image = $('<img>').appendTo(self.label_removeItem);
-		self.label_close_image.attr('src', base_url + '/site/images/social/close-icon.svg');
+		self.label_close_image.attr('src', self.base_url + '/site/images/social/close-icon.svg');
 
 		self.label_tax = $('div.total_count:first() span:last()');
 	};

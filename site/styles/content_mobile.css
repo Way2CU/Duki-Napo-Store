@@ -34,33 +34,43 @@ h3 {
 }
 
 .mobile_title a.menu {
+	position: absolute;
+	top: 50%;
+	margin-top: -17.5px;
+	left: 3%;
+	width: 35px;
+	height: 35px;
+	transition:all 0.3s;
+}
+
+.mobile_title a.menu span {
     position: absolute;
     top: 50%;
     margin-top: -1.5px;
-    left: 3%;
+    left: 0%;
     width: 35px;
     height: 3px;
     background-color: white;
     transition:all 0.3s;
 }
 
-.mobile_title.visible a.menu {
+.mobile_title.visible a.menu span{
 	background-color: inherit;
 }
 
-.mobile_title.visible a.menu:before {
+.mobile_title.visible a.menu span:before {
 	background-color: #f6c15c;
 	transform:rotate(45deg);
 	top:0px;
 }
 
-.mobile_title.visible a.menu:after {
+.mobile_title.visible a.menu span:after {
 	background-color: #f6c15c;
 	transform:rotate(-45deg);
 	top: 0px;
 }
 
-.mobile_title a.menu:before {
+.mobile_title a.menu span:before {
 	content: "";
 	position: absolute;
 	top: -10px;
@@ -71,7 +81,7 @@ h3 {
 	transition: all 0.3s;
 }
 
-.mobile_title a.menu:after {
+.mobile_title a.menu span:after {
 	content: "";
 	position: absolute;
 	top: 10px;

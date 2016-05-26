@@ -187,7 +187,9 @@
 	<cms:mobile>
 		<header class="$section == 'home' ? 'home' : false" cms:optional="class">
 			<div class="mobile_title">
-				<a href="javascript:void(0)" class="menu"></a>
+				<a href="javascript:void(0)" class="menu">
+					<span></span>
+				</a>
 				<a
 					class="logo"
 					href="url_Make('', 'home')"

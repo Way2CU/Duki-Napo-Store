@@ -119,11 +119,13 @@
 
 			<div class="size">
 				<h4><cms:text constant="property_size"/></h4>
-				<cms:module
-					name="downloads"
-					action="show_list"
-					template="parts/downloads.xml"
-					/>
+				<cms:if condition="$params['size_definition'] == RING_SIZE_DEFINITION">
+					<cms:module
+						name="downloads"
+						action="show_list"
+						template="parts/downloads.xml"
+						/>
+				</cms:if>
 				<select>
 					<cms:value_list
 						definition="$params['size_definition']"

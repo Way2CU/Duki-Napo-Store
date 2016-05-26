@@ -998,7 +998,6 @@ section.product div.properties div h4 {
 section.product div.properties div.size a {
 	display: inline-block;
 	vertical-align: middle;
-	padding-bottom: 10px;
 	text-decoration: none;
 	color: black;
 	transition: all 0.3s;

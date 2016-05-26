@@ -13,6 +13,8 @@ use Core\Cache\Type as CacheType;
 define('_STANDARD', 'html5');
 define('_TIMEZONE', 'America/New_York');
 
+define('RING_SIZE_DEFINITION', 1);
+
 define('DEBUG', 1);
 // define('SQL_DEBUG', 1);
 

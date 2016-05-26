@@ -1610,9 +1610,38 @@ section.product div.properties > div span.color {
 	position: relative;
 }
 
+section.product div.properties div.size a {
+	display: inline-block;
+	vertical-align: middle;
+	padding-bottom: 10px;
+	text-decoration: none;
+	color: black;
+	transition: all 0.3s;
+}
+
+section.product div.properties div.size a svg {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 5px;
+	width: 25px;
+	height: 25px;
+	fill: black;
+	transition: all 0.3s;
+}
+
+section.product div.properties div.size a:hover {
+	color: #f7c25d;
+}
+
+section.product div.properties div.size a:hover svg {
+	fill: #f7c25d;
+}
+
 section.product div.info a.btn_cart {
 	display: block;
-	padding: 10px 35px;
+	margin-left: 4em;
+	margin-right: 4em;
+	padding: 15px 35px;
 	background-color: #212121;
 	margin-top: 20px;
 

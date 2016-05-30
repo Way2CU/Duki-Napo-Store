@@ -26,6 +26,8 @@
 	"label_remember_me":"Remember me",
 	"label_repeat_password": "Repeat password",
 	"label_share": "Like our product? <strong>Share the love</strong>",
+	"label_username": "Username",
+	"label_new_password": "Password",
 	"login": "Login",
 	"login_dialog_message": "Please enter your username and password below. Password is case sensitive.",
 	"login_dialog_title": "Login",
@@ -66,6 +68,7 @@
 	"welcome_user": "Welcome back",
 	"welcome_user2": ".",
 	"title_vip": "Become a",
+	"title_recover_password": "Password recovery",
 	"subtitle_vip": "& recieve special gifts & discounts",
 	"send_vip_button": "Give me $260"
 }

@@ -124,7 +124,7 @@
 						<li>
 							<a
 								class="control_panel"
-								href="url_Make('', 'user')"
+								href="url_Make('_default', 'user')"
 								cms:eval="href"
 								>
 								<svg>

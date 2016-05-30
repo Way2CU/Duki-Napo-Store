@@ -404,11 +404,19 @@ div.contact_us div.form_wrap h3 {
 	border-bottom: 1px solid #e8e8e8;
 }
 
+form.recovery,
 div.contact_us div.form_wrap form {
 	display: block;
 	width: 100%;
 }
 
+form.recovery {
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
+
+form.recovery label,
 div.contact_us div.form_wrap form label {
 	display: block;
 	padding-bottom: 15px;
@@ -463,6 +471,7 @@ div.contact_us div.form_wrap form label.checkbox input:checked ~ span:after {
 	transform: scale(1);
 }
 
+form.recovery label span,
 div.contact_us div.form_wrap form label span {
 	display: inline-block;
 	vertical-align: middle;
@@ -471,10 +480,16 @@ div.contact_us div.form_wrap form label span {
 	font-size: 1.2em;
 }
 
+form.recovery label span {
+	display: block;
+	width: 100%;
+}
+
 div.contact_us div.form_wrap form label:last-of-type span {
 	vertical-align: top;
 }
 
+form.recovery input,
 div.contact_us div.form_wrap form label textarea,
 div.contact_us div.form_wrap form label input {
 	width: 475px;
@@ -485,16 +500,23 @@ div.contact_us div.form_wrap form label input {
 	transition: all 0.3s;
 }
 
+form.recovery input {
+	width: calc(100% - 22px);
+}
+
+form.recovery label input:hover,
 div.contact_us div.form_wrap form label input:hover,
 div.contact_us div.form_wrap form label textarea:hover {
 	border:1px solid rgba(246, 193, 92, 0.5);
 }
 
+form.recovery label input:focus,
 div.contact_us div.form_wrap form label input:focus,
 div.contact_us div.form_wrap form label textarea:focus {
 	border:1px solid #f6c15c;
 }
 
+form.recovery div.controls,
 div.contact_us div.form_wrap form div.controls {
 	display: block;
 	margin-left: auto;
@@ -502,6 +524,7 @@ div.contact_us div.form_wrap form div.controls {
 	width: 400px;
 }
 
+form.recovery div.controls button,
 div.contact_us div.form_wrap form div.controls button {
 	display:block;
 	margin-left: auto;
@@ -521,10 +544,12 @@ div.contact_us div.form_wrap form div.controls button {
 	position: relative;
 }
 
+form.recovery div.controls button:hover:before,
 div.contact_us div.form_wrap form div.controls button:hover:before {
 	left: 0%;
 }
 
+form.recovery div.controls button:before,
 div.contact_us div.form_wrap form div.controls button:before {
 	content: "";
 	position: absolute;
@@ -1555,6 +1580,14 @@ div.column a.link img {
 section.user {
 	display: block;
 	padding:20px calc((100vw - 1200px) / 2);
+}
+
+section.user h1 {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 1px solid #e8e8e8;
+	width: 50%;
 }
 
 ul#user_list {

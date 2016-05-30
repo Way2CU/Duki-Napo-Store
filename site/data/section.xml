@@ -29,7 +29,6 @@
 	<section name="user">
 		<language name="all">
 			<action name="_default" file="control_panel.xml"/>
-			<action name="password-recovery" file="control_panel.xml"/>
 		</language>
 	</section>
 	<section name="shop">

@@ -1162,17 +1162,26 @@ div.contact_us div.form_wrap h3 {
 	padding-bottom: 10px;
 }
 
+form.recovery,
 div.contact_us div.form_wrap form {
 	display: block;
 	text-align: left;
 	width: 100%;
 }
 
+form.recovery {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%
+}
+
+form.recovery label,
 div.contact_us div.form_wrap form label {
 	display: block;
 	padding-bottom: 15px;
 }
 
+form.recovery label input,
 div.contact_us div.form_wrap form label input,
 div.contact_us div.form_wrap form label textarea {
 	display:block;
@@ -1189,11 +1198,17 @@ div.contact_us div.form_wrap form label textarea {
 	transition:all 0.3s;
 }
 
+form.recovery label input {
+	width: calc(100% - 7px);
+}
+
+form.recovery label input:focus,
 div.contact_us div.form_wrap form label input:focus,
 div.contact_us div.form_wrap form label textarea:focus {
 	border:1px solid #f6c15c;
 }
 
+form.recovery div.controls button,
 div.contact_us div.form_wrap form div.controls button {
 	display:block;
 	margin-left: auto;
@@ -2226,3 +2241,22 @@ section#vip form label.checkbox  input[type=checkbox]:checked ~ span:after,
  div.dialog div.command_bar a:hover {
  	background-color: #212121;
  }
+
+/*
+ control_pane;	
+*/
+
+section.user {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 60px;
+}
+
+section.user h1 {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-bottom: 1px solid #e8e8e8;
+	width: 90%;
+}

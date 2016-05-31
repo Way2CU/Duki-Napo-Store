@@ -1270,6 +1270,21 @@ Site.on_load = function() {
             	'event':'leadSent'
             });
 	});
+
+	// Retrieve instagram images from api
+	$.ajax({
+		type: "GET",
+		dataType: "jsonp",
+		cache: false,
+		url: "https://api.instagram.com/v1/media/popular?access_token=312186687.e599426.e83a20ee78cf491c9355ff0a8c72d763",
+			success: function(data) {
+			// placing the images on the page
+			for (var i = 0; i < 4; i++) {
+			  $("ul.popular")
+			  	.append("<li><a target='_blank' href='" + data.data[i].link + "'><img src='" + data.data[i].images.low_resolution.url +"'></img></a></li>");
+				}
+			}
+	});
 };
 
 // connect document `load` event with handler function

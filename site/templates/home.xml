@@ -26,6 +26,10 @@
 							/>
 						<div class="controls"/>
 				</div>
+
+				<ul class="popular">
+					
+				</ul>
 			</cms:desktop>
 
 			<cms:mobile>

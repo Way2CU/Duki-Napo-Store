@@ -144,6 +144,11 @@ div#slider div.controls a:hover {
 	background-color: rgba(247, 194, 93, 0.7);
 }
 
+ul.popular {
+	margin: 0px;
+	padding: 0px;
+}
+
 
 section#vip div.contact_vip {
 	padding-left: calc(50% - 600px);

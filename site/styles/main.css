@@ -7,32 +7,19 @@
  */
 
 @font-face {
-	font-family: 'Roboto';
-	font-style: normal;
+	font-family: 'Open Sans';
 	font-weight: 400;
-	src: url(../images/fonts/Roboto-Regular-webfont.woff) format('woff');
+	src: url(../images/fonts/OpenSans-Regular.ttf) format('ttf');
 }
 
 @font-face {
-	font-family: 'Roboto';
+	font-family: 'Open Sans';
 	font-weight: 700;
-	src: url(../images/fonts/Roboto-Bold-webfont.woff) format('woff');
-}
-
-@font-face {
-	font-family: 'Roboto';
-	font-weight: 100;
-	src: url(../images/fonts/Roboto-Light-webfont.woff) format('woff');
-}
-
-@font-face {
-	font-family: 'Roboto';
-	font-weight: 100;
-	src: url(../images/fonts/Roboto-Italic-webfont.woff) format('woff');
+	src: url(../images/fonts/OpenSans-Bold.ttf) format('ttf');
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	background-color: white;
 	color: #212121;
 }
@@ -45,5 +32,5 @@ input,
 select,
 textarea,
 button {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }

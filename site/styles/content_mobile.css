@@ -786,7 +786,6 @@ section#vip div.contact_vip {
 
 section#vip div.contact_vip p {
 	text-transform: uppercase;
-	font-family: "serif";
 }
 
 section#vip div.contact_vip img {
@@ -1002,7 +1001,6 @@ div.image_rotate div {
 
 div.image_rotate div h2 {
 	margin: 0px;
-	font-family: serif;
 	color: white;
 	font-weight: 400;
 	text-transform: capitalize;

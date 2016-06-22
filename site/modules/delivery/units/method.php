@@ -91,7 +91,7 @@ class Duki_DeliveryMethod extends DeliveryMethod {
 	 * @param string $transaction
 	 * @return array
 	 */
-	public function getDeliveryTypes($items, $shipper, $recipient, $transaction) {
+	public function getDeliveryTypes($items, $shipper, $recipient, $transaction=null) {
 		$result = array(
 				'fedex'	=> array('FedEx', 10, 'USD', null, null),
 				'usps'	=> array('USPS', 10, 'USD', null, null)
@@ -170,7 +170,7 @@ class Duki_DeliveryMethod extends DeliveryMethod {
 	 * @param string $selection
 	 * @return float
 	 */
-	public function getCustomEstimate($items, $shipper, $recipient, $transaction, $selection) {
+	public function getCustomEstimate($items, $shipper, $recipient, $selection, $transaction=null) {
 		return 0;
 	}
 

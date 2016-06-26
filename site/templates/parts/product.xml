@@ -50,51 +50,27 @@
 		<div class="social">
 			<span><cms:text constant="label_share"/></span>
 
-			<a 
-				href="'https://www.facebook.com/sharer/sharer.php?u='.urlencode(url_Make('product', 'shop', array('id', $_REQUEST['id'])))" class="facebook" 
+			<a
+				href="'https://www.facebook.com/sharer/sharer.php?u='.urlencode(url_Make('product', 'shop', array('id', $_REQUEST['id'])))" class="facebook"
 				cms:eval="href"
 				>
-				<svg>
-					<use
-						href="#facebook"
-						xlink:href="_BASEURL.'/site/images/site-icons.svg#facebook'"
-						cms:eval="xlink:href"
-						/>
-				</svg>
+				<cms:svg file="site-icons.svg" symbol="facebook"/>
 			</a>
-			<a 
+			<a
 				href="'https://twitter.com/home?status='.urlencode(url_Make('product', 'shop', array('id', $_REQUEST['id'])))" class="twitter"
 				cms:eval="href"
 				>
-				<svg>
-					<use
-						href="#twitter"
-						xlink:href="_BASEURL.'/site/images/site-icons.svg#twitter'"
-						cms:eval="xlink:href"
-						/>
-				</svg>
+				<cms:svg file="site-icons.svg" symbol="twitter"/>
 			</a>
-			<a 
-				href="'https://pinterest.com/pin/create/button/?url=&amp;media=&amp;description='.urlencode(url_Make('product', 'shop', array('id', $_REQUEST['id'])))" 
+			<a
+				href="'https://pinterest.com/pin/create/button/?url=&amp;media=&amp;description='.urlencode(url_Make('product', 'shop', array('id', $_REQUEST['id'])))"
 				class="instagram"
 				cms:eval="href"
 				>
-				<svg>
-					<use
-						href="#pintarest"
-						xlink:href="_BASEURL.'/site/images/site-icons.svg#pintarest'"
-						cms:eval="xlink:href"
-						/>
-				</svg>
+				<cms:svg file="site-icons.svg" symbol="pinterest"/>
 			</a>
 			<a href="mailto://dukivenapo26@gmail.com" class="mail">
-				<svg>
-					<use
-						href="#mail"
-						xlink:href="_BASEURL.'/site/images/site-icons.svg#mail'"
-						cms:eval="xlink:href"
-						/>
-				</svg>
+				<cms:svg file="site-icons.svg" symbol="mail"/>
 			</a>
 		</div>
 	</div>

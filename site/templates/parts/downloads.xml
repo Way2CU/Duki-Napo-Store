@@ -1,12 +1,6 @@
 <document>
 	<a href="$params['url']" cms:eval="href">
 		<cms:var param="name" multilanguage="yes"/>
-		<svg>
-			<use
-				href="#download"
-				xlink:href="_BASEURL.'/site/images/site-icons.svg#download'"
-				cms:eval="xlink:href"
-				/>
-		</svg>
+		<cms:svg file="site-icons.svg" symbol="download"/>
 	</a>
 </document>

@@ -19,13 +19,7 @@
 				<ul class="drop">
 					<li>
 						<a href="javascript:void(0)">
-							<svg>
-								<use
-									href="#menu"
-									xlink:href="_BASEURL.'/site/images/site-icons.svg#menu'"
-									cms:eval="xlink:href"
-									/>
-							</svg>
+							<cms:svg file="site-icons.svg" symbol="menu"/>
 							<cms:text constant="menu_title"/>
 						</a>
 						<cms:template file="parts/simple_menu_items.xml"/>
@@ -41,13 +35,7 @@
 					cms:eval="href"
 					class="phone"
 					>
-					<svg>
-						<use
-							href="#phone"
-							xlink:href="_BASEURL.'/site/images/site-icons.svg#phone'"
-							cms:eval="xlink:href"
-							/>
-					</svg>
+					<cms:svg file="site-icons.svg" symbol="phone"/>
 					<cms:text constant="phone_text"/>
 				</a>
 			</div>
@@ -57,26 +45,14 @@
 				<ul class="contact">
 					<li>
 						<a href="url_Make('', 'contact-us')" cms:eval="href">
-							<svg>
-								<use
-									href="#envelope"
-									xlink:href="_BASEURL.'/site/images/site-icons.svg#envelope'"
-									cms:eval="xlink:href"
-									/>
-							</svg>
+							<cms:svg file="site-icons.svg" symbol="envelope"/>
 							<cms:text constant="menu_contact_us"/>
 						</a>
 					</li>
 					<!-- commenting  chat link until service is available -->
 <!-- 					<li>
 						<a href="javascript:void(0)">
-							<svg>
-								<use
-									href="#chat"
-									xlink:href="_BASEURL.'/site/images/site-icons.svg#chat'"
-									cms:eval="xlink:href"
-									/>
-							</svg>
+							<cms:svg file="site-icons.svg" symbol="chat"/>
 							<cms:text constant="label_chat"/>
 						</a>
 					</li> -->
@@ -97,25 +73,13 @@
 					<cms:guest>
 						<li>
 							<a class="sign-up" href="#">
-								<svg>
-									<use
-										href="#signup"
-										xlink:href="_BASEURL.'/site/images/site-icons.svg#signup'"
-										cms:eval="xlink:href"
-										/>
-								</svg>
+								<cms:svg file="site-icons.svg" symbol="signup"/>
 								<cms:text constant="menu_signup"/>
 							</a>
 						</li>
 						<li>
 							<a class="login" href="#">
-								<svg>
-									<use
-										href="#login"
-										xlink:href="_BASEURL.'/site/images/site-icons.svg#login'"
-										cms:eval="xlink:href"
-										/>
-								</svg>
+								<cms:svg file="site-icons.svg" symbol="login"/>
 								<cms:text constant="menu_login"/>
 							</a>
 						</li>
@@ -127,25 +91,13 @@
 								href="url_Make('_default', 'user')"
 								cms:eval="href"
 								>
-								<svg>
-									<use
-										href="#cog"
-										xlink:href="_BASEURL.'/site/images/site-icons.svg#cog'"
-										cms:eval="xlink:href"
-										/>
-								</svg>
+								<cms:svg file="site-icons.svg" symbol="cog"/>
 								<cms:text constant="menu_account"/>
 							</a>
 						</li>
 						<li>
 							<a class="logout" href="#">
-								<svg>
-									<use
-										href="#enter"
-										xlink:href="_BASEURL.'/site/images/site-icons.svg#enter'"
-										cms:eval="xlink:href"
-										/>
-								</svg>
+								<cms:svg file="site-icons.svg" symbol="enter"/>
 								<cms:text constant="menu_logout"/>
 							</a>
 						</li>
@@ -166,13 +118,7 @@
 
 				<!-- Shopping cart -->
 				<div id="cart">
-					<svg>
-						<use
-							href="#cart"
-							xlink:href="_BASEURL.'/site/images/site-icons.svg#cart'"
-							cms:eval="xlink:href"
-							/>
-					</svg>
+					<cms:svg file="site-icons.svg" symbol="cart"/>
 					<em><cms:text constant="label_cart"/></em>
 					<span class="count"></span>
 					<span><cms:text constant="label_cart_items"/></span>

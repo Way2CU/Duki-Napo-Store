@@ -19,43 +19,18 @@
 			<div class="social">
 				<span><cms:text constant="social_title"/></span>
 				<a href="https://www.facebook.com/DukiVenapo/?fref=ts" class="facebook">
-					<svg>
-						<use
-							href="#facebook"
-							xlink:href="_BASEURL.'/site/images/site-icons.svg#facebook'"
-							cms:eval="xlink:href"
-							/>
-					</svg>
+					<cms:svg file="site-icons.svg" symbol="facebook"/>
 				</a>
-				<a href="https://www.pinterest.com/dukivenapo/" class="pintarest">
-					<svg>
-						<use
-							href="#pintarest"
-							xlink:href="_BASEURL.'/site/images/site-icons.svg#pintarest'"
-							cms:eval="xlink:href"
-							/>
-					</svg>
+				<a href="https://www.pinterest.com/dukivenapo/" class="pinterest">
+					<cms:svg file="site-icons.svg" symbol="pinterest"/>
 				</a>
 				<a href="https://www.instagram.com/dukivenapo/" class="instagram">
-					<svg>
-						<use
-							href="#instagram"
-							xlink:href="
-							_BASEURL.'/site/images/site-icons.svg#instagram'"
-							cms:eval="xlink:href"
-							/>
-					</svg>
+					<cms:svg file="site-icons.svg" symbol="instagram"/>
 				</a>
 			</div>
 
 			<div class="payment">
-				<span/>
-				<span/>
-				<span/>
-				<span/>
-				<span/>
-				<span/>
-				<span/>
+				<span/> <span/> <span/> <span/> <span/> <span/> <span/>
 			</div>
 		</div>
 

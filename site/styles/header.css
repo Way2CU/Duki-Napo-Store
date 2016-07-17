@@ -332,7 +332,6 @@ nav#user div.message {
 	vertical-align: middle;
 	font-variant: small-caps;
 	text-transform: capitalize;
-	font-family: serif;
 	font-size: 1.3em;
 	line-height: 1em;
 	white-space: normal;
@@ -501,7 +500,6 @@ header.active div.top_header ul.drop a {
 nav#navigation ul.categories a {
 	padding-right: 30px;
 	padding-left: 30px;
-	font-family: serif;
 	font-size: 1.1em;
 	text-transform: uppercase;
 	color: #f7c25d;

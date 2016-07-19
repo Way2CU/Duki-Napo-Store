@@ -434,6 +434,7 @@ nav#navigation {
 	text-align: center;
 	padding: 0px calc((100vw - 1200px) / 2);
 	background-color: black;
+	border-top: 1px solid rgba(255,255,255,0.5);
 	border-bottom: 1px solid rgba(246,193,92,0.5);
 }
 

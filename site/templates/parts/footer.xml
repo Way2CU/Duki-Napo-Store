@@ -3,18 +3,12 @@
 <document>
 	<footer>
 		<div class="footer_top">
-			<h2><cms:text constant="footer_title"/></h2>
+			<!-- <h2><cms:text constant="footer_title"/></h2> -->
 			<cms:desktop>
 				<nav id="footer_nav">
 					<cms:template file="parts/simple_menu_items.xml"/>
 				</nav>
 			</cms:desktop>
-
-			<cms:module
-				name="contact_form"
-				action="show"
-				text_id="newsletter_form"
-				/>
 
 			<div class="social">
 				<span><cms:text constant="social_title"/></span>
@@ -29,9 +23,11 @@
 				</a>
 			</div>
 
-			<div class="payment">
-				<span/> <span/> <span/> <span/> <span/> <span/> <span/>
-			</div>
+			<cms:if condition="$action == 'checkout'">
+				<div class="payment">
+					<span/> <span/> <span/> <span/> <span/> <span/> <span/>
+				</div>
+			</cms:if>
 		</div>
 
 		<div class="copyright">

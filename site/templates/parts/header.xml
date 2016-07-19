@@ -40,71 +40,6 @@
 				</a>
 			</div>
 
-			<!-- Top navigation -->
-			<nav id="user">
-				<ul class="contact">
-					<li>
-						<a href="url_Make('', 'contact-us')" cms:eval="href">
-							<cms:svg file="site-icons.svg" symbol="envelope"/>
-							<cms:text constant="menu_contact_us"/>
-						</a>
-					</li>
-					<!-- commenting  chat link until service is available -->
-<!-- 					<li>
-						<a href="javascript:void(0)">
-							<cms:svg file="site-icons.svg" symbol="chat"/>
-							<cms:text constant="label_chat"/>
-						</a>
-					</li> -->
-				</ul>
-
-				<div class="message">
-					<cms:guest>
-						<cms:text constant="welcome_guest"/>
-					</cms:guest>
-					<cms:user>
-						<cms:text constant="welcome_user"/>
-						<cms:raw text="&amp;nbsp;"/>
-						<cms:var name="$_SESSION['fullname']"/>
-						<cms:text constant="welcome_user2"/>
-					</cms:user>
-				</div>
-				<ul class="session">
-					<cms:guest>
-						<li>
-							<a class="sign-up" href="#">
-								<cms:svg file="site-icons.svg" symbol="signup"/>
-								<cms:text constant="menu_signup"/>
-							</a>
-						</li>
-						<li>
-							<a class="login" href="#">
-								<cms:svg file="site-icons.svg" symbol="login"/>
-								<cms:text constant="menu_login"/>
-							</a>
-						</li>
-					</cms:guest>
-					<cms:user>
-						<li>
-							<a
-								class="control_panel"
-								href="url_Make('_default', 'user')"
-								cms:eval="href"
-								>
-								<cms:svg file="site-icons.svg" symbol="cog"/>
-								<cms:text constant="menu_account"/>
-							</a>
-						</li>
-						<li>
-							<a class="logout" href="#">
-								<cms:svg file="site-icons.svg" symbol="enter"/>
-								<cms:text constant="menu_logout"/>
-							</a>
-						</li>
-					</cms:user>
-				</ul>
-			</nav>
-
 			<!-- Bottom navigation -->
 			<nav id="navigation">
 				<!-- Shop categories -->
@@ -149,22 +84,6 @@
 
 			<nav class="mobile_menu">
 				<ul>
-				<cms:guest>
-					<li><a class="sign-up" href="#"><cms:text constant="menu_signup"/></a></li>
-					<li><a class="login" href="#"><cms:text constant="menu_login"/></a></li>
-				</cms:guest>
-				<cms:user>
-					<li>
-						<a
-							class="control_panel"
-							href="url_Make('', 'user')"
-							cms:eval="href"
-							>
-							<cms:text constant="menu_account"/>
-						</a>
-					</li>
-					<li><a class="logout" href="#"><cms:text constant="menu_logout"/></a></li>
-				</cms:user>
 					<li>
 						<a
 							class="$section == 'home' ? 'active' : false"

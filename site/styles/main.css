@@ -31,8 +31,12 @@ body {
 	color: #212121;
 }
 
+body.home {
+	background-color: black;
+}
+
 body.active {
-	padding-top: 250px;
+	padding-top: 105px;
 }
 
 input,

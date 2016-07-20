@@ -75,7 +75,6 @@
 					class="logo"
 					href="url_Make('', 'home')"
 					cms:eval="href"
-					cms:optional="class"
 					>
 				</a>
 				<a href="javascript:void(0)" class="cart_btn"></a>
@@ -100,7 +99,7 @@
 					<li>
 						<a
 							class="$section == 'about-us' ? 'active' : false"
-							href="url_Make('', 'about-us')"
+							href="url_Make('_default', 'about-us')"
 							cms:eval="href"
 							cms:optional="class"
 							>
@@ -119,8 +118,8 @@
 					</li>
 					<li>
 						<a
-							class="$section == 'portfolio' ? 'active' : false"
-							href="url_Make('', 'portfolio')"
+							class="$section == 'gallery' ? 'active' : false"
+							href="url_Make('', 'gallery')"
 							cms:eval="href"
 							cms:optional="class"
 							>
@@ -144,8 +143,8 @@
 					</li>
 					<li>
 						<a
-							class="$section == 'in-news' ? 'active' : false"
-							href="url_Make('', 'in-news')"
+							class="$section == 'from-the-press' ? 'active' : false"
+							href="url_Make('', 'from-the-press')"
 							cms:eval="href"
 							cms:optional="class"
 							>

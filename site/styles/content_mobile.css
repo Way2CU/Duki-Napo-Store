@@ -1074,14 +1074,23 @@ div#slider div.controls a:hover {
 	About Us Section
  */
 
+div.press,
+div.terms_and_conditions,
+div.privacy_policy,
 div.about_article {
 	display: block;
 	padding-top: 70px;
 	padding-bottom:10px;
-	text-align: center;
+	padding-right: 1em;
 	color:#212121;
 }
 
+div.press {
+	padding-right: 0;
+}
+
+div.terms_and_conditions h3,
+div.privacy_policy h3,
 div.about_article h3 {
 	display: block;
 	padding-top: 10px;
@@ -1093,6 +1102,8 @@ div.about_article h3 {
 	width: 90%;
 }
 
+div.terms_and_conditions p,
+div.privacy_policy p,
 div.about_article p {
 	display: block;
 	padding-top: 10px;
@@ -1797,13 +1808,6 @@ section.product div.related_items h3 {
     From the press page
 */
 
-div.press {
-	display: block;
-	padding-top: 70px;
-	padding-bottom: 10px;
-	text-align: center;
-}
-
 div.press article {
 	margin-left: auto;
 	margin-right: auto;
@@ -1999,7 +2003,7 @@ div.checkout_controls button:hover {
 
 div#input_details div.existing_account.visible,
 div#input_details div.new_account.visible,
- div#input_details div.guest_checkout.visible {
+div#input_details div.guest_checkout.visible {
  	max-height: 450px;
  }
 
@@ -2065,6 +2069,30 @@ section#vip form label.checkbox  span:after {
 section#vip form label.checkbox  input[type=checkbox]:checked ~ span:after{
  	transform: scale(1);
  }
+
+ /*
+     From the press page
+ */
+
+div.press div.column {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+div.column a.link {
+	display: block;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+div.column a.link img {
+	display: block;
+	width: 100%;
+	transfrom: scale(0.8);
+	transition: all 0.3s;
+}
 
 /*
  control_pane;	

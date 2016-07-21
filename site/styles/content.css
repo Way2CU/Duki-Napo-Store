@@ -328,12 +328,16 @@ section#vip form div.controls button:before {
  * About us section
  */
 
+div.terms_and_conditions,
+div.privacy_policy,
 div.about_article {
 	display: block;
 	text-align: left;
 	padding:20px calc((100vw - 1200px) / 2);
 }
 
+div.terms_and_conditions h3,
+div.privacy_policy h3,
 div.about_article h3 {
 	display: block;
 	text-align: center;
@@ -346,12 +350,15 @@ div.about_article h3 {
 	border-bottom: 1px solid #e8e8e8;
 }
 
+div.terms_and_conditions p,
+div.privacy_policy p,
 div.about_article p {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+div.terms_and_conditions p:first-of-type,
 div.about_article p:first-of-type {
 	margin-top: 0px;
 }

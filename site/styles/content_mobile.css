@@ -999,6 +999,7 @@ div.image_rotate div {
 
 div.image_rotate div h2 {
 	margin: 0px;
+	padding-bottom: 0.3em;
 	color: white;
 	font-weight: 400;
 	text-transform: capitalize;
@@ -1008,10 +1009,10 @@ div.image_rotate div a {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 100px;
+	width: 150px;
 	text-decoration: none;
-	padding-top: 7px;
-	padding-bottom: 7px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background-color: black;
 	color: white;
 	border: 1px solid white;
@@ -1022,26 +1023,6 @@ div.image_rotate div a {
 	overflow: hidden;
 	position: relative;
 	z-index: 0;
-}
-
-div.image_rotate div a:hover {
-	color: black;
-}
-
-div.image_rotate div a:before {
-	content: "";
-	position: absolute;
-	top: 0px;
-	left: -100%;
-	width: 100%;
-	height: 100%;
-	background-color: #f7c25d;
-	z-index: -1;
-	transition: all 0.3s;
-}
-
-div.image_rotate div a:hover:before {
-	left: 0%;
 }
 
 div#slider div.controls {

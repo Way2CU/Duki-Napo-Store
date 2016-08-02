@@ -547,7 +547,6 @@ div.popup div.controls button {
 footer {
 	display: block;
 	background-color: black;
-	position: relative;
 }
 
 footer div.footer_top {
@@ -665,8 +664,8 @@ footer div.social a {
 
 footer div.social a svg {
 	display: block;
-	width: 30px;
-	height: 30px;
+	width: 35px;
+	height: 35px;
 	fill: white;
 	transition: all 0.3s;
 }
@@ -728,8 +727,9 @@ footer div.payment span:nth-of-type(7) {
 
 footer div.copyright {
 	position: absolute;
+	left: 0;
+	right: 0;
 	top: 100%;
-	left: 0px;
 	width: 100%;
 	text-align: center;
 	background-color: black;

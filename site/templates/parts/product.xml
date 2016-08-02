@@ -169,6 +169,12 @@
 			<cms:module
 				name="articles"
 				action="show"
+				text_id="short_need_assistance"
+				template="parts/policy.xml"
+				/>
+			<cms:module
+				name="articles"
+				action="show"
 				text_id="short_shipping_policy"
 				template="parts/policy.xml"
 				/>
@@ -176,12 +182,6 @@
 				name="articles"
 				action="show"
 				text_id="short_return_policy"
-				template="parts/policy.xml"
-				/>
-			<cms:module
-				name="articles"
-				action="show"
-				text_id="short_need_assistance"
 				template="parts/policy.xml"
 				/>
 		</div>

@@ -727,9 +727,18 @@ div.gallery a span {
 	transition-delay: 0.3s;
 }
 
+div#lightbox div.content {
+	background-color: black;
+}
+
 div#lightbox a.close_button {
-	background-color: white;
-	color:black;
+	background-color: black;
+	width: 25px;
+	height: 25px;
+}
+
+div#lightbox a.close_button:hover {
+	background-color: #f7c25d;
 }
 
 /**

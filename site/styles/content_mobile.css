@@ -92,7 +92,7 @@ h3 {
 	transition: all 0.3s;
 }
 
-	.mobile_title a.cart_btn {
+.mobile_title a.cart_btn {
 	position: absolute;
 	top: 50%;
 	margin-top: -17.5px;
@@ -179,7 +179,6 @@ a.cart_btn.enabled{
 	background-position: -40px -104px;
 }
 
-
 .mobile_menu ul:first-of-type li:nth-of-type(2) a:before {
 	background-position: -5px -104px;
 }
@@ -257,7 +256,6 @@ a.cart_btn.enabled{
 	background-position: -40px -523px;
 }
 
-
 .mobile_menu ul:nth-of-type(3) li a:before {
 	content: "";
 	position: absolute;
@@ -278,7 +276,6 @@ a.cart_btn.enabled{
 .mobile_menu ul:nth-of-type(3) li:nth-of-type(1) a.active:before {
 	background-position: -40px -290px;
 }
-
 
 .mobile_menu ul:nth-of-type(3) li:nth-of-type(2) a:before {
 	background-position: -5px -324px;
@@ -488,7 +485,6 @@ div.popup > ul li a {
 	right: 5px;
 	padding:  10px;
 	background-color:  black;
-
 }
 
 div.popup > ul li a img {
@@ -547,6 +543,7 @@ div.popup div.controls button {
 footer {
 	display: block;
 	background-color: black;
+	text-align: center;
 }
 
 footer div.footer_top {
@@ -725,7 +722,7 @@ footer div.payment span:nth-of-type(7) {
 	width: 75px;
 }
 
-footer div.copyright {
+body.home footer div.copyright {
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -734,6 +731,10 @@ footer div.copyright {
 	text-align: center;
 	background-color: black;
 	direction: ltr;
+}
+
+footer div.copyright {
+	display: block;
 }
 
 footer div.copyright span {
@@ -907,7 +908,6 @@ section#vip form div.controls {
 		rgba(243, 162, 0, 1) 75.76%, rgba(121,55, 0, 1) 100%);
 	border-image-slice: 1;
 	width: 100%;
-	
 }
 
 section#vip form div.controls button {
@@ -1175,7 +1175,6 @@ div.contact_us div.form_wrap form label textarea {
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
-
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 5px;
@@ -1210,7 +1209,7 @@ div.contact_us div.form_wrap form div.controls button {
 	font-size: 1.1em;
 	text-decoration: none;
 	cursor: pointer;
-    transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 div.contact_us div.form_wrap form div.controls button:hover {
@@ -1256,11 +1255,11 @@ div.process_article p {
 }
 
 div.process_article p img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    width:100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width:100%;
 }
 
 div.process_article ol {
@@ -1274,10 +1273,10 @@ div.process_article ol li {
 }
 
 div.process_article ul {
-    display: block;
+	display: block;
 	padding-right: 20px;
-    text-align: left;
-    color: #212121;
+	text-align: left;
+	color: #212121;
 }
 
 div.benefits_article {
@@ -1303,7 +1302,6 @@ div.benefits_article p img {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	
 }
 
 div.benefits_article p {
@@ -1331,16 +1329,14 @@ div.benefits_article ul li {
 	padding-top: 10px;
 }
 
-
 /*
 	Gallery Page
 */
-
 div.gallery {
-    display: block;
-    padding-top: 70px;
-    padding-bottom: 10px;
-    text-align: center;
+  display: block;
+  padding-top: 70px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 div.gallery a {
@@ -1371,13 +1367,12 @@ div.gallery a span {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	
-    width: calc(100% - 20px);
-    padding-top: 5px;
-    padding-bottom: 5px;
-    transition: all 0.3s;
-    transition-delay: 0.3s;
-    
+
+  width: calc(100% - 20px);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: all 0.3s;
+  transition-delay: 0.3s;
 }
 
 div#lightbox a.close_button {
@@ -1388,7 +1383,6 @@ div#lightbox a.close_button {
 /*
 	Shop Category Dynamic Page
 */
-
 section.category {
 	display: block;
 	padding-top: 70px;
@@ -1456,13 +1450,13 @@ a.item span.name {
 }
 
 a.item span.color {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 18px;
-    height: 18px;
-    font-size: 0px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 18px;
+  height: 18px;
+  font-size: 0px;
 }
 
 a.item span.price {
@@ -1476,7 +1470,6 @@ a.item span.price:after {
 	content: attr(data-currency);
 	padding-left: 5px;
 }
-
 
 /*
 	product Dynamic Page
@@ -1687,23 +1680,23 @@ section.product div.policy label {
 }
 
 section.product div.policy label:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    margin-top: -9px;
-    right: 5px;
-    width: 10px;
-    height: 10px;
-    border: 2px solid black;
-    border-left: none;
-    border-top: none;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    transition: all 0.3s;
-    transition-delay: 0.1s;
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -9px;
+  right: 5px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid black;
+  border-left: none;
+  border-top: none;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: all 0.3s;
+  transition-delay: 0.1s;
 }
 
 section.product div.policy input:checked + label:before {
@@ -1733,7 +1726,6 @@ section.product div.policy > div > div {
 section.product div.policy input:checked ~ div {
 	opacity: 1;
 	max-height: 400px;
-
 }
 
 section.product div.social {
@@ -1788,7 +1780,6 @@ section.product div.related_items h3 {
 /*
     From the press page
 */
-
 div.press article {
 	margin-left: auto;
 	margin-right: auto;
@@ -1858,7 +1849,6 @@ div.pages {
 	box-shadow: 0px 0px 0px ;
 	border-color: none;
 }
-
 
 div#input_details {
 	border-radius:  0px 0px 0px 0px;
@@ -2017,44 +2007,43 @@ section#vip form label.checkbox  span:before {
  }
 
 section#vip form label.checkbox  span:after {
- 	content: ' ';
- 	position: absolute;
- 	left: 2px;
- 	top: 50%;
- 	margin-top: -12.5px;
- 	width: 23px;
- 	height: 23px;
- 	display: block;
- 	z-index: 1;
- 	background: url(../images/check_mark.svg);
- 	background-repeat: no-repeat;
- 	background-position: center center;
- 	-ms-transition: all .2s ease;
- 	-webkit-transition: all .2s ease;
- 	transition: all .3s ease;
- 	-ms-transform: scale(0);
- 	-webkit-transform: scale(0);
- 	transform: scale(0);
- 	opacity: 1;	
+	content: ' ';
+	position: absolute;
+	left: 2px;
+	top: 50%;
+	margin-top: -12.5px;
+	width: 23px;
+	height: 23px;
+	display: block;
+	z-index: 1;
+	background: url(../images/check_mark.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	-ms-transition: all .2s ease;
+	-webkit-transition: all .2s ease;
+	transition: all .3s ease;
+	-ms-transform: scale(0);
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	opacity: 1;	
  }
 
- section#vip form label.checkbox span:after {
- 	left: 17px;
- 	width: 12px;
- 	height: 12px;
- 	margin-top: -6px;
+section#vip form label.checkbox span:after {
+	left: 17px;
+	width: 12px;
+	height: 12px;
+	margin-top: -6px;
 
- 	background: url(../images/check_mark_white.svg);
- }
+	background: url(../images/check_mark_white.svg);
+}
 
 section#vip form label.checkbox  input[type=checkbox]:checked ~ span:after{
- 	transform: scale(1);
- }
+	transform: scale(1);
+}
 
  /*
      From the press page
  */
-
 div.press div.column {
 	display: block;
 	margin-left: auto;

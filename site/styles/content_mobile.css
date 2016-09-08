@@ -723,11 +723,6 @@ footer div.payment span:nth-of-type(7) {
 }
 
 body.home footer div.copyright {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 100%;
-	width: 100%;
 	text-align: center;
 	background-color: black;
 	direction: ltr;
@@ -1383,11 +1378,16 @@ div#lightbox a.close_button {
 /*
 	Shop Category Dynamic Page
 */
+div.promoted,
 section.category {
 	display: block;
 	padding-top: 70px;
 	padding-bottom: 10px;
 	text-align: center;
+}
+
+div.promoted {
+	padding: 1em 0em;
 }
 
 section.category h1 {
@@ -1417,6 +1417,10 @@ a.item {
 	transition: all 0.3s;
 }
 
+div.promoted a.item {
+	border: 1px solid rgba(246,193,92,0.5);
+}
+
 a.item span.image {
 	display: block;
 	margin-left: auto;
@@ -1442,11 +1446,19 @@ a.item span.image img {
 	border: 1px solid #e8e8e8;
 }
 
+div.promoted a.item span.image img {
+	border-color: rgba(246,193,92,0.5);
+}
+
 a.item span.name {
 	display: inline-block;
 	vertical-align: middle;
 	float: left;
 	color: #212121;
+}
+
+div.promoted a.item span.name {
+	color: white;
 }
 
 a.item span.color {
@@ -1464,6 +1476,10 @@ a.item span.price {
 	vertical-align: middle;
 	float: right;
 	color: #6e6e6e;
+}
+
+div.promoted a.item span.price {
+	color: white;
 }
 
 a.item span.price:after {

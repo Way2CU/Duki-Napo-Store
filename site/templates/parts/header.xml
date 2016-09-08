@@ -46,7 +46,26 @@
 				<ul class="categories">
 					<cms:module
 						name="shop"
-						action="show_category_list"
+						action="show_category"
+						text_id="ring"
+						template="parts/category_menu_item.xml"
+						/>
+					<cms:module
+						name="shop"
+						action="show_category"
+						text_id="bracelet"
+						template="parts/category_menu_item.xml"
+						/>
+					<cms:module
+						name="shop"
+						action="show_category"
+						text_id="pendant"
+						template="parts/category_menu_item.xml"
+						/>
+					<cms:module
+						name="shop"
+						action="show_category"
+						text_id="earing"
 						template="parts/category_menu_item.xml"
 						/>
 				</ul>
@@ -194,7 +213,26 @@
 			<ul id="navigation">
 				<cms:module
 					name="shop"
-					action="show_category_list"
+					action="show_category"
+					text_id="ring"
+					template="parts/category_menu_item.xml"
+					/>
+				<cms:module
+					name="shop"
+					action="show_category"
+					text_id="bracelet"
+					template="parts/category_menu_item.xml"
+					/>
+				<cms:module
+					name="shop"
+					action="show_category"
+					text_id="pendant"
+					template="parts/category_menu_item.xml"
+					/>
+				<cms:module
+					name="shop"
+					action="show_category"
+					text_id="earing"
 					template="parts/category_menu_item.xml"
 					/>
 			</ul>

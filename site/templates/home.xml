@@ -18,18 +18,24 @@
 
 			<cms:desktop>
 				<div id="slider">
-						<cms:module
-							name="gallery"
-							action="show_image_list"
-							group="home_page"
-							template="parts/home_page_image.xml"
-							/>
-						<div class="controls"/>
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="home_page"
+						template="parts/home_page_image.xml"
+						/>
+					<div class="controls"/>
 				</div>
-
-				<ul class="popular">
-					
-				</ul>
+				
+				<!-- Promoted items -->
+				<div class="promoted">
+					<cms:module
+						name="shop"
+						action="show_item_list"
+						category="promoted"
+						template="parts/promoted_shop_item.xml"
+						/>
+				</div>
 			</cms:desktop>
 
 			<cms:mobile>
@@ -39,6 +45,16 @@
 						action="show_image_list"
 						group="home_page"
 						template="parts/home_page_image.xml"
+						/>
+				</div>
+
+				<!-- Promoted items -->
+				<div class="promoted">
+					<cms:module
+						name="shop"
+						action="show_item_list"
+						category="promoted"
+						template="parts/promoted_shop_item.xml"
 						/>
 				</div>
 			</cms:mobile>

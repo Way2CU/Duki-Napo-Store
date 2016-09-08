@@ -1,0 +1,29 @@
+<document>
+	<a
+		href="url_Make('product', 'shop', array('id',$params['id']))"
+		class="item"
+		cms:eval="href"
+		>
+		<span class="image">
+			<img
+				src="gallery::getGroupThumbnailById($params['gallery'], null, 250)"
+				alt="$params['name'][$language]"
+				cms:eval="src,alt"
+				/>
+		</span>
+		<span class="name">
+			<cms:var param="name" multilanguage="yes"/>
+		</span>
+		<cms:color_list
+			id="$params['id']"
+			template="parts/item_colors.xml"
+			cms:eval="id"
+			/>
+		<span
+			class="price"
+			data-currency="shop::getDefaultCurrency()" cms:eval="data-currency"
+			>
+			<cms:var param="price"/>
+		</span>
+	</a>
+</document>

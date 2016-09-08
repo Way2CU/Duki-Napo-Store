@@ -744,7 +744,7 @@ div#lightbox a.close_button:hover {
 /**
  * Shop item list
  */
-
+div.promoted,
 section.category {
 	display: block;
 	padding: 20px calc((100vw - 1200px) / 2);
@@ -778,6 +778,11 @@ a.item {
 	transition: all 0.3s;
 }
 
+div.promoted a.item {
+	margin-bottom: 0;
+	border: 1px solid rgba(246,193,92,0.5);
+}
+
 a.item:hover {
 	top: -10px;
 	border-color: #e8e8e8;
@@ -806,11 +811,19 @@ a.item span.image img {
 	border: 1px solid #e8e8e8;
 }
 
+div.promoted a.item span.image img {
+	border-color: rgba(246,193,92,0.5);
+}
+
 a.item span.name {
 	display: inline-block;
 	vertical-align: middle;
 	float: left;
 	color: #212121;
+}
+
+div.promoted a.item span.name {
+	color: white;
 }
 
 a.item span.color {
@@ -828,6 +841,10 @@ a.item span.price {
 	vertical-align: middle;
 	float: right;
 	color: #6e6e6e;
+}
+
+div.promoted a.item span.price {
+	color: white;
 }
 
 a.item span.price:after {

@@ -1,0 +1,13 @@
+<document>
+	<div class="video">
+		<iframe 
+			src="'https://www.youtube.com/embed/'.$params['value']"
+			autoplay="0"
+			width="436"
+			height="250"
+			frameborder="0"
+			cms:eval="src"
+			>
+		</iframe>
+	</div>
+</document>

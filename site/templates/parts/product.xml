@@ -46,6 +46,16 @@
 			template="parts/product_image.xml"
 			cms:eval="group_id"
 			/>
+		
+		<!-- youtube video -->
+		<cms:module
+			name="shop"
+			action="show_property"
+			item="$params['id']"
+			text_id="video"
+			cms:eval="item"
+			template="parts/video.xml"
+			/>
 
 		<div class="social">
 			<span><cms:text constant="label_share"/></span>

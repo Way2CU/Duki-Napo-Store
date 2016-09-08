@@ -6,7 +6,7 @@ site:
   make_alias: true
   root: httpdocs
   username: "duki"
-  caracal_branch: develop
+  caracal_branch: release
   # ip_address: 0.0.0.0
   # owner: Some Person
   # plan: Unlimited

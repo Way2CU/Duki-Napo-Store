@@ -1,3 +1,4 @@
+
 /**
  * Mobile Style Sheet
  * DukiVeNapo Site
@@ -863,10 +864,10 @@ section#vip form label input {
 	padding-left: 50px;
 	color: white;
 	border: 1px solid transparent;
-	border-image: linear-gradient(100deg, rgba(121, 55, 0, 1) 0%, 
-		rgba(129, 62, 0, 1) 4.02%, rgba(151, 81, 0, 1) 10.25%, 
-		rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%, 
-		rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%, 
+	border-image: linear-gradient(100deg, rgba(121, 55, 0, 1) 0%,
+		rgba(129, 62, 0, 1) 4.02%, rgba(151, 81, 0, 1) 10.25%,
+		rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%,
+		rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%,
 		rgba(243, 162, 0, 1) 75.76%, rgba(121,55, 0, 1) 100%);
 	border-image-slice: 1;
 	background-color: rgba(0, 0, 0, 0.52);
@@ -879,15 +880,15 @@ section#vip input::-webkit-input-placeholder {
 }
 
 section#vip input::-moz-placeholder { /* Firefox 18- */
-   color: #f6c15c;  
+   color: #f6c15c;
 }
 
 section#vip input::-moz-placeholder {  /* Firefox 19+ */
-   color: #f6c15c;  
+   color: #f6c15c;
 }
 
-section#vip input::-ms-input-placeholder {  
-   color: #f6c15c;  
+section#vip input::-ms-input-placeholder {
+   color: #f6c15c;
 }
 
 section#vip form div.controls {
@@ -896,10 +897,10 @@ section#vip form div.controls {
 	position: relative;
 	z-index: 1;
 	border: 1px solid transparent;
-	border-image: linear-gradient(100deg, rgba(121, 55, 0, 1) 0%, 
-		rgba(129, 62, 0, 1) 4.02%, rgba(151, 81, 0, 1) 10.25%, 
-		rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%, 
-		rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%, 
+	border-image: linear-gradient(100deg, rgba(121, 55, 0, 1) 0%,
+		rgba(129, 62, 0, 1) 4.02%, rgba(151, 81, 0, 1) 10.25%,
+		rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%,
+		rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%,
 		rgba(243, 162, 0, 1) 75.76%, rgba(121,55, 0, 1) 100%);
 	border-image-slice: 1;
 	width: 100%;
@@ -1425,7 +1426,7 @@ a.item span.image {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	
+
 	width: 250px;
 	height: 250px;
 	margin-bottom: 10px;
@@ -1878,10 +1879,10 @@ div#input_details h1 {
 }
 
 div#input_details label input,
-div#payment_method input, 
+div#payment_method input,
 div#billing_information input,
-div#input_details div.existing_account.visible input, 
-div#input_details div.new_account.visible input, 
+div#input_details div.existing_account.visible input,
+div#input_details div.new_account.visible input,
 div#input_details div.guest_checkout.visible input,
 div#checkout_container div.page input {
 	width: 90%;
@@ -1915,14 +1916,14 @@ div#input_details label select {
 	border-radius: 0px 0px 0px 0px;
 	background-color: #e8e8e8;
 	color: #212121;
-	transition: all 0.3s;	
+	transition: all 0.3s;
 }
 
 div#input_details label input:focus,
 div#payment_method input:focus,
 div#billing_information input:focus,
-div#input_details div.existing_account.visible input:focus, 
-div#input_details div.new_account.visible input:focus, 
+div#input_details div.existing_account.visible input:focus,
+div#input_details div.new_account.visible input:focus,
 div#input_details div.guest_checkout.visible input:focus {
 	border: 1px solid #f6c15c;
 }
@@ -1930,8 +1931,8 @@ div#input_details div.guest_checkout.visible input:focus {
 div#input_details label input:hover,
 div#payment_method input:hover,
 div#billing_information input:hover,
-div#input_details div.existing_account.visible input:hover, 
-div#input_details div.new_account.visible input:hover, 
+div#input_details div.existing_account.visible input:hover,
+div#input_details div.new_account.visible input:hover,
 div#input_details div.guest_checkout.visible input:hover {
 	border: 1px solid rgba(246, 193, 92, 0.5);
 }
@@ -2014,10 +2015,10 @@ section#vip form label.checkbox  span:before {
  	height: 15px;
  	background-color: transparent;
  	border: 1px solid transparent;
- 	border-image: 
- 	  linear-gradient(100deg, rgba(121, 55, 0, 1) 0%, rgba(129, 62, 0, 1) 4.02%, 
- 	  rgba(151, 81, 0, 1) 10.25%, rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%, 
- 	  rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%, 
+ 	border-image:
+ 	  linear-gradient(100deg, rgba(121, 55, 0, 1) 0%, rgba(129, 62, 0, 1) 4.02%,
+ 	  rgba(151, 81, 0, 1) 10.25%, rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%,
+ 	  rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%,
  	  rgba(243, 162, 0, 1) 75.76%, rgba(121,55, 0, 1) 100%);
  	border-image-slice: 1;
  }
@@ -2041,7 +2042,7 @@ section#vip form label.checkbox  span:after {
 	-ms-transform: scale(0);
 	-webkit-transform: scale(0);
 	transform: scale(0);
-	opacity: 1;	
+	opacity: 1;
  }
 
 section#vip form label.checkbox span:after {

@@ -16,6 +16,14 @@
 			<cms:svg file="site-icons.svg"/>
 
 			<div class="top_header">
+				<a  class="logo" href="url_Make('','home')" cms:eval="href">
+					<img src="_BASEURL.'/site/images/header/logo-symbol.svg'"  alt="logo-symbol" cms:eval="src"/>
+					<img src="_BASEURL.'/site/images/header/type-logo.svg'"  alt="type-logo" cms:eval="src"/>
+				</a>
+			</div>
+
+			<!-- Bottom navigation -->
+			<nav id="navigation">
 				<ul class="drop">
 					<li>
 						<a href="javascript:void(0)">
@@ -25,23 +33,6 @@
 						<cms:template file="parts/simple_menu_items.xml"/>
 					</li>
 				</ul>
-
-				<a  class="logo" href="url_Make('','home')" cms:eval="href">
-					<img src="_BASEURL.'/site/images/header/logo-symbol.svg'"  alt="logo-symbol" cms:eval="src"/>
-					<img src="_BASEURL.'/site/images/header/type-logo.svg'"  alt="type-logo" cms:eval="src"/>
-				</a>
-				<a
-					href="'tel:'.urlencode(Language::getText('phone'))"
-					cms:eval="href"
-					class="phone"
-					>
-					<cms:svg file="site-icons.svg" symbol="phone"/>
-					<cms:text constant="phone_text"/>
-				</a>
-			</div>
-
-			<!-- Bottom navigation -->
-			<nav id="navigation">
 				<!-- Shop categories -->
 				<ul class="categories">
 					<cms:module

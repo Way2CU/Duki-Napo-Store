@@ -73,7 +73,6 @@ div.image_rotate div h2 {
 	margin: 0px;
 	color: white;
 	font-weight: 400;
-	font-size: 3.5em;
 	text-transform: capitalize;
 }
 
@@ -88,7 +87,6 @@ div.image_rotate div a {
 	color: white;
 	border: 1px solid white;
 	text-align: center;
-	font-size: 1.1em;
 	text-decoration: none;
 	transition: all 0.3s;
 	overflow: hidden;
@@ -162,7 +160,6 @@ section#vip div.contact_vip p:first-of-type {
 section#vip div.contact_vip p {
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 1.75em;
 	text-transform: uppercase;
 	width: 70%;
 }
@@ -191,7 +188,6 @@ section#vip form label.checkbox span {
 	display: inline-block;
 	text-align: left;
 	padding-left: 50px;
-	font-size: 0.8em;
 }
 
 section#vip form label:before {
@@ -239,10 +235,10 @@ section#vip form label input {
 	padding-left: 50px;
 	color: white;
 	border: 1px solid transparent;
-	border-image: linear-gradient(100deg, rgba(121, 55, 0, 1) 0%, 
-		rgba(129, 62, 0, 1) 4.02%, rgba(151, 81, 0, 1) 10.25%, 
-		rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%, 
-		rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%, 
+	border-image: linear-gradient(100deg, rgba(121, 55, 0, 1) 0%,
+		rgba(129, 62, 0, 1) 4.02%, rgba(151, 81, 0, 1) 10.25%,
+		rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%,
+		rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%,
 		rgba(243, 162, 0, 1) 75.76%, rgba(121,55, 0, 1) 100%);
 	border-image-slice: 1;
 	background-color: rgba(0, 0, 0, 0.5);
@@ -260,15 +256,15 @@ section#vip input::-webkit-input-placeholder {
 }
 
 section#vip input::-moz-placeholder { /* Firefox 18- */
-   color: #f6c15c;  
+   color: #f6c15c;
 }
 
 section#vip input::-moz-placeholder {  /* Firefox 19+ */
-   color: #f6c15c;  
+   color: #f6c15c;
 }
 
-section#vip input::-ms-input-placeholder {  
-   color: #f6c15c;  
+section#vip input::-ms-input-placeholder {
+   color: #f6c15c;
 }
 
 section#vip form div.controls {
@@ -277,10 +273,10 @@ section#vip form div.controls {
 	position: relative;
 	z-index: 1;
 	border: 1px solid transparent;
-	border-image: linear-gradient(100deg, rgba(121, 55, 0, 1) 0%, 
-		rgba(129, 62, 0, 1) 4.02%, rgba(151, 81, 0, 1) 10.25%, 
-		rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%, 
-		rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%, 
+	border-image: linear-gradient(100deg, rgba(121, 55, 0, 1) 0%,
+		rgba(129, 62, 0, 1) 4.02%, rgba(151, 81, 0, 1) 10.25%,
+		rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%,
+		rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%,
 		rgba(243, 162, 0, 1) 75.76%, rgba(121,55, 0, 1) 100%);
 	border-image-slice: 1;
 	overflow: hidden;
@@ -294,7 +290,6 @@ section#vip form div.controls button {
 	border: none;
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 1.5em;
 	color: black;
 	background: linear-gradient(to bottom, #f3a200 0%,#fff78e 100%);
 	background-repeat: no-repeat;
@@ -438,7 +433,6 @@ div.contact_us div.form_wrap form label.checkbox span {
 	display: inline-block;
 	padding-left: 30px;
 	width: 468px;
-	font-size: 1em;
 	position: relative;
 }
 
@@ -485,7 +479,6 @@ div.contact_us div.form_wrap form label span {
 	vertical-align: middle;
 	text-align: left;
 	width: 80px;
-	font-size: 1.2em;
 }
 
 form.recovery label span {
@@ -543,7 +536,6 @@ div.contact_us div.form_wrap form div.controls button {
 	border: 1px solid #989898;
 	background-color: #212121;
 	color: white;
-	font-size: 1.1em;
 	text-decoration: none;
 	cursor: pointer;
 	transition: all 0.3s;
@@ -968,7 +960,6 @@ section.product div.info article h1 {
 	margin: 0;
 	padding: 0;
 	font-weight: 400;
-	font-size: 1.5em;
 }
 
 section.product div.info article p {
@@ -1001,7 +992,6 @@ div.price a.btn_cart {
 div.price span {
 	padding-left: 10px;
 	padding-right: 10px;
-	font-size: 1.3em;
 }
 
 div.price span:after {
@@ -1016,7 +1006,6 @@ div.info a.btn_cart {
 	background-color: #212121;
 
 	color: white;
-	font-size: 1em;
 	text-decoration: none;
 
 	overflow: hidden;
@@ -1097,7 +1086,6 @@ section.product div.policy label {
 	display: block;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	font-size: 1.2em;
 	font-style: italic;
 	position: relative;
 	cursor: pointer;
@@ -1232,10 +1220,10 @@ div#input_details h1 {
 }
 
 div#input_details label input,
-div#payment_method input, 
+div#payment_method input,
 div#billing_information input,
-div#input_details div.existing_account.visible input, 
-div#input_details div.new_account.visible input, 
+div#input_details div.existing_account.visible input,
+div#input_details div.new_account.visible input,
 div#input_details div.guest_checkout.visible input,
 div#checkout_container div.page input {
 	width: 280px;
@@ -1269,14 +1257,14 @@ div#input_details label select {
 	border-radius: 0px 0px 0px 0px;
 	background-color: #e8e8e8;
 	color: #212121;
-	transition: all 0.3s;	
+	transition: all 0.3s;
 }
 
 div#input_details label input:focus,
 div#payment_method input:focus,
 div#billing_information input:focus,
-div#input_details div.existing_account.visible input:focus, 
-div#input_details div.new_account.visible input:focus, 
+div#input_details div.existing_account.visible input:focus,
+div#input_details div.new_account.visible input:focus,
 div#input_details div.guest_checkout.visible input:focus {
 	border: 1px solid #f6c15c;
 }
@@ -1284,8 +1272,8 @@ div#input_details div.guest_checkout.visible input:focus {
 div#input_details label input:hover,
 div#payment_method input:hover,
 div#billing_information input:hover,
-div#input_details div.existing_account.visible input:hover, 
-div#input_details div.new_account.visible input:hover, 
+div#input_details div.existing_account.visible input:hover,
+div#input_details div.new_account.visible input:hover,
 div#input_details div.guest_checkout.visible input:hover {
 	border: 1px solid rgba(246, 193, 92, 0.5);
 }
@@ -1366,10 +1354,10 @@ section#vip form label.checkbox span:before {
 	left: 14px;
 	background-color: transparent;
 	border: 1px solid transparent;
-	border-image: 
-	  linear-gradient(100deg, rgba(121, 55, 0, 1) 0%, rgba(129, 62, 0, 1) 4.02%, 
-	  rgba(151, 81, 0, 1) 10.25%, rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%, 
-	  rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%, rgba(243, 162, 0, 1) 75.76%, 
+	border-image:
+	  linear-gradient(100deg, rgba(121, 55, 0, 1) 0%, rgba(129, 62, 0, 1) 4.02%,
+	  rgba(151, 81, 0, 1) 10.25%, rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%,
+	  rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%, rgba(243, 162, 0, 1) 75.76%,
 	  rgba(121,55, 0, 1) 100%);
 	border-image-slice: 1;
 }
@@ -1393,7 +1381,7 @@ section#vip form label.checkbox span:after {
 	-ms-transform: scale(0);
 	-webkit-transform: scale(0);
 	transform: scale(0);
-	opacity: 1;	
+	opacity: 1;
 }
 
 section#vip form label.checkbox span:after {
@@ -1446,7 +1434,7 @@ div.column a.link img {
 }
 
 /*
-    control_pane;	
+    control_pane;
 */
 
 section.user {
@@ -1492,7 +1480,6 @@ ul#user_list li span {
 ul#user_list li span.name {
 	color: #989898;
 	font-weight: 700;
-	font-size: 1.1em;
 }
 
 ul#user_list li a {

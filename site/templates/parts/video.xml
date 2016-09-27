@@ -1,13 +1,28 @@
 <document>
+	<cms:desktop>
+		<div class="video">
+			<iframe
+				src="'https://www.youtube.com/embed/'.$params['value']"
+				autoplay="0"
+				width="600"
+				height="250"
+				frameborder="0"
+				cms:eval="src"
+				>
+			</iframe>
+		</div>
+	</cms:desktop>
+	<cms:mobile>
 	<div class="video">
 		<iframe
 			src="'https://www.youtube.com/embed/'.$params['value']"
 			autoplay="0"
-			width="600"
+			width="250"
 			height="250"
 			frameborder="0"
 			cms:eval="src"
 			>
 		</iframe>
 	</div>
+</cms:mobile>
 </document>

@@ -372,19 +372,15 @@ div.about_article p img {
 div.contact_us {
 	display: block;
 	padding:20px calc((100vw - 1200px) / 2);
+	text-align: center;
 }
 
 div.address_article {
-	display: inline-block;
-	vertical-align: top;
-	padding-left: 10px;
-	padding-right: 10px;
-	width: calc(50% - 20px);
+	display: block;
 }
 
 div.address_article h3 {
 	border-bottom: 1px solid #e8e8e8;
-	width: 400px;
 }
 
 div.address_article a {
@@ -397,12 +393,8 @@ div.address_article a:hover {
 }
 
 div.contact_us div.form_wrap {
-	display: inline-block;
-	vertical-align: top;
+	display: block;
 	text-align: center;
-	padding-left: 10px;
-	padding-right: 10px;
-	width: calc(50% - 20px);
 }
 
 div.contact_us div.form_wrap h3 {
@@ -941,6 +933,106 @@ section.product div.properties div {
 	display: inline-block;
 	vertical-align: top;
 	width: 33.3%;
+}
+
+section.product div.properties div.assistance_form {
+	display: block;
+	width: 100%;
+}
+
+section.product div.properties div.assistance_form label input#checkbox {
+	display: none;
+}
+
+section.product div.properties div.assistance_form > label > span {
+	display: block;
+	padding: 10px 0;
+	padding-top: 25px;
+	transition: all 0.3s;
+}
+
+section.product div.properties div.assistance_form > label > span:hover {
+	color: #f7c25d;
+}
+
+section.product div.properties div.assistance_form form {
+	display: block;
+	max-height: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+section.product div.properties div.assistance_form form.visible {
+	max-height: 400px;
+	visibility: visible;
+	opacity: 1;
+}
+
+section.product div.properties div.assistance_form form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+section.product div.properties div.assistance_form form label input,
+section.product div.properties div.assistance_form form label span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+section.product div.properties div.assistance_form form label input {
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+	box-sizing: border-box;
+	padding: 0.3em 0.5em;
+	border: 1px solid #989898;
+	transition: all 0.3s;
+}
+
+section.product div.properties div.assistance_form form label input:hover {
+	border: 1px solid  #f7c25d;
+}
+
+section.product div.properties div.assistance_form form label span {
+	display: inline-block;
+	padding-right: 10px;
+	width: 15%;
+	vertical-align: middle;
+}
+
+section.product div.properties div.assistance_form form label:nth-child(5) span {
+	vertical-align: top;
+}
+
+section.product div.properties div.assistance_form form label textarea {
+	resize: vertical;
+	box-sizing: border-box;
+	width: 50%;
+	border: 1px solid #989898;
+	transition: all 0.3s;
+}
+
+section.product div.properties div.assistance_form form label textarea:hover {
+		border: 1px solid #f7c25d;
+}
+
+section.product div.properties div.assistance_form form div.controls {
+	display: block;
+	width: 82%;
+	text-align: center;
+}
+
+section.product div.properties div.assistance_form form div.controls button {
+	padding: 0.2em 1em;
+	background: white;
+	border: 1px solid #989898;
+	transition: all 0.3s;
+}
+
+section.product div.properties div.assistance_form form div.controls button:hover {
+	border: 1px solid  #f7c25d;
+	color:  #f7c25d;
 }
 
 div.price {

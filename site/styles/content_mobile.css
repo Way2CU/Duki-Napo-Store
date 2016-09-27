@@ -970,6 +970,11 @@ div.image_rotate.right {
 	text-align: right;
 }
 
+div.image_rotate.left h2,
+div.image_rotate.right h2 {
+	text-align: center;
+}
+
 div.image_rotate.left {
 	text-align: left;
 }

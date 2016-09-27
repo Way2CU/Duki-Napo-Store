@@ -1,9 +1,9 @@
 <document>
 	<div class="video">
-		<iframe 
+		<iframe
 			src="'https://www.youtube.com/embed/'.$params['value']"
 			autoplay="0"
-			width="436"
+			width="600"
 			height="250"
 			frameborder="0"
 			cms:eval="src"

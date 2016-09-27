@@ -11,7 +11,6 @@
 			</cms:desktop>
 
 			<div class="social">
-				<span><cms:text constant="social_title"/></span>
 				<a href="https://www.facebook.com/DukiVenapo/?fref=ts" target="_blank" class="facebook">
 					<cms:svg file="site-icons.svg" symbol="facebook"/>
 				</a>

@@ -50,7 +50,7 @@ nav#footer_nav ul li a {
 	transition: all 0.3s;
 	text-decoration: none;
 	overflow: hidden;
-	color: white;
+	color: #f7c25d;
 }
 
 nav#footer_nav ul li a:hover {
@@ -96,7 +96,6 @@ footer div.social {
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	border: 1px solid white;
 	width: 25%;
 }
 

@@ -24,7 +24,7 @@ section#vip {
 div#slider {
 	display: block;
 	padding: 0px calc((100vw - 1200px) / 2);
-	min-height: 400px;
+	min-height: 600px;
 	position: relative;
 	background-color: black;
 }
@@ -34,12 +34,14 @@ div.image_rotate {
 	top: 0px;
 	left: 50%;
 	width: 1200px;
-	height: 400px;
+	height: 600px;
 	text-align: center;
 	margin-left: -600px;
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.6s;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 div.image_rotate.right {
@@ -739,12 +741,13 @@ div#lightbox a.close_button:hover {
 div.promoted,
 section.category {
 	display: block;
-	padding: 20px calc((100vw - 1200px) / 2);
+	padding: 4em calc((100vw - 1200px) / 2);
 }
 
 section.category h1 {
 	display: block;
 	text-align: center;
+	font-weight: 400;
 }
 
 /**
@@ -844,110 +847,74 @@ a.item span.price:after {
 	padding-left: 5px;
 }
 
-/**
- * Shop item details
- */
 section.product {
 	display: block;
 	padding: 50px calc((100vw - 1200px) / 2);
 }
 
-section.product div.images {
+/**
+ * product images
+ */
+
+section.product > div.images {
 	display: inline-block;
 	vertical-align: top;
-	width: 438px;
-	margin-right: 40px;
-}
-
-section.product div.images figure {
-	display: block;
-	text-align: center;
-	width: 438px;
-	height: 438px;
-	margin: 0;
-	margin-bottom: 20px;
-	padding: 0;
-
-	white-space: nowrap;
-}
-
-section.product div.images figure:before {
-	display: inline-block;
-	width: 0;
-	height: 100%;
-	vertical-align: top;
-	content: '';
-}
-
-section.product div.images figure a,
-section.product div.images > a {
-	display: inline-block;
-	text-decoration: none;
-	line-height: 0;
-
+	box-sizing: border-box;
+	width: 60%;
 	position: relative;
-	top: 0;
-	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+	padding-top: 470px;
+}
 
+section.product > div.images > img {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translatex(-50%);
+	opacity: 0;
+	visibility: hidden;
 	transition: all 0.3s;
 }
 
-section.product div.images figure a:hover,
-section.product div.images > a:hover {
-	top: -10px;
-	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+section.product > div.images > img.visible {
+	opacity: 1;
+	visibility: visible;
 }
 
-section.product div.images > a {  /* small images */
-	margin-right: 10px;
-	margin-bottom: 10px;
-}
-
-section.product div.images > a:nth-of-type(4n + 0) {  /* every 4th doesn't have margin */
-	margin-right: 0;
-}
-
-section.product div.images img {
-	border: 1px solid #e8e8e8;
-}
-
-section.product div.social {
-	margin-top: 20px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+section.product > div.images div.thumbnails {
+	display: block;
 	text-align: center;
-	border: 1px solid #e8e8e8;
 }
 
-section.product div.social a,
-section.product div.social span {
+section.product > div.images div.thumbnails a {
 	display: inline-block;
 	vertical-align: middle;
-	text-align: left;
-	margin-right: 10px;
-	margin-left: 10px;
-}
-
-section.product div.social strong {
-	display: block;
-}
-
-section.product div.social a:hover svg {
-	fill: #f7c25d;
-}
-
-section.product div.social a svg {
-	display: block;
-	width: 35px;
-	height: 35px;
-	fill: #989898;
+	margin: 0 1em;
+	border: 1px solid transparent;
 	transition: all 0.3s;
 }
+
+section.product > div.images div.thumbnails a.active {
+	border: 1px solid #f7c25d;
+}
+
+section.product > div.images div.thumbnails img {
+	display: block;
+}
+
+section.product > div.images div.video {
+	margin-top: 20px;
+	text-align: center;
+}
+
+/**
+ * product information
+ */
 
 section.product div.info {
 	display: inline-block;
 	vertical-align: top;
-	width: calc(100% - 478px);
+	box-sizing: border-box;
+	width: 40%;
 }
 
 section.product div.info article {
@@ -987,6 +954,7 @@ div.price span,
 div.price a.btn_cart {
 	display: inline-block;
 	vertical-align: middle;
+	font-weight: 400;
 }
 
 div.price span {
@@ -1073,84 +1041,34 @@ section.product div.properties div span {
 	text-transform: capitalize;
 }
 
-section.product div.policy {
-	display: block;
-	padding-top: 20px;
+section.product div.social {
+	margin-top: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
-section.product div.policy > div {
-	margin-bottom: 0px;
+section.product div.social a {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
-section.product div.policy label {
+section.product div.social a:first-of-type {
+	margin-left: 0;
+}
+
+section.product div.social a:hover svg {
+	fill: #f7c25d;
+}
+
+section.product div.social a svg {
 	display: block;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-style: italic;
-	position: relative;
-	cursor: pointer;
+	width: 35px;
+	height: 35px;
+	fill: #989898;
 	transition: all 0.3s;
-}
-
-section.product div.policy label:hover {
-	color: #f7c25d;
-}
-
-section.product div.policy label:hover:before {
-	border-color: #f7c25d;
-}
-
-section.product div.policy label:before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	margin-top: -16px;
-	right: 5px;
-	width: 15px;
-	height: 15px;
-	border: 2px solid black;
-	border-left: none;
-	border-top: none;
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
-	transition: all 0.3s;
-	transition-delay: 0.1s;
-}
-
-section.product div.policy input:checked + label:before {
-	-webkit-transform: rotate(223deg);
-	-moz-transform: rotate(223deg);
-	-ms-transform: rotate(223deg);
-	-o-transform: rotate(223deg);
-	transform: rotate(223deg);
-	border-color: #f6c15c;
-}
-
-section.product div.policy input:checked + label {
-	color: #f7c25d;
-}
-
-section.product div.policy input {
-	display: none;
-}
-
-section.product div.policy > div > div {
-	display: block;
-	padding-left: 15px;
-	padding-right: 15px;
-	max-height: 0;
-	opacity: 0;
-	overflow: hidden;
-	transition: max-height 0.3s, opacity 0.3s;
-	transition-delay:0.1s,0.1s;
-}
-
-section.product div.policy input:checked ~ div {
-	opacity: 1;
-	max-height: 400px;
 }
 
 section.product div.related_items {

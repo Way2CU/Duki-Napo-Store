@@ -363,6 +363,18 @@ Site.on_load = function() {
 	Site.product_gallery
 		.attachControls($('div.images div.thumbnails a'));
 
+	//ClickHandler for Assistance_form_button
+	Site.checkbox_button = $('#checkbox');
+	Site.assistanceForm = $('div.assistance_form form');
+
+	Site.checkbox_button.on('change', function() {
+		if(this.checked == true) {
+			Site.assistanceForm.addClass("visible");
+		}else {
+			Site.assistanceForm.removeClass("visible");
+		}
+	});
+
 	// lightbox for all images on page
 	if (!Site.is_mobile())
 		Site.lightbox_gallery = new LightBox('div.gallery a', false, false, true);

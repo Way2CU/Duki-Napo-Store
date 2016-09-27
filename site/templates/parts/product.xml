@@ -86,8 +86,20 @@
 				<h4><cms:text constant="property_weight"/></h4>
 				<span><cms:var param="weight"/></span>
 			</div>
-		</div>
 
+			<div class="assistance_form">
+				<label>
+					<span>	<cms:text constant="button_assistance"/></span>
+					<input type="checkbox" id="checkbox"></input>
+				</label>
+
+				<cms:module
+					name="contact_form"
+					action="show"
+					text_id="assistance_form"
+					/>
+			</div>
+		</div>
 		<div class="price">
 			<h4><cms:text constant="property_price"/></h4>
 			<span data-currency="shop::getDefaultCurrency()" cms:eval="data-currency" >

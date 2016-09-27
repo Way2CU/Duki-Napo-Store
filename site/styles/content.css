@@ -48,6 +48,10 @@ div.image_rotate.right {
 	text-align: right;
 }
 
+div.image_rotate.right h2 {
+	text-align: center;
+}
+
 div.image_rotate.left {
 	text-align: left;
 }
@@ -990,6 +994,7 @@ section.product div.properties div.assistance_form form label input {
 	transition: all 0.3s;
 }
 
+section.product div.properties div.assistance_form form label input:focus,
 section.product div.properties div.assistance_form form label input:hover {
 	border: 1px solid  #f7c25d;
 }
@@ -1013,8 +1018,9 @@ section.product div.properties div.assistance_form form label textarea {
 	transition: all 0.3s;
 }
 
+section.product div.properties div.assistance_form form label textarea:focus,
 section.product div.properties div.assistance_form form label textarea:hover {
-		border: 1px solid #f7c25d;
+	border: 1px solid #f7c25d;
 }
 
 section.product div.properties div.assistance_form form div.controls {

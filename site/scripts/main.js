@@ -98,7 +98,7 @@ Site.ItemView = function(item) {
 		self.label_price.addClass('price');
 
 		self.label_removeItem = $('<a href="javascript:void(0)">').appendTo(self.container);
-		
+
 		self.label_close_image = $('<img>').appendTo(self.label_removeItem);
 		self.label_close_image.attr('src', self.base_url + '/site/images/social/close-icon.svg');
 
@@ -358,9 +358,13 @@ Site.on_load = function() {
 		});
 	}
 
+	//Page control for product gallery
+	Site.product_gallery = new PageControl('section.product div.images', 'img');
+	Site.product_gallery
+		.attachControls($('div.images div.thumbnails a'));
+
 	// lightbox for all images on page
 	if (!Site.is_mobile())
-		Site.lightbox = new LightBox('div.images a', false, false, true);
 		Site.lightbox_gallery = new LightBox('div.gallery a', false, false, true);
 
 	// create shopping cart
@@ -396,7 +400,7 @@ Site.on_load = function() {
 		Site.home_page_gallery
 			.setInterval(4000)
 			.attachControls('div#slider div.controls a')
-			.setWrapAround(true);	
+			.setWrapAround(true);
 	}
 
 	// handle selecting color

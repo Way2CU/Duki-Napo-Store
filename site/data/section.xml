@@ -7,7 +7,6 @@
 	<section name="about-us">
 		<language name="all">
 			<action name="_default" file="about_us.xml"/>
-			<action name="privacy-policy" file="privacy_policy.xml"/>
 			<action name="terms-and-conditions" file="terms_and_conditions.xml"/>
 		</language>
 	</section>

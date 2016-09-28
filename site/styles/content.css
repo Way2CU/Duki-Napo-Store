@@ -76,10 +76,16 @@ div.image_rotate div {
 }
 
 div.image_rotate div h2 {
+	text-align: center;
 	margin: 0px;
 	color: white;
 	font-weight: 400;
 	text-transform: capitalize;
+}
+
+div.image_rotate div p {
+	margin-top: 0;
+	padding-top: 0.2em;
 }
 
 div.image_rotate div a {
@@ -359,15 +365,19 @@ div.about_article p {
 	margin-right: auto;
 }
 
+div.about_article p {
+	text-align: center;
+}
+
 div.terms_and_conditions p:first-of-type,
 div.about_article p:first-of-type {
 	margin-top: 0px;
 }
 
 div.about_article p img {
-	float: right;
-	margin-left: 20px;
-	margin-bottom: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /**

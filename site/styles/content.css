@@ -677,6 +677,7 @@ div.gallery {
 	display: block;
 	text-align: center;
 	padding:20px calc((100vw - 1200px) / 2);
+	background-color: black;
 }
 
 div.gallery a {
@@ -700,9 +701,7 @@ div.gallery a {
 
 div.gallery a:hover {
 	top: -10px;
-	border: 1px solid #e8e8e8;
 	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
-
 }
 
 div.gallery a:hover span {

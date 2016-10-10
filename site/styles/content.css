@@ -6,21 +6,6 @@
  * Authors: Tal Reznic, Mladen Mijatov
  */
 
-section#vip {
-	display: block;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	text-align: center;
-	background-image: url(../images/black-and-white.jpg);
-	background-repeat: no-repeat;
-	background-position: calc(50% + 250px) center;
-	background-color: black;
-	border-bottom: 1px solid rgba(246,193,92,0.5);
-	width: 100%;
-	position: relative;
-	overflow: hidden;
-}
-
 div#slider {
 	display: block;
 	padding: 0px calc((100vw - 1200px) / 2);
@@ -158,179 +143,6 @@ ul.popular {
 	padding: 0px;
 }
 
-section#vip div.contact_vip {
-	padding-left: calc(50% - 600px);
-	width: 500px;
-	color: white;
-	position: relative;
-}
-
-section#vip div.contact_vip p:first-of-type {
-	margin-top: 0px;
-}
-
-section#vip div.contact_vip p {
-	margin-left: auto;
-	margin-right: auto;
-	text-transform: uppercase;
-	width: 70%;
-}
-
-section#vip form {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	width: 75%;
-}
-
-section#vip form label {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	width: 100%;
-}
-
-section#vip form label.checkbox input {
-	display: none;
-}
-
-section#vip form label.checkbox span {
-	display: inline-block;
-	text-align: left;
-	padding-left: 50px;
-}
-
-section#vip form label:before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	margin-top: -25px;
-	left: 0px;
-
-	background-image: url(../images/form-icons.svg);
-	background-repeat: no-repeat;
-	background-size: 200px 50px;
-	width: 50px;
-	height: 50px;
-	z-index: 1;
-}
-
-section#vip form label.checkbox:before {
-	background-image: none;
-}
-
-section#vip form label:first-of-type:before {
-	background-position: -100px 0px;
-}
-
-section#vip form label:nth-of-type(2):before {
-	background-position: -50px 0px;
-}
-
-section#vip form label:nth-of-type(3):before {
-	background-position: 0px 0px;
-}
-
-section#vip form label:nth-of-type(4):before {
-	background-position: -150px 0px;
-}
-
-section#vip form label.checkbox span,
-section#vip form label input {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 50px;
-	color: white;
-	border: 1px solid transparent;
-	border-image: linear-gradient(100deg, rgba(121, 55, 0, 1) 0%,
-		rgba(129, 62, 0, 1) 4.02%, rgba(151, 81, 0, 1) 10.25%,
-		rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%,
-		rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%,
-		rgba(243, 162, 0, 1) 75.76%, rgba(121,55, 0, 1) 100%);
-	border-image-slice: 1;
-	background-color: rgba(0, 0, 0, 0.5);
-	transition: all 0.3s;
-	width: calc(100% - 50px);
-}
-
-section#vip form label input:focus,
-section#vip form label input:hover {
-	background-color: rgba(0, 0, 0, 1);
-}
-
-section#vip input::-webkit-input-placeholder {
-   color: #f6c15c;
-}
-
-section#vip input::-moz-placeholder { /* Firefox 18- */
-   color: #f6c15c;
-}
-
-section#vip input::-moz-placeholder {  /* Firefox 19+ */
-   color: #f6c15c;
-}
-
-section#vip input::-ms-input-placeholder {
-   color: #f6c15c;
-}
-
-section#vip form div.controls {
-	display: inline-block;
-	vertical-align: bottom;
-	position: relative;
-	z-index: 1;
-	border: 1px solid transparent;
-	border-image: linear-gradient(100deg, rgba(121, 55, 0, 1) 0%,
-		rgba(129, 62, 0, 1) 4.02%, rgba(151, 81, 0, 1) 10.25%,
-		rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%,
-		rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%,
-		rgba(243, 162, 0, 1) 75.76%, rgba(121,55, 0, 1) 100%);
-	border-image-slice: 1;
-	overflow: hidden;
-	width: 100%;
-}
-
-section#vip form div.controls button {
-	display: block;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	border: none;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: black;
-	background: linear-gradient(to bottom, #f3a200 0%,#fff78e 100%);
-	background-repeat: no-repeat;
-	background-size: 100% auto, 100% auto;
-	cursor: pointer;
-	transition: all 0.3s;
-	width: 100%;
-	position: relative;
-	z-index: 0;
-}
-
-section#vip form div.controls button:hover:before {
-	opacity: 1;
-}
-
-section#vip form div.controls button:before {
-	content: "";
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(to bottom, #fff78e 0%,#f3a200 100%);
-	z-index: -1;
-	opacity: 0;
-	transition: all 0.3s;
-}
-
-
 /**
  * About us section
  */
@@ -415,10 +227,17 @@ div.contact_us div.form_wrap h3 {
 	border-bottom: 1px solid #e8e8e8;
 }
 
+div.contact_vip form,
 form.recovery,
 div.contact_us div.form_wrap form {
 	display: block;
 	width: 100%;
+}
+
+div.contact_us div.form_wrap form {
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
 }
 
 form.recovery {
@@ -427,16 +246,24 @@ form.recovery {
 	width: 40%;
 }
 
+div.contact_vip form label,
 form.recovery label,
 div.contact_us div.form_wrap form label {
 	display: block;
 	padding-bottom: 15px;
 }
 
+div.contact_vip form label {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+div.contact_vip form label.checkbox input,
 div.contact_us div.form_wrap form label.checkbox input {
 	display: none;
 }
 
+div.contact_vip form label.checkbox span,
 div.contact_us div.form_wrap form label.checkbox span {
 	display: inline-block;
 	padding-left: 30px;
@@ -444,6 +271,12 @@ div.contact_us div.form_wrap form label.checkbox span {
 	position: relative;
 }
 
+div.contact_vip form label.checkbox span {
+	width: calc(100% - 30px);
+	text-align: left;
+}
+
+div.contact_vip form label.checkbox span:before,
 div.contact_us div.form_wrap form label.checkbox span:before {
 	content: "";
 	position: absolute;
@@ -455,6 +288,7 @@ div.contact_us div.form_wrap form label.checkbox span:before {
 	border: 1px solid #989898;
 }
 
+div.contact_vip form label.checkbox span:after,
 div.contact_us div.form_wrap form label.checkbox span:after {
 	content: '';
 	position: absolute;
@@ -477,6 +311,7 @@ div.contact_us div.form_wrap form label.checkbox span:after {
 	opacity: 1;
 }
 
+div.contact_vip form label.checkbox input:checked ~ span:after,
 div.contact_us div.form_wrap form label.checkbox input:checked ~ span:after {
 	transform: scale(1);
 }
@@ -503,9 +338,17 @@ div.contact_us div.form_wrap form label textarea,
 div.contact_us div.form_wrap form label input {
 	width: 475px;
 	text-align: left;
-	padding: 10px;
+	padding: 0.7em 0.2em;
 	border: 1px solid #989898;
-	background-color: #e8e8e8;
+	transition: all 0.3s;
+}
+
+div.contact_vip form label input {
+	display: block;
+	box-sizing: border-box;
+	padding: 0.7em 0.2em;
+	width: 100%;
+	border: 1px solid #989898;
 	transition: all 0.3s;
 }
 
@@ -513,12 +356,14 @@ form.recovery input {
 	width: calc(100% - 22px);
 }
 
+div.contact_vip form label input:hover,
 form.recovery label input:hover,
 div.contact_us div.form_wrap form label input:hover,
 div.contact_us div.form_wrap form label textarea:hover {
 	border:1px solid rgba(246, 193, 92, 0.5);
 }
 
+div.contact_vip form label input:focus,
 form.recovery label input:focus,
 div.contact_us div.form_wrap form label input:focus,
 div.contact_us div.form_wrap form label textarea:focus {
@@ -531,6 +376,10 @@ div.contact_us div.form_wrap form div.controls {
 	margin-left: auto;
 	margin-right: auto;
 	width: 400px;
+}
+
+div.contact_vip form div.controls {
+	width: 100%;
 }
 
 form.recovery div.controls button,
@@ -550,6 +399,22 @@ div.contact_us div.form_wrap form div.controls button {
 	z-index: 0;
 	overflow: hidden;
 	position: relative;
+}
+
+div.contact_vip form div.controls button {
+	display: block;
+	width: 100%;
+	padding: 0.7em 0em;
+	background-color: #212121;
+	border: 1px solid #989898;
+	color: white;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+div.contact_vip form div.controls button:hover {
+	border-color: #f7c25d;
+	color: #f7c25d;
 }
 
 form.recovery div.controls button:hover:before,
@@ -1347,66 +1212,6 @@ div#input_details div.guest_checkout.visible {
  	max-height: 400px;
  }
 
-section#vip form label.checkbox span:before {
-	content: ' ';
-	position: absolute;
-	left: 115px;
-	top: 50%;
-	margin-top: -10px;
-	width: 20px;
-	height: 20px;
-	display: block;
-	background: white;
-	border: 1px solid #A9A9A9;
-}
-
-section#vip form label.checkbox span:before {
-	left: 14px;
-	background-color: transparent;
-	border: 1px solid transparent;
-	border-image:
-	  linear-gradient(100deg, rgba(121, 55, 0, 1) 0%, rgba(129, 62, 0, 1) 4.02%,
-	  rgba(151, 81, 0, 1) 10.25%, rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%,
-	  rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%, rgba(243, 162, 0, 1) 75.76%,
-	  rgba(121,55, 0, 1) 100%);
-	border-image-slice: 1;
-}
-
-section#vip form label.checkbox span:after {
-	content: ' ';
-	position: absolute;
-	left: 117px;
-	top: 50%;
-	margin-top: -7.5px;
-	width: 15px;
-	height: 15px;
-	display: block;
-	z-index: 1;
-	background: url(../images/check_mark.svg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	-ms-transition: all .2s ease;
-	-webkit-transition: all .2s ease;
-	transition: all .3s ease;
-	-ms-transform: scale(0);
-	-webkit-transform: scale(0);
-	transform: scale(0);
-	opacity: 1;
-}
-
-section#vip form label.checkbox span:after {
-	left: 17px;
-	width: 15px;
-	height: 15px;
-	margin-top: -7.5px;
-
-	background: url(../images/check_mark_white.svg);
-}
-
-section#vip form label.checkbox  input[type=checkbox]:checked ~ span:after {
-	transform: scale(1);
-}
-
 /*
     From the press page
 */
@@ -1577,4 +1382,45 @@ div.features a span {
 	border-top: 1px solid #a49984;
 	background-color: rgba(0,0,0,0.7);
 	transition: all 0.5s;
+}
+
+/*
+ * Vip page
+ */
+
+section#vip {
+	padding: 4em calc((100% - 1200px) / 2);
+}
+
+section#vip div.contact_vip {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	width: 30%;
+	position: relative;
+}
+
+section#vip div.contact_vip:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	background-image: url(../images/vip.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 720px 409px;
+	width: 720px;
+	height: 409px;
+	transform: translatey(-50%);
+}
+
+section#vip div.contact_vip h2 {
+	margin: 0;
+	padding-bottom: 0.5em;
+	text-transform: uppercase;
+	border-bottom: 1px solid #212121;
+}
+
+section#vip div.contact_vip p {
+	text-transform: uppercase;
 }

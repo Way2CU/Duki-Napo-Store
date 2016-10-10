@@ -614,187 +614,6 @@ footer div.copyright span a:hover {
 	color:#5bc2d8;
 }
 
-/*Mobile Home Page*/
-
-section#vip {
-	display: block;
-	text-align: center;
-	padding-top: 70px;
-	min-height: 1000px;
-	background-color: black;
-	background-image: url(../images/black-and-white.jpg);
-	background-repeat: no-repeat;
-	background-position: center bottom;
-	background-size: 100% auto;
-	position: relative;
-}
-
-section#vip div.contact_vip {
-	color: white;
-}
-
-section#vip div.contact_vip p {
-	text-transform: uppercase;
-}
-
-section#vip div.contact_vip img {
-	display: block;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 95%
-}
-
-section#vip form {
-	display: block;
-}
-
-section#vip form label {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	width: 100%;
-}
-
-section#vip form label.checkbox input {
-	display: none;
-}
-
-section#vip form label.checkbox span {
-	display: inline-block;
-	text-align: left;
-	padding-bottom: 0px;
-	padding-left: 50px;
-	font-size: 0.8em;
-	color: white;
-}
-
-section#vip form label:before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	margin-top: -25px;
-	left: 0px;
-
-	background-image: url(../images/form-icons.svg);
-	background-repeat: no-repeat;
-	background-position: 0px 0px;
-	background-size: 200px 50px;
-	width: 50px;
-	height: 50px;
-	z-index: 1;
-}
-
-section#vip form label.checkbox:before {
-	background-image: none;
-}
-
-section#vip form label:first-of-type:before {
-	background-position: -100px 0px;
-}
-
-section#vip form label:nth-of-type(2):before {
-	background-position: -50px 0px;
-}
-
-section#vip form label:nth-of-type(3):before {
-	background-position: 0px 0px;
-}
-
-section#vip form label:nth-of-type(4):before {
-	background-position: -150px 0px;
-}
-
-section#vip form label.checkbox span,
-section#vip form label input {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 50px;
-	color: white;
-	border: 1px solid transparent;
-	border-image: linear-gradient(100deg, rgba(121, 55, 0, 1) 0%,
-		rgba(129, 62, 0, 1) 4.02%, rgba(151, 81, 0, 1) 10.25%,
-		rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%,
-		rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%,
-		rgba(243, 162, 0, 1) 75.76%, rgba(121,55, 0, 1) 100%);
-	border-image-slice: 1;
-	background-color: rgba(0, 0, 0, 0.52);
-	transition: all 0.3s;
-	width: calc(100% - 50px);
-}
-
-section#vip input::-webkit-input-placeholder {
-   color: #f6c15c;
-}
-
-section#vip input::-moz-placeholder { /* Firefox 18- */
-   color: #f6c15c;
-}
-
-section#vip input::-moz-placeholder {  /* Firefox 19+ */
-   color: #f6c15c;
-}
-
-section#vip input::-ms-input-placeholder {
-   color: #f6c15c;
-}
-
-section#vip form div.controls {
-	display: inline-block;
-	vertical-align: bottom;
-	position: relative;
-	z-index: 1;
-	border: 1px solid transparent;
-	border-image: linear-gradient(100deg, rgba(121, 55, 0, 1) 0%,
-		rgba(129, 62, 0, 1) 4.02%, rgba(151, 81, 0, 1) 10.25%,
-		rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%,
-		rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%,
-		rgba(243, 162, 0, 1) 75.76%, rgba(121,55, 0, 1) 100%);
-	border-image-slice: 1;
-	width: 100%;
-}
-
-section#vip form div.controls button {
-	display: block;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	border: none;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 1.5em;
-	color: black;
-	background: linear-gradient(to bottom, #f3a200 0%,#fff78e 100%);
-	background-repeat: no-repeat;
-	background-size: 100% auto, 100% auto;
-	cursor: pointer;
-	transition: all 0.3s;
-	width: 100%;
-	position: relative;
-	z-index: 0;
-}
-
-section#vip form div.controls button:hover:before {
-	opacity: 1;
-}
-
-section#vip form div.controls button:before {
-	content: "";
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(to bottom, #fff78e 0%,#f3a200 100%);
-	z-index: -1;
-	opacity: 0;
-	transition: all 0.3s;
-}
-
 div#slider {
 	display: block;
 	margin-top: 60px;
@@ -1882,69 +1701,6 @@ div#input_details div.guest_checkout.visible {
  	max-height: 450px;
  }
 
-section#vip form label.checkbox  span:before {
- 	content: ' ';
- 	position: absolute;
- 	left: 0px;
- 	top: 50%;
- 	margin-top: -13.5px;
- 	width: 25px;
- 	height: 25px;
- 	display: block;
- 	background: white;
- 	border: 1px solid #A9A9A9;
- }
-
- section#vip form label.checkbox  span:before {
- 	left: 15px;
- 	margin-top: -7.5px;
- 	width: 15px;
- 	height: 15px;
- 	background-color: transparent;
- 	border: 1px solid transparent;
- 	border-image:
- 	  linear-gradient(100deg, rgba(121, 55, 0, 1) 0%, rgba(129, 62, 0, 1) 4.02%,
- 	  rgba(151, 81, 0, 1) 10.25%, rgba(186, 112, 0, 1) 17.91%, rgba(235, 155, 0, 1) 26.62%,
- 	  rgba(243, 162, 0, 1) 27.88%, rgba(255, 247, 142, 1) 50.3%,
- 	  rgba(243, 162, 0, 1) 75.76%, rgba(121,55, 0, 1) 100%);
- 	border-image-slice: 1;
- }
-
-section#vip form label.checkbox  span:after {
-	content: ' ';
-	position: absolute;
-	left: 2px;
-	top: 50%;
-	margin-top: -12.5px;
-	width: 23px;
-	height: 23px;
-	display: block;
-	z-index: 1;
-	background: url(../images/check_mark.svg);
-	background-repeat: no-repeat;
-	background-position: center center;
-	-ms-transition: all .2s ease;
-	-webkit-transition: all .2s ease;
-	transition: all .3s ease;
-	-ms-transform: scale(0);
-	-webkit-transform: scale(0);
-	transform: scale(0);
-	opacity: 1;
- }
-
-section#vip form label.checkbox span:after {
-	left: 17px;
-	width: 12px;
-	height: 12px;
-	margin-top: -6px;
-
-	background: url(../images/check_mark_white.svg);
-}
-
-section#vip form label.checkbox  input[type=checkbox]:checked ~ span:after{
-	transform: scale(1);
-}
-
  /*
      From the press page
  */
@@ -2031,4 +1787,85 @@ div.features a span {
 	border-top: 1px solid #a49984;
 	background-color: rgba(0,0,0,0.7);
 	transition: all 0.5s;
+}
+
+/**
+ * Vip page
+ */
+section#vip {
+	padding: 1em 0.5em;
+}
+
+section#vip div.contact_vip {
+	display: block;
+	margin-top: 70px;
+	padding-top: calc(100vw * 0.5680);
+	text-align: center;
+	position: relative;
+	background-image: url(../images/vip.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100% auto;
+}
+
+section#vip div.contact_vip h2 {
+	margin: 0;
+	padding-bottom: 0.5em;
+	text-transform: uppercase;
+	border-bottom: 1px solid #212121;
+}
+
+section#vip div.contact_vip p {
+	padding: 0.5em 0em;
+	text-transform: uppercase;
+}
+
+section#vip div.contact_vip form {
+	padding-top: 0;
+}
+
+section#vip div.contact_vip form label {
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+section#vip div.contact_vip form label input {
+	display: block;
+	box-sizing: border-box;
+	padding: 0.5em 0.2em;
+	border: 1px solid #989898;
+	width: 100%;
+}
+
+section#vip div.contact_vip form label.checkbox {
+	position: relative;
+}
+
+section#vip div.contact_vip form label.checkbox input {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+}
+
+section#vip div.contact_vip form label.checkbox span {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	width: calc(100% - 20px);
+}
+
+section#vip div.contact_vip form div.controls {
+	width: 100%;
+}
+
+section#vip div.contact_vip form div.controls button {
+	display: block;
+	width: 100%;
+	padding: 0.7em 0em;
+	background-color: #212121;
+	border: 1px solid #989898;
+	color: white;
+	cursor: pointer;
+	transition: all 0.3s;
 }

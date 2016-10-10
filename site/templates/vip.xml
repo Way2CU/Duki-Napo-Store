@@ -17,27 +17,8 @@
 			<cms:template file="parts/header.xml"/>
 			<section id="vip">
 				<div class="contact_vip">
-					<p><cms:text constant="title_vip"/></p>
-					<img src="_BASEURL.'/site/images/title.svg'" alt="dukivenapo memebers club" cms:eval="src"/>
+					<h2><cms:text constant="title_vip"/></h2>
 					<p><cms:text constant="subtitle_vip"/></p>
-					<cms:desktop>
-						<cms:module
-							name="gallery"
-							action="show_image_list"
-							group="vip_gallery"
-							template="parts/home_page_image.xml"
-							/>
-					</cms:desktop>
-
-					<cms:mobile>
-						<cms:module
-							name="gallery"
-							action="show_image_list"
-							group="mobile_vip_gallery"
-							template="parts/home_page_image.xml"
-							/>
-					</cms:mobile>
-
 					<cms:module
 						name="contact_form"
 						action="show"

@@ -1,5 +1,5 @@
 <document>
-	<a href="$params['url']" cms:eval="href">
+	<a href="$params['url']" target="_blank" cms:eval="href">
 		<cms:var param="name" multilanguage="yes"/>
 		<cms:svg file="site-icons.svg" symbol="download"/>
 	</a>

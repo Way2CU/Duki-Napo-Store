@@ -361,6 +361,8 @@ Site.on_load = function() {
 	//Page control for product gallery
 	Site.product_gallery = new PageControl('section.product div.images', 'img');
 	Site.product_gallery
+		.setWrapAround(true)
+		.setInterval(4000)
 		.attachControls($('div.images div.thumbnails a'));
 
 	//ClickHandler for Assistance_form_button

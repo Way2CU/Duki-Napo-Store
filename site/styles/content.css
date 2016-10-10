@@ -812,6 +812,7 @@ a.item span.name {
 	color: #212121;
 	width: 150px;
 	text-transform: capitalize;
+	text-align: left;
 }
 
 a.item span.color {

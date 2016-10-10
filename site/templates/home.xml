@@ -26,14 +26,13 @@
 						/>
 					<div class="controls"/>
 				</div>
-				
-				<!-- Promoted items -->
-				<div class="promoted">
+
+				<div class="features">
 					<cms:module
-						name="shop"
-						action="show_item_list"
-						category="promoted"
-						template="parts/promoted_shop_item.xml"
+						name="gallery"
+						action="show_image_list"
+						group="features"
+						template="parts/home_page_features.xml"
 						/>
 				</div>
 			</cms:desktop>
@@ -48,13 +47,12 @@
 						/>
 				</div>
 
-				<!-- Promoted items -->
-				<div class="promoted">
+				<div class="features">
 					<cms:module
-						name="shop"
-						action="show_item_list"
-						category="promoted"
-						template="parts/promoted_shop_item.xml"
+						name="gallery"
+						action="show_image_list"
+						group="features"
+						template="parts/home_page_features.xml"
 						/>
 				</div>
 			</cms:mobile>

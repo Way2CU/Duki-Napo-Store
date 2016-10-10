@@ -5,5 +5,6 @@
 			alt="$params['title'][$language]"
 			cms:eval="src,alt"
 			/>
+		<span><cms:var param="title" multilanguage="yes"/></span>
 	</a>
 </document>

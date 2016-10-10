@@ -810,6 +810,8 @@ a.item span.name {
 	vertical-align: middle;
 	float: left;
 	color: #212121;
+	width: 150px;
+	text-transform: capitalize;
 }
 
 a.item span.color {
@@ -1540,6 +1542,7 @@ div.features a {
 	border: 1px solid transparent;
 	overflow: hidden;
 	transition: all 0.3s;
+	position: relative;
 }
 
 div.features a:hover {
@@ -1551,10 +1554,26 @@ div.features a:hover img {
 	opacity: 1;
 }
 
+div.features a:hover span {
+	bottom: -100%;
+}
+
 div.features a img {
 	display: block;
 	width: 100%;
 	height: auto;
 	transition: all 0.3s;
 	opacity: 0.7;
+}
+
+div.features a span {
+	position: absolute;
+	padding: 0.3em 0em;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: #f7c25d;
+	border-top: 1px solid #a49984;
+	background-color: rgba(0,0,0,0.7);
+	transition: all 0.5s;
 }

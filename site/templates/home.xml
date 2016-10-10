@@ -32,6 +32,7 @@
 						name="gallery"
 						action="show_image_list"
 						group="features"
+						order_by="text_id"
 						template="parts/home_page_features.xml"
 						/>
 				</div>

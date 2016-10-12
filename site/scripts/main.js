@@ -359,11 +359,13 @@ Site.on_load = function() {
 	}
 
 	//Page control for product gallery
-	Site.product_gallery = new PageControl('section.product div.images', 'img');
-	Site.product_gallery
-		.setWrapAround(true)
-		.setInterval(4000)
-		.attachControls($('div.images div.thumbnails a'));
+	if($('section').hasClass('product')) {
+		Site.product_gallery = new PageControl('section.product div.images', 'img.big_thumb');
+		Site.product_gallery
+			.setWrapAround(true)
+			.setInterval(4000)
+			.attachControls($('div.thumbnails a'));
+	}
 
 	//ClickHandler for Assistance_form_button
 	Site.checkbox_button = $('#checkbox');

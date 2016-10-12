@@ -1192,25 +1192,28 @@ section.product div.images {
 	text-align:  center;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 20px;
+	padding-top: 320px;
 	width: 280px;
+	position: relative;
 }
 
-section.product div.images figure {
+section.product div.images img.big_thumb {
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translatex(-50%);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s;
+}
+
+section.product div.images img.big_thumb.visible {
+	opacity: 1;
+	visibility: visible;
+}
+
+section.product div.images div.thumbnails {
 	display: block;
-	text-align: center;
-	margin: 0;
-	margin-bottom: 20px;
-	padding: 0;
-	white-space: nowrap;
-}
-
-section.product div.images figure:before {
-	display: inline-block;
-	width: 0;
-	height: 100%;
-	vertical-align: top;
-	content: '';
 }
 
 section.product div.images div.thumbnails a {

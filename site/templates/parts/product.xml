@@ -9,30 +9,13 @@
 	</cms:mobile>
 
 	<div class="images">
-		<cms:desktop>
-			<cms:module
-				name="gallery"
-				action="show_image_list"
-				group_id="$params['gallery']"
-				template="parts/thumbnail_large.xml"
-				cms:eval="group_id"
-				/>
-		</cms:desktop>
-
-		<cms:mobile>
-			<figure>
-				<a
-					href="$params['image']"
-					cms:eval="href"
-					>
-					<img
-						src="gallery::getGroupThumbnailById($params['gallery'], null, 280)"
-						alt="$params['name'][$language]"
-						cms:eval="src,alt"
-						/>
-				</a>
-			</figure>
-		</cms:mobile>
+		<cms:module
+			name="gallery"
+			action="show_image_list"
+			group_id="$params['gallery']"
+			template="parts/thumbnail_large.xml"
+			cms:eval="group_id"
+			/>
 
 		<div class="thumbnails">
 			<cms:module
@@ -42,7 +25,6 @@
 				template="parts/thumbnail_small.xml"
 				cms:eval="group_id"
 				/>
-
 		</div>
 		<!-- youtube video -->
 		<cms:module

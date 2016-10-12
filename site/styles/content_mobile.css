@@ -1193,7 +1193,6 @@ section.product div.images {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 320px;
-	width: 280px;
 	position: relative;
 }
 
@@ -1463,7 +1462,6 @@ section.product div.social {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	text-align: center;
-	border: 1px solid #e8e8e8;
 }
 
 section.product div.social span {

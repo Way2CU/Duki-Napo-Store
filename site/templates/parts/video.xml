@@ -12,12 +12,13 @@
 			</iframe>
 		</div>
 	</cms:desktop>
+
 	<cms:mobile>
 	<div class="video">
 		<iframe
 			src="'https://www.youtube.com/embed/'.$params['value']"
 			autoplay="0"
-			width="250"
+			width="300"
 			height="250"
 			frameborder="0"
 			cms:eval="src"

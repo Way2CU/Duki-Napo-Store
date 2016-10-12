@@ -14,11 +14,6 @@
 		<span class="name">
 			<cms:var param="name" multilanguage="yes"/>
 		</span>
-		<cms:color_list
-			id="$params['id']"
-			template="parts/item_colors.xml"
-			cms:eval="id"
-			/>
 		<span
 			class="price"
 			data-currency="shop::getDefaultCurrency()" cms:eval="data-currency"

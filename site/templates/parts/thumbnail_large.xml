@@ -1,5 +1,6 @@
 <document>
 	<img
+		class="big_thumb"
 		src="gallery::getThumbnailById($params['id'], null, 450, Thumbnail::CONSTRAIN_WIDTH)"
 		alt="$params['title'][$language]"
 		cms:eval="src,alt"

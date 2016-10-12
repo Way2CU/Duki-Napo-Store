@@ -1010,6 +1010,7 @@ div.gallery {
   padding-top: 70px;
   padding-bottom: 10px;
   text-align: center;
+  background-color: black;
 }
 
 div.gallery a {
@@ -1080,6 +1081,7 @@ a.item {
 	display: block;
 	text-align: center;
 	width: 250px;
+	height: 300px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
@@ -1132,7 +1134,9 @@ a.item span.name {
 	display: inline-block;
 	vertical-align: middle;
 	float: left;
+	text-align: left;
 	color: #212121;
+	width: 150px;
 }
 
 div.promoted a.item span.name {

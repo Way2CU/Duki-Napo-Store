@@ -1,5 +1,12 @@
 <document>
 	<ul class="menu">
+		<!-- Link for displaying shop-->
+		<cms:module
+			name="links"
+			action="show"
+			text_id="shop"
+			template="parts/shop_link.xml"
+			/>
 		<li>
 			<a
 				class="$section == 'about-us' ? 'active' : false"

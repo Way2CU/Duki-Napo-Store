@@ -4,7 +4,7 @@
 	<cms:var name="_DOCTYPE"/>
 	<html lang="$language" dir="$language_rtl ? 'rtl' : 'ltr'" cms:eval="lang,dir">
 		<head>
-			<title>				
+			<title>
 				<cms:text constant="site_title"/>
 				<cms:raw text=" - "/>
 				<cms:module
@@ -43,12 +43,13 @@
 						template="parts/category_name.xml"
 						cms:eval="id"
 						/>
-				</h1>	
+				</h1>
 
 				<cms:module
 					name="shop"
 					action="show_item_list"
 					category="fix_id($_REQUEST['id'])"
+					order_by="priority"
 					template="parts/shop_item.xml"
 					cms:eval="category"
 					/>

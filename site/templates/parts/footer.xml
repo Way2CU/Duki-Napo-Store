@@ -20,6 +20,15 @@
 				<a href="https://www.instagram.com/dukivenapo/"  target="_blank" class="instagram">
 					<cms:svg file="site-icons.svg" symbol="instagram"/>
 				</a>
+				<a href="https://www.youtube.com/channel/UCv4EYnnYevELCWtJzCWMBeg"  target="_blank" class="youtube">
+					<cms:svg file="site-icons.svg" symbol="youtube"/>
+				</a>
+				<a href="https://www.instagram.com/dukivenapo/"  target="_blank" class="google">
+					<cms:svg file="site-icons.svg" symbol="gooleplus"/>
+				</a>
+				<a href="waze://?q=Shabazi 58, Neve Zedek, Tel-aviv.&amp;navigate=yes" target="_blank" class="waze">
+					<cms:svg file="site-icons.svg" symbol="waze"/>
+				</a>
 			</div>
 
 			<cms:if condition="$action == 'checkout'">

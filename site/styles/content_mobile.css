@@ -184,10 +184,6 @@ ul#navigation li a {
 	text-decoration: none;
 }
 
-ul#navigation li a.active {
-	color:#f6c15c;
-}
-
 header.home ul#navigation {
 	display: block;
 	text-align: center;

@@ -3,9 +3,10 @@
 		<div class="video">
 			<iframe
 				src="'https://www.youtube.com/embed/'.$params['value']"
-				autoplay="0"
+				autoplay="1"
 				width="600"
 				height="250"
+				loop="1"
 				frameborder="0"
 				cms:eval="src"
 				>
@@ -20,6 +21,7 @@
 			autoplay="0"
 			width="300"
 			height="250"
+			loop="1"
 			frameborder="0"
 			cms:eval="src"
 			>

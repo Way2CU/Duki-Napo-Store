@@ -18,7 +18,7 @@
 			class="price"
 			data-currency="shop::getDefaultCurrency()" cms:eval="data-currency"
 			>
-			<cms:var param="price"/>
+			<cms:var name="(float) $params['price']"/>
 		</span>
 	</a>
 </document>

@@ -304,6 +304,7 @@ Caracal.Gallery.Slideshow = function() {
 Site.handle_add_to_cart = function(event) {
 	event.preventDefault();
 
+	var cart = $('div.popup');
 	var product_container = $('section.product div.info');
 	var size = $('div.size select option:selected').text();
 	var color = $('div.color span').text();
@@ -328,13 +329,21 @@ Site.handle_add_to_cart = function(event) {
 	if (!found_item) {
 		// add new item
 		Site.cart.add_item_by_uid(uid, properties, 1);
-		$('div.popup').addClass('activeCart');
+		// make cart blink
+		cart.addClass('activeCart');
+		setTimeout(function() {
+			cart.removeClass('activeCart');
+		}, 2000);
+		// $('div.popup').addClass('activeCart');
 		$('a.cart_btn').addClass('enabled');
 
 	} else {
 		// increase count
 		found_item.alter_count(1);
-		$('div.popup').addClass('activeCart');
+		cart.addClass('activeCart');
+		setTimeout(function() {
+			cart.removeClass('activeCart');
+		}, 2000);
 		$('a.cart_btn').addClass('enabled');
 	}
 };

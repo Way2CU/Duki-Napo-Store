@@ -148,6 +148,16 @@
 					</li>
 					<li>
 						<a
+							href="url_Make('privacy-policy', 'about-us')"
+							class="$section == 'about-us' and $action == 'privacy-policy' ? 'active' : false"
+							cms:eval="href"
+							cms:optional="class"
+							>
+							<cms:text constant="menu_privacy"/>
+						</a>
+					</li>
+					<li>
+						<a
 							href="url_Make('terms-and-conditions', 'about-us')"
 							class="$section == 'about-us' and $action == 'terms-and-conditions' ? 'active' : false"
 							cms:eval="href"

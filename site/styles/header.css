@@ -552,6 +552,7 @@ div#cart div.popup {
 	z-index: 1000;
 }
 
+div#cart div.popup.activeCart,
 div#cart:hover div.popup {
 	visibility: visible;
 	opacity: 1;

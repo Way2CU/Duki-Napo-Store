@@ -103,14 +103,6 @@
 				<cms:svg file="site-icons.svg" symbol="facebook"/>
 			</a>
 			<a
-				href="'https://twitter.com/home?status='.urlencode(url_Make('product', 'shop', array('id', $_REQUEST['id'])))"
-				target="_blank"
-				class="twitter"
-				cms:eval="href"
-				>
-				<cms:svg file="site-icons.svg" symbol="twitter"/>
-			</a>
-			<a
 				href="'https://pinterest.com/pin/create/button/?url=&amp;media=&amp;description='.urlencode(url_Make('product', 'shop', array('id', $_REQUEST['id'])))"
 				target="_blank"
 				class="instagram"

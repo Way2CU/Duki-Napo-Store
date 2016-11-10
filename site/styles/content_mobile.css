@@ -524,52 +524,11 @@ footer div.social a:hover svg {
 footer div.payment {
 	display: block;
 	text-align: center;
-	padding-top: 10px;
-}
-
-footer div.payment span {
-	display: inline-block;
-	vertical-align: top;
-	margin-left: 10px;
-	margin-right: 10px;
 	background-image: url(../images/payments/icons-sprite.png);
 	background-repeat: no-repeat;
-	background-position: 0px center;
-	height: 70px;
-}
-
-footer div.payment span:nth-of-type(1) {
-	width: 70px;
-}
-
-footer div.payment span:nth-of-type(2) {
-	background-position: -70px center;
-	width: 180px;
-}
-
-footer div.payment span:nth-of-type(3) {
-	background-position: -250px center;
-	width: 135px;
-}
-
-footer div.payment span:nth-of-type(4) {
-	background-position: -385px center;
-	width: 45px;
-}
-
-footer div.payment span:nth-of-type(5) {
-	background-position: -430px center;
-	width: 57px;
-}
-
-footer div.payment span:nth-of-type(6) {
-	background-position: -487px center;
-	width: 57px;
-}
-
-footer div.payment span:nth-of-type(7) {
-	background-position: -544px center;
-	width: 75px;
+	background-size: 80% auto;
+	background-position: center center;
+	min-height: 50px;
 }
 
 body.home footer div.copyright {

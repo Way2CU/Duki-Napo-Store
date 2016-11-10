@@ -35,7 +35,6 @@
 
 			<cms:if condition="$action == 'checkout'">
 				<div class="payment">
-					<span/> <span/> <span/> <span/> <span/> <span/> <span/>
 				</div>
 			</cms:if>
 		</div>

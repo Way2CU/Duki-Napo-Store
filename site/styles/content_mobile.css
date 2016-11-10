@@ -45,14 +45,14 @@ h3 {
 }
 
 .mobile_title a.menu span {
-    position: absolute;
-    top: 50%;
-    margin-top: -1.5px;
-    left: 0%;
-    width: 35px;
-    height: 3px;
-    background-color: white;
-    transition:all 0.3s;
+	position: absolute;
+	top: 50%;
+	margin-top: -1.5px;
+	left: 0%;
+	width: 35px;
+	height: 3px;
+	background-color: white;
+	transition: all 0.3s;
 }
 
 .mobile_title.visible a.menu span{

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../units/schema/language.dtd">
 <document>
+	<cms:svg file="site-icons.svg"/>
 	<cms:raw file="../gtm.txt"/>
 	<!-- Save user timer -->
 	<cms:guest>
@@ -13,8 +14,6 @@
 	<!-- Desktop Version -->
 	<cms:desktop>
 		<header class="$section" cms:eval="class">
-			<cms:svg file="site-icons.svg"/>
-
 			<div class="top_header">
 				<a  class="logo" href="url_Make('','home')" cms:eval="href">
 					<img src="_BASEURL.'/site/images/header/logo-symbol.svg'"  alt="logo-symbol" cms:eval="src"/>

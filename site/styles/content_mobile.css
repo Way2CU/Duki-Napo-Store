@@ -280,7 +280,6 @@ div.popup > ul {
 	margin: 0px;
 	padding: 0px;
 	text-align: left;
-
 }
 
 div.popup > ul li {
@@ -292,21 +291,6 @@ div.popup > ul li {
 div.popup > ul li > img {
 	display: inline-block;
 	vertical-align: middle;
-}
-
-div.popup > ul li div {
-	display: inline-block;
-	vertical-align: middle;
-}
-
-div.popup > ul li div span {
-	display: block;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
-	text-align: left;
-	font-size: 0.8em;
 }
 
 div.popup > ul li div span:first-of-type {
@@ -328,18 +312,49 @@ div.popup > ul li > span:first-of-type {
 	padding-right:  5px;
 }
 
-div.popup > ul li a {
-	position: absolute;
-	top: 50%;
-	margin-top: -17.5px;
-	right: 5px;
-	padding:  10px;
-	background-color:  black;
+
+div.popup > ul li div {
+	display: inline-block;
+	vertical-align: middle;
+	width: 100px;
 }
 
-div.popup > ul li a img {
+div.popup > ul li div span {
 	display: block;
-	width:  15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+	font-size: 0.8em;
+}
+
+div.popup > ul li div.cart_controls {
+	position: absolute;
+	top: 50%;
+	right: 0.5em;
+	transform: translateY(-50%);
+	width: auto;
+}
+
+div.popup > ul li div.cart_controls a {
+	display: block;
+	padding: 0.5em;
+	margin-bottom: 0.2em;
+	background-color: #212121;
+}
+
+div.popup > ul li div.cart_controls a:last-of-type {
+	margin-bottom: 0;
+}
+
+div.popup > ul li div.cart_controls a svg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 0.5em;
+	height: 0.5em;
+	fill: white;
 }
 
 div.popup div.total_count {

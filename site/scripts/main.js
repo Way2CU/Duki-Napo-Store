@@ -62,6 +62,7 @@ Site.ItemView = function(item) {
 	self.label_removeItem = null;
 	self.label_count = null;
 	self.label_tax = null;
+	self.controls = {};
 	self.base_url = document.querySelector('meta[property]').getAttribute('content');
 
 	/**
@@ -97,10 +98,30 @@ Site.ItemView = function(item) {
 		self.label_price = $('<span>').appendTo(self.container);
 		self.label_price.addClass('price');
 
-		self.label_removeItem = $('<a href="javascript:void(0)">').appendTo(self.container);
+		self.label_cart_controls = $('<div>').appendTo(self.container);
+		self.label_cart_controls.addClass('cart_controls');
 
-		self.label_close_image = $('<img>').appendTo(self.label_removeItem);
-		self.label_close_image.attr('src', self.base_url + '/site/images/social/close-icon.svg');
+
+		self.option_add = $('<a>').appendTo(self.label_cart_controls);
+		self.option_add
+				.html('<svg><use href="#plus" xlink:href=' + self.base_url + '/site/images/site-sprite.svg#plus/></svg>')
+				.attr('href', 'javascript: void(0);')
+				.data('direction', 1)
+				.addClass('alter increase')
+				.on('click', self.controls.handle_alter);
+
+
+		self.option_minus = $('<a>').appendTo(self.label_cart_controls);
+		self.option_minus
+				.html('<svg><use href="#minus" xlink:href='+ self.base_url + '/site/images/site-sprite.svg#minus/></svg>')
+				.attr('href', 'javascript: void(0);')
+				.data('direction', -1)
+				.addClass('alter decrease')
+				.on('click', self.controls.handle_alter);
+
+		self.label_removeItem = $('<a href="javascript:void(0)">').appendTo(self.label_cart_controls);
+		self.label_removeItem
+				.html('<svg><use href="#close" xlink:href='+ self.base_url + '/site/images/site-sprite.svg#close/></svg>');
 
 		self.label_tax = $('div.total_count:first() span:last()');
 	};
@@ -131,6 +152,22 @@ Site.ItemView = function(item) {
 		//show item if hidden
 		if (self.container.hasClass('hidden'))
 			self.container.removeClass('hidden');
+	};
+
+	/**
+	 * Handle increasing or decreasing item count.
+	 *
+	 * @param object event
+	 */
+	self.controls.handle_alter = function(event) {
+		var item = $(this);
+		var direction = item.data('direction');
+
+		// prevent default button behavior
+		event.preventDefault();
+
+		// alter item count
+		self.item.alter_count(direction);
 	};
 
 	/**

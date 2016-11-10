@@ -670,7 +670,6 @@ a.item span.image:before {
 
 a.item span.image img {
 	vertical-align: middle;
-	border: 1px solid #e8e8e8;
 }
 
 a.item span.name {

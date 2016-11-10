@@ -1138,7 +1138,6 @@ a.item span.image:before {
 
 a.item span.image img {
 	vertical-align: middle;
-	border: 1px solid #e8e8e8;
 }
 
 div.promoted a.item span.image img {

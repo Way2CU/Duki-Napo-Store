@@ -370,6 +370,11 @@ div.popup div.controls {
 	text-align: right;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	background-image: url(../images/payments/icons-sprite.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 60% auto;
+	background-color: black;
 }
 
 div.popup div.controls button {

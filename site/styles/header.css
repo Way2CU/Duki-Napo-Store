@@ -681,6 +681,11 @@ div#cart div.popup div.controls {
 	display: block;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	background-image: url(../images/payments/icons-sprite.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 70% auto;
+	background-color: black;
 }
 
 div#cart div.popup div.controls button {

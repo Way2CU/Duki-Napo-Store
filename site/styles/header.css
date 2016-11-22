@@ -118,30 +118,6 @@ header.active div.top_header a.logo img:last-of-type {
 	padding-left: 50px;
 }
 
-div.top_header a.phone {
-	position: absolute;
-	top: 0px;
-	right: calc(50% - 600px);
-	text-decoration: none;
-	color: white;
-	padding: 1em 10px;
-	overflow: hidden;
-	transition: all 0.3s;
-}
-
-header.active div.top_header a.phone {
-	padding: 15px;
-}
-
-div.top_header a.phone svg {
-	display: inline-block;
-	vertical-align: middle;
-	padding-right: 10px;
-	width: 20px;
-	height: 20px;
-	fill: white;
-}
-
 /*Drop Down Menu*/
 
 nav#navigation ul.drop {
@@ -304,32 +280,6 @@ nav#navigation ul.drop li:hover ul.menu {
 	transition-delay: 0.3s;
 }
 
-nav#navigation a.phone:before {
-	position: absolute;
-	width: 100%;
-	height: 1px;
-	bottom: 0;
-	left: -100%;
-	content: '';
-
-	background-color: #f6c15c;
-
-	transition: all 0.3s;
-	overflow: hidden;
-}
-
-header.active nav#navigation a.phone:before {
-	left: -100%;
-}
-
-nav#navigation a.phone:hover {
-	background-color: rgba(246, 193, 92, 0.2);
-}
-
-nav#navigation a.phone:hover:before {
-	left: 0;
-}
-
 /**
  * Bottom header navigation
  */
@@ -413,6 +363,7 @@ nav#navigation ul a {
 	color: white;
 }
 
+a.phone:hover,
 nav#navigation ul.drop a:hover,
 nav#navigation ul.drop a:hover,
 nav#navigation ul.categories a:hover,
@@ -421,6 +372,8 @@ nav#navigation ul.categories a:hover {
 	background-color: rgba(246, 193, 92, 0.2);
 }
 
+a.phone:after,
+a.phone:before,
 nav#navigation ul.drop a:before,
 nav#navigation ul.categories a:before,
 nav#navigation ul.drop a:after,
@@ -437,6 +390,7 @@ nav#navigation ul.categories a:after {
 	transition: all 0.3s;
 }
 
+a.phone:after,
 nav#navigation ul.drop a:after,
 nav#navigation ul.categories a:after {
 	left: auto;
@@ -445,11 +399,13 @@ nav#navigation ul.categories a:after {
 	bottom: -100%;
 }
 
+a.phone:hover:before,
 nav#navigation ul.drop a:hover:before,
 nav#navigation ul.categories a:hover:before {
 	top: 0;
 }
 
+a.phone:hover:after,
 nav#navigation ul.drop a:hover:after,
 nav#navigation ul.categories a:hover:after {
 	bottom: 0;
@@ -705,4 +661,29 @@ div#cart div.popup div.controls button:before {
 	background-color: #f6c15c;
 	z-index: -1;
 	transition: all 0.3s;
+}
+
+/**
+ * Phone link
+ */
+
+a.phone {
+	position: absolute;
+	top: 50%;
+	left: calc(50% - 450px);
+	transform: translatey(-50%);
+	text-decoration: none;
+	padding: 0.8em 10px;
+	overflow: hidden;
+	transition: all 0.3s;
+	color: #f6c15c;
+}
+
+a.phone svg {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	padding-right: 15px;
+	fill: #f6c15c;
 }

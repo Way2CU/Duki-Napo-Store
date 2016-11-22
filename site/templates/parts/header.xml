@@ -32,6 +32,17 @@
 						<cms:template file="parts/simple_menu_items.xml"/>
 					</li>
 				</ul>
+
+				<!-- phone link -->
+				<a
+					href="'tel:'.urlencode(Language::getText('phone'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<cms:svg file="site-icons.svg" symbol="phone"/>
+					<cms:text constant="phone"/>
+				</a>
+
 				<!-- Shop categories -->
 				<ul class="categories">
 					<cms:module

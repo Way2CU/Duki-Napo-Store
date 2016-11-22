@@ -406,10 +406,9 @@ Site.on_load = function() {
 
 	//Page control for product gallery
 	if($('section').hasClass('product')) {
-		Site.product_gallery = new PageControl('section.product div.images', 'img.big_thumb');
+		Site.product_gallery = new PageControl('section.product div.images', 'a.big_thumb');
 		Site.product_gallery
 			.setWrapAround(true)
-			.setInterval(4000)
 			.attachControls($('div.thumbnails a'));
 	}
 

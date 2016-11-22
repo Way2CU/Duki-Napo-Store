@@ -1,18 +1,29 @@
 <document>
 	<cms:desktop>
-		<img
+		<a
 			class="big_thumb"
-			src="gallery::getThumbnailById($params['id'], null, 450, Thumbnail::CONSTRAIN_WIDTH)"
-			alt="$params['title'][$language]"
-			cms:eval="src,alt"
-			/>
+			href="$params['image']"
+			cms:eval="href"
+			>
+			<img
+				src="gallery::getThumbnailById($params['id'], null, 450, Thumbnail::CONSTRAIN_WIDTH)"
+				alt="$params['title'][$language]"
+				cms:eval="src,alt"
+				/>
+		</a>
 	</cms:desktop>
 	<cms:mobile>
-		<img
+		<a
 			class="big_thumb"
-			src="gallery::getThumbnailById($params['id'], null, 300, Thumbnail::CONSTRAIN_HEIGHT)"
-			alt="$params['title'][$language]"
-			cms:eval="src,alt"
-			/>
+			href="$params['image']"
+			cms:eval="href"
+			>
+			<img
+				class="big_thumb"
+				src="gallery::getThumbnailById($params['id'], null, 300, Thumbnail::CONSTRAIN_HEIGHT)"
+				alt="$params['title'][$language]"
+				cms:eval="src,alt"
+				/>
+		</a>
 	</cms:mobile>
 </document>

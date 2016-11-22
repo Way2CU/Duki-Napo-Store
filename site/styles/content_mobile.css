@@ -1204,7 +1204,7 @@ section.product div.images {
 	position: relative;
 }
 
-section.product div.images img.big_thumb {
+section.product div.images a.big_thumb {
 	position: absolute;
 	top: 0%;
 	left: 50%;
@@ -1214,7 +1214,11 @@ section.product div.images img.big_thumb {
 	transition: all 0.3s;
 }
 
-section.product div.images img.big_thumb.visible {
+section.product div.images a.big_thumb img {
+	display: block;
+}
+
+section.product div.images a.big_thumb.visible {
 	opacity: 1;
 	visibility: visible;
 }

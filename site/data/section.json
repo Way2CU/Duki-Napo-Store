@@ -1,3 +1,15 @@
 {
-	"/": "home.xml"
+	"/": "home.xml",
+	"/about-us": "about_us.xml",
+	"/about-us/terms-and-conditions": "terms_and_conditions.xml",
+	"about-us/privacy-policy": "privacy_policy.xml",
+	"/diamonds": "diamonds.xml",
+	"gallery": "gallery.xml",
+	"contact-us": "contact_us.xml",
+	"/from-the-press": "press.xml",
+	"/vip": "vip.xml",
+	"/user": "control_panel.xml",
+	"/shop/checkout": "checkout.xml",
+	"/shop/{category}": "category.xml",
+	"/shop/{category}/{id}": "product-page.xml"
 }

@@ -1252,7 +1252,7 @@ div.column a.link:hover img {
 div.column a.link img {
 	display: block;
 	width: 100%;
-	transfrom: scale(0.8);
+	transform: scale(0.8);
 	transition: all 0.3s;
 }
 

@@ -344,6 +344,12 @@ div.contact_us div.form_wrap form label input {
 	transition: all 0.3s;
 }
 
+div.contact_us div.form_wrap form label span,
+div.contact_vip form label span {
+	display: block;
+	text-align: left;
+}
+
 div.contact_vip form label input {
 	display: block;
 	box-sizing: border-box;

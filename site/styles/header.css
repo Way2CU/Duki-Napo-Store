@@ -12,13 +12,6 @@ header {
 	background-color: black;
 	white-space: nowrap;
 	opacity: 1;
-	animation: hide;
-	animation-duration: 0.5s;
-	animation-delay: 0s;
-	animation-timing-function: linear;
-	animation-direction: normal;
-	animation-fill-mode: forwards;
-	transition: all 0.3s;
 	z-index: 10000;
 }
 

@@ -93,8 +93,7 @@ class Duki_DeliveryMethod extends DeliveryMethod {
 	 */
 	public function getDeliveryTypes($items, $shipper, $recipient, $transaction=null) {
 		$result = array(
-				'fedex'	=> array('FedEx', 10, 'USD', null, null),
-				'usps'	=> array('USPS', 10, 'USD', null, null)
+				'delivery'	=> array('Delivery', 25, 'USD', null, null),
 			);
 
 		return $result;

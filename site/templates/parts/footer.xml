@@ -23,7 +23,7 @@
 				<a href="https://www.youtube.com/channel/UCv4EYnnYevELCWtJzCWMBeg"  target="_blank" class="youtube">
 					<cms:svg file="site-icons.svg" symbol="youtube"/>
 				</a>
-				<a href="https://www.instagram.com/dukivenapo/"  target="_blank" class="google">
+				<a href="https://plus.google.com/117555633359388335374"  target="_blank" class="google">
 					<cms:svg file="site-icons.svg" symbol="gooleplus"/>
 				</a>
 				<cms:mobile>

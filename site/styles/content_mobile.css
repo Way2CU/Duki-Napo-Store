@@ -30,8 +30,8 @@ h3 {
     background-image: url(../images/header/dukivenapo-logo.svg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 200px 41px;
-    width: 200px;
+    background-size: 150px 30px;
+    width: 150px;
 }
 
 .mobile_title a.menu {
@@ -91,6 +91,21 @@ h3 {
 	height: 3px;
 	background-color: white;
 	transition: all 0.3s;
+}
+
+.mobile_title a.phone {
+	position: absolute;
+	top: 50%;
+	left: 60px;
+	transform: translateY(-50%);
+	padding: 0.5em;
+}
+
+.mobile_title a.phone svg {
+	display: block;
+	width: 25px;
+	height: 25px;
+	fill: #f6c15c;
 }
 
 .mobile_title a.cart_btn {

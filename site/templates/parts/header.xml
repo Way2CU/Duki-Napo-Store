@@ -91,6 +91,16 @@
 				<a href="javascript:void(0)" class="menu">
 					<span></span>
 				</a>
+
+				<!-- phone link -->
+				<a
+					href="'tel:'.urlencode(Language::getText('phone'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<cms:svg file="site-icons.svg" symbol="phone"/>
+				</a>
+
 				<a
 					class="logo"
 					href="url_Make('', 'home')"

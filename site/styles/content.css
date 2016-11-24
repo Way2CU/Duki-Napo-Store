@@ -409,6 +409,10 @@ div.contact_us div.form_wrap form div.controls button {
 	position: relative;
 }
 
+div.contact_us div.form_wrap form div.controls button:hover {
+	color: #212121;
+}
+
 div.contact_vip form div.controls button {
 	display: block;
 	width: 100%;

@@ -947,7 +947,12 @@ div.info a.btn_cart {
 
 	overflow: hidden;
 	position: relative;
+	transition: all 0.3s;
 	z-index: 1;
+}
+
+div.info a.btn_cart:hover {
+	color: #212121;
 }
 
 div.info a.btn_cart:before {
@@ -1196,6 +1201,10 @@ div.checkout_controls button {
 	overflow: hidden;
 	position: relative;
 	z-index: 0;
+}
+
+div.checkout_controls button:hover {
+	color: #212121;
 }
 
 div.checkout_controls button:hover:before {

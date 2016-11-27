@@ -35,15 +35,13 @@
 			<cms:template file="parts/header.xml"/>
 
 			<section class="category" data-id="$_REQUEST['id']" cms:eval="data-id">
-				<h1>
-					<cms:module
-						name="shop"
-						action="show_category"
-						id="fix_id($_REQUEST['id'])"
-						template="parts/category_name.xml"
-						cms:eval="id"
-						/>
-				</h1>
+				<cms:module
+					name="shop"
+					action="show_category"
+					id="fix_id($_REQUEST['id'])"
+					template="parts/category_name.xml"
+					cms:eval="id"
+					/>
 
 				<cms:module
 					name="shop"

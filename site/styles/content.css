@@ -629,7 +629,16 @@ section.category {
 section.category h1 {
 	display: block;
 	text-align: center;
+	padding-bottom: 0.5em;
 	font-weight: 400;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+section.category p.description {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
 }
 
 /**

@@ -1071,6 +1071,13 @@ div.promoted {
 section.category h1 {
 	display: block;
 	text-align: center;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+section.category p.description {
+	text-align: center;
+	padding: 1em 1em;
 }
 
 /**

@@ -86,7 +86,7 @@
 
 	<!-- Mobile version -->
 	<cms:mobile>
-		<header class="$section == 'home' ? 'home' : false" cms:optional="class">
+		<header class="URL::is_active('home.xml') ? 'home' : false" cms:optional="class">
 			<div class="mobile_title">
 				<a href="javascript:void(0)" class="menu">
 					<span></span>
@@ -103,7 +103,7 @@
 
 				<a
 					class="logo"
-					href="url_Make('', 'home')"
+					href="URL::make()"
 					cms:eval="href"
 					>
 				</a>
@@ -115,7 +115,7 @@
 				<ul>
 					<li>
 						<a
-							class="$section == 'home' ? 'active' : false"
+							class="URL::is_active('home.xml')"
 							href="URL::make()"
 							cms:eval="href"
 							cms:optional="class"
@@ -128,7 +128,7 @@
 				<ul>
 					<li>
 						<a
-							class="$section == 'about-us' ? 'active' : false"
+							class="URL::is_active('about_us.xml')"
 							href="URL::make(array(), 'about_us.xml')"
 							cms:eval="href"
 							cms:optional="class"
@@ -138,7 +138,7 @@
 					</li>
 					<li>
 						<a
-							class="$section == 'from-the-press' ? 'active' : false"
+							class="URL::is_active('press.xml')"
 							href="URL::make(array(), 'press.xml')"
 							cms:eval="href"
 							cms:optional="class"
@@ -148,7 +148,7 @@
 					</li>
 					<li>
 						<a
-							class="$section == 'gallery' ? 'active' : false"
+							class="URL::is_active('gallery.xml')"
 							href="URL::make(array(), 'gallery.xml')"
 							cms:eval="href"
 							cms:optional="class"
@@ -158,7 +158,7 @@
 					</li>
 					<li>
 						<a
-							class="$section == 'vip' ? 'active' : false"
+							class="URL::is_active('vip.xml')"
 							href="URL::make(array(), 'vip.xml')"
 							cms:eval="href"
 							cms:optional="class"
@@ -168,7 +168,7 @@
 					</li>
 					<li>
 						<a
-							class="$section == 'about-us' and $action == 'privacy-policy' ? 'active' : false"
+							class="URL::is_active('privacy_policy.xml')"
 							href="URL::make(array(), 'privacy_policy.xml')"
 							cms:eval="href"
 							cms:optional="class"
@@ -178,7 +178,7 @@
 					</li>
 					<li>
 						<a
-							class="$section == 'about-us' and $action == 'terms-and-conditions' ? 'active' : false"
+							class="URL::is_active('terms_and_conditions.xml')"
 							href="URL::make(array(), 'terms_and_conditions.xml')"
 							cms:eval="href"
 							cms:optional="class"
@@ -188,7 +188,7 @@
 					</li>
 					<li>
 						<a
-							class="$section == 'contact-us' ? 'active' : false"
+							class="URL::is_active('contact_us.xml')"
 							href="URL::make(array(), 'contact_us.xml')"
 							cms:eval="href"
 							cms:optional="class"
@@ -198,7 +198,7 @@
 					</li>
 					<li>
 						<a
-							class="$section == 'diamonds' ? 'active' : false"
+							class="URL::is_active('diamonds.xml')"
 							href="URL::make(array(), 'diamonds.xml')"
 							cms:eval="href"
 							cms:optional="class"

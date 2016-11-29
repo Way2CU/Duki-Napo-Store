@@ -67,5 +67,6 @@
 	"title_recover_password": "Password recovery",
 	"subtitle_vip": "& recieve special gifts & discounts",
 	"send_vip_button": "Give me $260",
-	"button_assistance": "Need Assistance?"
+	"button_assistance": "Need Assistance?",
+	"message_sent": "The form was successfully submitted"
 }

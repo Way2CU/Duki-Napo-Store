@@ -9,8 +9,8 @@
 			/>
 		<li>
 			<a
-				class="$section == 'about-us' ? 'active' : false"
-				href="url_Make('', 'about-us')"
+				class="URL::is_active('about_us.xml')"
+				href="URL::make(array(), 'about_us.xml')"
 				cms:eval="href"
 				cms:optional="class"
 				>
@@ -19,8 +19,8 @@
 		</li>
 		<li>
 			<a
-				class="$section == 'from-the-press' ? 'active' : false"
-				href="url_Make('', 'from-the-press')"
+				class="URL::is_active('press.xml')"
+				href="URL::make(array(), 'press.xml')"
 				cms:eval="href"
 				cms:optional="class"
 				>
@@ -29,8 +29,8 @@
 		</li>
 		<li>
 			<a
-				class="$section == 'gallery' ? 'active' : false"
-				href="url_Make('', 'gallery')"
+				class="URL::is_active('gallery.xml')"
+				href="URL::make(array(), 'gallery.xml')"
 				cms:eval="href"
 				cms:optional="class"
 				>
@@ -39,8 +39,8 @@
 		</li>
 		<li>
 			<a
-				class="$section == 'vip' ? 'active' : false"
-				href="url_Make('', 'vip')"
+				class="URL::is_active('vip.xml')"
+				href="URL::make(array(), 'vip.xml')"
 				cms:eval="href"
 				cms:optional="class"
 				>
@@ -49,8 +49,8 @@
 		</li>
 		<li>
 			<a
-				href="url_Make('privacy-policy', 'about-us')"
-				class="$section == 'about-us' and $action == 'privacy-policy' ? 'active' : false"
+				class="URL::is_active('privacy_policy.xml')"
+				href="URL::make(array(), 'privacy_policy.xml')"
 				cms:eval="href"
 				cms:optional="class"
 				>
@@ -59,8 +59,8 @@
 		</li>
 		<li>
 			<a
-				href="url_Make('terms-and-conditions', 'about-us')"
-				class="$section == 'about-us' and $action == 'terms-and-conditions' ? 'active' : false"
+				class="URL::is_active('terms_and_conditions.xml')"
+				href="URL::make(array(), 'terms_and_conditions.xml')"
 				cms:eval="href"
 				cms:optional="class"
 				>
@@ -69,8 +69,8 @@
 		</li>
 		<li>
 			<a
-				class="$section == 'contact-us' ? 'active' : false"
-				href="url_Make('', 'contact-us')"
+				class="URL::is_active('contact_us.xml')"
+				href="URL::make(array(), 'contact_us.xml')"
 				cms:eval="href"
 				cms:optional="class"
 				>
@@ -79,8 +79,8 @@
 		</li>
 		<li>
 			<a
-				class="$section == 'diamonds' ? 'active' : false"
-				href="url_Make('', 'diamonds')"
+				class="URL::is_active('diamonds.xml')"
+				href="URL::make(array(), 'diamonds.xml')"
 				cms:eval="href"
 				cms:optional="class"
 				>

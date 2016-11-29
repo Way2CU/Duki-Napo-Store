@@ -13,9 +13,9 @@
 
 	<!-- Desktop Version -->
 	<cms:desktop>
-		<header class="$section" cms:eval="class">
+		<header class="URL::is_active('home.xml') ? 'home' : false" cms:optional="class">
 			<div class="top_header">
-				<a  class="logo" href="url_Make('','home')" cms:eval="href">
+				<a  class="logo" href="URL::make()" cms:eval="href">
 					<img src="_BASEURL.'/site/images/header/logo-symbol.svg'"  alt="logo-symbol" cms:eval="src"/>
 					<img src="_BASEURL.'/site/images/header/type-logo.svg'"  alt="type-logo" cms:eval="src"/>
 				</a>
@@ -35,7 +35,7 @@
 
 				<!-- phone link -->
 				<a
-					href="'tel:'.urlencode(Language::getText('phone'))"
+					href="'tel:'.urlencode(Language::get_Text('phone'))"
 					cms:eval="href"
 					class="phone"
 					>
@@ -94,7 +94,7 @@
 
 				<!-- phone link -->
 				<a
-					href="'tel:'.urlencode(Language::getText('phone'))"
+					href="'tel:'.urlencode(Language::get_Text('phone'))"
 					cms:eval="href"
 					class="phone"
 					>
@@ -116,7 +116,7 @@
 					<li>
 						<a
 							class="$section == 'home' ? 'active' : false"
-							href="url_Make('', 'home')"
+							href="URL::make()"
 							cms:eval="href"
 							cms:optional="class"
 							>
@@ -129,7 +129,7 @@
 					<li>
 						<a
 							class="$section == 'about-us' ? 'active' : false"
-							href="url_Make('', 'about-us')"
+							href="URL::make(array(), 'about_us.xml')"
 							cms:eval="href"
 							cms:optional="class"
 							>
@@ -139,7 +139,7 @@
 					<li>
 						<a
 							class="$section == 'from-the-press' ? 'active' : false"
-							href="url_Make('', 'from-the-press')"
+							href="URL::make(array(), 'press.xml')"
 							cms:eval="href"
 							cms:optional="class"
 							>
@@ -149,7 +149,7 @@
 					<li>
 						<a
 							class="$section == 'gallery' ? 'active' : false"
-							href="url_Make('', 'gallery')"
+							href="URL::make(array(), 'gallery.xml')"
 							cms:eval="href"
 							cms:optional="class"
 							>
@@ -159,7 +159,7 @@
 					<li>
 						<a
 							class="$section == 'vip' ? 'active' : false"
-							href="url_Make('', 'vip')"
+							href="URL::make(array(), 'vip.xml')"
 							cms:eval="href"
 							cms:optional="class"
 							>
@@ -168,8 +168,8 @@
 					</li>
 					<li>
 						<a
-							href="url_Make('privacy-policy', 'about-us')"
 							class="$section == 'about-us' and $action == 'privacy-policy' ? 'active' : false"
+							href="URL::make(array(), 'privacy_policy.xml')"
 							cms:eval="href"
 							cms:optional="class"
 							>
@@ -178,8 +178,8 @@
 					</li>
 					<li>
 						<a
-							href="url_Make('terms-and-conditions', 'about-us')"
 							class="$section == 'about-us' and $action == 'terms-and-conditions' ? 'active' : false"
+							href="URL::make(array(), 'terms_and_conditions.xml')"
 							cms:eval="href"
 							cms:optional="class"
 							>
@@ -189,7 +189,7 @@
 					<li>
 						<a
 							class="$section == 'contact-us' ? 'active' : false"
-							href="url_Make('', 'contact-us')"
+							href="URL::make(array(), 'contact_us.xml')"
 							cms:eval="href"
 							cms:optional="class"
 							>
@@ -199,7 +199,7 @@
 					<li>
 						<a
 							class="$section == 'diamonds' ? 'active' : false"
-							href="url_Make('', 'diamonds')"
+							href="URL::make(array(), 'diamonds.xml')"
 							cms:eval="href"
 							cms:optional="class"
 							>

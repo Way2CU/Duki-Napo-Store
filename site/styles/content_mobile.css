@@ -406,7 +406,7 @@ div.popup div.controls button {
 	padding-left: 30px;
 	padding-right: 30px;
 	background-color: #212121;
-	border: none;
+	border: 1px solid #f6c15c;
 	color: white;
 	font-size: 1em;
 	cursor: pointer;

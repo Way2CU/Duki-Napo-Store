@@ -21,14 +21,14 @@ class delivery extends Module {
 
 		if (class_exists('shop')) {
 			require_once('units/method.php');
-			$delivery = Duki_DeliveryMethod::getInstance($this);
+			$delivery = Duki_DeliveryMethod::get_instance($this);
 		}
 	}
 
 	/**
 	 * Public function that creates a single instance
 	 */
-	public static function getInstance() {
+	public static function get_instance() {
 		if (!isset(self::$_instance))
 			self::$_instance = new self();
 
@@ -41,19 +41,19 @@ class delivery extends Module {
 	 * @param array $params
 	 * @param array $children
 	 */
-	public function transferControl($params = array(), $children = array()) {
+	public function transfer_control($params = array(), $children = array()) {
 	}
 
 	/**
 	 * Event triggered upon module initialization
 	 */
-	public function onInit() {
+	public function initialize() {
 	}
 
 	/**
-	 * Event triggered upon module deinitialization
+	 * Event triggered upon module disabling
 	 */
-	public function onDisable() {
+	public function cleanup() {
 	}
 }
 

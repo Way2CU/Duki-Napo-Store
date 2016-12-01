@@ -20,7 +20,7 @@
 		<body>
 			<cms:template file="parts/header.xml"/>
 
-			<div class="$section == 'from-the-press' ? 'press' : false" cms:optional="class">
+			<div class="from-the-press">
 				<div class="column">
 					<cms:module
 						name="links"

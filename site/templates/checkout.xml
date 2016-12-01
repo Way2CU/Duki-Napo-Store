@@ -22,7 +22,7 @@
 			<cms:module
 				name="shop"
 				action="set_terms"
-				link="url_Make('terms-and-conditions', 'about-us')"
+				link="URL::make(array(), 'terms_and_conditions.xml')"
 				cms:eval="link"
 				/>
 

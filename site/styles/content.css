@@ -409,6 +409,10 @@ div.contact_us div.form_wrap form div.controls button {
 	position: relative;
 }
 
+div.contact_us div.form_wrap form div.controls button:hover {
+	color: #212121;
+}
+
 div.contact_vip form div.controls button {
 	display: block;
 	width: 100%;
@@ -625,7 +629,16 @@ section.category {
 section.category h1 {
 	display: block;
 	text-align: center;
+	padding-bottom: 0.5em;
 	font-weight: 400;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+section.category p.description {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
 }
 
 /**
@@ -728,7 +741,7 @@ section.product > div.images {
 	padding-top: 470px;
 }
 
-section.product > div.images > img {
+section.product > div.images > a.big_thumb {
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -738,7 +751,11 @@ section.product > div.images > img {
 	transition: all 0.3s;
 }
 
-section.product > div.images > img.visible {
+section.product > div.images > a.big_thumb img {
+	display: block;
+}
+
+section.product > div.images > a.visible {
 	opacity: 1;
 	visibility: visible;
 }
@@ -943,7 +960,12 @@ div.info a.btn_cart {
 
 	overflow: hidden;
 	position: relative;
+	transition: all 0.3s;
 	z-index: 1;
+}
+
+div.info a.btn_cart:hover {
+	color: #212121;
 }
 
 div.info a.btn_cart:before {
@@ -1194,6 +1216,10 @@ div.checkout_controls button {
 	z-index: 0;
 }
 
+div.checkout_controls button:hover {
+	color: #212121;
+}
+
 div.checkout_controls button:hover:before {
 	left: 0%;
 }
@@ -1252,7 +1278,7 @@ div.column a.link:hover img {
 div.column a.link img {
 	display: block;
 	width: 100%;
-	transform: scale(0.8);
+	transform: scale(1);
 	transition: all 0.3s;
 }
 
@@ -1431,4 +1457,18 @@ section#vip div.contact_vip h2 {
 
 section#vip div.contact_vip p {
 	text-transform: uppercase;
+}
+
+/**
+ * Dialog
+ */
+
+div.dialog div.title {
+	text-align: center;
+	background-color: #212121;
+	color: #f6c15c;
+	background-image: url(../images/header/logo-symbol.svg);
+	background-repeat: no-repeat;
+	background-position: 0.5em center;
+	background-size: 40px 40px;
 }

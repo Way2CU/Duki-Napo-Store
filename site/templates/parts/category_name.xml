@@ -1,3 +1,6 @@
 <document>
-	<cms:var param="title" multilanguage="yes"/>
+	<h1><cms:var param="title" multilanguage="yes"/></h1>
+	<p class="description">
+		<cms:var param="description" multilanguage="yes"/>
+	</p>
 </document>

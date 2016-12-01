@@ -1,6 +1,6 @@
 <document>
 	<a
-		href="url_Make('product', 'shop', array('category', fix_id($_REQUEST['id'])), array('id',$params['id']))"
+		href="URL::make(array('category' => $_REQUEST['category'], 'id' => $params['id']), 'product-page.xml')"
 		class="item"
 		cms:eval="href"
 		>

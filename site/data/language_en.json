@@ -1,7 +1,5 @@
 {
-	"phone": "1800-000-000",
-	"title_instegram": "#DukiVeNapo",
-	"phone_text": "Lets Talk: 1800-000-000",
+	"phone": "+972-3-9402626",
 	"add_to_cart": "Add to cart",
 	"captcha_message": "Click to refresh image.",
 	"color_label": "Color: ",
@@ -9,7 +7,6 @@
 	"sale_tax_label": "Ca sales tax: ",
 	"total_label": "Total: ",
 	"currency": "$",
-	"color_error": "TAP ON RING COLOR",
 	"copyright": "Designed and developed by<a href=\"http://www.way2cu.com\">Way2CU</a>.<br> All rights reserved.",
 	"footer_title": "Buyers & seller of unique, rare & antique items.",
 	"form_title": "Contact us",
@@ -70,5 +67,6 @@
 	"title_recover_password": "Password recovery",
 	"subtitle_vip": "& recieve special gifts & discounts",
 	"send_vip_button": "Give me $260",
-	"button_assistance": "Need Assistance?"
+	"button_assistance": "Need Assistance?",
+	"message_sent": "The form was successfully submitted"
 }

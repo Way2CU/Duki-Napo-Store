@@ -66,7 +66,7 @@
 
 			<div class="weight">
 				<h4><cms:text constant="property_weight"/></h4>
-				<span><cms:var param="weight"/></span>
+				<span><cms:var name="$params['weight'] * 1000 .'g'"/></span>
 			</div>
 
 			<div class="assistance_form">
@@ -95,7 +95,7 @@
 		<div class="social">
 
 			<a
-				href="'https://www.facebook.com/sharer/sharer.php?u='.urlencode(url_Make('product', 'shop', array('id', $_REQUEST['id'])))"
+				href="'https://www.facebook.com/sharer/sharer.php?u='.urlencode(URL::make(array('category' => $_REQUEST['category'], 'id' => $params['id'])))"
 				target="_blank"
 				class="facebook"
 				cms:eval="href"
@@ -103,7 +103,7 @@
 				<cms:svg file="site-icons.svg" symbol="facebook"/>
 			</a>
 			<a
-				href="'https://pinterest.com/pin/create/button/?url=&amp;media=&amp;description='.urlencode(url_Make('product', 'shop', array('id', $_REQUEST['id'])))"
+				href="'https://pinterest.com/pin/create/button/?url=&amp;media=&amp;description='.urlencode(URL::make(array('category' => $_REQUEST['category'], 'id' => $params['id'])))"
 				target="_blank"
 				class="instagram"
 				cms:eval="href"

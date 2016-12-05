@@ -1526,4 +1526,25 @@ div.dialog div.title {
 	section.product div.related_items h3:after {
 		width: 35%;
 	}
+
+	section#vip {
+		padding: 4em 1em;
+		min-height: 735px;
+	}
+
+	section#vip div.contact_vip {
+		width: 50%;
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 2em;
+	}
+
+	section#vip div.contact_vip:after {
+		background-size: 650px 369px;
+		width: 650px;
+		height: 369px;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 }

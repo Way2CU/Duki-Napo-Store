@@ -3,7 +3,7 @@
  * DukiVeNapo Site
  *
  * Copyright (c) 2015. by Way2CU, http://way2cu.com
- * Authors: Tal Reznic, Mladen Mijatov
+ * Authors: Tal Reznic, Mladen Mijatov, Iliya Melisehv(media query)
  */
 
 div#slider {
@@ -1471,4 +1471,17 @@ div.dialog div.title {
 	background-repeat: no-repeat;
 	background-position: 0.5em center;
 	background-size: 40px 40px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	header.home div.top_header {
+		width: 100%;
+	}
+
+	#navigation a {
+		left: 1em;
+	}
+	#navigation div#cart {
+		right: 1em;
+	}
 }

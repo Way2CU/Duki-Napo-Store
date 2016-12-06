@@ -20,7 +20,7 @@
 		<body>
 			<cms:template file="parts/header.xml"/>
 
-			<div class="from-the-press">
+			<div class="press">
 				<div class="column">
 					<cms:module
 						name="links"

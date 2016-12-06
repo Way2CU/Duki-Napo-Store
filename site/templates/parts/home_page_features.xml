@@ -1,7 +1,10 @@
 <document>
-	<a href="$params['description'][$language]" cms:eval="href">
+	<a
+		href="URL::make(array('category' => $params['id']), 'category.xml')"
+		cms:eval="href"
+		>
 		<img
-			src="gallery::getThumbnailById($params['id'], null, 250, Thumbnail::CONSTRAIN_HEIGHT)"
+			src="$params['image']"
 			alt="$params['title'][$language]"
 			cms:eval="src,alt"
 			/>

@@ -23,7 +23,7 @@
 
 		<body>
 			<cms:template file="parts/header.xml"/>
-			<div class="contact-us">
+			<div class="contact_us">
 				<cms:module
 					name="articles"
 					action="show"

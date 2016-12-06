@@ -173,3 +173,14 @@ footer div.copyright span a {
 footer div.copyright span a:hover {
 	color:#5bc2d8;
 }
+
+/*
+*Media query footer
+*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+	footer div.footer_top nav#footer_nav ul li a {
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+}

@@ -9,6 +9,14 @@
 				<cms:raw text=" - "/>
 				<cms:module
 					name="shop"
+					action="show_category"
+					id="fix_id($_REQUEST['category'])"
+					template="parts/category_title.xml"
+					cms:eval="id"
+					/>
+				<cms:raw text=" "/>
+				<cms:module
+					name="shop"
 					action="show_item"
 					id="fix_id($_REQUEST['id'])"
 					template="parts/item_page_title.xml"

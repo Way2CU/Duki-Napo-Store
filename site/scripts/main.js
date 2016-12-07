@@ -425,8 +425,10 @@ Site.on_load = function() {
 	});
 
 	// lightbox for all images on page
-	if (!Site.is_mobile())
+	if (!Site.is_mobile()) {
 		Site.lightbox_gallery = new LightBox('div.gallery a', false, false, true);
+		Site.product_image = new LightBox('a.big_thumb', false, false, true);
+	}
 
 	// create shopping cart
 	Site.cart = new Caracal.Shop.Cart();

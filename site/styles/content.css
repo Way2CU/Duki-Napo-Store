@@ -449,6 +449,17 @@ div.contact_us div.form_wrap form div.controls button:before {
 	z-index: -1;
 }
 
+/*
+*Map
+*/
+
+div#map {
+	width: 600px;
+	height: 300px;
+	display: block;
+	margin: 0em auto;
+	margin-bottom: 1.5em;
+}
 /**
  * Diamonds page
  */

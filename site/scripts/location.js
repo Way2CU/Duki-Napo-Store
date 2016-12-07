@@ -4,7 +4,7 @@ var Site = Site || {};
 Site.map = function (langitude, latitude) {
 	var mapCanvas = document.getElementById('map');
 	var base_url = document.querySelector('meta[property]').getAttribute('content');
-	var image = base_url + '/site/images/favicon.png';
+	var image = base_url + '/site/images/favicon_map.png';
 	console.log(image);
 	var mapOptions = {
 		center: {lat: langitude, lng: latitude},

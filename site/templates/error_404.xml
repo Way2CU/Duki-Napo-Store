@@ -17,6 +17,7 @@
 
 			<section id="error">
 				<h2><cms:text constant="error_massage"/></h2>
+
 				<h3><cms:text constant="oops"/></h3>
 				<p><cms:text constant="page_missing_text"/></p>
 			</section>

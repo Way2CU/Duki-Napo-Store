@@ -11,5 +11,6 @@
 	"/user": "control_panel.xml",
 	"/shop/checkout": "checkout.xml",
 	"/shop/category/{category}": "category.xml",
-	"/shop/category/{category}/id/{id}": "product-page.xml"
+	"/shop/category/{category}/id/{id}": "product-page.xml",
+	"/404": "error_404.xml"
 }

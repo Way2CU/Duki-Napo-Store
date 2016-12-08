@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" dir="$language_rtl ? 'rtl' : 'ltr'" cms:eval="lang,dir">
+		<head>
+			<title><cms:text constant="site_title"/></title>
+			<cms:module
+				name="shop"
+				action="include_cart_scripts"
+				/>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body>
+			<cms:template file="parts/header.xml"/>
+
+			<section id="error">
+				<h2><cms:text constant="error_massage"/></h2>
+				<h3><cms:text constant="oops"/></h3>
+				<p><cms:text constant="page_missing_text"/></p>
+			</section>
+
+			<cms:template file="parts/footer.xml"/>
+		</body>
+	</html>
+</document>

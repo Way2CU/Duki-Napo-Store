@@ -68,8 +68,5 @@
 	"subtitle_vip": "& recieve special gifts & discounts",
 	"send_vip_button": "Give me $260",
 	"button_assistance": "Need Assistance?",
-	"message_sent": "The form was successfully submitted",
-	"error_massage": "Unable to find what you are looking for",
-	"oops":"oops",
-	"page_missing_text":"seems like a (404) error"
+	"message_sent": "The form was successfully submitted"
 }

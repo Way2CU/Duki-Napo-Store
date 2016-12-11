@@ -1,7 +1,12 @@
 <document>
 	<li>
-		<a href="$params['url']" cms:eval="href">
-			<cms:var param="text" multilanguage="yes"/>
+		<a
+			href="URL::make(array('category' => $params['id']), 'category.xml')"
+			class="(isset($_REQUEST['category']) and $_REQUEST['category']) == $params['id'] ? 'active' : false"
+			cms:eval="href"
+			cms:optional="class"
+			>
+			<cms:text constant="menu_shop"/>
 		</a>
 	</li>
 </document>

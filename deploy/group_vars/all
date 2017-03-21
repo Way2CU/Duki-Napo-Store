@@ -1,12 +1,11 @@
 ---
 site:
-
   domain: dukivenapo.com
   # subdomain: duki
-  make_alias: true
+  make_alias: false
   root: httpdocs
-  username: "duki"
-  caracal_branch: "release"
+  username: duki
+  caracal_branch: v0.3.x
   # ip_address: 0.0.0.0
   # owner: Some Person
   # plan: Unlimited

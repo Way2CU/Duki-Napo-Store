@@ -33,9 +33,8 @@
 				</cms:mobile>
 			</div>
 
-			<cms:if condition="$action == 'checkout'">
-				<div class="payment">
-				</div>
+			<cms:if condition="URL::is_active('checkout.xml')">
+				<div class="payment"/>
 			</cms:if>
 		</div>
 

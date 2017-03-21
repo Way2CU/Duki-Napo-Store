@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE document SYSTEM "../units/schema/language.dtd">
 <document>
-	<cms:var name="_DOCTYPE"/>
 	<html lang="$language" dir="$language_rtl ? 'rtl' : 'ltr'" cms:eval="lang,dir">
 		<head>
 			<title><cms:text constant="site_title"/></title>
@@ -20,7 +19,7 @@
 			<section class="user">
 				<cms:user>
 						<h1><cms:text constant="title_recover_password"/></h1>
-						<form class="recovery" action="url_Make()" method="POST" cms:eval="action">
+						<form class="recovery" action="URL::make()" method="POST" cms:eval="action">
 							<label>
 								<span><cms:text constant="label_username"/></span>
 								<input

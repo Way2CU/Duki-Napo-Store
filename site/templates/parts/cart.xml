@@ -2,11 +2,10 @@
 <!DOCTYPE document SYSTEM "../../units/schema/language.dtd">
 <document>
 	<div class="popup">
+		<!-- Item list -->
+		<ul/>
 
-		<ul>
-
-		</ul>
-
+		<!-- Additional information -->
 		<div class="total_count">
 			<span><cms:text constant="sale_tax_label"/></span>
 			<span></span>

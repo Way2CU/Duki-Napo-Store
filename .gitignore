@@ -1,4 +1,6 @@
 .vagrant
 .DS_Store
-gallery/
 site/gtm.txt
+site/gallery/
+site/videos/
+site/downloads/
